@@ -1,0 +1,315 @@
+@media screen and (max-width: 1140px) {
+    .reg__form {
+        display: block;
+    }
+
+    .reg__form-left,
+    .reg__form-right {
+        max-width: 100%;
+    }
+
+    .step_1 .reg__form-right {
+        margin-top: 40px;
+    }
+
+    .step_2 .reg__form-right {
+        margin-top: 40px;
+    }
+
+    .name__cabinet-mobile,
+    .exit__cabinet-mobile {
+        display: block;
+    }
+
+    .account-mobil a {
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF !important;
+        opacity: 0.45;
+    }
+
+    .account-mobil .menu {
+        margin-left: 10px;
+    }
+
+    .name__cabinet-mobile {
+        color: #ffca28;
+    }
+
+    .exit__cabinet-mobile {
+        margin-left: 20px;
+        width: 50px;
+    }
+
+    .exit__cabinet-mobile a {
+        width: 50px;
+    }
+
+    .exit__cabinet-mobile i {
+        color: #FFFFFF !important;
+        opacity: 0.45;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .credits__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .credits__wrapper-left {
+        max-width: 100%;
+    }
+
+    .credits__wrapper-right {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .tabs__header {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tabs__wrapper {
+        display: none;
+    }
+
+    .tabs__wrapper-mobile {
+        display: block;
+    }
+
+    .account__wrapper {
+        display: block;
+    }
+
+    .account__wrapper-tab {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .account__tab-name span {
+        display: inline-block;
+    }
+
+    .account__wrapper-info {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .register__icons {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .register__icons-item {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .register__step-header {
+        padding: 30px 0 0 0;
+    }
+
+    .register__icon-text {
+        max-width: 100%;
+    }
+
+    .step__title {
+        font-size: 24px;
+    }
+
+    .register__btn {
+        max-width: 435px;
+    }
+
+    .register__btn .btn {
+        max-width: 200px;
+    }
+
+    .personal__date-inp {
+        display: block;
+    }
+
+    .passport__date-inp {
+        display: block;
+    }
+
+    .passport__date-inp .select {
+        width: 100%;
+    }
+
+    .passport__date-inp .select+.select {
+        margin-left: 0;
+    }
+
+    .personal__date-inp .select {
+        width: 100%;
+    }
+
+    .personal__date-inp .select+.select {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .register__icon-text {
+        font-size: 8px;
+    }
+
+    .header__back {
+        display: none;
+    }
+
+    .header__lang {
+        display: none;
+    }
+
+    .header__right {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__mobil-menu {
+        margin: 0;
+    }
+
+    .svg__circle-line {
+        max-width: 85px;
+        right: -82px;
+    }
+
+    .reg__form {
+        padding: 5px 10px;
+    }
+
+    .contol-group-text {
+        font-size: 14px;
+    }
+
+    .control-group {
+        margin-left: 10px;
+    }
+
+    .account__info-content {
+        display: block;
+    }
+
+    .account__info-text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .account__info-content {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .register__step-title {
+        font-size: 16px;
+    }
+
+    .step__title {
+        font-size: 20px;
+    }
+
+    .contol-group-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .svg__circle-line {
+        max-width: 65px;
+        right: -63px;
+    }
+
+    .register__btn {
+        max-width: 295px;
+    }
+
+    .register__btn .btn {
+        padding: 15px 0;
+        max-width: 130px;
+    }
+
+    .personal__gender-inner {
+        justify-content: space-between;
+    }
+
+    .passport__type-inner {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .register__step-title {
+        font-size: 12px;
+    }
+
+    .contol-group-text {
+        font-size: 10px;
+    }
+
+    .document-item {
+        display: block;
+    }
+
+    .passport-text {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .file {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .name__cabinet-mobile span {
+        font-size: 16px;
+    }
+
+    .exit__cabinet-mobile {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .svg__circle-line {
+        max-width: 45px;
+        right: -43px;
+    }
+
+    .register__btn {
+        max-width: 245px;
+    }
+
+    .register__btn .btn {
+        padding: 15px 0;
+        max-width: 115px;
+    }
+
+    .register__btn button:last-child {
+        margin-left: 10px;
+    }
+
+    .contol-group-text {
+        font-size: 8px;
+    }
+
+    .passport__series {
+        display: block;
+    }
+
+    .passport__series-ser {
+        width: 100%;
+    }
+
+    .passport__series-num {
+        width: 100%;
+        margin: 0;
+    }
+}

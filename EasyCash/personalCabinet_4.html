@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/resize.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flex-wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="burger__menu">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <rect width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                                    <rect x="5" y="6" width="8" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                    <rect y="12" width="13" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="13" height="13" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="header__left">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header__menu">
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <li class="menu__list-item">
+                                            <a id="about" class="menu__list-link" href="about.html">
+                                                О нас
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link popup-modal" href="#popup__register">
+                                                Получить
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link" href="news.html">
+                                                Акции
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header__support">
+                            <div class="header__support-label">
+                                Поддержка:
+                            </div>
+                            <div class="header__support-phones">
+                                <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                            </div>
+                        </div>
+                        <div class="header__account">
+                            <div class="account__language">
+                                <div class="account__language-item">ua</div>
+                                <div class="account__language-item active">ru</div>
+                            </div>
+                            <a href="loan.html" class="account btn  btn-bg">
+                                Погасить
+                            </a>
+                            <a href="personalCabinet_1.html" class="account btn  btn-transparent">
+                                Личный кабинет
+                            </a>
+                        </div>
+                        <div class="header__account-phone">
+                            <a href="personalCabinet_1.html" class="account-phone">
+                                Личный кабинет
+                            </a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mainMenu">
+
+                    <div class="mainMenu__inner">
+                        <div class="mainMenu__inner-menu">
+                            <nav class="mainMenu__menu">
+                                <ul class="mainMenu__list">
+                                    <li class="mainMenu__list-item">
+                                        <a href="about.html" class="mainMenu__list-link">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="news.html" class="mainMenu__list-link">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="news.html" class="mainMenu__list-link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Вопросы и ответы
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mainMenu__inner-lang">
+                            <div class="account__language-item">ua</div>
+                            <div class="account__language-item active">ru</div>
+                        </div>
+                        <div class="header__support header__support_mobile">
+                            <div class="header__support-label">
+                                Поддержка:
+                            </div>
+                            <div class="header__support-phones">
+                                <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                            </div>
+                        </div>
+                        <div class="mainMenu__inner-btns">
+                            <a href="personalCabinet_1.html" class="mainMenu__inner-btn btn btn-transparent">Личный
+                                кабинет</a>
+                            <a href="loan.html" class="mainMenu__inner-btn btn">Погасить</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="profile-head">
+                <div class="container container_profile">
+                    <div class="profile-head__title">Мой профиль</div>
+                    <div class="profile-head__tabs">
+                        <nav>
+                            <ul class="profile-head__tabs-list">
+                                <li class="profile-head__tabs-item profile-head__tabs-item_1 "><a
+                                        href="personalCabinet_1.html">Мои данные</a>
+                                </li>
+                                <li class="profile-head__tabs-item profile-head__tabs-item_2 "><a
+                                        href="personalCabinet_2.html">Мои контактные
+                                        лица</a></li>
+                                <li class="profile-head__tabs-item profile-head__tabs-item_3 "><a
+                                        href="personalCabinet_3.html">Моя работа</a></li>
+                                <li class="profile-head__tabs-item profile-head__tabs-item_4 active"><a
+                                        href="personalCabinet_4.html">Мои карты</a></li>
+                                <li class="profile-head__tabs-item profile-head__tabs-item_5"><a
+                                        href="personalCabinet_5.html">Мои документы</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="persArea">
+                <div class="container container_profile">
+                    <div class="persArea__tabs">
+                        <div class="tabs__content">
+                            <div class="tabs__content-items">
+                                <div class="tabs__content-title">Мои платежные карты</div>
+                                <div class="reg-item__card card__table">
+                                    <div class="card__table-head card-head">
+                                        <div class="card-head__item">Номер карты</div>
+                                        <div class="card-head__item">Статус</div>
+                                    </div>
+                                    <div class="card__table-row card-row">
+                                        <div class="card-row__item">
+                                            <span>52 **** 4455</span>
+                                        </div>
+                                        <div class="card-row__item card-row__item_status">
+                                            <div class="card-row__status">Активна</div>
+                                        </div>
+                                        <div class="card-row__item card-row__item_delete">
+                                            <button class="card-row__delete-btn">
+                                                <img src="images/delete.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card__table-row card-row">
+                                        <div class="card-row__item">
+                                            <span>52 **** 4455</span>
+                                        </div>
+                                        <div class="card-row__item card-row__item_status">
+                                            <div class="card-row__status">Активна</div>
+                                        </div>
+                                        <div class="card-row__item card-row__item_delete">
+                                            <button class="card-row__delete-btn">
+                                                <img src="images/delete.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card__table-row card-row">
+                                        <div class="card-row__item">
+                                            <span class="mastercard">52 **** 4455</span>
+                                        </div>
+                                        <div class="card-row__item card-row__item_status">
+                                            <div class="card-row__status unactive">Неактивна</div>
+                                        </div>
+                                        <div class="card-row__item card-row__item_delete">
+                                            <button class="card-row__delete-btn">
+                                                <img src="images/delete.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-up">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__left-title">
+                                <a href="#">О компании</a>
+                            </div>
+                            <div class="footer__left-title">
+                                <a href="#">Полезные ссылки</a>
+                            </div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__right-support">
+                                <div class="support__title">Служба поддержки</div>
+                                <div class="support__phone">
+                                    <a href="#">+38 (044) 338-07-79</a>
+                                </div>
+                            </div>
+                            <div class="footer__right-time">Время работы: с 9:00 до 18:00
+                                без перерыва и выходных</div>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-down">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__copy">© 2020 “Easy Cash”. Все права защищены</div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__social">
+                                <div class="footer__social-text">Мы в социальных сетях:</div>
+                                <div class="footer__social-ico">
+                                    <a href="#" class="social__icon">
+                                        <img src="images/instagram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="social__icon">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="chatbot">
+        <div class="chatbot__messanger">
+            <div class="chatbot__messanger-item veber"><a href="#">
+                    Viber</a></div>
+            <div class="chatbot__messanger-item messenger"><a href="#">
+                    Messenger</a></div>
+            <div class="chatbot__messanger-item telegram"><a href="#">
+                    Telegram</a></div>
+        </div>
+        <img src="images/chatbot.png" alt="">
+    </div>
+    <div class="popups" style="display: none;">
+        <div id="popup__sent" class="popup__sent popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваша заявка отправлена</div>
+            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
+                заявка будет
+                рассмотрена!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__mistake" class="popup__mistake popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка отправки</div>
+            <div class="sent__text popup__text">При отправке заявки возникли проблемы, пожалуйста, попробуйте еще раз!
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-1" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит на сумму <span>4500 грн</span> одобрен!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Перейти в кабинет
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-2" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит пролонгирован!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                На главную
+            </a>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-3" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит закрыт!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Оформить новый
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-4" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="sent__text popup__text">
+                Я ознакомлен с “Кредитным договором” и подтверждаю свое согласие с условиями Договора и понимаю в полном
+                объеме изложенную в нем информацию.
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Подписать кредитный договор
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__sorry" class="popup__sorry popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка транзакции</div>
+            <div class="sent__text popup__text">При проведении платежа возникли проблемы, пожалуйста, попробуйте еще раз
+                или обратитесь в поддержку!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__login" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Войти в кабинет</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promo" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promoErr" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="popup__error-text">
+                Неверный промо-код
+            </div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification-timer" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Проходит идентификация личности</div>
+            <div class="popup__text">Подождите, пожалуйста, процесс проверки займет не больше 5 минут</div>
+            <img src="images/clockOrange.svg" alt="">
+            <div class="timer"></div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваш аккаунт проверяется</div>
+            <div class="popup__text">Мы успешно получили данные, которые вы отправили для верификации своего аккаунта.
+                Ваш аккаунт на этапе проверки. Как только ваш аккаунт будет верифицирован, вы получитеуведомление.</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__register" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Регистрация</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__code" class="popup popup__promo">
+            <div class="popup__title">Кредитный договор</div>
+            <div class="sent__text popup__text">Данным одноразовым идентификатором подписываю Кредитный договор и
+                направляю кредитору сообщение о принятии в полном объеме условий Кредитного договора</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <label>Код*</label>
+                    <input type="">
+                    <button href="#" class="popup-btn login-btn">Подписать</button>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Прислать код еще раз</a>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

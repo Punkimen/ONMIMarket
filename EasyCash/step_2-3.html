@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/regcalc.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/step-valid.js" defer></script>
+    <script src="scripts/cabinet-calc.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="burger__menu">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <rect width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                            <rect x="5" y="6" width="8" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                            <rect y="12" width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="header__left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a id="about" class="menu__list-link" href="about.html">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link popup-modal" href="#popup__register">
+                                        Получить
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="news.html">
+                                        Акции
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__support">
+                    <div class="header__support-label">
+                        Поддержка:
+                    </div>
+                    <div class="header__support-phones">
+                        <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                    </div>
+                </div>
+                <div class="header__account">
+                    <div class="account__language">
+                        <div class="account__language-item">ua</div>
+                        <div class="account__language-item active">ru</div>
+                    </div>
+                    <a href="loan.html" class="account btn  btn-bg">
+                        Погасить
+                    </a>
+                    <a href="personalCabinet_1.html" class="account btn  btn-transparent">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="header__account-phone">
+                    <a href="personalCabinet_1.html" class="account-phone">
+                        Личный кабинет
+                    </a>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                            stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                            stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="mainMenu">
+
+            <div class="mainMenu__inner">
+                <div class="mainMenu__inner-menu">
+                    <nav class="mainMenu__menu">
+                        <ul class="mainMenu__list">
+                            <li class="mainMenu__list-item">
+                                <a href="about.html" class="mainMenu__list-link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="news.html" class="mainMenu__list-link">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="news.html" class="mainMenu__list-link">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="#" class="mainMenu__list-link">
+                                    Вопросы и ответы
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="#" class="mainMenu__list-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mainMenu__inner-lang">
+                    <div class="account__language-item">ua</div>
+                    <div class="account__language-item active">ru</div>
+                </div>
+                <div class="header__support header__support_mobile">
+                    <div class="header__support-label">
+                        Поддержка:
+                    </div>
+                    <div class="header__support-phones">
+                        <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                    </div>
+                </div>
+                <div class="mainMenu__inner-btns">
+                    <a href="personalCabinet_1.html" class="mainMenu__inner-btn btn btn-transparent">Личный кабинет</a>
+                    <a href="loan.html" class="mainMenu__inner-btn btn">Погасить</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="step">
+        <div class="container">
+            <div class="step__inner">
+                <div class="step__inner-num">
+                    Шаг <span>2</span> из 3
+                </div>
+                <div class="step__inner-title">
+                    Для оформления кредита - заполните форму
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reg">
+        <div class="container">
+            <form id='form' action="#">
+                <div class="reg__wraperr">
+                    <div class="reg__step-items">
+                        <div class="reg__step-item reg__step-code">
+                            <div class="reg-item">
+                                <h3 class="reg__form-title">Социальный статус</h3>
+                                <div class="select">
+                                    <label class="form__title" for="">Ваш статус*</label>
+                                    <select id="live-status" name="live-status">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="live-status__option" value="1">Студент</option>
+                                        <option class="live-status__option" value="2">Рабочий</option>
+                                        <option class="live-status__option" value="3">Предприниматель</option>
+                                        <option class="live-status__option" value="4">Пенсионер</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                            </div>
+                            <div class="reg-item reg-item_work">
+                                <h3 class="reg__form-title">Данные о месте работы</h3>
+                                <div class="reg__input">
+                                    <label class="form__title" for="street">Название предприятия*</label>
+                                    <input class=" " type="text" name="">
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class="reg-item__row">
+                                    <div class=" select">
+                                        <label class="form__title" for="">Отрасль*</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="" value="1">Отрасль</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="">Занятость</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Выберите</option>
+                                            <option class="" value="1">Занятость</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                </div>
+                                <div class="reg-item__row">
+                                    <div class="reg__input">
+                                        <label class="form__title" for="street">Рабочий телефон*</label>
+                                        <input class=" " type="text" name=""
+                                            placeholder="Введите городской или мобильный телефон">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="">Занятость</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Выберите</option>
+                                            <option class="" value="1">Занятость</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                </div>
+                                <div class=" select">
+                                    <label class="form__title" for="">Категория должности*</label>
+                                    <select name="">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="" value="1">Категория должности</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                            </div>
+                            <div class="reg-item reg-item_study">
+                                <h3 class="reg__form-title">Данные об учебе</h3>
+                                <div class="reg__input">
+                                    <label class="form__title" for="street">Название учебного заведения*</label>
+                                    <input class=" " type="text" name=""
+                                        placeholder="Введите название учебного заведения">
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class="reg-item__row">
+                                    <div class=" select">
+                                        <label class="form__title" for="">Форма обучения*</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="" value="1">Очная</option>
+                                            <option class="" value="1">Заочная</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class="reg__input">
+                                        <label class="form__title" for="street">Курс</label>
+                                        <input class=" " type="text" name="" placeholder="Введите курс">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reg-item reg-item_ip">
+                                <h3 class="reg__form-title">Сфера деятельности</h3>
+                                <div class=" select">
+                                    <label class="form__title" for="">Ваша сфера деятельности*</label>
+                                    <select name="">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="" value="1">
+                                            Сфера деятельности
+                                        </option>
+                                        <option class="" value="1">
+                                            Сфера деятельности
+                                        </option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                            </div>
+                            <div class="reg-item">
+                                <h3 class="reg__form-title">Данные про доходы и расходы</h3>
+                                <div class="reg-item__row reg-item__row_3">
+                                    <div class=" select">
+                                        <label class="form__title" for="">Сумма основного дохода</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Введите сумму</option>
+                                            <option class="region-option" value="1">Сумма</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="">Количество активных кредитов</label>
+                                        <select name="">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="region-option" value="1">Сумма</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="">Ежемесячный платеж по кредитам</label>
+                                        <select name="region">
+                                            <option value="" hidden disabled selected>Введите сумму</option>
+                                            <option class="region-option" value="1">Холост</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reg-item">
+                                <h3 class="reg__form-title">Адрес проживания</h3>
+                                <div class=" select">
+                                    <label class="form__title" for="region">Область*</label>
+                                    <select name="region">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="region-option" value="1">Московская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class=" select">
+                                    <label class="form__title" for="district">Район*</label>
+                                    <select name="district">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="district-option" value="1">Московская область</option>
+                                        <option class="district-option" value="2">Амурская область</option>
+                                        <option class="district-option" value="3">Архангельская область</option>
+                                        <option class="district-option" value="4">Астраханская область</option>
+                                        <option class="district-option" value="5">Белгородская область</option>
+                                        <option class="district-option" value="6">Брянская область</option>
+                                        <option class="district-option" value="7">Владимирская область</option>
+                                        <option class="district-option" value="8">Волгоградская область</option>
+                                        <option class="district-option" value="9">Вологодская область</option>
+                                        <option class="district-option" value="10">Воронежская область</option>
+                                        <option class="district-option" value="11">Ивановская область</option>
+                                        <option class="district-option" value="12">Иркутская область</option>
+                                        <option class="district-option" value="13">Калининградская область
+                                        </option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class=" select">
+                                    <label class="form__title" for="district">Название населенного
+                                        пункта*</label>
+                                    <select name="district">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="district-option" value="1">Московская область</option>
+                                        <option class="district-option" value="2">Амурская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class="reg__input street-name">
+                                    <label class="form__title" for="street">Улица*</label>
+                                    <input class=" " type="text" name="street" placeholder="Введите название улицы">
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                                <div class="reg-item__row reg-item__row_3">
+                                    <div class="reg__input street-name">
+                                        <label class="form__title" for="home">Дом*</label>
+                                        <input class=" " type="text" name="home" placeholder="Номер дома">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class="reg__input street-name">
+                                        <label class="form__title" for="appart">Квартира*</label>
+                                        <input class=" " type="text" name="appart" placeholder="Номер квартиры">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class="reg__input street-name">
+                                        <label class="form__title" for="index">Индекс*</label>
+                                        <input class=" " type="text" name="index" placeholder="Введите индекс">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                </div>
+                                <div class="form__adress-btn">
+                                    <h3 class="reg__form-title">Адрес регистрации</h3>
+                                    <div class="control-group">
+                                        <label class="control control-checkbox">
+                                            <div class="contol-group-text">Совпадает с адресом проживания</div>
+                                            <input name="checkbox-adress" type="checkbox" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-checkbox">
+                                            <div class="contol-group-text">Не совпадает с адресом проживания</div>
+                                            <input name="checkbox-adressNo" type="checkbox" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="adress__reg-check">
+                                    <h3 class="reg__form-title">Адрес регистрации</h3>
+                                    <div class=" select">
+                                        <label class="form__title" for="region">Область*</label>
+                                        <select name="region">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="region-option" value="1">Московская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="district">Район*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область
+                                            </option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class=" select">
+                                        <label class="form__title" for="district">Название населенного
+                                            пункта*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class="reg__input street-name">
+                                        <label class="form__title" for="street">Улица*</label>
+                                        <input class=" " type="text" name="street" placeholder="Введите название улицы">
+                                        <span class="span-error">The name is incorrect</span>
+                                    </div>
+                                    <div class="reg-item__row reg-item__row_3">
+                                        <div class="reg__input street-name">
+                                            <label class="form__title" for="home">Дом*</label>
+                                            <input class=" " type="text" name="home" placeholder="Номер дома">
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="reg__input street-name">
+                                            <label class="form__title" for="appart">Квартира*</label>
+                                            <input class=" " type="text" name="appart" placeholder="Номер квартиры">
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="reg__input street-name">
+                                            <label class="form__title" for="index">Индекс*</label>
+                                            <input class=" " type="text" name="index" placeholder="Введите индекс">
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg__step-item reg__step-code">
+                        <div class="reg-item">
+                            <h3 class="reg__form-title">Данные контактного лица</h3>
+                            <div class="reg__input personal__surname  ">
+                                <label class="form__title" for="surname">Фамилия*</label>
+                                <input type="name" name="surname" placeholder="Введите фамилию контактного лица">
+                                <span class="span-error">The name is incorrect</span>
+                            </div>
+                            <div class="reg__input personal__name">
+                                <label class="form__title" for="name">Имя*</label>
+                                <input type="name" name="name" placeholder="Введите имя контактного лица">
+                                <span class="span-error">The name is incorrect</span>
+                            </div>
+                            <div class="reg__input personal__middleName">
+                                <label class="form__title" for="middleName">Отчество*</label>
+                                <input type="name" name="middleName" placeholder="Введите отчество контактного лица">
+                                <span class="span-error">The name is incorrect</span>
+                            </div>
+                            <div class="reg__input personal__phone">
+                                <label class="form__title" for="phone">Телефон*</label>
+                                <input type="phone" name="phone" placeholder="+38 099 123 12 13">
+                                <span class="span-error">The name is incorrect</span>
+                            </div>
+
+                            <div class="personal__status">
+                                <div class="select  ">
+                                    <label class="form__title" for="status">Степень отношений*</label>
+                                    <select name="status">
+                                        <option value="" hidden disabled selected>Выберите
+                                        </option>
+                                        <option>Холост</option>
+                                        <option>В браке</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                    <span class="span-error">The name is incorrect</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reg-item">
+                            <h3 class="reg__form-title">Подтверждение заявки на кредит</h3>
+                            <div class="reg-item__calc">
+                                <div class="reg-calc__table">
+                                    <div class="reg-calc__table-item">
+                                        <div class="reg-calc__table-label">Вы получите</div>
+                                        <div class="reg-calc__table-line"></div>
+                                        <div class="reg-calc__table-info get__sum">8 000 грн</div>
+                                    </div>
+                                    <div class="reg-calc__table-item">
+                                        <div class="reg-calc__table-label">Срок кредита</div>
+                                        <div class="reg-calc__table-line"></div>
+                                        <div class="reg-calc__table-info get__term">20 дней</div>
+                                    </div>
+                                    <div class="reg-calc__table-item">
+                                        <div class="reg-calc__table-label">К возврату</div>
+                                        <div class="reg-calc__table-line"></div>
+                                        <div class="reg-calc__table-info return__sum">8 055 грн</div>
+                                    </div>
+                                    <div class="reg-calc__table-item">
+                                        <div class="reg-calc__table-label">Дата погашения</div>
+                                        <div class="reg-calc__table-line"></div>
+                                        <div class="reg-calc__table-info">20/12/2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="reg__form-title">Желаете изменить условия?</h4>
+                            <div class="reg-calc__table">
+                                <div class="reg-calc__table-item">
+                                    <div class="reg-calc__table-label">Сумма <span>кредита</span></div>
+                                    <div class="reg-calc__table-line"></div>
+                                    <div class="reg-calc__table-info reg-calc__info">
+                                        <div class="reg-calc__info-btn reg-calc__info-btn_minus summ_minus">
+                                            <img src="images/minus.png" alt="">
+                                        </div>
+                                        <div class="reg-calc__info-summ">
+                                            <input type="text" class="text" id="summ" name="s" value="8000"
+                                                data-max="10000" data-min="1000" data-step="500" data-k="1" multiple>
+                                        </div>
+                                        <div class="reg-calc__info-btn reg-calc__info-btn_plus summ_plus">
+                                            <img src="images/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg-calc__table-item">
+                                    <div class="reg-calc__table-label">Срок <span>кредита</span></div>
+                                    <div class="reg-calc__table-line"></div>
+                                    <div class="reg-calc__table-info reg-calc__info">
+                                        <div class="reg-calc__info-btn reg-calc__info-btn_minus term_minus">
+                                            <img src="images/minus.png" alt="">
+                                        </div>
+                                        <div class="reg-calc__info-summ">
+                                            <input type="text" class="text" id="term" name="s" value="20" data-max="30"
+                                                data-min="1" data-min-event="0" data-step="1" data-k="1">
+                                        </div>
+                                        <div class="reg-calc__info-btn reg-calc__info-btn_plus term_plus">
+                                            <img src="images/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg__form-btns">
+                    <button type="submit" id="step__btn-next" class="reg__form-btn btn">Продолжить</button>
+                    <a href="step_4-2.html" type="submit" id="newBtn" class="reg__form-btn btn">Продолжить</a>
+                    <a id="step__btn-prev" class="reg__form-back" href="#">Вернуться назад</a>
+                </div>
+                <div id="message-error">
+                    Вы заполнили не все поля!
+                </div>
+        </div>
+        </form>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper-up">
+                    <div class="footer__wrapper-left footer__wrapper-left_up">
+                        <div class="footer__left-title">
+                            <a href="#">О компании</a>
+                        </div>
+                        <div class="footer__left-title">
+                            <a href="#">Полезные ссылки</a>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-right footer__wrapper-right_up">
+                        <div class="footer__right-support">
+                            <div class="support__title">Служба поддержки</div>
+                            <div class="support__phone">
+                                <a href="#">+38 (044) 338-07-79</a>
+                                <a href="#">+38 (044) 338-07-79</a>
+                                <a href="#">+38 (044) 338-07-79</a>
+                            </div>
+                        </div>
+                        <div class="footer__right-time">Время работы: с 9:00 до 18:00
+                            без перерыва и выходных</div>
+                    </div>
+                </div>
+                <div class="footer__wrapper-down">
+                    <div class="footer__wrapper-left footer__wrapper-left_down">
+                        <div class="footer__copy">© 2020 “Easy Cash”. Все права защищены</div>
+                    </div>
+                    <div class="footer__wrapper-right footer__wrapper-right_down">
+                        <div class="footer__social">
+                            <div class="footer__social-text">Мы в социальных сетях:</div>
+                            <div class="footer__social-ico">
+                                <a href="#" class="social__icon">
+                                    <img src="images/instagram.svg" alt="">
+                                </a>
+                                <a href="#" class="social__icon">
+                                    <img src="images/facebook.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chatbot">
+        <div class="chatbot__messanger">
+            <div class="chatbot__messanger-item veber"><a href="#">
+                    Viber</a></div>
+            <div class="chatbot__messanger-item messenger"><a href="#">
+                    Messenger</a></div>
+            <div class="chatbot__messanger-item telegram"><a href="#">
+                    Telegram</a></div>
+        </div>
+        <img src="images/chatbot.png" alt="">
+    </div>
+    <div class="popups" style="display: none;">
+        <div id="popup__sent" class="popup__sent popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваша заявка отправлена</div>
+            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
+                заявка будет
+                рассмотрена!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__mistake" class="popup__mistake popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка отправки</div>
+            <div class="sent__text popup__text">При отправке заявки возникли проблемы, пожалуйста, попробуйте еще раз!
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-1" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит на сумму <span>4500 грн</span> одобрен!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Перейти в кабинет
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-2" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит пролонгирован!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                На главную
+            </a>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-3" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит закрыт!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Оформить новый
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-4" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="sent__text popup__text">
+                Я ознакомлен с “Кредитным договором” и подтверждаю свое согласие с условиями Договора и понимаю в полном
+                объеме изложенную в нем информацию.
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Подписать кредитный договор
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__sorry" class="popup__sorry popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка транзакции</div>
+            <div class="sent__text popup__text">При проведении платежа возникли проблемы, пожалуйста, попробуйте еще раз
+                или обратитесь в поддержку!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__login" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Войти в кабинет</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promo" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promoErr" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="popup__error-text">
+                Неверный промо-код
+            </div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification-timer" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Проходит идентификация личности</div>
+            <div class="popup__text">Подождите, пожалуйста, процесс проверки займет не больше 5 минут</div>
+            <img src="images/clockOrange.svg" alt="">
+            <div class="timer"></div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваш аккаунт проверяется</div>
+            <div class="popup__text">Мы успешно получили данные, которые вы отправили для верификации своего аккаунта.
+                Ваш аккаунт на этапе проверки. Как только ваш аккаунт будет верифицирован, вы получитеуведомление.</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__register" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Регистрация</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__code" class="popup popup__promo">
+            <div class="popup__title">Кредитный договор</div>
+            <div class="sent__text popup__text">Данным одноразовым идентификатором подписываю Кредитный договор и
+                направляю кредитору сообщение о принятии в полном объеме условий Кредитного договора</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <label>Код*</label>
+                    <input type="">
+                    <button href="#" class="popup-btn login-btn">Подписать</button>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Прислать код еще раз</a>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

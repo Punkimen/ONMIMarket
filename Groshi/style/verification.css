@@ -1,0 +1,217 @@
+.page {
+    background: #F6F6F6;
+    padding: 30px 0 50px;
+}
+
+.verification__wrapper {
+    max-width: 730px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 64px 50px 64px 97px;
+    margin: 0 auto;
+}
+
+.verification__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.verification__subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #808080;
+}
+
+.verification__content {
+    margin: 50px 0 30px;
+    display: flex;
+}
+
+.verification__content-img {
+    flex: 0 1 246px;
+}
+
+.verification__content-img img {
+    display: block;
+    max-width: 246px;
+    width: 100%;
+    height: auto;
+}
+
+.verification__content-instructuion {
+    flex: 0 1 300px;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.verification-instructuion__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.verification-instructuion__item::before {
+    content: url(../images/veridication/ver-check.png);
+    margin-right: 8px;
+}
+
+.verification-instructuion__item+.verification-instructuion__item {
+    margin-top: 10px;
+}
+
+.verification__btns {
+    max-width: 243px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.verification__btns .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.verification__btns-next {
+    margin-bottom: 30px;
+}
+
+.verification__btns-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.verification__btns-or {
+    margin-top: 16px;
+}
+
+.verification__btns-or img {
+    display: block;
+}
+
+.verification__photo {
+    margin: 40px 0;
+}
+
+.verification__photo-inner {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.verification__photo-text {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.verification_2 .verification__photo-inner {
+    max-width: 100%;
+}
+
+.verification__photo-inner img {
+    display: block;
+    max-width: 365px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.verification__error {
+    background: #FFEEEB;
+    border-radius: 8px;
+    max-width: 365px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FC4F36;
+    display: flex;
+    padding: 12px 15px;
+    margin-top: 24px;
+}
+
+.verification__error p {}
+
+.verification__error::before {
+    content: url(../images/veridication/error.png);
+    display: block;
+    margin-right: 10px;
+}
+
+/* media */
+@media(max-width: 767px) {
+    .verification__wrapper {
+        padding: 64px 50px;
+    }
+
+    .verification__content {
+        justify-content: space-between;
+    }
+
+    .verification__content-instructuion {}
+}
+
+@media(max-width: 650px) {
+    .verification__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .verification__wrapper {
+        padding: 64px 25px;
+    }
+
+    .verification__content-img {
+        flex: 0 1 auto;
+    }
+
+    .verification__content-instructuion {
+        max-width: 300px;
+        width: 100%;
+        flex: 0 1 auto;
+        margin: 20px auto 0;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 420px) {
+    .verification__wrapper-top {
+        padding: 0 15px;
+    }
+
+    .verification_3 .verification__wrapper,
+    .verification_4 .verification__wrapper {
+        padding: 25px 0;
+    }
+
+    .verification_3>.container,
+    .verification_4>.container {
+        padding: 0;
+    }
+
+    .verification__photo-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

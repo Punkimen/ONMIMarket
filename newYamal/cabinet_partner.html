@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+</head>
+
+<body class="">
+  <main class="main-page">
+    <section class="cabinet">
+      <div class="pattern-bg">
+        <img src="img/bg-circle.svg" alt="">
+      </div>
+      <div class="cabinet-content">
+        <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <div class="header__logo">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+          </svg>
+        </div>
+        <div class="header__location">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#location"></use>
+          </svg>
+          <span>Челябинск</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__themes-btns">
+          <button id="light-btn-theme" class="btn-small header__change-theme btn-change-theme active">день</button>
+          <button id="dark-btn-theme" class="btn-small header__change-theme btn-change-theme">ночь</button>
+        </div>
+        <div class="header__visually">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#eye"></use>
+          </svg>
+          <span>Версия для слабовидящих</span>
+        </div>
+        <div class="burger js-show-menu">
+          <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+        <div class="container">
+          <div class="inner__breadcrumbs">
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__elem">
+                <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+              </li>
+              <li class="bread-crumbs__elem">
+                <a href="#" class="bread-crumbs__link">Личный кабинет</a>
+              </li>
+              <li class="bread-crumbs__elem">
+                <a href="#" class="bread-crumbs__link">Профиль</a>
+              </li>
+            </ul>
+          </div>
+          <h2 class="cabinet__title section-title ">Личный кабинет</h2>
+          <div class="cabinet__tabs">
+            <a href="#" data-tab="#profile" class="cabinet__tab btn active">
+              <div class="costumn-select__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#select-profile"></use>
+                </svg>
+              </div>
+              Профиль
+            </a>
+            <a href="#" data-tab="#my-elements" class="cabinet__tab btn">
+              <div class="costumn-select__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#select-route"></use>
+                </svg>
+              </div>
+              Мои элементы
+            </a>
+
+            <a href="#" data-tab="#my-rewievs" class="cabinet__tab btn">
+              <div class="costumn-select__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#select-anketa"></use>
+                </svg>
+              </div>
+              Отзывы
+            </a>
+
+          </div>
+          <div class="cabinet__body">
+            <div id="profile" class="cabinet__item cabinet-profile show">
+              <div class="cabinet-profile__content">
+                <div class="cabinet-profile__info">
+                  <div class="cabinet-profile__label">Имя:</div>
+                  <div class="cabinet-profile__data">Евгений</div>
+                </div>
+                <div class="cabinet-profile__info">
+                  <div class="cabinet-profile__label">Почта:</div>
+                  <div class="cabinet-profile__data">ex@mail.com</div>
+                </div>
+                <div class="cabinet-profile__info">
+                  <div class="cabinet-profile__label">Телефон:</div>
+                  <div class="cabinet-profile__data">+7 000 000-00-00</div>
+                </div>
+                <div class="popup-form__personal-check cabinet-check">
+                  <label class="control control-radio costum-radio">
+                    Хочу получать маркетинговые
+                    предложения от сервиса
+                    <input class="choosen-radio" name="personal-date" value="agree" type="checkbox" required checked
+                      name="1" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+              <div class="cabinet-profile__btns">
+                <button type="button" data-tab="#changed-data" class="cabinet-profile__btn btn">Изменить данные</button>
+                <button type="button" class="cabinet-profile__btn btn">Сбросить пароль</button>
+              </div>
+            </div>
+            <div id="changed-data" class="cabinet__item cabinet-profile__form ">
+              <div class="cabinet-profile__btns cabinet-profile__btns--top">
+                <button type="button" data-tab="#profile" class="cabinet-profile__btn btn">Назад</button>
+              </div>
+              <div class="cabinet-profile__content">
+                <div class="cabinet-profile__input">
+                  <div class="cabinet-profile__input-label">Имя</div>
+                  <input class="costumn-input" type="text" name="name" value="Евгений">
+                  <div class="cabinet-profile__icon">
+                    <svg class="">
+                      <use xlink:href="./img/icons/icons.svg#select-user"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cabinet-profile__input">
+                  <div class="cabinet-profile__input-label">Почта</div>
+                  <input class="costumn-input" type="email" name="email" value="ex@mail.com">
+                  <div class="cabinet-profile__icon">
+                    <svg class="">
+                      <use xlink:href="./img/icons/icons.svg#select-email"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cabinet-profile__input">
+                  <div class="cabinet-profile__input-label">Телефон</div>
+                  <input class="input-phone costumn-input" type="tel" name="phone" value="+7 000 000-00-00">
+                  <div class="cabinet-profile__icon">
+                    <svg class="">
+                      <use xlink:href="./img/icons/icons.svg#select-phone"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <button type="" data-tab="#profile" class="cabinet-profile__form-save btn">Сохранить</button>
+            </div>
+            <div class="cabinet__item empty-block cabinet__item_2 ">
+              <div class="empty-block__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#exclamation"></use>
+                </svg>
+              </div>
+              <div class="empty-block__title">Здесь ничего нет</div>
+              <div class="empty-block__text">Добавьте свое
+                заведение или услугу</div>
+              <a href="#" class="empty-block__button btn">Создать карточку</a>
+            </div>
+            <div id="my-elements" class="cabinet__item my-purchases ">
+              <div class="my-purchases__head">
+                <div class="my-purchases__tabs">
+                  <div class="poster-filter__btns category__btns">
+                    <div class="category-selector"></div>
+                    <a href="#" class="poster-filter__btn category-btn">Все</a>
+                    <a href="#" class="poster-filter__btn category-btn">Туры</a>
+                    <a href="#" class="poster-filter__btn category-btn">Мероприятия</a>
+                    <a href="#" class="poster-filter__btn category-btn">Экскурсии</a>
+                    <a href="#" class="poster-filter__btn category-btn">Музеи</a>
+                  </div>
+                </div>
+                <div class="routes-block__head">
+                  <div class="routes-block__quantity">
+                    <svg class="">
+                      <use xlink:href="./img/icons/icons.svg#file"></use>
+                    </svg>
+                    <span>2 элемента</span>
+                  </div>
+                  <a href="#" class="routes-block__create btn">Создать карточку</a>
+                </div>
+              </div>
+              <div class="my-purchases__body">
+                <div class="poster-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="poster-slider__slide swiper-slide">
+                      <a href="#" class="event-item">
+                        <div class="event-item__body">
+                          <div class="event-item__photo">
+                            <img src="img/poster/poster_1.jpg" alt="">
+                          </div>
+                          <div class="event-item__status event-item__status--clock">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#edit"></use>
+                            </svg>
+                            <span>Редактировать</span>
+                          </div>
+                        </div>
+                        <div class="event-item__footer">
+                          <div class="event-item__name">Человек Севера</div>
+                          <div class="event-item__category">выставка</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                      <a href="#" class="event-item">
+                        <div class="event-item__body">
+                          <div class="event-item__photo">
+                            <img src="img/poster/poster_2.jpg" alt="">
+                          </div>
+                          <div class="event-item__status event-item__status--clock">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#edit"></use>
+                            </svg>
+                            <span>Редактировать</span>
+                          </div>
+                        </div>
+                        <div class="event-item__footer">
+                          <div class="event-item__name">Дюна</div>
+                          <div class="event-item__category">кино</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                      <a href="#" class="event-item">
+                        <div class="event-item__body">
+                          <div class="event-item__photo">
+                            <img src="img/poster/poster_3.jpg" alt="">
+                          </div>
+                          <div class="event-item__status event-item__status--clock">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#edit"></use>
+                            </svg>
+                            <span>Редактировать</span>
+                          </div>
+                        </div>
+                        <div class="event-item__footer">
+                          <div class="event-item__name">Город в искусстве</div>
+                          <div class="event-item__category">выставка</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="my-rewievs" class="cabinet__item comment-block ">
+              <div class="comment-block__items">
+                <a href="#" class="event-item comment-block__event ">
+                  <div class="event-item__body">
+                    <div class="event-item__photo">
+                      <img src="img/poster/poster_1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="event-item__footer">
+                    <div class="event-item__name">Тур «По Ямалу»</div>
+                  </div>
+                </a>
+                <a href="#" class="event-item comment-block__event ">
+                  <div class="event-item__body">
+                    <div class="event-item__photo">
+                      <img src="img/poster/poster_1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="event-item__footer">
+                    <div class="event-item__name">Тур «По Ямалу»</div>
+                  </div>
+                </a>
+                <a href="#" class="event-item comment-block__event ">
+                  <div class="event-item__body">
+                    <div class="event-item__photo">
+                      <img src="img/poster/poster_1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="event-item__footer">
+                    <div class="event-item__name">Тур «По Ямалу»</div>
+                  </div>
+                </a>
+              </div>
+              <div class="comment-block__comments">
+                <div class="reviews__wrapper comment-block__comments-item show">
+                  <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="review-item__arrows">
+                      <button type="button" class="review-item__arrow btn-reset review-item__arrow--prev">
+                        <svg class="">
+                          <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="review-item__arrow btn-reset review-item__arrow--next">
+                        <svg class="">
+                          <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="reviews-show__btn show-more__btn btn">Показать ещё</button>
+                  </div>
+                </div>
+                <div class="review-item comment-block__empty empty-block  comment-block__comments-item ">
+                  <div class="empty-block__icon">
+                    <svg class="">
+                      <use xlink:href="./img/icons/icons.svg#exclamation"></use>
+                    </svg>
+                  </div>
+                  <div class="empty-block__title">Отзывов нет. Поделитесь элементом в соц. сетях</div>
+                  <a href="#" class="empty-block__share-button btn">Поделиться</a>
+                </div>
+                <div class="reviews__wrapper comment-block__comments-item ">
+                  <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                      <div class="review-item swiper-slide show">
+                        <button type="button" class="review-item__answer btn">
+                          Ответить
+                        </button>
+                        <div class="review-item__head">
+                          <div class="review-item__icon">
+                            <svg class="">
+                              <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                            </svg>
+                          </div>
+                          <div class="review-item__person">
+                            <div class="review-item__name">Артем</div>
+                            <div class="review-item__date">14.10.2021</div>
+                          </div>
+                        </div>
+                        <div class="review-item__text">
+                          <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства
+                            представляют
+                            не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в
+                            посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение
+                            современных
+                            методик обеспечивает актуальность форм воздействия.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="review-item__arrows">
+                      <button type="button" class="review-item__arrow btn-reset review-item__arrow--prev">
+                        <svg class="">
+                          <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="review-item__arrow btn-reset review-item__arrow--next">
+                        <svg class="">
+                          <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <button class="reviews-show__btn show-more__btn btn">Показать ещё</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="cabinet__item empty-block cabinet__item_3 ">
+              <div class="empty-block__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#exclamation"></use>
+                </svg>
+              </div>
+              <div class="empty-block__title">Тут пока ничего нет</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/fb.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="footer__emal blue">info@visityamal.ru</a>
+                <a href="tel:73492244949" class="footer__phone blue">+7 (349) 224-49-49</a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav">
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">О Ямале</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">ООПТ и пограничные зоны</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Партнеры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Туры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Афиша</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+  <script src="js/cabinet.js"></script>
+
+</body>
+
+</html>

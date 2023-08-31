@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step-2</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.css"
+    integrity="sha512-kSH0IqtUh1LRE0tlO8dWN7rbmdy5cqApopY6ABJ4U99HeKulW6iKG5KgrVfofEXQOYtdQGFjj2N/DUBnj3CNmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/vendor.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <img class="cum-logo" src="img/logo/cum-logo.jpg" alt="">
+            <img class="header__logo-add" src="img/logo/add.svg" alt="">
+            <img class="rizh-logo" src="img/logo/rizh-logo.svg" alt="">
+        </div>
+        <div class="header__right">
+            <a href="#" class="header__link">Як це працює</a>
+            <button class="btn header__login">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#cabinet"></use>
+                </svg>
+                <span>Увійти</span>
+            </button>
+        </div>
+        <div class="header__burger">
+            <div class="burger__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-mobile__content">
+                <nav class="header-mobile__nav">
+                    <ul class="header-mobile__list">
+                        <li class="header-mobile__elem"><a href="" class="header-mobile__link">Як це працює</a></li>
+                        <li class="header-mobile__elem"><a href="" class="header-mobile__link">Увійти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-mobile__footer">
+                2021 © ТОВ Ріж Платіж, усі права захищені
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="steps-banner">
+    <div class="container">
+        <a href="#" class="steps-banner__link">
+            <svg class="">
+                <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                <span>Назад до сторінки товара</span>
+            </svg>
+        </a>
+        <div class="steps-banner__logo">
+            <img src="img/steps-logo.svg" alt="">
+            <div class="steps-banner__text">плати, як хочеш,<br>
+                про решту дбаємо ми</div>
+        </div>
+        <div class="steps-banner__items">
+            <div class="steps-banner__item active">
+                <div class="steps-banner__num"><span>1</span></div>
+                <div class="steps-banner__label">Варіант оплати</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>2</span></div>
+                <div class="steps-banner__label">Вхід / реєстрація</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>3</span></div>
+                <div class="steps-banner__label">Обробка заявки</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>4</span></div>
+                <div class="steps-banner__label">Товар їде до вас</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+            <section class="step-content">
+                <div class="container step-content__container">
+                    <div class="step-content__inner bg-border">
+                        <div class="step-content__info">Крок 2. Вхід / реєстрація</div>
+                        <h1 class="step-content__title">Увійдіть до Ріж платіж</h1>
+                        <div class="step-content__wrapper">
+                            <div class="step-content__left">
+                                <div class="step-content__block">
+                                    <form id="step2-form" action="" class="step-content__form form-step2">
+                                        <div class="form-step2__item active" data-step="1">
+                                            <div class="form-step2__body">
+                                                <div class="form-step2__input">
+                                                    <label for="" class="form-step2__label">Ваш номер телефону</label>
+                                                    <input type="phone" name="phone"
+                                                        class="form-step2__inp costum-input" value="+380(">
+                                                </div>
+                                                <button
+                                                    class="form-step2__bnt btn btn-yellow next-step">Продовжити</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-step2__item sms-code" data-step="2">
+                                            <div class="form-step2__body">
+                                                <div class="form-step2__input">
+                                                    <label for="" class="form-step2__label">Введіть код з СМС #1</label>
+                                                    <div class="sms-code__flex">
+                                                        <input type="text" name="sms-code"
+                                                            class="form-step2__inp costum-input">
+                                                        <button
+                                                            class="form-step2__bnt btn btn-yellow next-step">ок</button>
+                                                    </div>
+                                                </div>
+                                                <div class="sms-code__btns">
+                                                    <button class="sms-code__btn btn">відправити ще раз</button>
+                                                    <button class="sms-code__btn btn">не приходить СМС</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-step2__item date-born" data-step="3">
+                                            <div class="form-step2__benner step2-benner">
+                                                <div class="step2-benner__img">
+                                                    <img src="img/creditbuy-banner.svg" alt="">
+                                                </div>
+                                                <div class="step2-benner__text">
+                                                    <span>Бачу, що ви новий юзер. Раді вітати!</span>
+                                                    Щоб продовжити розкажіть більше про себе:
+                                                </div>
+                                            </div>
+                                            <div class="form-step2__body">
+                                                <div class="form-step2__input">
+                                                    <label for="" class="form-step2__label">Дата народження</label>
+                                                    <div class="date-born__flex">
+                                                        <div class="date-born__inp" data-label="день"><input type="text"
+                                                                name="date-day" class="form-step2__inp costum-input">
+                                                        </div>
+                                                        <div class="date-born__inp" data-label="місяць"><input
+                                                                type="text" name="date-mouth"
+                                                                class="form-step2__inp costum-input">
+                                                        </div>
+                                                        <div class="date-born__inp" data-label="рік"> <input type="text"
+                                                                name="date-year" class="form-step2__inp costum-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="date-born__checkboxes">
+                                                    <label class="date-born__checkbox costum-checkbox">
+                                                        Згода на перевірку даних у Бюро Кредитних Історій
+                                                        <input value="" type="checkbox" name="" />
+                                                        <div class="costum-checkbox__indicator"></div>
+                                                    </label>
+                                                    <label class="date-born__checkbox costum-checkbox">
+                                                        Згода на обробку Персональних Даних
+                                                        <input id="accept" value="" type="checkbox" name="" />
+                                                        <div class="costum-checkbox__indicator"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-questionnaire">
+                                                <div class="form-questionnaire__title">Мені потрібно ще кілька даних про
+                                                    вас:</div>
+                                                <div class="form-questionnaire__info">
+                                                    <div class="form-questionnaire__icon">
+                                                        <img src="img/icon/ok.svg" alt="">
+                                                    </div>
+                                                    <div class="form-questionnaire__text">Наступного разу, коли
+                                                        забажаєте купляти через
+                                                        Ріж Платіж вам буде достатньо лише номеру телефону. </div>
+                                                </div>
+                                                <div class="form-step2__body">
+                                                    <div class="form-questionnaire__inp">
+                                                        <div class="form-questionnaire__label">Прізвище</div>
+                                                        <input type="text" name="surname"
+                                                            class="form-questionnaire__input costum-input">
+                                                    </div>
+                                                    <div class="form-questionnaire__inp">
+                                                        <div class="form-questionnaire__label">Ім’я</div>
+                                                        <input type="text" name="name"
+                                                            class="form-questionnaire__input costum-input">
+                                                    </div>
+                                                    <div class="form-questionnaire__inp">
+                                                        <div class="form-questionnaire__label">По батькові</div>
+                                                        <input type="text" name="father-name"
+                                                            class="form-questionnaire__input costum-input">
+                                                    </div>
+                                                    <div class="form-questionnaire__inp">
+                                                        <div class="form-questionnaire__label"><span>ІПН</span>
+                                                            <svg class="svg-support">
+                                                                <use xlink:href="./img/icons/icons.svg#support"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <input type="text" name="IPN"
+                                                            class="form-questionnaire__input costum-input">
+                                                    </div>
+                                                    <div class="form-questionnaire__radios">
+                                                        <div class="form-questionnaire__label">Тип документу</div>
+                                                        <label class="control control-radio costum-radio">
+                                                            Паспорт
+                                                            <input class="choosen-radio document-choosen"
+                                                                value="passport" type="radio" name="1" checked />
+                                                            <div class="control_indicator"></div>
+                                                        </label>
+                                                        <label class="control control-radio costum-radio">
+                                                            ID картка
+                                                            <input class="choosen-radio document-choosen"
+                                                                value="id-card" type="radio" name="1" />
+                                                            <div class="control_indicator"></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-questionnaire__pasports active">
+                                                        <div class="form-questionnaire__inp">
+                                                            <label for="" class="form-step2__label">
+                                                                <span>Серія та номер паспорту</span>
+                                                                <svg class="svg-support">
+                                                                    <use xlink:href="./img/icons/icons.svg#support">
+                                                                    </use>
+                                                                </svg>
+                                                            </label>
+                                                            <div class="form-questionnaire__inp-flex">
+                                                                <input type="text" name="passport-ser"
+                                                                    class="form-questionnaire__input costum-input">
+                                                                <input type="text" name="passport-num"
+                                                                    class="form-questionnaire__input costum-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-questionnaire__inp">
+                                                            <label for="" class="form-step2__label">Дата видачі</label>
+                                                            <div class="date-born__flex">
+                                                                <div class="date-born__inp" data-label="день"><input
+                                                                        type="text" name="passport-day"
+                                                                        class="form-step2__inp costum-input">
+                                                                </div>
+                                                                <div class="date-born__inp" data-label="місяць"><input
+                                                                        type="text" name="passport-mouth"
+                                                                        class="form-step2__inp costum-input">
+                                                                </div>
+                                                                <div class="date-born__inp" data-label="рік"> <input
+                                                                        type="text" name="passport-year"
+                                                                        class="form-step2__inp costum-input"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-questionnaire__idCard">
+                                                        <div class="form-questionnaire__inp">
+                                                            <label for="" class="form-step2__label">
+                                                                <span>Документ №*</span>
+                                                                <svg class="svg-support">
+                                                                    <use xlink:href="./img/icons/icons.svg#support">
+                                                                    </use>
+                                                                </svg>
+                                                            </label>
+                                                            <input type="text" name="idCard-num"
+                                                                class="form-questionnaire__input costum-input">
+                                                        </div>
+                                                        <div class="form-questionnaire__inp">
+                                                            <label for="" class="form-step2__label">Дата видачі</label>
+                                                            <div class="date-born__flex">
+                                                                <div class="date-born__inp" data-label="день"><input
+                                                                        type="text" name="idCard-day"
+                                                                        class="form-step2__inp costum-input">
+                                                                </div>
+                                                                <div class="date-born__inp" data-label="місяць"><input
+                                                                        type="text" name="idCard-mouth"
+                                                                        class="form-step2__inp costum-input">
+                                                                </div>
+                                                                <div class="date-born__inp" data-label="рік"> <input
+                                                                        type="text" name="idCard-year"
+                                                                        class="form-step2__inp costum-input"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-questionnaire__inp">
+                                                        <div class="form-questionnaire__label"><span>E-mail</span>
+                                                            <svg class="svg-support">
+                                                                <use xlink:href="./img/icons/icons.svg#support"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <input type="email" name="email"
+                                                            class="form-questionnaire__input costum-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-step2__body">
+                                                <button id="form2-submit-btn" class="date-born__btn btn btn-yellow"
+                                                    disabled>Продовжити</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="or">або</div>
+                                    <div class="enter__items">
+                                        <a href="" class="enter__item ">
+                                            <div class="enter__item-flex">
+                                                <div class="enter__label">Швидкий вхід через Дія</div>
+                                                <div class="enter__icon enter__icon--relative">
+                                                    <img src="img/dia-logo.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="enter__item-qr enter-qr">
+                                                <div class="enter-qr__img">
+                                                    <img src="img/qr.png" alt="">
+                                                </div>
+                                                <div class="enter-qr__text">Відскануйте QR-код за допомогою вашої камери
+                                                    для швидкого входу/реєстрації в Ріж Платіж</div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="enter__item">
+                                            <div class="enter__item-flex">
+                                                <div class="enter__label">Швидкий вхід через ID Gov UA</div>
+                                                <div class="enter__icon">
+                                                    <img src="img/idgovua-logo.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="enter__item-qr enter-qr">
+                                                <div class="enter-qr__img">
+                                                    <img src="img/qr.png" alt="">
+                                                </div>
+                                                <div class="enter-qr__text">Відскануйте QR-код за допомогою вашої камери
+                                                    для швидкого входу/реєстрації в Ріж Платіж</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="step-content__why why-content">
+                                    <div class="why-content__title">Навіщо заходити у Ріж Платіж?</div>
+                                    <ul class="why-content__list">
+                                        <li class="why-content__elem"><span class="list-num">1.</span>
+                                            <p><span>По-перше:</span> оскільки ми надаємо вам
+                                                сервіс
+                                                фінансування нам потрібно трішки більше про вас знати.
+                                                <a href="" class="why-content__link">Як ми проводимо збір
+                                                    данних</a></p>
+                                        </li>
+                                        <li class="why-content__elem"><span class="list-num">2.</span>
+                                            <p><span>По-друге:</span> як тільки ми звами
+                                                познайомимось, усі
+                                                наступні рази вам буде швидко оформляти покупки лише за номером телефону
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <div class="why-content__title">Ваші особисті дані захищено</div>
+                                    <div class="why-content__text">інфа про захист даних</div>
+                                </div>
+                            </div>
+                            <div class="step-content__right">
+                                <div class="step-content__product step-product bg-border">
+                                    <div class="step-product__head border-none">
+                                        <div class="step-product__img">
+                                            <img src="img/product.jpg" alt="">
+                                        </div>
+                                        <div class="step-product__content">
+                                            <div class="step-product__code">Код: 14558408</div>
+                                            <div class="step-product__name">Душова кабіна Kolo Record 90x90
+                                                PKPG902223 з піддоном XBN1690000</div>
+                                            <div class="step-product__price">7 110,65₴</div>
+                                        </div>
+                                        <div class="product__method">метод сплати</div>
+                                    </div>
+                                    <div class="step-product__body product-body">
+                                        <div class="product-body__wrapper">
+                                            <div class="product-body__left">
+                                                <div class="product-body__label">Всю суму пізніше (до 45 днів)</div>
+                                                <button type="button" class="buy-choose__showMore btn product-showMore">
+                                                    <span>показати деталі</span>
+                                                    <svg class="">
+                                                        <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="product-body__right">
+                                                <img src="img/apple.svg" class="product-body__img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-product__footer product-footer">
+                                        <div class="product-footer__wrapper">
+                                            <div class="product-footer__label">Сумма до розрізання: </div>
+                                            <div class="product-footer__price">7 110,65₴</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+    <div class="container">
+        <div class="questions__wrapper">
+            <div class="questions-aside">
+                <div class="questions-aside__title">Відповіді на питання</div>
+                <div class="questions-aside__items">
+                    <ul class="questions-aside__list">
+                        <li class="questions-aside__elem active">
+                            <a href="#">Про Ріж Платіж</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Персональні дані</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Угода з лендером</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Питання по виплатам</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Оформлення та доставка товару</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Повернення товару</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Служба підтримки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-content">
+                <div class="questions-content__items">
+                    <div class="questions-content__item item-question bg-border active">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Що таке Ріж Платіж та як він працює?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чому я маю довіряти Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи є переплата за покупки з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи можна купити декілька товарів з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи можу я взяти ще один (більше) товарів з Ріж Платіж,
+                                якщо не розрахувався(-лась) за попередній?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Як оформити заявку на покупку з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Скільки часу займе погодження заявки?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Хто така Ріжка та що вона символізує?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__title">Ріж платіж, відсотки під ніж!</div>
+                <div class="footer__text">плати, як хочеш<br>
+                    про решту дбаємо ми
+                </div>
+                <a href="#" class="footer__link">rizh.com.ua</a>
+            </div>
+            <div class="footer__right">
+                <img src="img/samurai.png" alt="" class="footer__img">
+                <a href="#" class="footer__question">Що символізує героїня?</a>
+            </div>
+        </div>
+        <div class="footer__copy">2021 © ТОВ Ріж Платіж, усі права захищені</div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.js"
+    integrity="sha512-6vo59lZMHB6GgEySnojEnfhnugP7LR4qm6akxptNOw/KW+i9o9MK4Gaia8f/eJATjAzCkgN3CWlIHWbVi2twpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

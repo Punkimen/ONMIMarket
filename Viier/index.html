@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+        integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="" class="header__wrapper-logo">
+                        <img src="img/Logo.png" alt="">
+                    </a>
+                    <div class="header__wrapper-content">
+                        <nav class="header__wrapper-nav">
+                            <ul class="header__wrapper-list">
+                                <li class="header__wrapper-elem">
+                                    <a href="work.html">Наши работы</a>
+                                </li>
+                                <li class="header__wrapper-elem">
+                                    <a class="scrollMenu" href="index.html" scroll-href='.why'>Почему мы?</a>
+                                </li>
+                                <li class="header__wrapper-elem">
+                                    <a class="scrollMenu" href="index.html" scroll-href='.questions'>FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="tel:380987194210" class="header__wrapper-phone">
+                        +38 (098) 719 42 10
+                    </a>
+                    <div class="header__wrapper-mobile header-mobile">
+                        <div class="header-mobile__burger burger">
+                            <div class="burger__icon icon-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header-mobile__menu">
+                            <div class="header-mobile__menu-wrapper">
+                                <nav class="header-mobile__nav">
+                                    <ul class="header-mobile__list">
+                                        <li class="header-mobile__elem">
+                                            <a href="work.html">Наши работы</a>
+                                        </li>
+                                        <li class="header-mobile__elem">
+                                            <a class="scrollMenu" href="index.html" scroll-href='.why'>Почему мы?</a>
+                                        </li>
+                                        <li class="header-mobile__elem">
+                                            <a class="scrollMenu" href="index.html" scroll-href='.team'>Наша команда</a>
+                                        </li>
+                                        <li class="header-mobile__elem">
+                                            <a class="scrollMenu" href="index.html" scroll-href='.questions'>FAQ</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="tel:380987194210" class="header-mobile__phone">+38 (098) 719 42 10</a>
+                                <a href="" class="header-mobile__email">viieragency@gmail.com</a>
+                                <div class="header-mobile__social">
+                                    <a class="header-mobile__social-elem" href="">
+                                        <img src="img/icons/insta.png" alt="">
+                                    </a>
+                                    <a class="header-mobile__social-elem" href="">
+                                        <img src="img/icons/telega.png" alt="">
+                                    </a>
+                                    <a class="header-mobile__social-elem" href="">
+                                        <img src="img/icons/linkedin.png" alt="">
+                                    </a>
+                                    <a class="header-mobile__social-elem" href="">
+                                        <img src="img/icons/fb.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="welcome">
+                <div class="container container_welcome">
+                    <div class="welcome__wrapper">
+                        <div class="welcome__wrapper-descr">
+                            <h1 class="welcome__wrapper-title">ДОБРО ПОЖАЛОВАТЬ<br>
+                                VIIER AGENCY</h1>
+                            <div class="welcome__wrapper-text">
+                                Увеличиваем прибыль от х1,5 до х5 при помощи сервисов автоматизации маркетинга
+                            </div>
+                            <a href="work.html" class="welcome__wrapper-btn btn">Посмотреть работы</a>
+                        </div>
+                        <div class="welcome__wrapper-spiral welcome-spiral">
+                            <div class="welcome-spiral__visiters">
+                                <span>Посетители</span>
+                                <img src="img/icons/spiral-arrows.png" alt="">
+                            </div>
+                            <div class="welcome-spiral__inner">
+                                <div class="welcome-spiral__left">
+                                    <div class="welcome-spiral__info welcome-spiral__info_curiosity">
+                                        <div class="welcome-spiral__info-title"><span>Заинтересованность (85%)</span>
+                                            <div class="welcome-spiral__line spiral-line">
+                                                <div class="spiral-line__circle"></div>
+                                                <div class="spiral-line__line"></div>
+                                                <div class="spiral-line__circle spiral-line__circle_border"></div>
+                                            </div>
+                                        </div>
+                                        <div class="welcome-spiral__info-text">Заинтересованный посетитель решает
+                                            изучить продукт при помощи онлайн форумов, контента компании в социальных
+                                            сетях.</div>
+                                    </div>
+                                    <div class="welcome-spiral__info welcome-spiral__info_decision">
+                                        <div class="welcome-spiral__info-title">
+                                            <span>Решение
+                                                (40%)</span>
+                                            <div class="welcome-spiral__line spiral-line">
+                                                <div class="spiral-line__circle"></div>
+                                                <div class="spiral-line__line"></div>
+                                                <div class="spiral-line__circle spiral-line__circle_border"></div>
+                                            </div>
+                                        </div>
+                                        <div class="welcome-spiral__info-text">При помощи чат-бот и емейл инструментах
+                                            отправляются сообщения чтобы представить ценность продукта, и продать
+                                            решение их проблем.</div>
+                                    </div>
+                                </div>
+                                <div class="welcome-spiral__img">
+                                    <img src="img/spiral.png" alt="">
+                                </div>
+                                <div class="welcome-spiral__right">
+                                    <div class="welcome-spiral__info welcome-spiral__info_interest">
+                                        <div class="welcome-spiral__info-title"><span>Интерес (65%)</span>
+                                            <div class="welcome-spiral__line spiral-line">
+                                                <div class="spiral-line__circle spiral-line__circle_border"></div>
+                                                <div class="spiral-line__line"></div>
+                                                <div class="spiral-line__circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="welcome-spiral__info-text">Потенциальный покупатель провел
+                                            достаточно исследований для формирования мнения о продукте, осталось решить
+                                            где именно он совершит покупку</div>
+                                    </div>
+                                    <div class="welcome-spiral__info welcome-spiral__info_buy">
+                                        <div class="welcome-spiral__info-title "><span>Покупка
+                                                Покупка
+                                                (&LT;15%)</span>
+                                            <div class="welcome-spiral__line spiral-line">
+                                                <div class="spiral-line__circle spiral-line__circle_border"></div>
+                                                <div class="spiral-line__line"></div>
+                                                <div class="spiral-line__circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="welcome-spiral__info-text">Конечной целью воронки продаж - клиент
+                                            оставляет заявку на консультацию, покупает товар, совершает целевое
+                                            действие.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="definition">
+                <div class="container">
+                    <h2 class="definition__title section-title">Автоворонки в Мессенджерах это:</h2>
+                    <div class="definition__wrapper">
+                        <div class="definition__wrapper-item">
+                            <div class="definition__wrapper-img">
+                                <img src="img/definition_1.png" alt="">
+                            </div>
+                            <div class="definition__wrapper-title">Привлечение</div>
+                            <div class="definition__wrapper-text">Привлечение мотивированого трафика в автоворонку</div>
+                        </div>
+                        <div class="definition__wrapper-item">
+                            <div class="definition__wrapper-img">
+                                <img src="img/definition_2.png" alt="">
+                            </div>
+                            <div class="definition__wrapper-title">Прогревание</div>
+                            <div class="definition__wrapper-text">Постепенно подогреваем интерес аудитории к продукту,
+                                отправляя полезный контент и продаем трипвайер</div>
+                        </div>
+                        <div class="definition__wrapper-item">
+                            <div class="definition__wrapper-img">
+                                <img src="img/definition_3.png" alt="">
+                            </div>
+                            <div class="definition__wrapper-title">Монетизация</div>
+                            <div class="definition__wrapper-text">Благодаря прогреванию в туннеле продаж, мы продаем
+                                наши продукты клиента без проблем</div>
+                        </div>
+                        <div class="definition__wrapper-item">
+                            <div class="definition__wrapper-img">
+                                <img src="img/definition_4.png" alt="">
+                            </div>
+                            <div class="definition__wrapper-title">Доппродажа</div>
+                            <div class="definition__wrapper-text">Продолжаем строить отношения с клиентом с помощью
+                                контента и вы зарабатываете больше за счет дополнительных продаж</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title section-title">Какие услуги включены в воронку продаж?</h2>
+                    <div class="services__wrapper">
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="500" data-aos-offset="200">
+                            <div class="services-item__num" data-tilt="">1</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon services-item__icon_top">
+                                    <img src="img/services_1.png" alt="">
+                                </div>
+                                <div class="services-item__title">ЧАТ-БОТ АВТОВОРОНКА</div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="700" data-aos-offset="200">
+                            <div class="services-item__num">2</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon services-item__icon_few">
+                                    <img src="img/services_fb.png" alt="">
+                                    <span>+</span>
+                                    <img src="img/services_inst.png" alt="">
+                                </div>
+                                <div class="services-item__title">ТАРГЕТИРОВАНАЯ РЕКЛАМА в Facebook и Instagram</div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="900" data-aos-offset="200">
+                            <div class="services-item__num">3</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon">
+                                    <img src="img/services_3.png" alt="">
+                                </div>
+                                <div class="services-item__title">КОПИРАЙТИНГ</div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="1100" data-aos-offset="200">
+                            <div class="services-item__num">4</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon">
+                                    <img src="img/services_4.png" alt="">
+                                </div>
+                                <div class="services-item__title">РЕКЛАМА В КМС ГУГЛ</div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="1300" data-aos-offset="200">
+                            <div class="services-item__num">5</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon">
+                                    <img src="img/services_5.png" alt="">
+                                </div>
+                                <div class="services-item__title">РЕКЛАМА В LinkedIn</div>
+                            </div>
+                        </div>
+                        <div class="services__wrapper-item services-item" data-tilt="" data-aos="fade-down"
+                            data-aos-duration="1500" data-aos-offset="200">
+                            <div class="services-item__num">6</div>
+                            <div class="services-item__wrapper" data-tilt="">
+                                <div class="services-item__icon">
+                                    <img src="img/services_6.png" alt="">
+                                </div>
+                                <div class="services-item__title">EMAIL-МАРКЕТИНГ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why">
+                <div class="container">
+                    <h2 class="why__title section-title">Почему мы?</h2>
+                    <div class="why__wrapper">
+                        <div class="why__wrapper-content">
+                            <p>VIIER AGENCY- is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <a href="#" class="why__wrapper-btn btn">Забронируйте звонок с Маркетологом</a>
+                        </div>
+                        <div class="why__wrapper-img">
+                            <img src="img/why_illustration.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <div class="container">
+                    <h2 class="team__title section-title">Наша команда</h2>
+                    <div class="team__wrapper">
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Виер Даниил</div>
+                                <div class="team__wrapper-position">Основатель/ Маркетолог</div>
+                            </div>
+
+                        </div>
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Виталий Залотоцкий</div>
+                                <div class="team__wrapper-position">Таргетолог/ Аналитик</div>
+                            </div>
+
+                        </div>
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Влад Радченко</div>
+                                <div class="team__wrapper-position">Копирайтер/ Переводчик</div>
+                            </div>
+
+                        </div>
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/4.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Павел Лисицын </div>
+                                <div class="team__wrapper-position">Разработчик Чат-ботов/ Проджект Менеджер</div>
+                            </div>
+                        </div>
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Екатерина Макарова</div>
+                                <div class="team__wrapper-position">Графический дизайнер /HR менеджер</div>
+                            </div>
+
+                        </div>
+                        <div class="team__wrapper-item">
+                            <div class="team__wrapper-photo" data-relative-input="true" data-hover-only="true">
+                                <div class="team__wrapper-photo__img" data-depth="0.5">
+                                    <img src="img/team/6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__wrapper-content">
+                                <div class="team__wrapper-name">Александра Гарбуз</div>
+                                <div class="team__wrapper-position">UX/UI дизайнер/ Верстальщик</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <h2 class="questions__titel section-title">FAQ</h2>
+                    <div class="questions__wrapper">
+                        <div class="questions__wrapper-content">
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>HOW LONG IT TAKES YOU TO CREATE A SALES FUNNEL?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>HOW ARE YOU DIFFERENT FROM FREELANCERS OR OTHER MARKETING AGENCIES?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>DO YOU GIVE A GUARANTEE FOR THE SALES FUNNEL'S PERFORMANCE?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>WHY DO YOUR FUNNELS WORK?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>DO YOU MANAGE INSTAGRAM GROWTH?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>KАКИЕ SAAS ПЛАТФОРМЫ ВЫ ИСПОЛЬЗУЕТЕ ДЛЯ СОЗДАНИЕ ВОРОНОК ПРОДАЖ?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>ЗА КАКУЮ ЦЕНУ ВЫ СДЕЛАЕТЕ ВОРОНКУ ПРОДАЖ В МОЙ БИЗНЕС?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>МНЕ НЕ НУЖНА ВОРОНКА ПРОДАЖ, А ТОЛЬКО ЛИДОГЕНЕРАЦИЯ НА ЛЕНД-КВИЗ</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                            <div class="questions__wrapper-item question-accodrion">
+                                <div class="question-accodrion__title">
+                                    <div class="question-accodrion__plus">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>ВЫ МОЖЕТЕ МНЕ ПОМОЧЬ С ГРАФИЧЕСКИМ ДИЗАЙНОМ И ВИДЕО ОБРАБОТКОЙ?</span>
+                                </div>
+                                <div class="question-accodrion__content">Many companies create funnels from abstract
+                                    customer data and customer needs. We do the opposite. We first test ideas and only
+                                    then automate the cost-effective way of promoting the product</div>
+                            </div>
+                        </div>
+                        <div class="questions__wrapper-img">
+                            <img src="img/question.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="collaborate">
+                <div class="container">
+                    <h2 class="collaborate__title section-title">Хотите сотрудничать?</h2>
+                    <div class="collaborate__question">
+                        <div class="collaborate__question-label">Или у вас остались вопросы?</div>
+                        <a href="#popup_call" class="collaborate__question-btn btn popup-modal">Позвонить</a>
+                    </div>
+                    <div class="collaborate__wrapper">
+                        <div class="collaborate__wrapper-form collaborate-form">
+                            <form id="formValid" action="#">
+                                <div class="collaborate-form__title">Оставьте свой e-mail чтобы убедиться в
+                                    работоспособности нашей Воронки Продаж:</div>
+                                <div class="collaborate-form__inputs">
+                                    <div class="form__input-block">
+                                        <input type="text" name="name" class="collaborate-form__input input"
+                                            placeholder="Имя" required>
+                                    </div>
+                                    <div class="form__input-block">
+                                        <input type="email" name="email" class="collaborate-form__input input"
+                                            placeholder="my@example.com" required>
+                                    </div>
+                                    <button class="collaborate-form__btn btn">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="collaborate__wrapper-img">
+                            <img src="img/coloboration.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-col footer__wrapper-col_content">
+                        <div class="footer__wrapper-title">Контент</div>
+                        <nav class="footer__wrapper-nav">
+                            <ul class="footer__wrapper-list">
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Наши работы</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Почему мы?</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Наша команда</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper-col footer__wrapper-col_social">
+                        <div class="footer__wrapper-title">Мы в социальных сетях:</div>
+                        <div class="footer__wrapper-social">
+                            <a href="" class="footer__wrapper-social-item">
+                                <img src="img/icons/insta.png" alt="">
+                            </a>
+                            <a href="" class="footer__wrapper-social-item">
+                                <img src="img/icons/telega.png" alt="">
+                            </a>
+                            <a href="" class="footer__wrapper-social-item">
+                                <img src="img/icons/linkedin.png" alt="">
+                            </a>
+                            <a href="" class="footer__wrapper-social-item">
+                                <img src="img/icons/fb.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__wrapper-contacts">
+                            <a class="footer__wrapper-link" href="">viieragency@gmail.com</a>
+                            <a class="footer__wrapper-link" href="tel:+380987194210">+38 (098)719 42 10</a>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-col footer__wrapper-col_legal">
+                        <div class="footer__wrapper-title">Юридическое</div>
+                        <nav class="footer__wrapper-nav">
+                            <ul class="footer__wrapper-list">
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Правила Использования</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Политика Конфиденциальности</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Отказ от отвественности</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Политика cookies</a>
+                                </li>
+                                <li class="footer__wrapper-link">
+                                    <a href="#">Согласие с рассылкой</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__copy">© 2021</div>
+            </div>
+        </footer>
+    </div>
+    <div class="popups">
+        <div id="popup_call" class="popup">
+            <div class="popup__text">Спасибо, мы свяжемся с вами!</div>
+            <a class="popup__exit" href="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25 25M1 25L25 1" stroke="#69A28F" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+        integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+        crossorigin="anonymous"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"
+        integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg=="
+        crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

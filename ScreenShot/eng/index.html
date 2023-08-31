@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenshoter - Screenshoter capture and recorder for 1 click</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../images/icons/site.webmanifest">
+    <link rel="mask-icon" href="../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/libs.min.css" />
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="body__wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__navbar">
+            <div class="header__logo">
+              <a href="../eng/index.html" class="header__logo-link"><img src="../images/logo-eng.svg" alt="Logo"/></a>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="#functions">Features</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="#advantages">Advantages</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="#how">How to use</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="#faq">FAQ (F.A.Q)</a></li>
+              </ul>
+              <div class='header__language'>
+                <details class='details'>
+               <summary class="summary">English</summary>
+               <div class='opt-wrapper'>
+                 <a href="../index.html" type="button" data-lang='russian' class='opt'>RU</a>
+                 <a href="../eng/index.html" type="button" data-lang='english' class='opt selected'>ENG</a>
+                </div>
+              </details>
+              </div>
+            </nav>
+            <div class="burger"><span></span></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__background-holder"><img src="../images/hero-background-holder-1.png" alt=""></div>
+        <div class="container">
+          <div class="hero__wrapper">
+          <div class="hero__info">
+            <h1 class="hero__title" data-aos="fade-down" data-aos-duration="1000">Create screenshots <br> and record your screen <br> <span class="hero__title-eng">in 1 click</span></h1>
+            <h2 class="hero__description description" data-aos="fade-down" data-aos-duration="1300">
+              Screenshoter+ allows you to easily create a screenshot or record what is happening on your PC screen to share with anyone
+            </h2>
+            <div class="hero__link" data-aos="fade-down" data-aos-duration="1500"><a href="#" class="button">Free download</a></div>
+            <a href="#functions" class="hero__arrow"><img src="../images/icons/hero-arrow-down.svg" alt="Arrow Down"></a>
+          </div>
+          <div class="hero__image">
+            <img class="hero__image--desktop" src="../images/hero-image-eng.png" alt="Hero Image" data-aos="fade-up" data-aos-duration="1300">
+            <img class="hero__image--phone" src="../images/hero-image-phone-eng.png" alt="Hero Image" data-aos="fade-down" data-aos-duration="1300">
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="functions" id="functions">
+        <div class="container">
+          <div class="functions__info">
+            <h3 class="functions__info-title title" data-aos="fade-up" data-aos-duration="1100"><span>2-in-1</span> screen capture and screen recorder</h3>
+            <p class="functions__info-text description" data-aos="fade-down" data-aos-duration="1300">
+              No more looking for two separate programs for creating screenshots and screen recording. Screenshoter+ lets you <span>take screenshots, record videos and share</span> them <span>with anyone you want</span>. You can select the entire screen, a specific area, or the active window
+            </p>
+          </div>
+          <div class="functions__items">
+            <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1100">
+              <div class="functions__item-image">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path class="path1-1" d="M72.179 43.3894L55.3675 30.68L62.9181 16.2531C64.6247 12.9926 64.3158 9.67533 62.7045 8.75431L62.7051 8.7537L47.8675 0.263086C47.8656 0.261865 47.8632 0.260644 47.8614 0.259424L47.8583 0.258203C47.3279 -0.0506355 46.6559 -0.0988533 45.8661 0.203271L8.99105 14.3134C6.41109 15.3003 4.19612 19.5319 4.57332 22.754L9.95785 68.8124C10.1129 70.1375 10.6512 70.9578 11.383 71.3045V71.3063L26.0644 79.7121C26.0913 79.7285 26.1182 79.7438 26.1456 79.7585L26.1719 79.7731V79.7719C27.6251 80.5348 29.8944 79.3501 31.427 76.4223L37.9535 63.9522L40.929 66.2019C41.1084 66.3374 41.294 66.457 41.4819 66.5687L41.4893 66.5767C41.4893 66.5767 56.5192 75.1802 56.6907 75.2669L56.7005 75.2724L56.6999 75.2711C61.2513 77.5594 67.9456 73.3314 72.179 65.2418C76.7054 56.5944 76.7054 46.8104 72.179 43.3894Z" fill="#7421B0"/>
+                  <path class="path1-2" d="M60.7264 8.70611L23.8507 22.8162C21.2713 23.8038 19.0563 28.0348 19.4335 31.2574L24.8181 77.3152C25.2813 81.2758 29.1613 80.7515 31.4276 76.4217L38.9777 61.9954L55.7898 74.7048C60.3156 78.1258 67.6533 73.8893 72.179 65.2418C76.7054 56.5944 76.7054 46.8104 72.179 43.3894L55.3675 30.68L62.9181 16.2531C65.1838 11.9239 63.8971 7.49273 60.7264 8.70611Z" fill="#E7DBFF"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="80" height="80" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                   
+              </div>
+              <p class="functions__item-title">Capture and record <br> your screen in 1 click</p>
+            </div>
+
+            <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1300">
+              <div class="functions__item-image">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip1)">
+                  <path d="M65.2655 13.7164L58.2099 5.34299C57.9804 5.07077 57.7204 4.85593 57.4384 4.69174L57.4396 4.6893L50.0391 0.368622C49.0619 -0.199005 47.8028 -0.114776 46.4832 0.646943L19.018 16.5039C16.0224 18.2336 13.5938 22.8735 13.5938 26.8676V70.9259C13.5938 73.1677 14.3592 74.729 15.5597 75.3625L22.7704 79.5758L22.7747 79.5782L22.8705 79.6344C23.8214 80.1831 25.0611 80.1324 26.4173 79.3493L60.9381 59.4183C63.9337 57.6892 66.3623 53.0487 66.3623 49.0551V17.4438C66.3623 15.8697 65.9772 14.5611 65.2655 13.7164Z" fill="#551981"/>
+                  <path class="path2" d="M62.5004 59.8749L27.4996 79.3638C24.4624 81.0546 22 79.2593 22 75.3538V32.2735C22 28.3674 24.4624 23.831 27.4996 22.1396L55.3466 6.63447C57.0707 5.6748 58.6945 5.80968 59.7342 6.99912L66.888 15.1868C67.6095 16.0128 68 17.2923 68 18.8315V49.7416C68 53.6465 65.5376 58.1841 62.5004 59.8749Z" fill="#7421B0"/>
+                  <path d="M31 20.6652V39.146C31 41.621 33.6788 43.1676 35.8218 41.9304L51.6421 32.7965C53.4548 31.7497 54.5712 29.8155 54.5712 27.7227V7L31 20.6652Z" fill="#E7DBFF"/>
+                  <path d="M54.5 7L44.9481 1.5332L21.3281 15.1703L30.9288 20.6652L42.7144 13.8326L54.5 7Z" fill="#C0A9F0"/>
+                  <path d="M32.8906 22.3273V35.6183L40.9058 30.9906V17.6996L32.8906 22.3273Z" fill="#7421B0"/>
+                  <path d="M31.5442 49.9945L55.9442 35.907C57.1521 35.21 58.6615 36.0816 58.6615 37.4762V51.5137C58.6615 53.504 57.5995 55.3436 55.8759 56.3385L31.4758 70.426C30.2679 71.1231 28.7585 70.2515 28.7585 68.8574V54.8194C28.7585 52.829 29.8206 50.99 31.5442 49.9945Z" fill="#E7DBFF"/>
+                  <path d="M53.9936 44.8847L33.3618 56.8665C32.6239 57.2925 32.0258 56.8403 32.0258 55.8564C32.0258 54.8719 32.6239 53.7293 33.3618 53.3033L53.9936 41.3215C54.7315 40.8954 55.3302 41.3477 55.3302 42.3316C55.3302 43.3155 54.7315 44.4587 53.9936 44.8847Z" fill="#7421B0"/>
+                  <path d="M53.9936 52.8174L33.3618 64.7992C32.6239 65.2253 32.0258 64.773 32.0258 63.7891C32.0258 62.8052 32.6239 61.662 33.3618 61.236L53.9936 49.2542C54.7315 48.8282 55.3302 49.2804 55.3302 50.2643C55.3302 51.2482 54.7315 52.3914 53.9936 52.8174Z" fill="#7421B0"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip1">
+                  <rect width="80" height="80" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                                     
+              </div>
+              <p class="functions__item-title">Direct link <br> to the file</p>
+            </div>
+
+            <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1500">
+              <div class="functions__item-image">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip2)">
+                  <path d="M80 28.6031L75.0413 25.7403L75.0762 13.4336C75.0761 13.4648 75.0731 13.4958 75.0722 13.527C75.1194 12.1452 74.2087 10.7384 72.3163 9.64687C68.8383 7.73125 63.297 7.76641 59.9111 9.72375C58.178 10.7255 57.312 12.0394 57.3105 13.3548C57.3105 13.3533 57.3103 13.3517 57.3103 13.3502L57.3072 14.4236C57.1992 14.6825 56.9706 14.9227 56.6388 15.1155L39.8695 5.43359L23.2095 15.1156L23.1802 25.4905C22.0125 25.2406 20.9155 24.8459 19.9755 24.3033C18.4747 23.4369 17.6194 22.3389 17.4061 21.2086L17.4095 19.9764C17.4095 19.9803 17.4086 19.9842 17.4086 19.9881C17.4152 19.5906 17.1514 19.2053 16.6603 18.9217L0 28.6034V51.397L16.7045 61.0786C17.178 60.8034 17.443 60.4317 17.4441 60.0469L17.448 58.6767C17.6852 57.5828 18.5263 56.5252 19.9778 55.6862C20.9483 55.1253 22.0964 54.723 23.3253 54.4806L23.2958 64.8841L40.1305 74.5663L56.7261 64.8845C57.0834 65.0909 57.3195 65.3511 57.4198 65.6308L57.417 66.6C57.4133 67.9261 58.2884 69.2542 60.0413 70.2661C63.5761 72.3069 69.3202 72.277 72.7666 70.177C74.3783 69.1955 75.1831 67.9267 75.1866 66.655L75.222 54.1358L80 51.3966V28.6031Z" fill="#C0A9F0"/>
+                  <path d="M57.3781 14.0829L57.3134 36.8765C57.3136 36.8233 57.3087 36.77 57.2987 36.7165C57.2626 36.5262 57.245 36.3348 57.2454 36.1436L57.3101 13.35C57.3096 13.5412 57.3273 13.7325 57.3634 13.9229C57.3734 13.9762 57.3782 14.0297 57.3781 14.0829Z" fill="#7421B0"/>
+                  <path d="M75.0762 13.4335L75.0115 36.2271C75.0078 37.533 74.1472 38.8235 72.4459 39.8122C70.4808 40.9543 67.8151 41.4475 65.2401 41.2924C64.472 41.2455 63.7086 41.3985 63.165 41.7144L63.2297 18.9208C63.7733 18.6049 64.5367 18.4518 65.3048 18.4988C67.8797 18.6539 70.5453 18.1607 72.5106 17.0186C74.212 16.0299 75.0726 14.7394 75.0762 13.4335Z" fill="#7421B0"/>
+                  <path d="M17.4095 19.9762L17.3448 42.7698C17.3447 42.8192 17.3405 42.8684 17.3319 42.9179C17.3023 43.0879 17.2873 43.2587 17.2869 43.4295L17.3516 20.6359C17.352 20.4651 17.367 20.2943 17.3966 20.1243C17.405 20.0749 17.4094 20.0254 17.4095 19.9762Z" fill="#7421B0"/>
+                  <path d="M35.123 20.6881L35.0583 43.4817C35.0621 42.155 34.1942 40.8269 32.4641 39.8222C30.4633 38.6669 27.7841 38.1741 25.2044 38.3328C24.4439 38.3797 23.6877 38.2225 23.145 37.9091L23.2097 15.1155C23.7524 15.4288 24.5086 15.5859 25.2691 15.5392C27.8488 15.3803 30.528 15.8734 32.5288 17.0286C34.2589 18.0333 35.1267 19.3614 35.123 20.6881Z" fill="#C0A9F0"/>
+                  <path class="path3-1" d="M17.3759 59.3132L17.4406 36.5196C17.4444 35.2058 18.3106 33.8938 20.0423 32.8928C23.4275 30.936 28.9686 30.9008 32.6011 32.9036L32.5364 55.6972C28.9039 53.6946 23.3628 53.7297 19.9776 55.6864C18.2461 56.6874 17.3797 57.9994 17.3759 59.3132Z" fill="#7421B0"/>
+                  <path class="path3-2" d="M35.2256 36.5708L35.1609 59.3644C35.1647 58.0377 34.2892 56.7091 32.5363 55.6969L32.6009 32.9033C34.3539 33.9155 35.2294 35.2441 35.2256 36.5708Z" fill="#7421B0"/>
+                  <path class="path3-3" d="M80 28.6031V51.3966L63.2753 61.0785L63.3398 38.2849L80 28.6031Z" fill="#7421B0"/>
+                  <path d="M17.5087 37.2534L17.4441 60.047C17.443 60.4318 17.178 60.8036 16.7045 61.0787L16.7692 38.2851C17.2427 38.01 17.5077 37.6381 17.5087 37.2534Z" fill="#7421B0"/>
+                  <path d="M16.7692 38.285L16.7045 61.0787L0 51.3968V28.6034L16.7692 38.285Z" fill="#C0A9F0"/>
+                  <path d="M57.5399 43.1456L57.4752 65.9392C57.4763 65.5458 57.2122 65.1651 56.726 64.8845L56.7906 42.0909C57.2769 42.3716 57.541 42.7522 57.5399 43.1456Z" fill="#7421B0"/>
+                  <path d="M75.2513 43.8612L75.1866 66.6548C75.183 67.9266 74.3783 69.1953 72.7664 70.1769C69.3199 72.277 63.5759 72.307 60.0411 70.2661C58.2883 69.2542 57.4131 67.9258 57.4169 66.6L57.4816 43.8064C57.4778 45.1325 58.353 46.4606 60.1058 47.4725C63.6406 49.5133 69.3847 49.4834 72.8311 47.3834C74.443 46.4014 75.2477 45.1326 75.2513 43.8612Z" fill="#C0A9F0"/>
+                  <path class="path3-4" d="M56.7905 42.0909L56.726 64.8844L40.1305 74.5663V51.7727L56.7905 42.0909Z" fill="#7421B0"/>
+                  <path d="M72.3163 9.64677C75.9534 11.7447 75.9728 15.0068 72.5108 17.0186C70.5456 18.1607 67.88 18.654 65.305 18.4988C64.5369 18.4519 63.7734 18.6049 63.2298 18.9208L80 28.6032L63.3398 38.2849C63.8825 38.5982 64.6387 38.7554 65.3992 38.7086C67.9791 38.5497 70.658 39.0427 72.6417 40.188C76.0484 42.1663 76.128 45.3755 72.8311 47.3833C69.3845 49.4835 63.6406 49.5135 60.1058 47.4724C58.1269 46.3299 57.2666 44.7843 57.527 43.2938C57.6038 42.8491 57.3378 42.4068 56.7908 42.0908L40.1306 51.7725L23.3606 42.0904C23.9044 41.7744 24.6677 41.6213 25.4358 41.6683C28.0106 41.8235 30.6763 41.3302 32.6416 40.1882C36.1031 38.1766 36.0853 34.9147 32.6014 32.9033C28.9689 30.9007 23.4278 30.9358 20.0427 32.8925C18.0588 34.0393 17.2106 35.5941 17.4941 37.0922C17.5775 37.5329 17.3086 37.9715 16.7695 38.2849L0 28.6035L16.6602 18.9218C17.2072 19.2377 17.4733 19.6797 17.3964 20.1247C17.137 21.6157 17.9963 23.1608 19.9753 24.3033C23.5102 26.3441 29.2542 26.3143 32.7006 24.2141C35.9975 22.2063 35.918 18.9969 32.5286 17.0288C30.5278 15.8735 27.8486 15.3807 25.2689 15.5394C24.5084 15.5863 23.7522 15.4291 23.2095 15.1157L39.8697 5.43396L56.6388 15.1157C57.178 14.8024 57.4459 14.3643 57.3633 13.923C57.0798 12.4249 57.928 10.8699 59.9111 9.7238C63.2972 7.7663 68.8381 7.73115 72.3163 9.64677Z" fill="#E7DBFF"/>
+                  <path d="M40.1305 51.7726V74.5662L23.2958 64.8841L23.3603 42.0905L40.1305 51.7726Z" fill="#C0A9F0"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip2">
+                  <rect width="80" height="80" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                                    
+              </div>
+              <p class="functions__item-title">Quick <br> snapshot editor</p>
+            </div>
+
+            <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1700">
+              <div class="functions__item-image">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip3)">
+                  <path d="M17.5252 17.6793C21.9958 15.0981 26.0464 14.8604 28.9717 16.5603L31.1231 17.8104C34.0142 11.3225 38.8417 5.37218 44.3234 2.20718C48.7956 -0.374845 52.8476 -0.614376 55.7739 1.08625L73.8201 11.5736C73.8107 11.5683 73.8007 11.5637 73.7913 11.5584C76.6966 13.2303 78.5001 16.8054 78.5145 21.8951C78.567 40.4243 50.6109 78.0214 49.1395 80.0002C48.3147 79.8461 39.2033 78.1422 31.3031 73.4458C31.4172 73.5138 31.5311 73.5824 31.6456 73.6489L13.5994 63.1616C7.20521 59.4457 1.50897 53.798 1.48537 45.4619C1.45615 35.2498 8.63818 22.8103 17.5252 17.6793Z" fill="#FE0B37"/>
+                  <path class="path4-1" d="M73.8202 11.5739L55.774 1.08656C52.8477 -0.614058 48.7957 -0.374371 44.3235 2.2075C38.7324 5.43546 33.8171 11.5592 30.9479 18.1972L48.9941 28.6843C51.8634 22.0464 56.7788 15.9228 62.3697 12.6947C66.8419 10.1128 70.8941 9.87327 73.8202 11.5739Z" fill="#C0A9F0"/>
+                  <path d="M47.0181 27.0476L28.9719 16.5603C26.0467 14.8604 21.9961 15.0981 17.5253 17.6793L35.5715 28.1666C40.0423 25.5854 44.0929 25.3477 47.0181 27.0476Z" fill="#E7DBFF"/>
+                  <path class="path4-2" d="M13.5993 63.1612L31.6457 73.6486C25.2515 69.9326 19.5553 64.285 19.5317 55.9491C19.5028 45.7372 26.6846 33.2977 35.5717 28.1668L17.5254 17.6794C8.63825 22.8104 1.45639 35.2499 1.48545 45.4617C1.50889 53.7977 7.20498 59.4453 13.5993 63.1612Z" fill="#C0A9F0"/>
+                  <path class="path4-3" d="M35.5715 28.1667C26.6843 33.2976 19.5025 45.7372 19.5315 55.949C19.584 74.4782 47.6618 79.724 49.1394 80.0001C50.6108 78.0213 78.5672 40.4242 78.5147 21.8952C78.4858 11.6831 71.2569 7.56378 62.3699 12.6947C56.7788 15.9227 51.8635 22.0464 48.9943 28.6844C46.0966 25.3756 41.1626 24.9386 35.5715 28.1667Z" fill="#7421B0"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip3">
+                  <rect width="80" height="80" fill="white" transform="matrix(-1 0 0 1 80 0)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                                                     
+              </div>
+              <p class="functions__item-title">Free of charge <br> and without registration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="record" id="advantages">
+        <div class="record__background-holder"><img src="../images/functions-record-background-holder-1.png" alt=""></div>
+        <div class="container">
+          <div class="record__wrapper">
+            <div class="record__image functions-image" data-aos="fade-up" data-aos-duration="1100">
+              <img src="../images/gif.jpg" alt="Gif Image">
+            </div>
+            <div class="record__info functions-info-wrapper">
+              <h3 class="record__info-title title" data-aos="fade-up" data-aos-duration="1400">Screen recording</h3>
+              <div class="record__info-inner" data-aos="fade-up" data-aos-duration="1600">
+              <p class="record__info-text description functions-info-text">Want more? Record both what's happening on the screen and your voice or system audio.</p>
+              <p class="record__info-text description functions-info-text"><span>Just press two mouse buttons,</span> highlight the area, and the screen recording will start. <br> Quickly and without complicated settings</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="click">
+        <div class="click__background-holder--right"><img src="../images/functions-click-background-holder-1.png" alt=""></div>
+        <div class="container">
+          <div class="click__wrapper">
+            <div class="click__info functions-info-wrapper">
+              <h3 class="click__info-title title" data-aos="fade-up" data-aos-duration="1400">One click away</h3>
+              <div class="click__info-inner" data-aos="fade-up" data-aos-duration="1600">
+              <p class="click__info-text description functions-info-text"><span>No need to memorise keyboard shortcuts</span> <br> to take a screenshot or start screen recording.</p>
+              <p class="click__info-text description functions-info-text">Just press two mouse buttons <br> or assign shortcuts to any key you want</p>
+            </div>
+          </div>
+            <div class="click__image functions-image" data-aos="fade-up" data-aos-duration="1100">
+              <img src="../images/gif.jpg" alt="Gif Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="link">
+        <div class="link__background-holder"><img src="../images/functions-link-background-holder-1.png" alt=""></div>
+        <div class="container">
+          <div class="link__wrapper">
+            <div class="link__image functions-image" data-aos="fade-up" data-aos-duration="1100">
+              <img src="../images/gif.jpg" alt="Gif Image">
+              <div class="link__image-tag"><p><span>Files are available for one year</span> from the date of creation. You can delete them. The last five screenshots are saved in the history</p></div>
+            </div>
+            <div class="link__info functions-info-wrapper">
+              <h3 class="link__info-title title" data-aos="fade-up" data-aos-duration="1400">Direct link</h3>
+              <p class="link__info-text description functions-info-text" data-aos="fade-up" data-aos-duration="1600">Receive a direct link to a screenshot <br> or recording. You just need to press Enter, and the link <br> is saved to the clipboard. Open this link to see your snapshot or recorded video</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="edit">
+        <div class="edit__background-holder--right"><img src="../images/functions-edit-background-holder-1.png" alt=""></div>
+        <div class="container">
+          <div class="edit__wrapper">
+            <div class="edit__info functions-info-wrapper">
+              <h3 class="edit__info-title title" data-aos="fade-up" data-aos-duration="1400">Snapshot editor</h3>
+              <div class="click__info-inner" data-aos="fade-up" data-aos-duration="1600">
+              <p class="edit__info-text description functions-info-text"><span>More than five editing tools.</span> Select an area and edit.</p>
+              <p class="edit__info-text description functions-info-text">If you've selected the wrong area, no problem, <br> you can easily move it and/or resize it without losing previous changes!</p>
+            </div>
+          </div>
+            <div class="edit__image functions-image" data-aos="fade-up" data-aos-duration="1100">
+              <img src="../images/gif.jpg" alt="Gif Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="function__items--2">
+        <div class="container">
+      <div class="functions__items">
+        <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1100">
+          <div class="functions__item-image">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path2-1-1" d="M63.8983 41.203L14.671 12.7429C14.5087 12.6342 14.3408 12.5366 14.1669 12.4518L14.1364 12.4334L14.1351 12.4365C12.6471 11.7193 10.766 11.8615 8.71765 13.0444C3.9032 15.8239 0 23.2818 0 29.7015C0 33.2983 1.22559 35.805 3.15002 36.8268L52.9944 65.6048C54.5496 66.6174 56.6254 66.5863 58.9069 65.2697C63.728 62.4859 67.6361 55.0189 67.6361 48.5913C67.6355 44.6386 66.1572 42.0031 63.8983 41.203Z" fill="#7421B0"/>
+              <path class="path2-1-2" d="M53.2056 65.7353L10.4535 41.0436C8.52905 40.0224 7.33398 37.4492 7.33398 33.8524C7.33398 27.4327 11.2366 19.9748 16.0516 17.1953C17.8821 16.1388 19.5782 15.9148 20.9802 16.3902L63.9319 41.2224L53.2056 65.7353Z" fill="#E7DBFF"/>
+              <path class="path2-1-5" d="M50.1776 58.6708C50.1776 65.0984 54.0857 68.0531 58.9069 65.2699C63.7274 62.4861 67.6355 55.019 67.6355 48.5914C67.6355 42.1632 63.7274 39.2091 58.9069 41.9923C54.0857 44.7755 50.1776 52.2425 50.1776 58.6708Z" fill="#C0A9F0"/>
+              <path class="path2-1-3" d="M40.8698 58.6109C40.2454 57.2241 40.2454 55.755 40.2454 54.6765C40.2454 47.1503 44.7583 38.6493 50.52 35.3229C51.0889 34.9951 51.6504 34.7052 52.2058 34.4434L58.4692 38.064C56.7255 38.2031 48.2324 44.5068 46.4722 54.6765C46.0718 56.9904 46.2848 60.0067 47.63 62.5153L40.8698 58.6109Z" fill="#E7DBFF"/>
+              <path class="path2-1-4" d="M11.8115 41.799C11.1871 40.4116 11.1871 38.9431 11.1871 37.8646C11.1871 30.3384 15.7001 21.8374 21.4612 18.511C22.03 18.1826 22.5922 17.8927 23.1476 17.6309L29.411 21.2521C27.6666 21.3912 19.1736 27.6943 17.4133 37.8646C17.0129 40.1785 17.2266 43.1942 18.5712 45.7034L11.8115 41.799Z" fill="#E7DBFF"/>
+              <path class="path2-1-6" d="M52.744 59.0239C52.744 53.33 56.2059 46.715 60.4766 44.2492C62.9686 42.8106 65.1836 43.1048 66.5978 44.7289C66.5978 44.7283 66.5996 44.7271 66.5996 44.7271L66.6362 44.7722C66.66 44.7997 66.6832 44.8278 66.7064 44.8565L79.1295 60.5663C80.0731 61.7968 80.2648 63.4459 79.6294 64.8601C78.9196 66.4403 77.271 67.3821 75.5492 67.1917L57.3467 65.797V65.7946C54.6355 65.7567 52.744 63.2323 52.744 59.0239Z" fill="#7421B0"/>
+              </svg>                                                 
+          </div>
+          <p class="functions__item-title">Choose a colour and <br> draw with a pencil</p>
+        </div>
+
+        <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1300">
+          <div class="functions__item-image">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path2-2-1" d="M63.2959 55.1474L61.5094 39.8648C61.46 39.4394 61.2903 39.1727 61.0596 39.0512L61.0608 39.0488L55.0232 35.593C55.0079 35.5832 54.9921 35.5747 54.9762 35.5661L54.9432 35.5472L54.9414 35.5508C54.4586 35.3348 53.7305 35.7291 53.2349 36.6769L51.1444 40.6705C51.0638 40.6155 50.9802 40.5679 50.8948 40.527L44.9457 37.1115L44.9463 37.1127C43.4351 36.2399 41.1481 37.6437 39.7125 40.3861C38.2111 43.2553 38.2111 46.5018 39.7125 47.637L45.2911 51.8546L42.7856 56.6415C42.1667 57.8238 42.3468 59.0286 43.017 59.1928L48.9008 62.59C49.0814 62.7109 49.3158 62.7365 49.5947 62.6297L61.8298 57.9477C62.6862 57.6205 63.421 56.2167 63.2959 55.1474Z" fill="#7421B0"/>
+              <path class="path2-2-5" d="M49.5947 62.6304L61.8304 57.9484C62.6861 57.6206 63.421 56.2168 63.2959 55.1475L61.5094 39.8649C61.3556 38.5508 60.0683 38.7248 59.3164 40.1615L56.8109 44.9485L51.2329 40.7316C49.7308 39.5964 47.2961 41.002 45.7946 43.8713C44.2926 46.7405 44.2926 49.987 45.7946 51.1222L51.3727 55.3391L48.8672 60.1261C48.1158 61.5629 48.5425 63.0326 49.5947 62.6304Z" fill="#E7DBFF"/>
+              <path class="path2-2-2" d="M40.1593 32.3604L34.5813 28.1435L37.0868 23.3565C37.6477 22.2842 37.5519 21.1935 37.0301 20.8767L37.027 20.8749C37.0233 20.8724 37.0197 20.8706 37.0166 20.8688L30.9503 17.394C30.943 17.3891 30.9345 17.3843 30.9265 17.38L30.9082 17.3696V17.3708C30.7373 17.2829 30.5249 17.2732 30.2777 17.3678L18.042 22.0504C17.1863 22.3775 16.4515 23.782 16.5766 24.8507L18.3631 40.1333C18.4156 40.5813 18.6011 40.8523 18.8507 40.9634L18.8489 40.967L24.8365 44.399L24.8383 44.3966C25.3162 44.7146 26.109 44.3319 26.6376 43.3211L28.7274 39.3282C28.769 39.3557 28.8105 39.3813 28.8532 39.4057L34.8633 42.8493C34.8755 42.8573 34.8883 42.8634 34.9005 42.8707L34.9854 42.9189H34.9848C36.496 43.7221 38.7427 42.3189 40.1599 39.6114C41.6614 36.7422 41.6614 33.4957 40.1593 32.3604Z" fill="#7421B0"/>
+              <path class="path2-2-3" d="M62.8564 3.56929L62.8571 3.56746L56.8024 0.0982223L56.8005 0.101274C56.5283 -0.0702348 56.153 -0.0323929 55.7489 0.280107L43.5132 9.72652C42.4609 10.5383 42.0343 12.5018 42.7863 13.07L45.2911 14.9639L39.7131 25.6225C38.2117 28.4918 38.2117 31.7382 39.7131 32.8735C39.8492 32.9766 39.9933 33.0578 40.144 33.1201L45.9357 36.455C45.9485 36.463 45.9613 36.4697 45.9741 36.477L45.976 36.4782C47.486 37.3791 49.79 35.9747 51.2329 33.2177L56.8109 22.5598L59.3164 24.4537C60.0684 25.0219 61.3556 23.7091 61.5094 22.2174L63.2959 4.87239C63.3643 4.21321 63.1775 3.75057 62.8564 3.56929Z" fill="#7421B0"/>
+              <path class="path2-2-4" d="M40.1596 47.1247C40.0924 47.074 40.0229 47.0301 39.9527 46.9892L39.9533 46.988L33.9492 43.5517C33.8931 43.5157 33.8363 43.4827 33.7777 43.4534L33.7765 43.4528C32.2665 42.6929 30.0454 44.0961 28.6404 46.7805L23.0618 57.439L20.5569 55.5451C19.805 54.9763 18.5171 56.2891 18.3633 57.7808L16.5768 75.1264C16.5091 75.7856 16.6958 76.2482 17.0169 76.4295L17.0163 76.4314L23.1192 79.9274V79.9262C23.3871 80.0648 23.7436 80.0129 24.1244 79.7187L36.3595 70.2723C37.4118 69.4599 37.839 67.4964 37.0871 66.9282L34.5816 65.0343L40.1596 54.3763C41.6617 51.5064 41.6617 48.26 40.1596 47.1247Z" fill="#7421B0"/>
+              <path class="path2-2-6" d="M36.3593 20.8521L24.1236 25.5341C23.2679 25.8618 22.533 27.2656 22.6581 28.335L24.4446 43.617C24.5984 44.9317 25.8857 44.7571 26.6376 43.3209L29.1431 38.5339L34.7211 42.7509C36.2232 43.8861 38.6579 42.4805 40.1593 39.6112C41.6614 36.742 41.6614 33.4955 40.1593 32.3602L34.5813 28.1433L37.0868 23.3563C37.8388 21.9196 37.4115 20.4498 36.3593 20.8521Z" fill="#E7DBFF"/>
+              <path class="path2-2-7" d="M61.5094 22.2181L63.2965 4.87249C63.421 3.65912 62.6862 3.10308 61.8304 3.7641L49.5953 13.2105C48.5431 14.0229 48.1158 15.9864 48.8678 16.5546L51.3733 18.4485L45.7947 29.1071C44.2932 31.9764 44.2932 35.2222 45.7947 36.3575C47.2968 37.4933 49.7314 36.0871 51.2329 33.2178L56.8115 22.5599L59.317 24.4538C60.0684 25.022 61.3556 23.7092 61.5094 22.2181Z" fill="#E7DBFF"/>
+              <path class="path2-2-8" d="M24.4446 61.2643L22.6581 78.6099C22.533 79.8233 23.2679 80.3787 24.1236 79.7177L36.3593 70.2713C37.4115 69.4595 37.8388 67.496 37.0862 66.9278L34.5813 65.0339L40.1593 54.3753C41.6614 51.506 41.6614 48.2596 40.1593 47.1243C38.6579 45.9891 36.2232 47.3947 34.7211 50.264L29.1431 60.9225L26.6376 59.0286C25.8857 58.4604 24.5984 59.7726 24.4446 61.2643Z" fill="#E7DBFF"/>
+              </svg>                                                                 
+          </div>
+          <p class="functions__item-title">Highlight with arrows, <br> circles or squares</p>
+        </div>
+
+        <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1500">
+          <div class="functions__item-image">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip4)">
+              <path d="M56.955 0L73.525 9.62937V50.8553L51.3428 63.6622L48.2982 70.027L44.3214 67.7161L23.045 80L6.47496 70.3706V29.1447L56.955 0Z" fill="#58948E"/>
+              <path d="M45.2277 67.1928L28.6577 57.5635L31.7283 60.3975L48.2983 70.0271L45.2277 67.1928Z" fill="#58948E"/>
+              <path class="path2-3-1" d="M23.045 38.7744L6.47498 29.145V70.371L23.045 80.0003V38.7744Z" fill="#7421B0"/>
+              <path d="M73.525 9.62937L56.955 0L6.47496 29.1447L23.045 38.7741L73.525 9.62937Z" fill="#C0A9F0"/>
+              <path d="M23.045 38.7741V80L45.2276 67.1928L48.2982 70.0271L51.3428 63.6622L73.525 50.8553V9.62939L23.045 38.7741Z" fill="#E7DBFF"/>
+              <path d="M64.6053 30.1811C65.8397 29.4683 66.9583 29.4022 67.766 29.8716L71.1742 31.835C71.1716 31.8336 71.1689 31.8324 71.1663 31.8308C71.968 32.2922 72.4656 33.2788 72.4697 34.6833C72.4777 37.502 70.4956 40.9352 68.0425 42.3516C66.773 43.0845 65.6272 43.132 64.8149 42.6178C64.8374 42.6322 64.8594 42.6475 64.8825 42.661L61.4742 40.6975C60.6769 40.2342 60.1825 39.2489 60.1786 37.8486C60.1706 35.0302 62.1527 31.5972 64.6053 30.1811Z" fill="#E0E0E2"/>
+              <path d="M49.3066 39.0141C50.5409 38.3013 51.6595 38.2352 52.4672 38.7046L55.8755 40.668C55.8728 40.6666 55.8703 40.6654 55.8677 40.664C56.6694 41.1254 57.167 42.1119 57.1709 43.5165C57.1789 46.3352 55.1969 49.7683 52.7436 51.1847C51.4736 51.918 50.327 51.9655 49.5148 51.4507C49.5377 51.4652 49.5597 51.4807 49.5831 51.4943L46.1748 49.5308C45.3777 49.0676 44.8833 48.0822 44.8792 46.6819C44.8714 43.8635 46.8534 40.4304 49.3066 39.0141Z" fill="#E0E0E2"/>
+              <path d="M34.0072 47.8471C35.2416 47.1343 36.3602 47.0682 37.1678 47.5376L40.5761 49.501C40.5734 49.4996 40.5708 49.4984 40.5683 49.4968C41.37 49.9582 41.8677 50.9448 41.8716 52.3493C41.8795 55.1681 39.8975 58.6012 37.4444 60.0176C36.1748 60.7507 35.0287 60.7981 34.2164 60.2837C34.2391 60.2981 34.2611 60.3134 34.2844 60.327L30.8761 58.3635C30.0787 57.9003 29.5844 56.9149 29.5805 55.5146C29.5725 52.6963 31.5547 49.2631 34.0072 47.8471Z" fill="#E0E0E2"/>
+              <path d="M68.0138 32.1444C65.561 33.5604 63.5789 36.9936 63.5871 39.8119C63.595 42.6307 65.59 43.7677 68.0427 42.3514C70.4958 40.9352 72.4779 37.5021 72.4699 34.6832C72.4619 31.8651 70.4669 30.7282 68.0138 32.1444Z" fill="#F9F7FF"/>
+              <path d="M52.715 40.977C50.2619 42.3933 48.2799 45.8264 48.2877 48.6448C48.2956 51.4636 50.2906 52.6006 52.7438 51.1842C55.1969 49.768 57.1789 46.3348 57.1711 43.5159C57.1632 40.6976 55.168 39.5606 52.715 40.977Z" fill="#F9F7FF"/>
+              <path d="M64.6053 30.1811C65.8397 29.4683 66.9583 29.4022 67.7659 29.8716L71.1742 31.835C70.3665 31.3656 69.2481 31.4317 68.0136 32.1445C65.5608 33.5605 63.5787 36.9938 63.5869 39.812C63.5908 41.2125 64.0853 42.1977 64.8825 42.661L61.4742 40.6975C60.6769 40.2342 60.1825 39.2489 60.1786 37.8486C60.1706 35.0302 62.1526 31.5972 64.6053 30.1811Z" fill="#C0A9F0"/>
+              <path d="M49.3065 39.0141C50.5409 38.3013 51.6595 38.2352 52.4671 38.7046L55.8754 40.668C55.0678 40.1986 53.9493 40.2647 52.7148 40.9776C50.2617 42.3938 48.2796 45.8269 48.2875 48.6454C48.2914 50.0457 48.7857 51.031 49.5831 51.4943L46.1748 49.5308C45.3776 49.0676 44.8832 48.0822 44.8792 46.6819C44.8714 43.8635 46.8534 40.4304 49.3065 39.0141Z" fill="#C0A9F0"/>
+              <path d="M34.0071 47.8471C35.2415 47.1343 36.3601 47.0682 37.1678 47.5376L40.576 49.501C39.7684 49.0317 38.65 49.0978 37.4154 49.8106C34.9626 51.2265 32.9806 54.6596 32.9887 57.4781C32.9926 58.8785 33.4871 59.8637 34.2843 60.327L30.876 58.3635C30.0787 57.9003 29.5843 56.9149 29.5804 55.5146C29.5724 52.6963 31.5546 49.2631 34.0071 47.8471Z" fill="#C0A9F0"/>
+              <path d="M37.4157 49.8105C34.9629 51.2265 32.9808 54.6596 32.989 57.478C32.9969 60.2968 34.9919 61.4338 37.4446 60.0176C39.8977 58.6013 41.8797 55.1682 41.8719 52.3493C41.864 49.531 39.8688 48.3941 37.4157 49.8105Z" fill="#F9F7FF"/>
+              </g>
+              <defs>
+              <clipPath id="clip4">
+              <rect width="80" height="80" fill="white" transform="matrix(-1 0 0 1 80 0)"/>
+              </clipPath>
+              </defs>
+              </svg>                                                                 
+          </div>
+          <p class="functions__item-title">Leave <br> a comment</p>
+        </div>
+
+        <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1700">
+          <div class="functions__item-image">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path2-4-1" d="M31.8314 0L47.9272 9.35391C48.9822 10.2606 69.0269 27.487 69.0647 40.8305C69.1025 54.1672 59.7256 70.4155 48.1191 77.1164C42.108 80.5869 36.6838 80.8108 32.84 78.3761C32.9477 78.4442 33.0524 78.5175 33.1625 78.5817L17.0667 69.2277C13.293 67.0347 10.9536 62.3713 10.935 55.7448C10.8974 42.4017 30.7847 2.12016 31.8314 0Z" fill="#7421B0"/>
+              <path d="M47.9272 9.35352C46.8805 11.4737 26.9931 51.7551 27.0309 65.0984C27.0687 78.4351 36.5069 83.8204 48.1194 77.1159C59.7258 70.4149 69.1026 54.1667 69.0648 40.8299C69.0269 27.4868 48.9822 10.2601 47.9272 9.35352Z" fill="#E7DBFF"/>
+              </svg>                                                                 
+          </div>
+          <p class="functions__item-title">Blur <br> selected areas</p>
+        </div>
+      </div>
+     <div class="functions__item-link"><a href="#" class="button button--2">Free download</a></div> 
+    </div>
+    </section>
+
+    <div class="usage__wrapper">
+      <div class="usage__background-holder"><img src="../images/usage-background-holder-1.png" alt=""></div>
+      <div class="usage__background-holder--right"><img src="../images/usage-background-holder-2.png" alt=""></div>
+      <div class="usage__background-holder--center"><img src="../images/usage-background-holder-3.png" alt=""></div>
+    <section class="usage" id="how">
+      <div class="container container--2">
+        <h3 class="usage__items-title title"><span>Screenshoter+</span> - Features for everyday life</h3>
+        <div class="usage__items" data-aos="zoom-in" data-aos-duration="1400">
+          <div class="usage__item usage__item--1">
+            <div class="usage__item-image usage__item-image--1"><img src="../images/usage-item-1.png" alt=""></div>
+            <div class="usage__item-title">
+              <span class="usage__item-title-number">01.</span>
+              <p class="usage__item-title-text"><span>Exchange</span> ideas</p>
+            </div>
+            <p class="usage__item-text description">
+              When you need to show something to a colleague, contractor or customer, you can take a screenshot and comment on it.
+            </p>
+            <p class="usage__item-text description">
+              What if the situation requires a more detailed explanation? Fine, no problem. Screenshoter allows you to record a screenshot with a voice-over
+            </p>
+          </div>
+
+          <div class="usage__item usage__item--2">
+            <div class="usage__item-image usage__item-image--2"><img src="../images/usage-item-2.png" alt=""></div>
+            <div class="usage__item-title">
+              <span class="usage__item-title-number">02.</span>
+              <p class="usage__item-title-text"><span>Create</span> instructions</p>
+            </div>
+            <p class="usage__item-text description">
+              Need to present information visually? Create specific, step-by-step instructions by adding comments and visual markers where you need them in the screenshot
+            </p>
+            <p class="usage__item-text usage__item-text--2 description">
+              Share a screenshot or recording with a direct link saved to the clipboard
+            </p>
+          </div>
+
+          <div class="usage__item usage__item--3">
+            <div class="usage__item-image usage__item-image--3"><img src="../images/usage-item-3.png" alt=""></div>
+            <div class="usage__item-title">
+              <span class="usage__item-title-number">03.</span>
+              <p class="usage__item-title-text"><span>Give</span> feedback</p>
+            </div>
+            <p class="usage__item-text description">
+              If an error occurs when using our app, website or service, you can quickly fix it
+            </p>
+            <p class="usage__item-text usage__item-text--3 description">
+              Send a screenshot to Technical Support to help us see what you’re experiencing
+            </p>
+          </div>
+
+        </div>
+      </div>
+        <div class="how">
+          <div class="container">
+            <h3 class="how__title title">How to use <span>Screenshoter+</span></h3>
+            <div class="how__steps">
+              <div class="how__step" data-aos="fade-up" data-aos-duration="1200">
+                <span class="how__step-title">Step 1.</span>
+                <div class="how__step-image"><img src="../images/how-step-1.jpg" alt=""></div>
+                <p class="how__step-subtitle"><span>Download software</span> on your PC or laptop</p>
+              </div>
+              <div class="how__step" data-aos="fade-up" data-aos-duration="1500">
+                <span class="how__step-title">Step 2.</span>
+                <div class="how__step-image"><img src="../images/how-step-2.jpg" alt=""></div>
+                <p class="how__step-subtitle"><span>Start Screenshoter+:</span> software runs in the background</p>
+              </div>
+              <div class="how__step" data-aos="fade-up" data-aos-duration="1800">
+                <span class="how__step-title">Step 3.</span>
+                <div class="how__step-image"><img src="../images/how-step-3.jpg" alt=""></div>
+                <p class="how__step-subtitle"><span>Enjoy speed</span> and convenience</p>
+              </div>
+            </div>
+            <div class="how__link"><a href="#" class="button button--2">Free download</a></div> 
+          </div>
+        </div>
+    </section>
+  </div>
+
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__info">
+        <h3 class="advantages__info-title title" data-aos="fade-up" data-aos-duration="1100"><span>Screenshoter+</span> is the best app for everyone who works on the internet</h3>
+        <div class="advantages__info-tag"><img src="../images/advantages-info-tag-eng.png" alt=""></div>
+        <p class="advantages__info-text description"  data-aos="fade-down" data-aos-duration="1300">
+          Coordinate work issues, show interesting things and discuss any topic. Share your comments with this free 2-in-1 tool
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="function__items--3">
+    <div class="container">
+  <div class="functions__items">
+    <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1100">
+      <div class="functions__item-image">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip5)">
+          <path d="M8.51384 33.0586L20.3538 26.2228C21.7752 25.4022 23.033 23.6209 23.4669 21.8144L27.0894 6.76346C27.7647 3.958 29.5871 1.69785 31.4127 0.643943C32.595 -0.038712 33.7788 -0.215587 34.6535 0.292694L49.9097 9.15862L54.4198 6.55471C55.7548 5.78393 56.8556 5.74315 57.6431 6.20081L74.6793 16.1011C74.6262 16.0703 74.5717 16.0422 74.5159 16.0161C76.4843 16.9406 76.7181 20.7603 74.1604 24.3806L64.6054 37.9062C63.4569 39.5304 62.9801 41.5107 63.4244 42.812L67.1203 53.6374C68.17 56.7118 65.6381 61.3818 62.7897 63.0263C61.8989 63.5405 60.977 63.759 60.1242 63.5399L50.5241 61.0716C49.948 60.9238 49.27 61.0749 48.593 61.4659C47.9159 61.8569 47.2394 62.4876 46.666 63.2991L37.1096 76.8274C36.2611 78.0288 35.3416 78.8732 34.451 79.3875C33.208 80.105 32.0219 80.1782 31.1654 79.6777C31.1669 79.6786 31.1683 79.6799 31.1699 79.6807L14.134 69.7804C13.0252 69.136 12.466 67.5324 13.046 65.1212L16.5858 50.4135L5.25868 43.8307C2.519 42.239 4.374 35.4487 8.51384 33.0586Z" fill="#FED322"/>
+          <path d="M74.6794 16.1008L57.6435 6.20051C56.8558 5.74285 55.7552 5.78363 54.4202 6.55441L71.4561 16.4547C72.7911 15.6839 73.8919 15.6431 74.6794 16.1008Z" fill="#E7DBFF"/>
+          <path d="M14.1338 69.7808L31.1697 79.6811C30.061 79.0367 29.5017 77.4331 30.0817 75.0219L13.0459 65.1216C12.4662 67.533 13.0252 69.1366 14.1338 69.7808Z" fill="#C0A9F0"/>
+          <path d="M71.456 16.455L54.4201 6.55469L42.5801 13.3905L59.6161 23.2907L71.456 16.455Z" fill="#E7DBFF"/>
+          <path d="M40.2438 13.6178L57.2797 23.5181C57.8847 23.8698 58.7191 23.8082 59.6158 23.2903L42.5801 13.3901C41.6832 13.9081 40.8491 13.9695 40.2438 13.6178Z" fill="#C0A9F0"/>
+          <path d="M33.7043 59.9706L16.6684 50.0703L13.0459 65.1212L30.0819 75.0215L33.7043 59.9706Z" fill="#C0A9F0"/>
+          <path d="M32.9063 56.6078L15.8704 46.7075C16.7262 47.2049 17.0486 48.491 16.6684 50.0702L33.7043 59.9705C34.0844 58.3914 33.7621 57.1052 32.9063 56.6078Z" fill="#C0A9F0"/>
+          <path d="M40.5032 31.7147L23.4673 21.8145C23.0334 23.621 21.7756 25.4023 20.3542 26.2229L37.3901 36.1232C38.8112 35.3026 40.0692 33.5213 40.5032 31.7147Z" fill="#C0A9F0"/>
+          <path d="M51.6896 10.193L34.6537 0.292694C33.7791 -0.215587 32.5952 -0.038712 31.4129 0.643943L48.4488 10.5442C49.6312 9.86158 50.8149 9.68486 51.6896 10.193Z" fill="#E7DBFF"/>
+          <path d="M44.1253 16.6638L27.0894 6.76367L23.4669 21.8144L40.5031 31.7147L44.1253 16.6638Z" fill="#C0A9F0"/>
+          <path d="M48.4488 10.5443L31.4129 0.644043C29.5871 1.6981 27.7649 3.9581 27.0896 6.76356L44.1255 16.6639C44.8007 13.8584 46.623 11.5984 48.4488 10.5443Z" fill="#E7DBFF"/>
+          <path d="M37.39 36.123L20.3539 26.2227L8.51397 33.0584L25.55 42.9587L37.39 36.123Z" fill="#E7DBFF"/>
+          <path d="M5.25837 43.8309L22.2943 53.7312C19.5549 52.1392 21.4099 45.349 25.5497 42.9589L8.51383 33.0586C4.374 35.4486 2.519 42.2389 5.25837 43.8309Z" fill="#E7DBFF"/>
+          <path class="path3-1-1" d="M48.4488 10.5443C46.623 11.5983 44.8008 13.8583 44.1257 16.6638L40.5032 31.7147C40.0693 33.5213 38.8114 35.3025 37.39 36.1231L25.5501 42.9589C21.1363 45.5072 19.3198 53.057 22.8993 53.9762L32.4994 56.4426C33.6533 56.7373 34.1397 58.1619 33.7043 59.9709L30.0818 75.0218C29.0541 79.2953 31.6036 81.0317 34.4508 79.3879C35.3414 78.8737 36.261 78.0292 37.1094 76.8278L46.6658 63.2995C47.2394 62.4879 47.9158 61.857 48.5928 61.4662C49.2699 61.0755 49.9477 60.9242 50.5239 61.072L60.1241 63.5403C60.9767 63.7592 61.8987 63.5409 62.7895 63.0267C65.638 61.3822 68.1698 56.7123 67.1201 53.6378L63.4244 42.8122C62.9801 41.5109 63.4569 39.5305 64.6055 37.9064L74.1604 24.381C77.7231 19.3383 75.8698 13.9072 71.4561 16.4555L59.6161 23.2913C58.1947 24.1119 56.9309 23.7864 56.4867 22.4871L52.7924 11.6605C52.1036 9.64209 50.2744 9.49021 48.4488 10.5443Z" fill="#7421B0"/>
+          </g>
+          <defs>
+          <clipPath id="clip5">
+          <rect width="80" height="80" fill="white" transform="matrix(-1 0 0 1 80 0)"/>
+          </clipPath>
+          </defs>
+          </svg>                                                           
+      </div>
+      <p class="functions__item-title">No registration: <br> no need to enter <br> any personal information</p>
+    </div>
+
+    <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1300">
+      <div class="functions__item-image">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40.2793 13.3913L54.6399 0L62.8861 4.78516V55.6394L47.7229 80L23.2649 78.5145L17.1139 72.5198V21.6656L40.2793 13.3913Z" fill="#ACABB1"/>
+          <path d="M47.7229 18.9244V80L62.8861 55.6394V4.78516L47.7229 18.9244Z" fill="#E7DBFF"/>
+          <path d="M23.2648 27.6604V78.5148L47.7228 79.9999V18.9243L23.2648 27.6604Z" fill="#EFE7FF"/>
+          <path d="M17.1139 21.6655V72.5198L23.2648 78.5148V27.6604L17.1139 21.6655Z" fill="#C0A9F0"/>
+          <path d="M17.1139 21.6656L23.2649 27.6605L47.7229 18.9244L62.8861 4.78516L54.6399 0L40.2793 13.3913L17.1139 21.6656Z" fill="#E7DBFF"/>
+          <path d="M47.7729 22.154L60.5738 10.2178V54.6446L47.7729 75.9845L25.6771 74.3701V30.2339L47.7729 22.154Z" fill="#A66206"/>
+          <path d="M47.7729 75.9845L60.5738 54.6446V10.2178L47.7729 22.154V75.9845Z" fill="#7421B0"/>
+          <path d="M47.7729 22.1543L25.6771 30.2341V74.3704L47.7729 75.9848V22.1543Z" fill="#852FC2"/>
+          </svg>                                                                          
+      </div>
+      <p class="functions__item-title">Free of charge, <br> no hidden fees <br> and no commissions</p>
+    </div>
+
+    <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1500">
+      <div class="functions__item-image">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip6)">
+          <path d="M53.3334 10.2972V24.992L40.0432 32.7153L26.6665 24.9923V10.2975L40.0432 2.57422L53.3334 10.2972Z" fill="#E7DBFF"/>
+          <path d="M53.3335 10.2969V24.9917L40.0433 32.715V18.0202L53.3335 10.2969Z" fill="#551981"/>
+          <path d="M40.0432 18.0203V32.7152L26.6665 24.9922V10.2974L40.0432 18.0203Z" fill="#C0A9F0"/>
+          <path d="M53.3334 55.0071V69.702L40.0432 77.4253L26.6665 69.7023V55.0075L40.0432 47.2842L53.3334 55.0071Z" fill="#E7DBFF"/>
+          <path d="M53.3335 55.0073V69.7022L40.0433 77.4254V62.7306L53.3335 55.0073Z" fill="#551981"/>
+          <path d="M40.0432 62.7308V77.4256L26.6665 69.7027V55.0078L40.0432 62.7308Z" fill="#C0A9F0"/>
+          <path d="M26.6666 55.0071V69.702L13.3767 77.4253L0 69.7023V55.0075L13.3767 47.2842L26.6666 55.0071Z" fill="#E7DBFF"/>
+          <path d="M26.6666 55.0073V69.7022L13.3767 77.4254V62.7306L26.6666 55.0073Z" fill="#551981"/>
+          <path d="M13.3767 62.7308V77.4256L0 69.7027V55.0078L13.3767 62.7308Z" fill="#C0A9F0"/>
+          <path d="M80.0001 55.0071V69.702L66.7101 77.4253L53.3335 69.7023V55.0075L66.7101 47.2842L80.0001 55.0071Z" fill="#E7DBFF"/>
+          <path d="M79.9999 55.0073V69.7022L66.71 77.4254V62.7306L79.9999 55.0073Z" fill="#551981"/>
+          <path d="M66.7101 62.7308V77.4256L53.3335 69.7027V55.0078L66.7101 62.7308Z" fill="#C0A9F0"/>
+          <path d="M66.6668 32.5765V47.2715L53.3768 54.9948L40.0433 47.2718V32.5768L53.3768 24.8535L66.6668 32.5765Z" fill="#E7DBFF"/>
+          <path d="M66.6667 32.5762V47.2712L53.3767 54.9945V40.2995L66.6667 32.5762Z" fill="#551981"/>
+          <path d="M53.3768 40.2996V54.9946L40.0433 47.2717V32.5767L53.3768 40.2996Z" fill="#C0A9F0"/>
+          <path d="M40.0434 32.5765V47.2715L26.7101 54.9948L13.3335 47.2718V32.5768L26.7101 24.8535L40.0434 32.5765Z" fill="#E7DBFF"/>
+          <path d="M40.0434 32.5762V47.2712L26.7101 54.9945V40.2995L40.0434 32.5762Z" fill="#551981"/>
+          <path d="M26.7101 40.2996V54.9946L13.3335 47.2717V32.5767L26.7101 40.2996Z" fill="#C0A9F0"/>
+          </g>
+          <defs>
+          <clipPath id="clip6">
+          <rect width="80" height="80" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>                                                                           
+      </div>
+      <p class="functions__item-title">Unlimited <br> number of screenshots <br> and recordings</p>
+    </div>
+
+    <div class="functions__item" data-aos="zoom-out-down" data-aos-duration="1700">
+      <div class="functions__item-image">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip7)">
+          <path d="M6.85779 46.2702C6.3195 45.5424 6.00873 44.5094 6.00513 43.2166C5.99419 39.3751 8.69528 34.6966 12.0372 32.7673C13.3901 31.9862 14.6411 31.7762 15.6507 32.0568C18.367 22.0165 25.4393 11.8984 33.7541 7.09761C39.1321 3.99262 44.0047 3.70465 47.5233 5.74934L57.7738 11.7065C59.3602 11.4809 60.7839 11.7326 61.9581 12.4149L76.5856 20.9157C76.5787 20.9118 76.5719 20.9082 76.565 20.9043C78.6781 22.1204 79.9897 24.7213 80.0003 28.4238C80.0214 35.8513 74.7977 44.8991 68.3325 48.6316L23.8928 74.2889C21.2521 75.8134 18.8685 75.9119 17.1798 74.8422C17.2271 74.8722 17.2731 74.9044 17.3215 74.9325L2.69389 66.4319C1.03639 65.4686 0.00888824 63.4206 0.000450134 60.51C-0.0134506 55.5814 2.8992 49.7514 6.85779 46.2702Z" fill="#C3DFF7"/>
+          <path d="M76.5853 20.916L61.9577 12.4154C59.8293 11.1786 56.8816 11.3529 53.6282 13.2312C53.3288 13.4042 53.0319 13.5921 52.7379 13.7879L67.3655 22.2885C67.6596 22.0928 67.9563 21.9046 68.2558 21.7318C71.5092 19.8535 74.4567 19.679 76.5853 20.916Z" fill="#E7DBFF"/>
+          <path d="M62.1505 14.2503L47.5229 5.74989C44.0041 3.70505 39.1315 3.99317 33.7537 7.09817L48.3813 15.5986C53.7591 12.4936 58.6318 12.2055 62.1505 14.2503Z" fill="#E7DBFF"/>
+          <path d="M2.6935 66.4322L17.3211 74.9328C15.6636 73.9695 14.636 71.9216 14.6277 69.0111C14.6136 64.0823 17.5264 58.2522 21.4852 54.7711L6.85755 46.2705C2.89881 49.7518 -0.0138321 55.5819 7.43866e-05 60.5105C0.00851059 63.4211 1.03601 65.4691 2.6935 66.4322Z" fill="#E7DBFF"/>
+          <path d="M48.3812 15.5988L33.7536 7.09814C25.4386 11.8988 18.3666 22.0169 15.6502 32.0573L30.2778 40.5579C32.9942 30.5175 40.0664 20.3994 48.3812 15.5988Z" fill="#E7DBFF"/>
+          <path d="M30.2777 40.558L15.6501 32.0574C14.6405 31.7771 13.3895 31.9869 12.0366 32.7678C8.69478 34.6974 5.99369 39.3755 6.00463 43.2172C6.00822 44.5098 6.319 45.543 6.85728 46.2708L21.4849 54.7714C20.9466 54.0436 20.6358 53.0106 20.6323 51.7178C20.6213 47.8762 23.3224 43.1978 26.6643 41.2684C28.0172 40.4874 29.2682 40.2777 30.2777 40.558Z" fill="#E7DBFF"/>
+          <path d="M48.3815 15.5986C40.0665 20.3993 32.9945 30.5174 30.2781 40.5578C29.2685 40.2775 28.0174 40.4873 26.6646 41.2683C23.3228 43.1978 20.6217 47.8759 20.6326 51.7176C20.6362 53.0104 20.947 54.0434 21.4853 54.7712C17.5265 58.2525 14.6139 64.0826 14.6278 69.0112C14.6445 74.8702 18.7921 77.234 23.8924 74.2895L68.3324 48.632C74.7977 44.8994 80.0212 35.8516 80.0003 28.4241C79.9792 20.9952 74.7214 17.9988 68.2563 21.7316C67.9569 21.9046 67.66 22.0925 67.366 22.2883C65.4875 13.2902 57.6918 10.2233 48.3815 15.5986Z" fill="#C0A9F0"/>
+          <path d="M36.4 50.5849L48.053 27.6929L53.8064 31.0363L65.5498 40.4203L58.7942 44.321L58.8456 62.4948L48.9606 68.202L43.2073 64.8584L43.1747 53.3389L42.1534 53.9284L36.4 50.5849Z" fill="#1A6FB0"/>
+          <path d="M48.9092 50.0282L43.1556 46.6846L43.2073 64.8586L48.9606 68.2022L48.9092 50.0282Z" fill="#551981"/>
+          <path d="M53.8063 31.0363L48.0529 27.6929L36.4 50.5848L42.1534 53.9284L53.8063 31.0363Z" fill="#9247C9"/>
+          <path d="M53.8064 31.0361L42.1534 53.9283L48.9092 50.0278L48.9606 68.2019L58.8456 62.4947L58.794 44.3208L65.5498 40.4202L53.8064 31.0361Z" fill="#7421B0"/>
+          </g>
+          <defs>
+          <clipPath id="clip7">
+          <rect width="80" height="80" fill="white" transform="matrix(-1 0 0 1 80 0)"/>
+          </clipPath>
+          </defs>
+          </svg>                                                                          
+      </div>
+      <p class="functions__item-title">Files are available <br> for 1 year - you <br> can delete them <br> at any time</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <h3 class="faq__title title">FAQ</h3>
+<div class="accordion">
+  <div class="accordion__item">
+    <div class="accordion__item-trigger">
+      <div class="trigger__num">01.</div>
+      <div class="trigger__text">Is it a paid app?</div>
+      <div class="trigger__img">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+    <div class="accordion__item-content">
+      <div class="content__text">No, Screenshoter+ is totally free. You don't have to pay to download, install or use the software. All features are available for free.</div>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__item-trigger">
+      <div class="trigger__num">02.</div>
+      <div class="trigger__text">What platforms can Zoom be used on?</div>
+      <div class="trigger__img">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+    <div class="accordion__item-content">
+      <div class="content__text">Screenshoter+ is available for Windows only, but a macOS version will be released later.</div>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__item-trigger">
+      <div class="trigger__num">03.</div>
+      <div class="trigger__text">What's the difference between Screenshoter and other software?</div>
+      <div class="trigger__img">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+    <div class="accordion__item-content">
+      <div class="content__text">The main advantage is that it's a 2-in-1 tool. You can take a screenshot or start screen recording with sound in one click. Just press both mouse buttons or a hotkey.</div>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__item-trigger">
+      <div class="trigger__num">04.</div>
+      <div class="trigger__text">Where are screenshots and recordings saved?</div>
+      <div class="trigger__img">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+    <div class="accordion__item-content">
+      <div class="content__text">You can specify in the settings where to save screenshots and screen recordings. By default, files are saved in the local storage on your computer. You can also have the file sent to a server. As soon as you take a photo or record a video, you can share it with anyone via a link.</div>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <div class="accordion__item-trigger">
+      <div class="trigger__num">05.</div>
+      <div class="trigger__text">Can I delete files from the server in a couple of clicks?</div>
+      <div class="trigger__img">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+    <div class="accordion__item-content">
+      <div class="content__text">Yes, you can. You need to use the generated link, enter your User ID (you can copy it in the settings), and confirm on delete. It's convenient because you don't need to create an account for it.</div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="download">
+  <div class="download__background-holder"><img src="../images/download-background-holder.png" alt=""></div>
+  <div class="container">
+    <div class="download__wrapper">
+      <div class="download__info">
+        <p class="download__info-text">
+          Join 50,000+ users who use Screenshoter+ every day for work and correspondence
+        </p>
+       <div class="download__info-link-wrapper"><a href="#" class="download__info-link button">Download now</a></div> 
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo"><img src="../images/logo-eng.svg" alt="Footer Logo"></div>
+      <div class="footer__product">
+        <a href="#" class="footer__title">Product</a>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#functions">Features</a></li>
+          <li class="footer__list-item"><a href="#advantages">Advantages</a></li>
+          <li class="footer__list-item"><a href="#how">How to use</a></li>
+        </ul>
+      </div>
+      <div class="footer__product">
+        <a href="../eng/feedback.html" class="footer__title">Feedback</a>
+      </div>
+      <div class="footer__product footer__product--1">
+        <a href="../eng/privacy.html" class="footer__title">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+    <script src="../js/lib.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

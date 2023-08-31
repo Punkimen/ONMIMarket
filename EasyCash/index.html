@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/calc.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="burger__menu">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <rect width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                            <rect x="5" y="6" width="8" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                            <rect y="12" width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="header__left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a id="about" class="menu__list-link" href="about.html">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link popup-modal" href="#popup__register">
+                                        Получить
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="news.html">
+                                        Акции
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__support">
+                    <div class="header__support-label">
+                        Поддержка:
+                    </div>
+                    <div class="header__support-phones">
+                        <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                    </div>
+                </div>
+                <div class="header__account">
+                    <div class="account__language">
+                        <div class="account__language-item">ua</div>
+                        <div class="account__language-item active">ru</div>
+                    </div>
+                    <a href="loan.html" class="account btn  btn-bg">
+                        Погасить
+                    </a>
+                    <a href="personalCabinet_1.html" class="account btn  btn-transparent">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="header__account-phone">
+                    <a href="personalCabinet_1.html" class="account-phone">
+                        Личный кабинет
+                    </a>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                            stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                            stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="mainMenu">
+
+            <div class="mainMenu__inner">
+                <div class="mainMenu__inner-menu">
+                    <nav class="mainMenu__menu">
+                        <ul class="mainMenu__list">
+                            <li class="mainMenu__list-item">
+                                <a href="about.html" class="mainMenu__list-link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="news.html" class="mainMenu__list-link">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="news.html" class="mainMenu__list-link">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="answer.html" class="mainMenu__list-link">
+                                    Вопросы и ответы
+                                </a>
+                            </li>
+                            <li class="mainMenu__list-item">
+                                <a href="#" class="mainMenu__list-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mainMenu__inner-lang">
+                    <div class="account__language-item">ua</div>
+                    <div class="account__language-item active">ru</div>
+                </div>
+                <div class="header__support header__support_mobile">
+                    <div class="header__support-label">
+                        Поддержка:
+                    </div>
+                    <div class="header__support-phones">
+                        <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                        <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                    </div>
+                </div>
+                <div class="mainMenu__inner-btns">
+                    <a href="personalCabinet_1.html" class="mainMenu__inner-btn btn btn-transparent">Личный кабинет</a>
+                    <a href="loan.html" class="mainMenu__inner-btn btn">Погасить</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="credits">
+        <div class="credits__inner">
+            <div class="credits__info">
+                <div class="info__slider">
+                    <div class="info__slider-item">
+                        <div class="info__slider-bg">
+                            <div class="container">
+                                <div class="slider__content">
+                                    <div class="info__slider-title">
+                                        Быстрые онлайн-кредиты на карту любого банка
+                                    </div>
+                                    <div class="info__slider-text">
+                                        Предоставляем кредиты на сумму до 10 000 гривен на срок до 30 календарных дней
+                                    </div>
+                                    <div class="info__slider-percent">
+                                        <div class="percent-num">0<sub>%</sub></div>
+                                        <div class="percent-text">комиссии на займ
+                                            для новых клиентов</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__slider-item">
+                        <div class="info__slider-bg">
+                            <div class="container">
+                                <div class="slider__content">
+                                    <div class="info__slider-title">
+                                        Кредиты он-лайн: <span>быстро и надежно!</span>
+                                    </div>
+                                    <div class="info__slider-text">
+                                        Предоставляем кредиты на сумму до 10 000 гривен на срок до 30 календарных дней
+                                    </div>
+                                    <div class="info__slider-percent">
+                                        <div class="percent-num">0<sub>%</sub></div>
+                                        <div class="percent-text">комиссии на займ
+                                            для новых клиентов</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__slider-item">
+                        <div class="info__slider-bg">
+                            <div class="container">
+                                <div class="slider__content">
+                                    <div class="info__slider-title">
+                                        Кредиты он-лайн: <span>быстро и надежно!</span>
+                                    </div>
+                                    <div class="info__slider-text">
+                                        Предоставляем кредиты на сумму до 10 000 гривен на срок до 30 календарных дней
+                                    </div>
+                                    <div class="info__slider-percent">
+                                        <div class="percent-num">0<sub>%</sub></div>
+                                        <div class="percent-text">комиссии на займ
+                                            для новых клиентов</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container calc__container">
+            <div class="credits__calc">
+                <div class="credits__calc-wrap">
+                    <div class="wrap__content">
+                        <div class="credits__calc-left">
+                            <div class="сalc__info">
+                                <div class="range clearfix">
+                                    <div class="range__up">
+                                        <div class="info__label">Сумма кредита</div>
+                                        <div class="info__inp">
+                                            <div class="info__inp-btn sum_minus">
+                                                <span></span>
+                                            </div>
+                                            <input type="text" class="text" id="summ" name="s" value="8000"
+                                                data-max="10000" data-min="1000" data-step="500" data-k="1" multiple>
+                                            <div class="info__inp-btn sum_plus">
+                                                <span></span>
+                                                <span class="up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider"></div>
+                                </div>
+                                <div class="сalc__quantity">
+                                    <div class="quantity__left">
+                                        1000 <span>грн</span>
+                                    </div>
+                                    <div class="quantity__right">
+                                        10 000 <span>грн</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="сalc__info">
+                                <div class="range clearfix">
+                                    <div class="range__up">
+                                        <div class="info__label">Срок кредита</div>
+                                        <div class="info__inp">
+                                            <div class="info__inp-btn date_minus">
+                                                <span></span>
+                                            </div>
+                                            <input type="text" class="text" id="term" name="s" value="20" data-max="30"
+                                                data-min="1" data-min-event="0" data-step="1" data-k="1">
+                                            <div class="info__inp-btn date_plus">
+                                                <span></span>
+                                                <span class="up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                    </div>
+                                </div>
+                                <div class="сalc__quantity">
+                                    <div class="quantity__left">
+                                        1 <span>день</span>
+                                    </div>
+                                    <div class="quantity__right">
+                                        30 <span>дней</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__term"></div>
+                        </div>
+                        <div class="credits__calc-right">
+                            <div class="calc__calculation">
+                                <div class="calculation__title">
+                                    Заявка на кредит
+                                </div>
+                                <div class="calculation__get calculation__content">
+                                    <div class="get__label label">Вы получите</div>
+                                    <div class="get__sum calculation__sum">
+                                        8000
+                                        <span>грн</span>
+                                    </div>
+                                </div>
+                                <div class="calculation__comission calculation__content">
+                                    <div class="comission__label label">Комиссия</div>
+                                    <div class="comission__sum calculation__sum">
+                                        0 <span>грн</span>
+                                    </div>
+                                </div>
+                                <div class="calculation__rate calculation__content">
+                                    <div class="rate__label label">Ставка в день на грейс период</div>
+                                    <div class="rate__sum calculation__sum">0,01%</div>
+                                </div>
+                                <div class="calculation__return calculation__content">
+                                    <div class="return__label label">К возврату в грейс период</div>
+                                    <div class="return__sum calculation__sum">
+                                        8 055<span> грн</span>
+                                    </div>
+                                </div>
+                                <div class="calculation__date calculation__content">
+                                    <div class="date__label label">Дата погашения</div>
+                                    <div class="date__sum calculation__sum">
+                                        31.09.2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credits__calc-promo">
+                        <a class="popup-modal" href="#popup__promo">У меня есть промо-код</a>
+                    </div>
+                    <a class="credits__calc-btn btn popup-modal" href="#popup__register">
+                        Оформить кредит
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="loan">
+        <div class="container">
+            <h2 class="loan__title title">Что необходимо от Вас</h2>
+            <div class="loan__items">
+                <div class="loan__item">
+                    <div class="loan__item-text">Платежная карта</div>
+                    <div class="loan__item-img">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.9268 18.0919L28.9732 4.12967C28.2157 3.37217 27.2171 2.95898 26.1411 2.95898C25.0737 2.95898 24.0666 3.37217 23.3091 4.12967L1.1865 26.2523C0.437599 27.0098 0.0244141 28.0083 0.0244141 29.0843C0.0244141 30.1517 0.437599 31.1588 1.1951 31.9163L2.91671 33.6379L14.4859 45.2071H12.8848C12.3769 45.2071 11.9637 45.6203 11.9637 46.1282C11.9637 46.6361 12.3769 47.0492 12.8848 47.0492H17.9807H31.2457C31.7536 47.0492 32.1667 46.6361 32.1667 46.1282C32.1667 45.6203 31.7536 45.2071 31.2457 45.2071H21.4756L42.9268 23.7559C44.4848 22.1893 44.4848 19.6499 42.9268 18.0919ZM41.6269 22.4475L19.5043 44.5701C19.0998 44.9747 18.5575 45.1985 17.9807 45.1985H17.9721C17.3954 45.1985 16.8531 44.9747 16.4485 44.5701L4.86212 32.9837L26.1067 11.7392C26.4682 11.3776 26.4682 10.8009 26.1067 10.4393C25.7452 10.0778 25.1684 10.0778 24.8069 10.4393L3.56231 31.6839L2.48631 30.6079C2.08173 30.2034 1.85792 29.661 1.85792 29.0757C1.85792 28.4904 2.08173 27.9481 2.48631 27.5435L24.6089 5.42088C25.0135 5.0163 25.5558 4.79249 26.1411 4.79249C26.7179 4.79249 27.2688 5.0163 27.6734 5.42088L32.6402 10.3877L11.3956 31.6409C11.0341 32.0024 11.0341 32.5792 11.3956 32.9407C11.5764 33.1215 11.8088 33.2075 12.0412 33.2075C12.2736 33.2075 12.5146 33.1215 12.6868 32.9407L33.9314 11.6961L41.6183 19.3831C42.4705 20.2353 42.4705 21.6039 41.6269 22.4475Z"
+                                fill="url(#paint0_linear)" />
+                            <path
+                                d="M22.6466 29.4803C22.2851 29.1187 21.7083 29.1187 21.3468 29.4803L14.1247 36.7024C13.7631 37.0639 13.7631 37.6407 14.1247 38.0022C14.3054 38.183 14.5379 38.2691 14.7703 38.2691C15.0027 38.2691 15.2437 38.183 15.4159 38.0022L22.638 30.7801C23.0081 30.4185 23.0081 29.8418 22.6466 29.4803Z"
+                                fill="url(#paint1_linear)" />
+                            <path
+                                d="M19.6854 36.3409L16.7243 39.302C16.3627 39.6635 16.3627 40.2403 16.7243 40.6018C16.905 40.7826 17.1375 40.8687 17.3699 40.8687C17.6023 40.8687 17.8433 40.7826 18.0155 40.6018L20.9766 37.6407C21.3382 37.2791 21.3382 36.7024 20.9766 36.3409C20.6151 35.9793 20.0384 35.9793 19.6854 36.3409Z"
+                                fill="url(#paint2_linear)" />
+                            <path
+                                d="M22.4046 33.6121L22.0172 33.9995C21.6557 34.361 21.6557 34.9377 22.0172 35.2993C22.198 35.4801 22.4304 35.5661 22.6628 35.5661C22.8953 35.5661 23.1363 35.4801 23.3084 35.2993L23.6958 34.9119C24.0573 34.5504 24.0573 33.9736 23.6958 33.6121C23.3515 33.2592 22.7661 33.2592 22.4046 33.6121Z"
+                                fill="url(#paint3_linear)" />
+                            <path
+                                d="M35.0677 17.0675C34.8955 16.8953 34.6631 16.8007 34.4221 16.8007C34.181 16.8007 33.9486 16.8953 33.7765 17.0675L29.8684 20.9583C29.6963 21.1305 29.6016 21.3629 29.6016 21.6039C29.6016 21.845 29.6963 22.0774 29.8684 22.2495L32.468 24.8492C32.6488 25.0299 32.8812 25.116 33.1136 25.116C33.3461 25.116 33.5871 25.0299 33.7592 24.8492L37.6587 20.9497C38.0202 20.5882 38.0202 20.0114 37.6587 19.6499L35.0677 17.0675ZM33.1136 22.9037L31.8138 21.6039L34.4134 19.0043L35.7133 20.3041L33.1136 22.9037Z"
+                                fill="url(#paint4_linear)" />
+                            <path
+                                d="M27.5963 9.87117C27.8287 9.87117 28.0697 9.78509 28.2419 9.60432L28.6292 9.21696C28.9908 8.85542 28.9908 8.27869 28.6292 7.91715C28.2677 7.55561 27.6909 7.55561 27.3294 7.91715L26.9421 8.30451C26.5805 8.66605 26.5805 9.24278 26.9421 9.60432C27.1314 9.77648 27.3638 9.87117 27.5963 9.87117Z"
+                                fill="url(#paint5_linear)" />
+                            <path
+                                d="M9.25226 33.7842L8.8649 34.1716C8.50337 34.5331 8.50337 35.1099 8.8649 35.4714C9.04567 35.6522 9.27809 35.7383 9.5105 35.7383C9.74292 35.7383 9.98394 35.6522 10.1561 35.4714L10.5435 35.084C10.905 34.7225 10.905 34.1458 10.5435 33.7842C10.1905 33.4313 9.6138 33.4313 9.25226 33.7842Z"
+                                fill="url(#paint6_linear)" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="11.9603" y1="4.79608" x2="43.4922" y2="12.0432"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="16.3081" y1="29.5866" x2="22.7921" y2="31.078"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear" x1="17.7517" y1="36.2697" x2="21.1823" y2="37.0578"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear" x1="22.3476" y1="33.4399" x2="23.9363" y2="33.8055"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear" x1="31.8571" y1="17.1471" x2="37.8147" y2="18.5191"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear" x1="27.2747" y1="7.73871" x2="28.8695" y2="8.10611"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                                <linearGradient id="paint6_linear" x1="9.19523" y1="33.612" x2="10.784" y2="33.9776"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.223958" stop-color="#5D4157" />
+                                    <stop offset="1" stop-color="#A8CABA" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="loan__item">
+                    <div class="loan__item-text">Возраст<br>
+                        от 18 до 65 лет</div>
+                    <div class="loan__item-img">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M30.7617 35.3223H28.0273C27.627 35.3223 27.2949 35.6543 27.2949 36.0547C27.2949 36.4551 27.627 36.7871 28.0273 36.7871H30.7617C31.1621 36.7871 31.4941 36.4551 31.4941 36.0547C31.4941 35.6445 31.1719 35.3223 30.7617 35.3223Z"
+                                    fill="url(#paint0_linear)" />
+                                <path
+                                    d="M46.894 27.4804L42.9096 25.9375L40.8784 23.9062C40.7514 23.7793 40.5756 23.7011 40.4096 23.6914V22.0703C41.3666 21.0449 42.0502 19.7558 42.3237 18.3008C42.4995 18.3105 42.6655 18.291 42.8413 18.2617C43.8178 18.0664 44.5209 17.1582 44.5209 16.1133V15.5761C44.5209 14.9707 44.2768 14.414 43.8764 14.0136C44.5209 10.498 43.9936 7.62693 42.3334 5.71287C40.7221 3.8574 38.1342 2.96873 34.8432 3.14451C31.8061 3.31052 29.8432 4.70701 29.2182 5.22459C28.8764 5.26365 28.3002 5.38084 27.7143 5.7324C26.9037 6.22068 25.9272 7.24607 25.9272 9.35544C25.9272 11.2011 26.2202 12.7344 26.435 13.6133C25.7221 13.9648 25.2436 14.7168 25.2436 15.5761V16.1035C25.2436 17.1484 25.9467 18.0566 26.9233 18.2519C27.0893 18.291 27.2651 18.3008 27.4409 18.291C27.7143 19.7461 28.3979 21.0449 29.3549 22.0605V23.6816C29.1791 23.6914 29.0131 23.7597 28.8862 23.8965L26.8549 25.9277L22.851 27.4804C22.5092 27.6172 22.1772 27.7832 21.8745 27.998C21.5424 28.2226 21.4545 28.6816 21.6791 29.0136C21.8256 29.2187 22.0502 29.3359 22.2846 29.3359C22.4311 29.3359 22.5678 29.2969 22.6948 29.209C22.9096 29.0625 23.1342 28.9453 23.3784 28.8476L27.0795 27.4218L29.9116 31.6699C30.2631 32.1972 30.8295 32.5293 31.4545 32.5976C31.5229 32.6074 31.5913 32.6074 31.6596 32.6074C32.0209 32.6074 32.3823 32.5097 32.6948 32.334L32.0893 46.1133C32.0698 46.5136 32.3823 46.8554 32.7924 46.875C32.8022 46.875 32.812 46.875 32.8217 46.875C33.2123 46.875 33.5346 46.5722 33.5541 46.1718L34.1205 33.3886H35.644L36.2104 46.1718C36.2299 46.5625 36.5522 46.875 36.9428 46.875C36.9526 46.875 36.9623 46.875 36.9721 46.875C37.3725 46.8554 37.685 46.5136 37.6752 46.1133L37.06 32.3242C37.3725 32.5 37.7241 32.5976 38.0952 32.5976C38.1635 32.5976 38.2319 32.5976 38.3002 32.5879C38.9252 32.5293 39.4916 32.1875 39.8432 31.6601L42.6752 27.4121L46.3764 28.8379C46.894 29.0332 47.3432 29.3554 47.6948 29.7558L45.1655 32.2851C44.2475 33.2031 43.7495 34.414 43.7495 35.7129V46.123C43.7495 46.5234 44.0815 46.8554 44.4819 46.8554C44.8823 46.8554 45.2143 46.5234 45.2143 46.123V35.7226C45.2143 34.8242 45.5659 33.9746 46.2006 33.3301L48.4272 31.1035C48.5151 31.4355 48.5541 31.7773 48.5444 32.1289L47.978 46.1035C47.9584 46.5039 48.2807 46.8457 48.6811 46.8652C48.6909 46.8652 48.7006 46.8652 48.7104 46.8652C49.101 46.8652 49.4233 46.5527 49.4428 46.1621L50.0092 32.1875C50.0776 30.1172 48.8373 28.2226 46.894 27.4804ZM28.8666 17.998C28.7397 17.2949 28.0854 16.7871 27.3823 16.8359C27.3237 16.8359 27.2651 16.8359 27.2163 16.8261C26.9233 16.7676 26.7084 16.4551 26.7084 16.1133V15.5859C26.7084 15.2441 26.933 14.9414 27.226 14.8926C27.4702 14.8535 27.7045 14.9414 27.851 15.1367C27.9877 15.3125 28.1635 15.4394 28.3686 15.498C28.6713 15.5859 29.0034 15.5371 29.2573 15.3515C29.7163 15.0293 30.1166 14.6289 30.4584 14.1797C30.7026 13.8574 30.6342 13.3984 30.312 13.1543C29.9897 12.9101 29.5307 12.9785 29.2866 13.3008C29.1205 13.5254 28.9252 13.7304 28.7202 13.916C28.4858 13.7207 28.2123 13.5742 27.9291 13.4961C27.7436 12.7734 27.4018 11.2304 27.4018 9.36521C27.4018 8.24216 27.7436 7.45115 28.4272 7.02146C28.9545 6.67966 29.5209 6.6699 29.5209 6.6699C29.7065 6.6699 29.892 6.59177 30.0288 6.46482C30.0483 6.44529 31.8452 4.77537 34.9311 4.60935C37.7534 4.4531 39.9311 5.16599 41.2299 6.6699C42.5385 8.18357 42.978 10.5078 42.4995 13.4082C42.3041 13.3984 42.0893 13.4179 41.8745 13.4472L41.1909 11.7969C41.0541 11.4551 40.683 11.2793 40.3315 11.3672C40.2631 11.3867 33.4955 13.0957 30.6635 9.57029C30.4096 9.25779 29.9506 9.20896 29.6381 9.4531C29.3256 9.70701 29.2768 10.166 29.5307 10.4785C32.4311 14.082 38.1733 13.3008 40.0873 12.9199L40.6147 14.1992C40.8393 14.7461 41.4252 15.0488 42.0014 14.9121C42.2358 14.8535 42.4604 14.8535 42.5483 14.873C42.8413 14.9316 43.0659 15.2246 43.0659 15.5566V16.0937C43.0659 16.4453 42.851 16.748 42.558 16.8066C42.4995 16.8164 42.4409 16.8261 42.392 16.8164C41.6889 16.7676 41.0346 17.2754 40.9077 17.9785C40.3705 20.8789 37.851 22.9883 34.892 22.9883C31.9233 23.0078 29.394 20.8984 28.8666 17.998ZM32.1186 30.9472C31.933 31.1328 31.7182 31.1426 31.601 31.1328C31.4936 31.123 31.2788 31.0742 31.1323 30.8496L28.2807 26.5722L29.4233 25.4297L33.7983 29.2578L32.1186 30.9472ZM34.1791 31.914L34.228 30.9082L34.8823 30.2539L35.5366 30.9082L35.5854 31.914H34.1791ZM34.8725 28.2519L30.81 24.6972V23.291C31.9916 24.0429 33.3881 24.4726 34.8725 24.4726C36.3569 24.4726 37.7534 24.0429 38.935 23.291V24.6972L34.8725 28.2519ZM38.6225 30.8496C38.476 31.0644 38.2709 31.123 38.1538 31.1328C38.0366 31.1426 37.8217 31.1328 37.6362 30.9472L35.9467 29.2578L40.3217 25.4297L41.4643 26.5722L38.6225 30.8496Z"
+                                    fill="url(#paint1_linear)" />
+                                <path
+                                    d="M23.2225 31.3184L19.6482 29.7559L17.6951 27.8027C17.5682 27.6758 17.3924 27.5977 17.2264 27.5879V26.4355C18.8963 25.3418 20.117 23.5938 20.5174 21.5137C20.7127 21.5234 20.908 21.5039 21.0936 21.4551C22.0311 21.2305 22.7146 20.332 22.7146 19.3164V18.7793C22.7146 18.0371 22.3436 17.373 21.7771 16.9824C21.9432 16.3184 22.0311 15.6348 22.0311 14.9512C22.0311 11.9141 20.3904 9.24805 17.9197 7.70508C17.8904 5.17578 15.7322 3.11523 13.076 3.11523C10.4197 3.11523 8.26152 5.16602 8.23222 7.70508C5.76152 9.23828 4.1209 11.9141 4.1209 14.9512C4.1209 15.6348 4.20879 16.3086 4.3748 16.9727C3.8084 17.3633 3.4373 18.0371 3.4373 18.7891V19.3164C3.4373 20.332 4.1209 21.2305 5.0584 21.4551C5.25371 21.5039 5.43926 21.5234 5.63457 21.5137C6.02519 23.5938 7.2459 25.3418 8.92558 26.4355V27.5879C8.7498 27.5977 8.58379 27.666 8.45683 27.8027L6.50371 29.7559L2.92949 31.3184C1.08379 32.1094 -0.0783227 33.9746 -0.000197726 35.9668L0.42949 46.1719C0.449021 46.5625 0.771287 46.875 1.16191 46.875C1.17168 46.875 1.18144 46.875 1.19121 46.875C1.5916 46.8555 1.91386 46.5137 1.89433 46.1133L1.46465 35.8984C1.43535 35.2441 1.61113 34.5996 1.9334 34.0527L3.85722 36.3574C4.46269 37.0898 4.79472 38.0078 4.79472 38.9551V46.123C4.79472 46.5234 5.12676 46.8555 5.52715 46.8555C5.92754 46.8555 6.25957 46.5234 6.25957 46.123V38.9648C6.25957 37.6758 5.80058 36.416 4.98027 35.4297L2.93926 32.9785C3.11504 32.8613 3.30058 32.7539 3.4959 32.666L6.61113 31.3086L8.81816 34.8828C9.03301 35.2344 9.39433 35.4785 9.80449 35.5371C9.88261 35.5469 9.95097 35.5566 10.0291 35.5566C10.3611 35.5566 10.6932 35.4395 10.9471 35.2148L12.3436 34.0234V46.1426C12.3436 46.543 12.6756 46.875 13.076 46.875C13.4764 46.875 13.8084 46.543 13.8084 46.1426V34.0234L15.2049 35.2148C15.4588 35.4395 15.7908 35.5566 16.1229 35.5566C16.201 35.5566 16.2693 35.5469 16.3475 35.5371C16.7576 35.4688 17.1189 35.2344 17.3338 34.8828L19.5408 31.3086L22.6561 32.666C22.8514 32.7539 23.0369 32.8613 23.2127 32.9785L21.1717 35.4297C20.3416 36.4258 19.8924 37.6758 19.8924 38.9648V46.1328C19.8924 46.5332 20.2244 46.8652 20.6248 46.8652C21.0252 46.8652 21.3572 46.5332 21.3572 46.1328V38.9648C21.3572 38.0176 21.6893 37.0898 22.2947 36.3672L24.2186 34.0625C24.5408 34.6094 24.7068 35.2539 24.6873 35.9082L24.2576 46.1133C24.2381 46.5137 24.5506 46.8555 24.9607 46.875C24.9705 46.875 24.9803 46.875 24.99 46.875C25.3807 46.875 25.7029 46.5625 25.7225 46.1719L26.1521 35.9668C26.2107 33.9746 25.0486 32.1094 23.2225 31.3184ZM13.0662 4.59961C14.6287 4.59961 15.9373 5.5957 16.3279 6.94336C15.3123 6.5625 14.2186 6.34766 13.0662 6.34766C11.9139 6.34766 10.8201 6.55273 9.80449 6.94336C10.1951 5.58594 11.5037 4.59961 13.0662 4.59961ZM7.05058 21.2109C6.92363 20.5078 6.26933 20 5.56621 20.0488C5.50761 20.0488 5.43926 20.0488 5.3709 20.0293C5.08769 19.9609 4.88261 19.6582 4.88261 19.3164V18.7891C4.88261 18.4473 5.10722 18.1445 5.40019 18.0957C5.64433 18.0566 5.87871 18.1445 6.02519 18.3398C6.16191 18.5156 6.33769 18.6426 6.54277 18.7012C6.84551 18.7891 7.17754 18.7402 7.43144 18.5547C7.88066 18.2324 8.28105 17.8516 8.61308 17.4023C8.85722 17.0801 8.78886 16.6211 8.4666 16.377C8.14433 16.1328 7.68535 16.2012 7.44121 16.5234C7.27519 16.748 7.08965 16.9434 6.88457 17.1289C6.57207 16.8652 6.19121 16.6895 5.78105 16.6406C5.64433 16.0938 5.56621 15.5273 5.56621 14.9609C5.56621 11.0156 8.92558 7.8125 13.0564 7.8125C17.1873 7.8125 20.5467 11.0156 20.5467 14.9609C20.5467 15.5273 20.4783 16.0938 20.3318 16.6406C20.1365 16.6602 19.9412 16.6895 19.7654 16.7383L19.2186 16.2891C18.9451 16.0645 18.5936 15.9473 18.242 15.9668C17.1678 16.0352 11.6502 16.1719 8.82793 12.793C8.56425 12.4805 8.10527 12.4414 7.79277 12.7051C7.48027 12.9688 7.44121 13.4277 7.70488 13.7402C9.10136 15.4102 11.1424 16.543 13.7889 17.0996C15.8103 17.5293 17.6072 17.4805 18.3104 17.4414L19.1697 18.1445C19.4041 18.3398 19.7361 18.3691 19.9998 18.2129C20.1268 18.1445 20.5369 18.0762 20.7225 18.1152C21.0154 18.1738 21.24 18.4668 21.24 18.7988V19.3359C21.24 19.6777 21.0252 19.9805 20.7518 20.0488C20.6834 20.0684 20.6248 20.0684 20.5564 20.0684C19.8533 20.0195 19.199 20.5273 19.0721 21.2305C18.535 24.1309 16.0154 26.2402 13.0564 26.2402C10.117 26.2207 7.58769 24.1113 7.05058 21.2109ZM10.0291 34.0625L7.82207 30.4883L8.95488 29.3555L11.992 32.3926L10.0291 34.0625ZM13.0662 31.3965L10.3709 28.7012V27.1875C11.2107 27.5098 12.1189 27.6855 13.0662 27.6855C14.0135 27.6855 14.9217 27.5098 15.7615 27.1875V28.7012L13.0662 31.3965ZM16.1033 34.0625L14.1404 32.3926L17.1775 29.3555L18.3104 30.4883L16.1033 34.0625Z"
+                                    fill="url(#paint2_linear)" />
+                                <path
+                                    d="M10.3223 38.5547H8.27148C7.87109 38.5547 7.53906 38.8867 7.53906 39.2871C7.53906 39.6875 7.87109 40.0195 8.27148 40.0195H10.332C10.7324 40.0195 11.0645 39.6875 11.0645 39.2871C11.0547 38.877 10.7324 38.5547 10.3223 38.5547Z"
+                                    fill="url(#paint3_linear)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="28.4322" y1="35.3833" x2="30.6373" y2="36.8368"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="29.2619" y1="4.94569" x2="50.229" y2="8.0814"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear" x1="7.0806" y1="4.93855" x2="26.4196" y2="7.59664"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear" x1="8.49386" y1="38.6157" x2="10.5269" y2="39.7408"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <clipPath id="clip0">
+                                    <rect width="50" height="50" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="loan__item">
+                    <div class="loan__item-text">Паспорт<br>
+                        или ID карта</div>
+                    <div class="loan__item-img">
+                        <svg width="46" height="50" viewBox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M43.2637 11.3965H34.7383V2.24609C34.7383 1.00586 33.7324 0 32.4922 0H2.73633C1.49609 0 0.490234 1.00586 0.490234 2.24609V47.7539C0.490234 48.9941 1.49609 50 2.73633 50H32.4922C33.7324 50 34.7383 48.9941 34.7383 47.7539V38.6035H43.2637C44.5039 38.6035 45.5098 37.5977 45.5098 36.3574V13.6426C45.5098 12.4023 44.5039 11.3965 43.2637 11.3965ZM34.7383 17.8223H35.002C36.7988 17.8223 38.2539 19.2773 38.2539 21.0742C38.2539 22.8711 36.7988 24.3164 35.002 24.3164H34.7383V17.8223ZM34.7383 30.498H41.2031V32.9102H34.7383V30.498ZM33.3711 47.7539C33.3711 48.2422 32.9805 48.6328 32.4922 48.6328H2.73633C2.24805 48.6328 1.85742 48.2422 1.85742 47.7539V2.24609C1.85742 1.75781 2.24805 1.36719 2.73633 1.36719H32.4922C32.9805 1.36719 33.3711 1.75781 33.3711 2.24609V47.7539ZM44.1426 36.3574C44.1426 36.8457 43.752 37.2363 43.2637 37.2363H34.7383V34.2773H41.8867C42.2676 34.2773 42.5703 33.9746 42.5703 33.5938V29.8145C42.5703 29.4336 42.2676 29.1309 41.8867 29.1309H34.7383V25.6836H35.002C37.5508 25.6836 39.6211 23.6133 39.6211 21.0645C39.6211 18.5156 37.5508 16.4453 35.002 16.4453H34.7383V12.7539H43.2637C43.752 12.7539 44.1426 13.1445 44.1426 13.6328V36.3574Z"
+                                fill="url(#paint0_linear)" />
+                            <path
+                                d="M17.6094 11.4453C17.0234 12.1094 16.6621 12.9883 16.6621 13.9453C16.7012 16.0449 16.9551 18.1445 16.9746 20.2441C17.0234 22.207 16.4375 24.043 15.7148 25.8398C15.4805 26.3379 15.2168 26.8164 14.9629 27.3047L14.2109 27.1484C13.5273 27.0117 13.0879 26.3477 13.2246 25.6641C13.3418 25.0684 13.8691 24.6484 14.4551 24.6484L14.7285 24.6777L14.1133 19.5313C13.9082 17.2461 12.7266 15.2344 10.998 13.9258C10.6953 13.7012 10.3828 13.4961 10.0508 13.3105V31.5723H14.2695C14.582 33.2812 15.5293 34.7754 16.8477 35.791C17.1602 36.0059 17.4238 36.2988 17.6191 36.6309C17.8047 36.2988 18.0684 36.0059 18.3906 35.791C19.7188 34.7656 20.6562 33.2812 20.9688 31.5723H25.1875V13.3105C24.8555 13.4961 24.543 13.7012 24.2402 13.9258C22.502 15.2344 21.3203 17.2363 21.125 19.5313L20.5098 24.6777L20.7832 24.6484C21.3691 24.6484 21.8965 25.0684 22.0137 25.6641C22.1504 26.3477 21.7109 27.0117 21.0273 27.1484L20.2754 27.3047C20.0215 26.8164 19.7578 26.3379 19.5234 25.8398C18.8105 24.043 18.2246 22.207 18.2637 20.2441C18.2832 18.1348 18.5469 16.0449 18.5762 13.9453C18.5664 12.9883 18.2051 12.1191 17.6094 11.4453ZM11.3008 15.9668C12.1211 16.9238 12.668 18.1152 12.8242 19.4336L13.332 23.6719C12.6875 23.9941 12.1992 24.5801 12.0137 25.293H11.3008V15.9668ZM23.9082 15.9668V25.293H23.1953C23.0098 24.5801 22.5215 23.9941 21.877 23.6719L22.3848 19.4336C22.541 18.1152 23.0879 16.9238 23.9082 15.9668ZM17.6094 24.4922C17.9512 25.5957 18.4102 26.6504 18.9961 27.627C18.4492 27.793 17.9707 28.1152 17.6094 28.5547C17.2578 28.1152 16.7793 27.793 16.2227 27.627C16.7988 26.6504 17.2676 25.5957 17.6094 24.4922ZM11.3008 26.5527H12.0137C12.2383 27.4219 12.9219 28.1055 13.7813 28.3496L14.3867 28.4863C14.2207 29.0723 14.1328 29.6875 14.1328 30.332H11.3008V26.5527ZM23.1953 26.5527H23.9082V30.332H21.0762C21.0762 29.6973 20.9883 29.0723 20.8223 28.4863L21.4277 28.3496C22.2969 28.1152 22.9707 27.4219 23.1953 26.5527ZM15.627 28.7793C16.3887 28.8867 16.9844 29.541 16.9844 30.332H15.4121C15.4023 29.7949 15.4805 29.2773 15.627 28.7793ZM19.5918 28.7793C19.7383 29.2773 19.8164 29.7949 19.8164 30.332H18.2441C18.2344 29.541 18.8301 28.8867 19.5918 28.7793ZM15.5488 31.6016H16.9844V34.2578C16.2812 33.5254 15.7832 32.6074 15.5488 31.6016ZM18.2344 31.6016H19.6699C19.4355 32.6172 18.9277 33.5254 18.2344 34.2578V31.6016Z"
+                                fill="url(#paint1_linear)" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="12.683" y1="2.08333" x2="45.2014" y2="8.81563"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="14.1503" y1="12.4947" x2="25.3388" y2="14.0409"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="loan__item">
+                    <div class="loan__item-text">Телефон или email</div>
+                    <div class="loan__item-img">
+                        <svg width="40" height="50" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1699 45C13.7109 45 13.3398 45.3711 13.3398 45.8301C13.3398 46.2891 13.7109 46.6602 14.1699 46.6602H15.8398C16.2988 46.6602 16.6699 46.2891 16.6699 45.8301C16.6699 45.3711 16.2988 45 15.8398 45H14.1699Z"
+                                fill="url(#paint0_linear)" />
+                            <path
+                                d="M37.5 15H30V12.5C30 12.041 29.6289 11.6699 29.1699 11.6699C28.7109 11.6699 28.3398 12.041 28.3398 12.5V15H15.8398C14.4629 15 13.3398 16.123 13.3398 17.5V32.5C13.3398 33.877 14.4629 35 15.8398 35H28.3398V40.8301H25.8398C25.3809 40.8301 25.0098 41.2012 25.0098 41.6602C25.0098 42.1191 25.3809 42.4902 25.8398 42.4902H28.3398V47.4902C28.3398 47.9492 27.9687 48.3203 27.5098 48.3203H2.50977C2.05078 48.3203 1.67969 47.9492 1.67969 47.4902V42.4902H20.8496C21.3086 42.4902 21.6797 42.1191 21.6797 41.6602C21.6797 41.2012 21.3086 40.8301 20.8496 40.8301H1.66992V8.33008H4.16992C4.62891 8.33008 5 7.95898 5 7.5C5 7.04102 4.62891 6.66992 4.16992 6.66992H1.66992V2.5C1.66992 2.04102 2.04102 1.66992 2.5 1.66992H27.5C27.959 1.66992 28.3301 2.04102 28.3301 2.5V6.66992H9.16992C8.71094 6.66992 8.33984 7.04102 8.33984 7.5C8.33984 7.95898 8.71094 8.33008 9.16992 8.33008H29.1699C29.6289 8.33008 30 7.95898 30 7.5V2.5C30 1.12305 28.877 0 27.5 0H2.5C1.12305 0 0 1.12305 0 2.5V47.5C0 48.877 1.12305 50 2.5 50H27.5C28.877 50 30 48.877 30 47.5V35H37.5C38.877 35 40 33.877 40 32.5V17.5C40 16.123 38.877 15 37.5 15ZM38.3301 32.5C38.3301 32.959 37.959 33.3301 37.5 33.3301H15.8301C15.3711 33.3301 15 32.959 15 32.5V17.5C15 17.041 15.3711 16.6699 15.8301 16.6699H37.5C37.959 16.6699 38.3301 17.041 38.3301 17.5V32.5Z"
+                                fill="url(#paint1_linear)" />
+                            <path
+                                d="M35.967 19.1797C35.7522 19.1406 35.5276 19.1992 35.342 19.3262L26.6702 25.6348L17.9983 19.3262C17.7542 19.1504 17.4417 19.1211 17.1682 19.2383C16.8948 19.3555 16.7092 19.6191 16.6799 19.9121C16.6506 20.2051 16.7776 20.4981 17.0217 20.6738L26.1917 27.3438C26.2209 27.3633 26.2502 27.3731 26.2795 27.3828C26.3088 27.4024 26.3381 27.4121 26.3674 27.4219C26.4651 27.4707 26.5823 27.5 26.6897 27.5C26.8069 27.5 26.9143 27.4707 27.012 27.4219C27.0413 27.4121 27.0706 27.3926 27.0999 27.3828C27.1292 27.3731 27.1584 27.3535 27.1877 27.3438L36.3577 20.6738C36.7288 20.4004 36.8069 19.8828 36.5432 19.5117C36.3772 19.3262 36.1819 19.209 35.967 19.1797Z"
+                                fill="url(#paint2_linear)" />
+                            <path
+                                d="M20.6638 26.4942L16.9138 30.2441C16.699 30.4492 16.6111 30.7617 16.6892 31.0547C16.7674 31.3477 16.992 31.5723 17.2849 31.6504C17.5779 31.7285 17.8904 31.6406 18.0955 31.4258L21.8455 27.6758C22.158 27.3535 22.158 26.8262 21.8357 26.5039C21.5037 26.1817 20.9861 26.1817 20.6638 26.4942Z"
+                                fill="url(#paint3_linear)" />
+                            <path
+                                d="M32.6755 26.4942C32.3533 26.1817 31.8259 26.1817 31.5037 26.5039C31.1814 26.8262 31.1814 27.3438 31.4939 27.6758L35.2439 31.4258C35.5662 31.7383 36.0935 31.7383 36.4158 31.416C36.738 31.0938 36.738 30.5762 36.4255 30.2442L32.6755 26.4942Z"
+                                fill="url(#paint4_linear)" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="14.2417" y1="45.0692" x2="16.3102" y2="46.0232"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="10.8333" y1="2.08333" x2="39.9782" y2="7.44446"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear" x1="22.0987" y1="19.5149" x2="33.6536" y2="25.8995"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear" x1="18.1284" y1="26.4867" x2="22.0043" y2="27.3779"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear" x1="32.7227" y1="26.4859" x2="36.5847" y2="27.3739"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B534BE" />
+                                    <stop offset="1" stop-color="#451472" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="benefits__title title">Почему стоит взять кредит у нас</h2>
+            <div class="benefits__items">
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Быстрое принятие решений</div>
+                    <div class="benefits__item-text">Быстрое принятие решения за 10 минут при предоставлении
+                        минимум
+                        информации для получения кредита.</div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Ценим ваше время</div>
+                    <div class="benefits__item-text">Вы можете получить кредит в любое время в течение суток не
+                        выходя из дома, в удобной для Вас обстановке.</div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Досрочное погашение</div>
+                    <div class="benefits__item-text">Оплата в любое время только за фактическое время
+                        пользования
+                        кредитными средствами</div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Без предоставления обеспечения</div>
+                    <div class="benefits__item-text">Моментальный кредит на карту любого банка Украины без
+                        обеспечения по кредиту</div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Доверяем вам</div>
+                    <div class="benefits__item-text">Не требуем личного визита, но проверяем кредитную историю!
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-title">Автоматическая пролонгация</div>
+                    <div class="benefits__item-text">Если вы не успеваете оплатить кредит,
+                        но оплатили полностью проценты, срок кредита будет автоматически продлен</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how">
+        <div class="container">
+            <h2 class="how__title title">Как это работает?</h2>
+            <div class="how__items">
+                <div class="how__item">
+                    <div class="how__item-img">
+                        <img src="images/clock.svg" alt="">
+                    </div>
+                    <div class="how__item-title">Молниеносно!</div>
+                    <div class="how__item-text">
+                        Получайте деньги за 10 минут, даже сидя дома. На любые цели
+                    </div>
+                </div>
+                <div class="how__item">
+                    <div class="how__item-img">
+                        <img src="images/pen.svg" alt="">
+                    </div>
+                    <div class="how__item-title">Неимоверно просто!</div>
+                    <div class="how__item-text">
+                        Не нужны справки и документы, минимум анкет и простое оформление через интернет
+                    </div>
+                </div>
+                <div class="how__item">
+                    <div class="how__item-img">
+                        <img src="images/shield.svg" alt="">
+                    </div>
+                    <div class="how__item-title">100% надежно и безопасно</div>
+                    <div class="how__item-text">
+                        Полная конфиденциальность и гарантия
+                        защиты персональных данных
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety">
+        <div class="container">
+            <h2 class="safety__title title">Мы заботимся о вашей безопасности</h2>
+            <div class="safety__inner">
+                <div class="safety__inner-item">
+                    <img src="images/safety1.svg" alt="">
+                    <div class="safety__inner-text">Без скрытых платежей, комиссий, написанных мелким шрифтом в
+                        договоре.</div>
+                </div>
+                <div class="safety__inner-item">
+                    <img src="images/safety2.svg" alt="">
+                    <div class="safety__inner-text">Надежная защита персональных данных, согласно требований
+                        законодательства Украины</div>
+                </div>
+                <div class="safety__inner-item">
+                    <img src="images/safety3.svg" alt="">
+                    <div class="safety__inner-text">Мы гарантируем четкое соблюдение законов о защите прав
+                        пользователя.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="repay">
+        <div class="container">
+            <h2 class="repay__title title">Погасить кредит просто</h2>
+            <div class="repay__inner">
+                <div class="repay__item">
+                    <div class="repay__item-wrapper">
+                        <div class="repay__item-content">
+                            <div class="repay__item-title">В личном кабинете</div>
+                            <div class="repay__item-text">Вы можете погасить Ваш кредит онлайн не выходя из
+                                дома.
+                                Просто
+                                перейдите в личный кабинет и оплатите займ банковской картой </div>
+                            <div class="repay__item-icon">
+                                <a href="#">
+                                    <img src="images/visa.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/mastercard.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/prostir.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="repay__item-images">
+                            <img src="images/macbook.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="repay__item">
+                    <a class="repay__link" href="#">
+                        <div class="repay__item-wrapper">
+                            <div class="repay__item-content">
+                                <div class="repay__item-title">Через платежные терминалы</div>
+                                <div class="repay__item-text">Оплата кредита в терминале ibox, EasyPay и City24 - это
+                                    быстро и удобной. Терминал Вы сможете
+                                    найти терминал в близжайшем супермаркете. </div>
+                                <div class="repay__item-icon">
+                                    <a href="#">
+                                        <img src="images/city.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/ibox.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/easypay.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="repay__item-images">
+                                <img src="images/Mask.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <h2 class="questions__title title">Популярные вопросы</h2>
+            <div class="questions__inner">
+                <div class="questions__accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Не получил пароль в СМС
+                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Что делать, если транзакции отклоняются? <svg width="10" height="5"
+                                    viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg></a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Когда можно подать повторную заявку после получения отказа? <svg width="10"
+                                    height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg></a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Погашение займа и продления сроков <svg width="10" height="5" viewBox="0 0 10 5"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg></a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Можно ли погасить кредит досрочно? <svg width="10" height="5" viewBox="0 0 10 5"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Можно погашать кредит частями? <svg width="10" height="5" viewBox="0 0 10 5"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Погашение кредита в терминалах самообслуживания <svg width="10" height="5"
+                                    viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg></a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <a href="#">Когда можно подать повторную заявку после получения отказа? <svg width="10"
+                                    height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03626 4.9939C5.25762 4.9939 5.42364 4.89438 5.58966 4.79488L9.68481 1.36204C10.0169 1.06354 10.0722 0.615803 9.79549 0.267546C9.46345 -0.0309608 8.96539 -0.080718 8.57801 0.168037C8.57801 0.168037 8.57801 0.168025 8.52267 0.217776L4.98092 3.1531L1.43916 0.217776C1.10712 -0.0807301 0.553725 -0.0807301 0.221686 0.217776C-0.110354 0.516283 -0.110354 1.0138 0.221686 1.31231C0.221686 1.31231 0.221686 1.31229 0.277026 1.36204L4.42752 4.79488C4.59354 4.89438 4.8149 4.9939 5.03626 4.9939Z"
+                                        fill="#333333" />
+                                </svg></a>
+                        </div>
+                        <div class="accordion__content">Да, вы можете погасить кредит досрочно. Более того, чем
+                            раньше вы погашаете кредит, тем меньше Вам придется платить процентов за пользование им.
+                            Вы можете увидеть сумму фактической задолженности по процентам и кредиту по состоянию на
+                            любой день в Личном Кабинете.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="online">
+        <div class="container">
+            <div class="online__inner">
+                <div class="online__images">
+                    <img src="images/online.jpg" alt="">
+                </div>
+                <div class="online__content">
+                    <div class="online__content-title">Кредит онлайн. Быстро и без проблем</div>
+                    <div class="online__content-text">
+                        <span>Срочно понадобились деньги?</span>
+
+                        <span> Нет возможности или желания посещать ломбарды и банковские учреждения с вечными
+                            очередями
+                            и
+                            документальной волокитой?
+                        </span>
+                        <span>А одалживать у знакомых не хотите?</span>
+
+                        <span> Отличным решением станет онлайн кредит FlashCash.</span>
+
+                        <span>Используя наш сервис, вы можете забыть о проблеме неожиданной нехватки финансовых
+                            средств
+                            для
+                            оплаты счета в кафе, покупки понравившейся вещи или оплаты тренинга по скидке. Все
+                            делается
+                            мгновенно. Для оформления заявки и получения средств не нужно делать сканы документов,
+                            переживать о необходимости предоставления ИНН и поиске поручителей.</span>
+
+                        <span>Все, что необходимо доступ в интернет и смартфон или ноутбук.</span>
+
+                        <span> Через несколько минут после оформления кредита онлайн от FlashCash деньги на счету.
+                            Вы
+                            можете
+                            дальше проводить время с друзьями в кафе, радоваться покупке или наслаждаться вебинаром.
+                            Деньги
+                            на оплату теперь под рукой.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="kinds">
+        <div class="container">
+            <div class="kinds__title">Виды займов</div>
+            <div class="kinds__wrapper">
+                <div class="kinds__wrapper-row">
+                    <a href="#" class="kinds__wrapper-item">Кредит на карту</a>
+                    <a href="#" class="kinds__wrapper-item">Беспроцентный кредит</a>
+                    <a href="#" class="kinds__wrapper-item">Заем онлайн</a>
+                    <a href="#" class="kinds__wrapper-item">Заем онлайн</a>
+                    <a href="#" class="kinds__wrapper-item">Мгновенный кредит</a>
+                </div>
+                <div class="kinds__wrapper-row">
+                    <a href="#" class="kinds__wrapper-item">Заем онлайн</a>
+                    <a href="#" class="kinds__wrapper-item">Мгновенный кредит</a>
+                    <a href="#" class="kinds__wrapper-item">Кредит на карту</a>
+                    <a href="#" class="kinds__wrapper-item">Беспроцентный кредит</a>
+                    <a href="#" class="kinds__wrapper-item">Заем онлайн</a>
+                    <a href="#" class="kinds__wrapper-item">Заем онлайн</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="city">
+        <div class="container">
+            <div class="city__title">По городам</div>
+            <div class="city__wrapper">
+                <div class="city__wrapper-item">
+                    <ul>
+                        <li><a href="#">Кредит в Киеве </a></li>
+                        <li><a href="#">Кредит в Днепре</a></li>
+                        <li><a href="#">Кредит в Одессе</a></li>
+                        <li><a href="#">Кредит во Львове</a></li>
+                    </ul>
+                </div>
+                <div class="city__wrapper-item">
+                    <ul>
+                        <li><a href="#">Кредит в Киеве </a></li>
+                        <li><a href="#">Кредит в Днепре</a></li>
+                        <li><a href="#">Кредит в Одессе</a></li>
+                        <li><a href="#">Кредит во Львове</a></li>
+                    </ul>
+                </div>
+                <div class="city__wrapper-item">
+                    <ul>
+                        <li><a href="#">Кредит в Киеве </a></li>
+                        <li><a href="#">Кредит в Днепре</a></li>
+                        <li><a href="#">Кредит в Одессе</a></li>
+                        <li><a href="#">Кредит во Львове</a></li>
+                    </ul>
+                </div>
+                <div class="city__wrapper-item">
+                    <ul>
+                        <li><a href="#">Кредит в Киеве </a></li>
+                        <li><a href="#">Кредит в Днепре</a></li>
+                        <li><a href="#">Кредит в Одессе</a></li>
+                        <li><a href="#">Кредит во Львове</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper-up">
+                    <div class="footer__wrapper-left">
+                        <div class="footer__left-title">
+                            <a href="about.html">О компании</a>
+                        </div>
+                        <div class="footer__left-title">
+                            <a href="#">Полезные ссылки</a>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-right">
+                        <div class="footer__right-support">
+                            <div class="support__title">Служба поддержки</div>
+                            <div class="support__phone">
+                                <a href="#">+38 (044) 338-07-79</a>
+                                <a href="#">+38 (044) 338-07-79</a>
+                                <a href="#">+38 (044) 338-07-79</a>
+                            </div>
+                        </div>
+                        <div class="footer__right-time">Время работы: с 9:00 до 18:00
+                            без перерыва и выходных</div>
+                    </div>
+                </div>
+                <div class="footer__wrapper-down">
+                    <div class="footer__wrapper-left">
+                        <div class="footer__copy">© 2020 “Easy Cash”. Все права защищены</div>
+                    </div>
+                    <div class="footer__wrapper-right">
+                        <div class="footer__social">
+                            <div class="footer__social-text">Мы в социальных сетях:</div>
+                            <div class="footer__social-ico">
+                                <a href="#" class="social__icon">
+                                    <img src="images/instagram.svg" alt="">
+                                </a>
+                                <a href="#" class="social__icon">
+                                    <img src="images/facebook.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="chatbot">
+        <div class="chatbot__messanger">
+            <div class="chatbot__messanger-item veber"><a href="#">
+                    Viber</a></div>
+            <div class="chatbot__messanger-item messenger"><a href="#">
+                    Messenger</a></div>
+            <div class="chatbot__messanger-item telegram"><a href="#">
+                    Telegram</a></div>
+        </div>
+        <img src="images/chatbot.png" alt="">
+    </div>
+    <div class="popups" style="display: none;">
+        <div id="popup__sent" class="popup__sent popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваша заявка отправлена</div>
+            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
+                заявка будет
+                рассмотрена!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__mistake" class="popup__mistake popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка отправки</div>
+            <div class="sent__text popup__text">При отправке заявки возникли проблемы, пожалуйста, попробуйте еще раз!
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-1" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит на сумму <span>4500 грн</span> одобрен!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Перейти в кабинет
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-2" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит пролонгирован!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                На главную
+            </a>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-3" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="sent__text popup__text">Ваш кредит закрыт!
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Оформить новый
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-4" class="popup__congr popup">
+            <img src="images/popup-happy.png" alt="">
+            <div class="sent__text popup__text">
+                Я ознакомлен с “Кредитным договором” и подтверждаю свое согласие с условиями Договора и понимаю в полном
+                объеме изложенную в нем информацию.
+            </div>
+            <a href="#" class="popup-btn btn  btn-bg">
+                Подписать кредитный договор
+            </a>
+            <div class="login__register">
+                <a href="#" class="login__regist">Отказаться</a>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__sorry" class="popup__sorry popup">
+            <img src="images/popup-unhappy.png" alt="">
+            <div class="popup__title">Ошибка транзакции</div>
+            <div class="sent__text popup__text">При проведении платежа возникли проблемы, пожалуйста, попробуйте еще раз
+                или обратитесь в поддержку!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__login" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Войти в кабинет</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promo" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+
+        <div id="popup__promoErr" class="popup popup__promo">
+            <div class="popup__title">Введите промо-код</div>
+            <div class="popup__error-text">
+                Неверный промо-код
+            </div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <input>
+                    <button href="#" class="popup-btn login-btn">Подтвердить</button>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification-timer" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Проходит идентификация личности</div>
+            <div class="popup__text">Подождите, пожалуйста, процесс проверки займет не больше 5 минут</div>
+            <img src="images/clockOrange.svg" alt="">
+            <div class="timer"></div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__verification" class="popup popup__verification">
+            <img src="images/popup-happy.png" alt="">
+            <div class="popup__title">Ваш аккаунт проверяется</div>
+            <div class="popup__text">Мы успешно получили данные, которые вы отправили для верификации своего аккаунта.
+                Ваш аккаунт на этапе проверки. Как только ваш аккаунт будет верифицирован, вы получитеуведомление.</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__register" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Регистрация</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Введите код одноразового идентификатора из sms-сообщения*</label>
+                        <input>
+                    </div>
+                    <div class="login__forgot">
+                        <div class="login__forgot-window">
+                            <p>Если в течении 5 минут Вы не получили смс, обратитесь в службу поддержки по номеру 8 800
+                                950 123.</p>
+                        </div>
+                        <a id="" href="#" class="sms-code">Не получили смс с кодом?</a>
+                    </div>
+                    <a href="step_1.html" class="popup-btn login-btn">Зарегестрироваться</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">отмена</a>
+                    </div>
+                </form>
+                <div class="login__inner-enter login-enter">
+                    <div class="login-enter__title">или войти через:</div>
+                    <div class="login-enter__wrapper">
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/bank.svg" alt="">
+                            <span>Bank ID</span>
+                        </a>
+                        <a class="login-enter__wrapper-link" href="">
+                            <img src="images/social/google.svg" alt="">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+        <div id="popup__code" class="popup popup__promo">
+            <div class="popup__title">Кредитный договор</div>
+            <div class="sent__text popup__text">Данным одноразовым идентификатором подписываю Кредитный договор и
+                направляю кредитору сообщение о принятии в полном объеме условий Кредитного договора</div>
+            <div class="login__form-item">
+                <form class="login__form">
+                    <label>Код*</label>
+                    <input type="">
+                    <button href="#" class="popup-btn login-btn">Подписать</button>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Прислать код еще раз</a>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exitBig.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

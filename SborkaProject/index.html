@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Front-end by sborkaproject.com -->
+    <meta charset="utf-8" />
+    <title>
+        Project </title>
+    <meta name="viewport" content="width=768px, initial-scale=1">
+
+    <script type="text/javascript">!function(){function e(e){return r.indexOf(e)>-1}function o(e){return a.indexOf(e)>-1}function n(e){return s.indexOf(e)>-1}var i=[],t=navigator,r=t.platform.toLowerCase(),a=t.userAgent.toLowerCase(),s=t.appName.toLowerCase(),d=document.documentElement,c=(localStorage,o("iphone")||o("ipod")||o("ipad")||o("android")||o("iemobile")||o("blackberry")||o("bada")?"_mobile":"_desktop");i.push(c);var m="";o("ipad")||o("iphone")||o("ipod")?m="_ios":o("android")?m="_android":e("win")?m="_win":e("mac")?m="_mac":e("linux")&&(m="_linux"),i.push(m);var u="";o("firefox")?u="_ff":o("opr")?u="_opera":o("yabrowser")?u="_yandex":o("edge")?u="_edge":o("trident")||n("explorer")||n("msie")?u="_ie":o("safari")&&!o("chrome")?u="_safari":o("chrome")&&(u="_chrome"),i.push(u),window.environmentObject={platform:c,os:m,browser:u,isLocal:0==window.location.href.indexOf("http://localhost:")},d.className+=" "+i.join(" ");var l=new XMLHttpRequest;l.open("GET","assets/svg/sprite.svg",!0),l.overrideMimeType("image/svg+xml"),l.onreadystatechange=function(){function e(){if(document.body){var o=document.querySelector(".invisible-container");o||(o=document.createElement("div"),o.className="invisible-container",document.body.insertBefore(o,document.body.firstChild)),o.appendChild(l.responseXML.documentElement)}else setTimeout(e,16)}l.readyState===XMLHttpRequest.DONE&&200===l.status&&e()},l.send("")}();</script>
+
+    <link rel="stylesheet" href="assets/css/styles.css?113842a68f93cdd1e8e407e6986f3ba5" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="logo">
+                        <img src="../../assets/images/logo.svg" alt="logo" />
+                    </a>
+                    <nav class="menu">
+                        <a href="#" class="menu__item">
+                            Women’s
+                        </a>
+                        <a href="#" class="menu__item">
+                            Men’s
+                        </a>
+                        <a href="#" class="menu__item">
+                            Home
+                        </a>
+                        <a href="#" class="menu__item">
+                            Beauty
+                        </a>
+                        <a href="#" class="menu__item">
+                            Sale
+                        </a>
+                    </nav>
+
+                    <div class="header__handle">
+                        <button id="" class="header__btn icon-btn">
+                            <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+                                <use xlink:href="#icon-lupe" />
+                            </svg>
+
+                        </button>
+                        <button id="basket" class="header__btn icon-btn">
+                            <svg viewBox="0 0 24 21" style="width: 24px; height: 21px;">
+                                <use xlink:href="#icon-cart" />
+                            </svg>
+
+                            <span id="cart-count" class="icon-btn__notification">2</span>
+                        </button>
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile mobile-menu">
+                <nav class="menu">
+                    <a href="#" class="menu__item">
+                        Women’s
+                    </a>
+                    <a href="#" class="menu__item">
+                        Men’s
+                    </a>
+                    <a href="#" class="menu__item">
+                        Home
+                    </a>
+                    <a href="#" class="menu__item">
+                        Beauty
+                    </a>
+                    <a href="#" class="menu__item">
+                        Sale
+                    </a>
+                </nav>
+
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+                <div class="content__wrapper">
+
+                    <div class="main-block">
+                        <section class="payment">
+                            <div class="progress-block">
+                                <div class="progress-block__item progress-block__item_active">
+                                    <div class="progress-block__number" data-text="Account">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="progress-block__item progress-block__item_active">
+                                    <div class="progress-block__number" data-text="Shipping">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="progress-block__item progress-block__item_current">
+                                    <div class="progress-block__number" data-text="Billing">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="progress-block__item">
+                                    <div class="progress-block__number" data-text="Review">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-form">
+                                <form id="payment-form" action="#" method="#">
+                                    <h2 class="title payment-form__title">Billing Information</h2>
+                                    <div class="payment-form__type">
+
+                                        <label class="control  control_radio
+ ">
+                                            <div class="control__text">
+                                                Pay with Credit Card
+                                            </div>
+                                            <input type="checkbox" name="payment_type" value=" card " checked>
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                        <label class="control  control_radio
+ ">
+                                            <div class="control__text">
+                                                <img src="./assets/images/payPal.svg" alt="PayPal">
+                                            </div>
+                                            <input type="checkbox" name="payment_type" value=" payPal ">
+                                            <div class="control_indicator"></div>
+                                        </label>
+
+                                    </div>
+                                    <div class="payment-form__block">
+                                        <div class="payment-form__row">
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label">Name on card</label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_name" placeholder="Placehoolder text" value="">
+                                            </div>
+
+                                        </div>
+                                        <div class="payment-form__row payment-form__row_grid">
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label">Card number</label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_num_1" placeholder="" value="">
+                                            </div>
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label"></label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_num_2" placeholder="" value="">
+                                            </div>
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label"></label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_num_3" placeholder="" value="">
+                                            </div>
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label"></label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_num_4" placeholder="" value="">
+                                            </div>
+
+                                        </div>
+                                        <div class="payment-form__row payment-form__row_grid">
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label">Expire date</label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_date" placeholder="" value="">
+                                            </div>
+
+                                            <div class="input-block">
+                                                <label for="" class="input-block__label">CVV code <div class="tooltip">
+                                                        <div class="tooltip__icon">?</div>
+                                                        <div class="tooltip__info">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias quis mollitia earum!
+                                                            Dolorem, dicta ea, rem consequatur praesentium inventore nihil quia sit blanditiis
+                                                            voluptatibus doloribus est eum provident dolorum?
+                                                        </div>
+                                                    </div></label>
+                                                <input id=" " type=" text " class="input-block__field" name="card_cvv" placeholder="" value="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="payment-form__footer">
+                                        <div class="payment-form__checkboxes">
+
+                                            <label class="control  control_checkbox  payment-form__checkbox">
+                                                <div class="control__text">
+                                                    Save information of this credit card
+                                                </div>
+                                                <input type="checkbox" name="save_info" value=" true " checked>
+                                                <div class="control_indicator"></div>
+                                            </label>
+
+                                            <label class="control  control_checkbox  payment-form__checkbox">
+                                                <div class="control__text">
+                                                    I accept the <a href="#" target="_blank" class="main-link">terms and comditions</a> and the <a href="#" target="_blank" class="main-link">Privacy Policies</a>
+                                                </div>
+                                                <input type="checkbox" name="accept" value=" true ">
+                                                <div class="control_indicator"></div>
+                                            </label>
+
+                                        </div>
+                                        <div class="payment-form__btns">
+                                            <a href="#" class="payment-form__btn   btn btn_transparent  ">
+                                                Back
+                                            </a>
+
+                                            <button href="" class="payment-form__btn   btn  ">
+                                                Check Out
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="aside">
+                        <div class="aside-item basket">
+                            <h2 class="aside-item__title title">My basket</h2>
+                            <div class="basket__catalog">
+
+                            </div>
+                        </div>
+                        <div class="aside-item promo">
+                            <h2 class="aside-item__title title">Promo code</h2>
+                            <form id="promo_form">
+                                <div class="promo__wrapper">
+                                    <div class="input-block">
+                                        <label for="" class="input-block__label"></label>
+                                        <input type="text" class="input-block__field" name=" promo" placeholder="Placeholder Text">
+                                    </div>
+                                    <button class="promo__btn btn">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="aside-item summ">
+                            <div class="summ-item">
+                                <div class="summ-item__label">Subtotal</div>
+                                <div class="summ-item__value">$1 050</div>
+                            </div>
+                            <div class="summ-item">
+                                <div class="summ-item__label">Tax</div>
+                                <div class="summ-item__value">$100</div>
+                            </div>
+                            <div class="summ-item">
+                                <div class="summ-item__label">Shipping</div>
+                                <div class="summ-item__value">$150</div>
+                            </div>
+                            <div class="summ-item summ-item_total">
+                                <div class="summ-item__label">Total</div>
+                                <div class="summ-item__value">$1 300</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/bundle.js?b7b62bcf8f4a8261a7dd7febc72dc6ce"></script>
+</body>
+
+</html>

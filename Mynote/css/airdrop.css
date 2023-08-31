@@ -1,0 +1,138 @@
+.airdrop {
+  padding: 50px 0 100px;
+}
+
+.airdrop__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.airdrop__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 550px;
+  width: 100%;
+}
+
+.airdrop__title {
+  font-size: 43px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.airdrop__text {
+  font-size: 32px;
+  font-weight: 550;
+  margin-bottom: 70px;
+}
+
+.airdrop__curses {
+  margin-bottom: 15px;
+}
+
+.airdrop__acent {
+  margin-bottom: 15px;
+  color: #B1FA16;
+  font-weight: bold;
+}
+
+.airdrop__date {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.airdrop__img {
+  margin-right: 0;
+  margin-left: auto;
+  width: 50%;
+  max-width: 715px;
+  width: 100%;
+}
+
+.airdrop__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+}
+
+.btn_conter {
+  position: relative;
+}
+
+.btn_conter::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 30px);
+  height: calc(100% + 20px);
+  border: 3px solid #B1FA16;
+  filter: blur(3px);
+  border-radius: 100px;
+}
+
+.btn_conter::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 30px);
+  height: calc(100% + 20px);
+  border: 1px solid #B1FA16;
+  border-radius: 100px;
+}
+
+@media (max-width: 992px) {
+  .airdrop__title {
+    font-size: 43px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .airdrop__wrapper {
+    display: block;
+  }
+
+  .airdrop__content {
+    position: relative;
+    max-width: 100%;
+  }
+
+  .airdrop__text {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .airdrop__btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 568px) {
+  .airdrop__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .airdrop__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 412px) {
+  .airdrop__text {
+    font-size: 20px;
+  }
+}

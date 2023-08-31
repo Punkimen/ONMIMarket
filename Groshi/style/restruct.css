@@ -1,0 +1,696 @@
+.loanCalc-title {
+    padding-left: 0;
+}
+
+.cabinet__global-restruct {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.restruct__left {
+    max-width: 405px;
+}
+
+.restruct-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.restruct-title span {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+}
+
+.restruct-text {
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.restruct__right {
+    max-width: 400px;
+    width: 100%;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+
+.restruct__right-btn .btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.resctruction-inner {
+    border: 2px solid #FFDD2D;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.resctruction__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 8px;
+}
+
+.resctruction__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.resctruction__personal {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 26px;
+}
+
+.resctruction__personal span {
+    font-weight: bold;
+}
+
+.resctruction-checkboxes {
+    margin-bottom: 25px;
+}
+
+.resctruction-checkboxes label {
+    color: #111111;
+}
+
+.resctruction-checkbox+.resctruction-checkbox {
+    margin-top: 15px;
+}
+
+.resctruction__btn {
+    max-width: 250px;
+    width: 100%;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.resctruction__password {
+    display: flex;
+    padding-top: 25px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.resctruction__password-inp label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.resctruction__password input {
+    max-width: 250px;
+    width: 100%;
+    min-height: 56px;
+    height: 100%;
+    background: #F6F6F6;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 48px;
+    outline: none;
+}
+
+.resctruction__password input:hover {
+    border: 1px solid #FFDD2D;
+}
+
+.resctruction__password input:focus {
+    border: 1px solid #FFDD2D;
+}
+
+.resctruction__password input::placeholder {
+    line-height: 48px;
+    color: #808080;
+}
+
+.resctruction__password .resctruction__btn {
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+
+.resctruction__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resctruction-pay {
+    max-width: 462px;
+    width: 100%;
+    background: #F6F6F6;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.resctruction-pay+.resctruction-pay {
+    margin-left: 40px;
+}
+
+.resctruction-pay__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 10px;
+}
+
+.resctruction-pay__info {
+    font-size: 16px;
+    line-height: 24px;
+    color: #31C850;
+}
+
+.resctruction-pay__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.resctruction-pay__content-items {
+    margin-bottom: 30px;
+}
+
+.resctruction-pay__content-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.resctruction-pay__content-item+.resctruction-pay__content-item {
+    margin-top: 10px;
+}
+
+.resctruction-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resctruction-date__date {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.resctruction-date__summ {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.resctruction-pay__content-check {
+    margin-bottom: 25px;
+}
+
+.resctruction-pay__content-check label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #111;
+}
+
+.resctruction-pay__content-btn .btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.resctruction-pay__content-eco {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.resctruction-eco__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.resctruction-eco__summ {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #FF671B;
+}
+
+.cabinet__global-info {
+    margin-top: 55px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #808080;
+}
+
+.resctruction-timer {
+    text-align: center;
+    padding: 72px 15px;
+}
+
+.resctruction-timer__img img {
+    display: block;
+    max-width: 96px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.resctruction-timer__timer {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.resctruction-timer__title {
+    max-width: 345px;
+    margin: 50px auto 30px;
+}
+
+.resctruction-timer__btn {
+    max-width: 250px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.resctruction-application__head {
+    display: grid;
+    grid-template-columns: 90px 82px 149px 164px;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.application-head__label {
+    font-size: 12px;
+    line-height: 18px;
+    color: #808080;
+    margin-bottom: 4px;
+}
+
+.application-head__info {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.application-head__info_status {
+    color: #FC4F36;
+    white-space: nowrap;
+}
+
+.application-head__info_status::before {
+    content: '';
+}
+
+.application-head__link {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #808080;
+}
+
+.application-head__link a {
+    color: inherit;
+}
+
+.application-head__link+.application-head__link {
+    margin-top: 8px;
+}
+
+.application-table__head {
+    margin: 40px 0 15px;
+    display: flex;
+    padding: 0 30px;
+}
+
+.application-table__head-item {
+    flex: 0 1 25%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #B0B0B0;
+}
+
+.application-table__head-item:last-child {
+    flex: 0 1 50%;
+    text-align: center;
+}
+
+.application-table__item {
+    display: flex;
+    justify-content: space-between;
+    background: #F6F6F6;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    padding: 15px 30px;
+}
+
+.application-table__item+.application-table__item {
+    margin-top: 8px;
+}
+
+.application-table__item_green {
+    background: #EAF9ED;
+    border: 1px solid #31C850;
+}
+
+.application-table__item_green .application-table__item-col_status {
+    color: #31C850;
+}
+
+.application-table__item_yellow {
+    background: #FFFCEA;
+    border: 1px solid #FFDD2D;
+}
+
+.application-table__item_yellow .application-table__item-col_status {
+    color: #FC4F36;
+}
+
+.application-table__item-col {
+    flex: 0 1 25%;
+}
+
+.application-table__item-col:last-child {
+    flex: 0 1 50%;
+    text-align: center;
+}
+
+.credit__history-documetn {
+    text-align: center;
+}
+
+.credit__history-documetn a+a {
+    margin-top: 8px;
+}
+
+/* media */
+
+@media screen and (max-width: 1430px) {
+    .credit__history-documetn {
+        text-align: left;
+    }
+
+    .credit__history-documetn_more {
+        display: none;
+    }
+}
+
+@media (max-width: 1330px) {
+    .cabinet__global-restruct {
+        display: block;
+    }
+
+    .restruct__left {
+        max-width: 100%;
+    }
+
+    .restruct__right {
+        max-width: 100%;
+        padding-left: 60px;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .resctruction__title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .resctruction__password {
+        display: block;
+    }
+
+    .resctruction__password .resctruction__btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .resctruction__wrapper {
+        display: block;
+    }
+
+    .resctruction-pay {
+        max-width: 100%;
+    }
+
+    .resctruction-pay+.resctruction-pay {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .resctruction-pay__title {
+        display: inline-block;
+    }
+
+    .resctruction-pay__info {
+        display: inline-block;
+    }
+
+    .resctruction-pay__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resctruction-pay__title {
+        font-size: 22px;
+        flex: 0 0 auto;
+    }
+
+    .resctruction-pay__info {
+        flex: 0 1 auto;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .resctruction-application__head {
+        grid-template-columns: 1fr;
+    }
+
+    .application-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .application-head_links {
+        margin-top: 25px;
+        display: block;
+    }
+
+    .application-head__link {
+        text-align: left;
+    }
+
+    .application-table__head {
+        padding: 0 20px;
+    }
+
+    .application-head+.application-head {
+        margin-top: 10px;
+    }
+
+    .application-table__item {
+        padding: 15px 20px;
+    }
+
+    .application-table__head-item {
+        flex: 0 1 33.333%;
+    }
+
+    .application-table__item-col {
+        flex: 0 1 33.333%;
+        font-size: 13px;
+    }
+
+    .application-table__head-item+.application-table__head-item {
+        margin-left: 5px;
+    }
+
+    .application-table__item-col+.application-table__item-col {
+        margin-left: 5px;
+    }
+
+    .application-head_links {
+        margin-top: 25px !important;
+    }
+
+    .application-table__head {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .restruct__right {
+        padding-left: 0;
+    }
+
+    .restruct-text {
+        padding-left: 0;
+    }
+
+    .resctruction__subtitle {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .resctruction__personal {
+        font-size: 15px;
+    }
+
+    .resctruction-checkboxes label {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .resctruction__text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .resctruction__password {
+        margin-top: 30px;
+    }
+
+    .resctruction-pay__head {
+        display: block;
+    }
+
+    .resctruction-pay__info {
+        margin-left: 0;
+    }
+
+    .application-table__head {
+        display: none;
+    }
+
+    .application-table__item {
+        display: block;
+        padding: 15px;
+    }
+
+    .application-table__item-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .application-table__item-col+.application-table__item-col {
+        margin-left: 0;
+    }
+
+    .application-table__item-col::before {
+        content: attr(data-title);
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #B0B0B0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .restruct-title span {
+        font-size: 18px;
+    }
+
+    .restruct-text {
+        font-size: 13px;
+    }
+
+    .resctruction-inner {
+        padding: 20px;
+    }
+
+    .resctruction__title {
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .resctruction__subtitle {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .resctruction__personal {
+        text-align: center;
+        margin: 15px 0 25px;
+    }
+
+    .resctruction__personal span {
+        display: block;
+        text-align: center;
+    }
+
+    .resctruction__text {
+        text-align: center;
+    }
+
+    .resctruction__btn {
+        margin-top: 15px;
+    }
+
+    .resctruction-pay__content-title {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .resctruction-date__date {
+        font-size: 13px;
+    }
+
+    .resctruction-date__summ {
+        font-size: 14px;
+    }
+
+    .cabinet__global-info {
+        margin-top: 30px;
+    }
+
+    .resctruction-pay__content-check label {
+        font-size: 13px;
+    }
+
+    .resctruction-pay {
+        padding: 24px;
+    }
+
+    .resctruction-timer__title {
+        margin: 32px 0;
+    }
+
+    .application-head_links {
+        margin-top: 15px !important;
+    }
+}

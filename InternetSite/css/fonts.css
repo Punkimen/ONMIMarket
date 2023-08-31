@@ -1,0 +1,16 @@
+@font-face{
+	font-family: monster;
+	src: url("font/montserrat.woff") format("woff"), url("font/montserrat.woff2") format("woff2");
+}
+@font-face{
+	font-family: nonito;
+	src: url("font/nonito.woff") format("woff"), url("font/nonito.woff2") format("woff2");
+}
+@font-face{
+	font-family: roboto;
+	src: url("font/Roboto.woff") format("woff"), url("font/Roboto.woff2") format("woff2");
+}
+@font-face{
+	font-family: robotoital;
+	src: url("font/Robotolightitalic.woff") format("woff"), url("font/Robotolightitalic.woff2") format("woff2");
+}

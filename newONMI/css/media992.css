@@ -1,0 +1,586 @@
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 1.5vw;
+  }
+
+  .container {
+    padding: 0 2.82vw;
+  }
+
+  .decor-text {
+    margin: 0 0.51vw;
+  }
+
+  .decor-text::after {
+    border-radius: 1.01vw;
+    left: -0.4vw;
+    width: calc(100% + 0.8vw);
+  }
+
+  .btn_app {
+    padding: 0.58vw 0.94vw 0.58vw 0.94vw;
+  }
+
+  .main__text {
+    font-size: 1.41vw;
+  }
+
+  .decor-line svg {
+    height: 31.45vw;
+  }
+
+  .decor-line__wrapper {
+    margin: 15.12vw 0;
+  }
+
+  .c {
+    width: 0.2vw;
+    height: 0.2vw;
+  }
+
+  .header {
+    font-size: 1.21vw;
+  }
+
+  .header__text {
+    font-size: 1.21vw;
+  }
+
+  .header__logo {
+    width: 8.08vw;
+  }
+
+  .header__link {
+    font-size: 1.21vw;
+    margin-right: 2.02vw;
+    padding-right: 1.52vw;
+  }
+
+  .header__link .arrow_link {
+    width: 1.01vw;
+  }
+
+  .header__btn {
+    font-size: 1.21vw;
+    padding: 0.8vw 1.2vw 0.8vw 1.2vw;
+  }
+
+  .hero {
+    padding: 12vw 0 12vw;
+  }
+
+  .hero__title {
+    font-size: 13.1vw;
+  }
+
+  .reality__text_small {
+    max-width: 100%;
+    font-size: 2.42vw;
+    margin-bottom: 10.1vw;
+  }
+
+  .reality__screen {
+    min-width: 18.99vw;
+  }
+
+  .reality__decor {
+    width: 12.02vw;
+    height: 12.02vw;
+  }
+
+  .description-reality__text {
+    max-width: 70%;
+    font-size: 2.42vw;
+  }
+
+  .cards-slider__descr {
+    font-size: 1.21vw;
+  }
+
+  .cards-slider__num {
+    font-size: 1.01vw;
+  }
+
+  .create-omi__text {
+    width: 100%;
+  }
+
+  .create-omi__item {
+    width: 16vw;
+  }
+
+  .create-omi__item_15 {
+    width: 16.2vw;
+  }
+
+  .create-omi__cards {
+    width: 100%;
+  }
+
+  .create-omi__cards-wrapper {
+    display: grid;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    row-gap: 2.6vw;
+  }
+
+  .create-omi__card {
+    max-width: 50.4vw;
+  }
+
+  .create-omi__card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .omi-card__title {
+    font-size: 2.12vw;
+  }
+
+  .omi-card__text {
+    font-size: 1.41vw;
+  }
+
+  .omi-card__label-icon {
+    width: 2.22vw;
+    height: 2.22vw;
+  }
+
+  .omi-card__label-text {
+    font-size: 1.41vw;
+  }
+
+  .omi-card__point-btn {
+    width: 2.42vw;
+    height: 2.42vw;
+    font-size: 1.81vw;
+  }
+
+  .omi-card__point-value {
+    font-size: 3.63vw;
+  }
+
+  .omi-card__total {
+    margin-top: 3.23vw;
+  }
+
+  .omi-card__total-value {
+    font-size: 7.26vw;
+  }
+
+  .omi-card__total-descr {
+    font-size: 1.71vw;
+    width: 10.08vw;
+  }
+
+  .omi-card__unallocated-points {
+    width: 9.27vw;
+    height: 9.27vw;
+    font-size: 3.02vw;
+  }
+
+  .cards__wrapper {
+    max-width: 70vw;
+  }
+
+  .card_1 {
+    height: 48.81vw;
+  }
+
+  .card_1 .card__front-img {
+    max-width: 60%;
+  }
+
+  .card_2 .card__front {
+    padding-bottom: 4.8vw;
+  }
+
+  .card_3 {
+    height: 42vw;
+  }
+
+  .card_3 .card__front {
+    padding-bottom: 4vw;
+  }
+
+  .card_3 .card__front .card__front-img {
+    width: 150%;
+  }
+
+  .card_3 .card__title {
+    max-width: 50%;
+  }
+
+  .card_3 .card__text {
+    max-width: 72%;
+  }
+
+  .card_4 .card__title {
+    max-width: 66%;
+  }
+
+  .card__title {
+    font-size: 2vw;
+  }
+
+  .omies__circle {
+    width: 7vw;
+    flex: 0 0 7vw;
+  }
+
+  .omies__circle_2 {
+    width: 7.5vw;
+    flex: 0 0 7.5vw;
+  }
+
+  .journey-card {
+    padding: 6vw 3vw;
+  }
+
+  .journey-card_1 {
+    height: 45vw;
+  }
+
+  .journey-card_1 .journey-card__phone {
+    max-width: 50%;
+    border-radius: 3.2vw;
+  }
+
+  .journey-card_1 .journey-card__phone video {
+    top: 1vw;
+  }
+
+  .journey-card_2 {
+    height: 50vw;
+  }
+
+  .journey-card_3 {
+    height: 50vw;
+    padding-bottom: 2vw;
+  }
+
+  .journey-card_3 .journey-card__title {
+    max-width: 75%;
+  }
+
+  .journey-card_4 {
+    height: 45vw;
+  }
+
+  .journey-card_4 .journey-card__title {
+    max-width: 70%;
+  }
+
+  .each-point__text {
+    font-size: 1.2vw;
+  }
+
+  .each-point__circle {
+    padding: 7.29vw 3.52vw 7.29vw 4.52vw;
+  }
+
+  .each-point__circle-text {
+    font-size: 1.2vw;
+  }
+
+  .each-point__svg {
+    position: relative;
+    top: 0.4vw;
+  }
+
+  .each-point__mark {
+    max-width: 0.8vw;
+  }
+
+  .sound {
+    margin-bottom: 10vw;
+  }
+
+  .sound__anim {
+    height: 35vw;
+  }
+
+  .sound-season__name {
+    font-size: 1.5vw;
+  }
+
+  .pvp__text {
+    font-size: 1.41vw;
+  }
+
+  .market__subtitle {
+    font-size: 4.03vw;
+    width: 17vw;
+  }
+
+  .market__descr-text {
+    font-size: 1.61vw;
+    width: 27vw;
+  }
+
+  .market-catalog__item {
+    width: 23.57vw;
+    height: 26.82vw;
+  }
+
+  .market-catalog__item img {
+    width: 115%;
+  }
+
+  .market-catalog__item_text {
+    font-size: 1.61vw;
+  }
+
+  .hunger-games__title {
+    font-size: 8.69vw;
+  }
+
+  .hunger-games__title_small {
+    line-height: 1em;
+    font-size: 6.26vw;
+  }
+
+  .hunger-games__pose {
+    top: -26.5vw;
+    left: 35vw;
+    width: 21.05vw;
+  }
+
+  .hunger-games__text {
+    font-size: 1.61vw;
+    width: 100%;
+  }
+
+  .hunger-progress__text {
+    font-size: 1.41vw;
+  }
+
+  .hunger-progress__text_1 {
+    max-width: 23.16vw;
+  }
+
+  .hunger-progress__text_2 {
+    max-width: 23.16vw;
+  }
+
+  .hunger-progress__text_3 {
+    max-width: 20.16vw;
+  }
+
+  .individual__title {
+    font-size: 2.82vw;
+  }
+
+  .individual-chose__item {
+    max-width: 100%;
+  }
+
+  .individual-chose__item:not(:last-child) {
+    margin-right: 4vw;
+  }
+
+  .individual-chose__label {
+    font-size: 2.62vw;
+  }
+
+  .individual-chose__text {
+    font-size: 1.81vw;
+    max-width: 100%;
+  }
+
+  .individual-chose__list {
+    font-size: 1.81vw;
+  }
+
+  .individual-chose__list-elem::before {
+    font-size: 1.21vw;
+    width: 2.32vw;
+    height: 2.32vw;
+    line-height: 0.9em;
+    left: -3.02vw;
+  }
+
+  .mission__line {
+    height: 0.1vw;
+  }
+
+  .mission__title {
+    font-size: 6.05vw;
+  }
+
+  .mission__text {
+    font-size: 2.12vw;
+  }
+
+  .mission__text_big {
+    font-size: 3.03vw;
+  }
+
+  .culture-event {
+    padding-left: 2.82vw;
+  }
+
+  .culture-event__title {
+    font-size: 3.13vw;
+  }
+
+  .culture-event__text {
+    font-size: 1.41vw;
+    max-width: 28.4vw;
+  }
+
+  .culture-event__partners-label {
+    font-size: 1.62vw;
+  }
+
+  .culture-event__circle-soon {
+    font-size: 1.82vw;
+  }
+
+  .token__card {
+    height: 35.58vw;
+  }
+
+  .token__card-label {
+    font-size: 2.72vw;
+  }
+
+  .token__card-text {
+    font-size: 1.61vw;
+    max-width: 100%;
+  }
+
+  .cards-token__wrapper {
+    max-width: 70vw;
+  }
+
+  .card-token {
+    height: 48.38vw;
+  }
+
+  .card-token__content {
+    height: 70%;
+  }
+
+  .card-token__title {
+    font-size: 4.04vw;
+  }
+
+  .card-token__text {
+    font-size: 1.62vw;
+    max-width: 28vw;
+  }
+
+  .card-token_1 .card-token__text {
+    max-width: 28vw;
+  }
+
+  .roadmap-item {
+    font-size: 1.2vw;
+  }
+
+  .security {
+    margin: -100vh 0 calc(-100vh + 90vw);
+  }
+
+  .security__title {
+    font-size: 4.17vw;
+  }
+
+  .security__label {
+    max-width: 80%;
+    font-size: 3.13vw;
+  }
+
+  .security__text {
+    max-width: 80%;
+    font-size: 2.08vw;
+  }
+
+  .question-item {
+    padding: 0 2.82vw;
+  }
+
+  .question-item__title {
+    font-size: 1.62vw;
+  }
+
+  .question-item__text {
+    font-size: 1.62vw;
+  }
+
+  .footer__logo {
+    width: 11.08vw;
+  }
+
+  .footer__labels {
+    font-size: 1.82vw;
+  }
+
+  .footer__socials .x {
+    max-width: 1.82vw;
+  }
+
+  .footer__socials .instagram {
+    max-width: 2.02vw;
+  }
+
+  .footer__socials .telegram {
+    max-width: 2.12vw;
+  }
+
+  .footer__socials .medium {
+    max-width: 2.83vw;
+  }
+
+  .footer__socials .discord {
+    max-width: 2.42vw;
+  }
+
+  .footer__text {
+    font-size: 1.01vw;
+  }
+
+  .footer__copy {
+    font-size: 1.41vw;
+  }
+
+  .modal__container {
+    max-width: 100%;
+  }
+
+  .modal__content {
+    margin-bottom: 10vw;
+  }
+
+  .modal__info {
+    left: 2.82vw;
+  }
+
+  .modal__info-icon {
+    width: 3.43vw;
+    height: 3.43vw;
+    flex: 0 0 3.43vw;
+  }
+
+  .modal__close {
+    right: 2.82vw;
+    width: 2.32vw;
+    height: 2.32vw;
+  }
+
+  .form__label {
+    font-size: 2.22vw;
+  }
+
+  .form__input {
+    font-size: 4.55vw;
+  }
+
+  .form__btn.btn {
+    font-size: 1.62vw;
+  }
+
+  .form__text {
+    font-size: 1.41vw;
+  }
+}

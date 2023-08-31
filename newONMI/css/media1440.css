@@ -1,0 +1,51 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 1.94vw;
+  }
+
+  .btn_app {
+    padding: 0.2vw 0.94vw 0.1vw 0.94vw;
+    min-height: 3.06vw;
+    min-width: 9.72vw;
+  }
+
+  .btn_app img {
+    width: 100%;
+  }
+
+  .btn_app img.AppStore {
+    width: 100%;
+  }
+
+  .decor-line svg {
+    height: 21.67vw;
+  }
+
+  .header {
+    font-size: 0.83vw;
+  }
+
+  .header__link {
+    font-size: 0.69vw;
+  }
+
+  .header__btn {
+    font-size: 0.69vw;
+  }
+
+  .culture-event {
+    padding-left: 1.94vw;
+  }
+
+  .question-item {
+    padding: 0 1.94vw;
+  }
+
+  .modal__info {
+    left: 1.94vw;
+  }
+
+  .modal__close {
+    right: 1.94vw;
+  }
+}

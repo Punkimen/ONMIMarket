@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step_2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__up">
+                <div class="container">
+                    <div class="header__up-enter">
+                        <a href="cabinet.html" class="header__up-link">Вхід в особистий кабінет</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__down">
+                <div class="container">
+                    <div class="header__down-wrapper">
+                        <div class="header__down-logo">
+                            <a href="index.html">
+                                <img src="img/Logo.png" alt="BORGIVNET">
+                            </a>
+                        </div>
+                        <nav class="header__down-menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a href="#">Про сервіс </a>
+                                </li>
+                                <li class="menu__list-item menu__list-item_none">
+                                    <a href="#">Для кого?</a>
+                                </li>
+                                <li class="menu__list-item menu__list-item_none">
+                                    <a href="#">Як це працює?</a>
+                                </li>
+                                <li class="menu__list-item menu__list-item_none">
+                                    <a href="#">Питання- відповідь</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#">Контакти</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#">Правова информація</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__down-burger burger">
+                            <div class="burger__icon icon-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header__mobile">
+                            <nav class="header__mobile-menu">
+                                <ul class="mobile-menu__list">
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Про сервіс </a>
+                                    </li>
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Для кого?</a>
+                                    </li>
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Як це працює?</a>
+                                    </li>
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Питання- відповідь</a>
+                                    </li>
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Контакти</a>
+                                    </li>
+                                    <li class="mobile-menu__list-item">
+                                        <a href="#">Правова информація</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="preview">
+                <div class="container">
+                    <div class="preview__title">ЗНАЙДІТЬ ВІХІД ПРЯМО ЗАРАЗ!</div>
+                    <div class="preview__subtitle">Заявка на правовій аналіз</div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <form id="help-form" class="page-form" action="">
+                        <div class="help__wrapper">
+                            <div class="help__wrapper-item form-accordion">
+                                <div class="form-accordion__name">Допомога</div>
+                                <div class="form-accordion__content">
+                                    <div class="accordion-content__item">
+                                        <div class="form-content__title">Клієнт</div>
+                                        <div class="form-content__wrapper">
+                                            <div class="form-content__inputs form-content__inputs_personal">
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Прізвище</label>
+                                                    <input required name='surname' type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Имя</label>
+                                                    <input required name="name" type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp_area">
+                                                    <label for="form-content__inp-label">По батькові</label>
+                                                    <input required name="patronymic" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Телефон</label>
+                                                    <input class="input__phone" required name="phone" type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">E-mail</label>
+                                                    <input required name="email" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content__item">
+                                        <div class="form-content__title">Виданий кредит</div>
+                                        <div class="form-content__wrapper form-content__wrapper_flex">
+                                            <div class="form-content__inputs form-content__inputs_creditHelp">
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">ИПН</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">Назва банку/ Назва фінансової
+                                                        компанії</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp form-content__inp_area">
+                                                    <label for="form-content__inp-label">МФО</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-content__inp">
+                                                    <label for="form-content__inp-label">№ договору, дата</label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-content__file form-file">
+                                                <div class="form-content__title">Завантажити договір</div>
+                                                <div class="form-file__inp">
+                                                    <input type="file">
+                                                    <span class="select-file">Оберіть файл</span>
+                                                    <span class="downloaded-file">Файл завантажений</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-content__textarea">
+                                            <div class="form-content__inp form-content__inp_textarea">
+                                                <label for="form-content__inp-label">Коментарі</label>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form__content-check">
+                                            <label for="processing ">
+                                                <input required name="agree" id="processing " type="checkbox">
+                                                Я хочу отримати правовий аналіз моєї ситуації та
+                                                даю згоду на обробку моїх персональних данних
+                                                <div class="checkbox__indificator"></div>
+                                            </label>
+                                        </div>
+                                        <button class="form__btn btn">Відправити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__back">
+                            <a class="form__btns-back" href="question.html">Вернуться назад</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-logo">
+                        <img src="img/Logo.png" alt="BORGIVNET">
+                    </div>
+                    <div class="footer__wrapper-content footer-content">
+                        <div class="footer-content__links">
+                            <ul class="footer-content__links-list">
+                                <li><a href="#"></a>О сервисе</li>
+                                <li><a href="#">Для кого?</a></li>
+                                <li><a href="#">Как работает? </a></li>
+                                <li><a href="#">Вопрос- ответ</a></li>
+                                <li><a href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-content__contacts footer-contacts">
+                            <div class="footer-contacts__title">Контакты:</div>
+                            <div class="footer-contacts__item">
+                                <div class="footer-contacts__item-name">Телефон:</div>
+                                <a href="tel:0441234567" class="footer-contacts__item-link">044-123-45-67</a>
+                            </div>
+                            <div class="footer-contacts__item">
+                                <div class="footer-contacts__item-name">E-mail:</div>
+                                <a href="#" class="footer-contacts__item-link">info@gmail.com</a>
+                            </div>
+                            <div class="footer-contacts__item footer-contacts__item_social">
+                                <div class="footer-contacts__item-name">Мы в соц.сетях:</div>
+                                <div class="footer-contacts__item-links">
+                                    <a class="footer-contacts__social" href="#">
+                                        <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M31 0C13.9317 0 0 13.931 0 31C0 35.9416 1.29195 40.948 3.74155 45.5214L1.24315 58.6326C1.13041 59.2234 1.31762 59.8317 1.74302 60.2571C2.1683 60.6824 2.77607 60.8698 3.36738 60.757L16.4786 58.2584C21.052 60.7082 26.0584 62 31 62C48.0683 62 62 48.0693 62 31C62 13.9317 48.0693 0 31 0ZM31 58.3672C26.4677 58.3672 21.8583 57.1228 17.6699 54.7685C17.2863 54.5529 16.8492 54.4896 16.4399 54.5676L5.3119 56.6883L7.43249 45.5603C7.51278 45.1394 7.44157 44.7037 7.23172 44.3302C4.87717 40.1419 3.63281 35.5324 3.63281 31C3.63281 15.9097 15.9097 3.63281 31 3.63281C46.0903 3.63281 58.3672 15.9097 58.3672 31C58.3672 46.0903 46.0903 58.3672 31 58.3672V58.3672ZM47.0309 35.7952L41.2638 32.9116C40.5643 32.5617 39.7197 32.6992 39.1672 33.2519L36.9957 35.4232C36.0886 35.5008 33.5471 35.3385 30.1762 31.9674C26.8051 28.5963 26.643 26.0554 26.7205 25.148L28.892 22.9767C29.4448 22.4239 29.5819 21.5791 29.2323 20.88L26.3487 15.1129C25.5559 13.5273 24.0977 12.455 22.3477 12.171C20.5977 11.887 18.8751 12.4431 17.6217 13.6967L14.4361 16.882C13.3793 17.9388 12.8115 19.3519 12.8369 20.8609C12.8956 24.3482 14.2254 31.4294 22.4699 39.6737C29.9516 47.1555 37.3172 48.8177 41.0419 49.1426C42.6728 49.2846 44.261 48.7084 45.4024 47.5668L48.4472 44.5222C49.7009 43.2686 50.2568 41.5461 49.973 39.7961C49.6888 38.0464 48.6166 36.5881 47.0309 35.7952V35.7952ZM45.8782 41.9535L42.8334 44.9983C42.4453 45.3864 41.9207 45.5735 41.3575 45.5237C38.125 45.2417 31.7065 43.773 25.0384 37.1052C17.4238 29.4906 16.5088 23.1657 16.469 20.7999C16.4603 20.2843 16.6505 19.8052 17.0047 19.451L20.1902 16.2658C21.0679 15.3882 22.5446 15.6286 23.0992 16.7378L25.3972 21.3338L23.7542 22.9768C23.5549 23.1763 23.4045 23.4193 23.3154 23.6869C23.1476 24.1903 21.8425 28.7714 27.6073 34.5364C33.3723 40.3015 37.9536 38.9963 38.457 38.8285C38.7244 38.7393 38.9676 38.5891 39.1669 38.3896L40.81 36.7465L45.406 39.0446C46.5162 39.5995 46.756 41.0757 45.8782 41.9535V41.9535Z"
+                                                fill="#5C5C5C" />
+                                        </svg>
+
+                                    </a>
+                                    <a class="footer-contacts__social" href="#"><svg viewBox="0 0 62 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M61.0396 6.15875C60.2823 5.23257 59.148 4.72266 57.8453 4.72266C57.1372 4.72266 56.387 4.87166 55.6159 5.16635L3.1341 25.2003C0.348944 26.2632 -0.026163 27.8582 -0.00203892 28.7144C0.0220852 29.5705 0.487066 31.1419 3.32804 32.0459C3.34507 32.0511 3.3621 32.0563 3.37913 32.061L14.2653 35.1763L20.1525 52.0112C20.9552 54.3063 22.757 55.732 24.8553 55.732C26.1783 55.732 27.4796 55.1776 28.6187 54.1294L35.3521 47.9295L45.1186 55.7935C45.1196 55.7944 45.121 55.7949 45.1219 55.7958L45.2146 55.8706C45.2232 55.8772 45.2322 55.8843 45.2407 55.8909C46.3263 56.7329 47.5112 57.1775 48.6687 57.178H48.6691C50.9307 57.178 52.7314 55.504 53.256 52.9137L61.8551 10.4533C62.2004 8.74902 61.9109 7.224 61.0396 6.15875V6.15875ZM17.9071 34.5846L38.9097 23.855L25.8321 37.751C25.6178 37.9785 25.466 38.2571 25.3912 38.5603L22.8695 48.7748L17.9071 34.5846ZM26.1575 51.4568C26.0705 51.5367 25.983 51.6082 25.8955 51.6739L28.235 42.1983L32.4908 45.6254L26.1575 51.4568ZM58.2947 9.73196L49.6956 52.1928C49.6128 52.5991 49.3484 53.5447 48.6687 53.5447C48.3328 53.5447 47.9109 53.3617 47.479 53.0291L36.4122 44.1183C36.4108 44.1169 36.4089 44.1155 36.407 44.1145L29.822 38.812L48.7339 18.7166C49.3394 18.0732 49.3943 17.0879 48.864 16.3812C48.3333 15.6745 47.3716 15.4522 46.585 15.8543L15.48 31.745L4.44579 28.5881L56.9115 8.56029C57.3548 8.39095 57.6641 8.35547 57.8453 8.35547C57.9565 8.35547 58.1542 8.36871 58.2275 8.45906C58.324 8.57684 58.447 8.97844 58.2947 9.73196V9.73196Z"
+                                                    fill="#5C5C5C" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="62" height="62" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-contacts__social" href="#"><svg viewBox="0 0 62 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M59.8175 35.8904C61.6671 20.3206 58.9288 10.491 53.9895 6.04507L53.9921 6.04249C46.0199 -1.54994 19.0964 -2.67369 9.55872 6.38349C5.27555 10.8139 3.76689 17.3162 3.60155 25.3658C3.43622 33.4181 3.23989 48.5022 17.2958 52.5942H17.3087L17.2958 58.8433C17.2958 58.8433 17.2002 61.375 18.8174 61.8839C20.6671 62.4832 21.5041 61.3078 27.2571 54.4361C36.8775 55.2705 44.2658 53.3589 45.1054 53.0799C47.0481 52.4289 58.0401 50.9745 59.8175 35.8904ZM28.2052 50.0393C28.2052 50.0393 22.1163 57.6317 20.2227 59.6028C19.6027 60.2435 18.9233 60.184 18.9336 58.913C18.9336 58.0786 18.9801 48.5384 18.9801 48.5384C7.06322 45.1232 7.76589 32.2788 7.89505 25.5596C8.02422 18.8378 9.25389 13.3327 12.8809 9.62557C21.2483 1.77998 44.8522 3.53407 50.8662 9.18641C58.2184 15.7042 55.6015 34.1182 55.617 34.7459C54.1057 47.3371 45.1984 48.1354 43.5606 48.6804C42.8605 48.9129 36.3634 50.5844 28.2052 50.0393V50.0393Z"
+                                                    fill="#5C5C5C" />
+                                                <path
+                                                    d="M31.5732 11.1005C30.5786 11.1005 30.5786 12.6505 31.5732 12.6634C39.2896 12.7228 45.6446 18.1013 45.7143 27.9671C45.7143 29.0081 47.2385 28.9952 47.2256 27.9541H47.223C47.1403 17.3237 40.2015 11.1599 31.5732 11.1005V11.1005Z"
+                                                    fill="#5C5C5C" />
+                                                <path
+                                                    d="M41.7234 26.332C41.7002 27.3602 43.2218 27.4092 43.2347 26.3682C43.3613 20.5066 39.7472 15.6783 32.9556 15.1694C31.961 15.0971 31.8577 16.66 32.8497 16.7323C38.7397 17.1793 41.8423 21.1989 41.7234 26.332V26.332Z"
+                                                    fill="#5C5C5C" />
+                                                <path
+                                                    d="M40.097 32.9996C38.8208 32.2607 37.5214 32.7206 36.984 33.4465L35.8603 34.9009C35.2894 35.6397 34.2225 35.5416 34.2225 35.5416C26.4363 33.4826 24.3541 25.3348 24.3541 25.3348C24.3541 25.3348 24.2585 24.2317 24.9715 23.6401L26.3769 22.4776C27.0795 21.9196 27.5239 20.5763 26.8083 19.2562C24.8966 15.8023 23.6127 14.6114 22.9591 13.6969C22.272 12.8366 21.2386 12.6429 20.164 13.2241H20.1407C17.9061 14.5313 15.4597 16.9777 16.2425 19.4965C17.578 22.1521 20.0322 30.6177 27.8545 37.0141C31.5306 40.0391 37.3483 43.1391 39.818 43.8547L39.8412 43.8909C42.2747 44.7021 44.641 42.1601 45.9043 39.8583V39.8402C46.4649 38.7268 46.2789 37.6728 45.46 36.9831C44.0081 35.5674 41.8175 34.0045 40.097 32.9996Z"
+                                                    fill="#5C5C5C" />
+                                                <path
+                                                    d="M34.0198 20.9353C36.5024 21.08 37.7062 22.3768 37.8354 25.0402C37.8819 26.0813 39.3931 26.009 39.3466 24.9679C39.1813 21.4907 37.3678 19.5532 34.1024 19.3724C33.1079 19.313 33.0149 20.8759 34.0198 20.9353V20.9353Z"
+                                                    fill="#5C5C5C" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="62" height="62" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-contacts__social" href="#"><svg viewBox="0 0 62 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.08203 62H29.3047V39.9609H22.0391V32.6953H29.3047V23.6133C29.3047 18.6054 33.3788 14.5312 38.3867 14.5312H47.4688V21.7969H40.2031C38.1999 21.7969 36.5703 23.4264 36.5703 25.4297V32.6953H47.1409L45.93 39.9609H36.5703V62H52.918C57.9259 62 62 57.9259 62 52.918V9.08203C62 4.07414 57.9259 0 52.918 0H9.08203C4.07414 0 0 4.07414 0 9.08203V52.918C0 57.9259 4.07414 62 9.08203 62ZM3.63281 9.08203C3.63281 6.07739 6.07739 3.63281 9.08203 3.63281H52.918C55.9226 3.63281 58.3672 6.07739 58.3672 9.08203V52.918C58.3672 55.9226 55.9226 58.3672 52.918 58.3672H40.2031V43.5938H49.0075L51.4294 29.0625H40.2031V25.4297H51.1016V10.8984H38.3867C31.3756 10.8984 25.6719 16.6021 25.6719 23.6133V29.0625H18.4062V43.5938H25.6719V58.3672H9.08203C6.07739 58.3672 3.63281 55.9226 3.63281 52.918V9.08203Z"
+                                                fill="#5C5C5C" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    © 2020 “Антимфо”. Все права защищены
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

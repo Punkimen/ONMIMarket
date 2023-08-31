@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+  <link rel="stylesheet" href="css/how-get.css">
+</head>
+
+<body class="">
+  <main class="main-page">
+    <section class="how-get">
+      <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <div class="header__logo">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+          </svg>
+        </div>
+        <div class="header__location">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#location"></use>
+          </svg>
+          <span>Челябинск</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__themes-btns">
+          <button id="light-btn-theme" class="btn-small header__change-theme btn-change-theme active">день</button>
+          <button id="dark-btn-theme" class="btn-small header__change-theme btn-change-theme">ночь</button>
+        </div>
+        <div class="header__visually">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#eye"></use>
+          </svg>
+          <span>Версия для слабовидящих</span>
+        </div>
+        <div class="burger js-show-menu">
+          <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+      <div class="how-get__container container">
+        <div class="how-get__top">
+          <div class="bread-crumbs">
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__elem">
+                <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+              </li>
+              <li class="bread-crumbs__elem">
+                <a href="#" class="bread-crumbs__link">Как добраться</a>
+              </li>
+            </ul>
+          </div>
+          <div class="how-get__top-content">
+            <h2 class="how-get__title section-title">Как добраться</h2>
+            <div class="how-get__text">
+              <p>Для каждого путешественника важным остается вопрос:
+                на чем можно добраться до желаемой точки
+                и как передвигаться внутри города.</p>
+              <p>Рассказываем по порядку.</p>
+            </div>
+          </div>
+        </div>
+        <div class="how-get__info-wrapper">
+          <div class="how-get__info-block">
+            <p>До Ямала летают самолёты компаний S7 Airlines, Аэрофлот,
+              Газпром авиа, Трансаэро, U-Tair, ИрАэро и других, в общей сложности шестнадцати авиалиний, регулярно
+              осуществляют перелёты из Москвы, Екатеринбурга, Тюмени
+              и других городов России.</p>
+          </div>
+          <div class="how-get__info-block how-get__info-block_right">
+            <p>Аэропорты есть в Салехарде, Ноябрьске, Надыме, Новом Уренгое, Тарко-Сале, Красноселькупе, Сабетте,
+              поэтому можно сориентироваться, какой рейс для вас наиболее удобен, исходя из предполагаемого маршрута
+              путешествия по полуострову.
+            </p>
+          </div>
+        </div>
+        <div class="how-get__train">
+          <img src="img/how-get/train.png" alt="train">
+        </div>
+      </div>
+    </section>
+    <section class="get-map">
+      <div class="container">
+        <div class="get-map__text">
+          <p>Если воздушному транспорту вы предпочитаете наземный,
+            то на железнодорожный вокзал в Новом Уренгое вас доставят поезда
+            из таких городов как Москва, Уфа, Казань, Челябинск, Новосибирск. </p>
+        </div>
+        <div class="get-map__map">
+          <img src="img/how-get/map.svg" alt="map">
+        </div>
+        <div class="get-map__choose">
+          <div class="get-map__tabs">
+            <a href="#" class="get-map__tab active">Самолет</a>
+            <a href="#" class="get-map__tab">Поезд</a>
+            <a href="#" class="get-map__tab">Автобус</a>
+          </div>
+          <div class="get-map__body"></div>
+        </div>
+      </div>
+    </section>
+    <section class="get-around">
+      <div class="container">
+        <h2 class="get-around__title section-title">На чем передвигаться по Ямалу?</h2>
+        <div class="get-around__item">
+          <div class="get-around__photo">
+            <img src="img/how-get/photo_1.png" alt="helicopter">
+          </div>
+          <div class="get-around__text">
+            <p>На Ямале не так много дорог, так как их нельзя строить в тундре и лесотундре,
+              чтобы не нарушать естественные природные процессы. Поэтому обычным для ямальцев средством передвижения
+              являются вертолёты. По округу они совершают перевозки порядка 30-ти направлений. Поэтому у вас будет
+              уникальная возможность совершить полет на вертолёте. </p>
+          </div>
+        </div>
+        <div class="get-around__item">
+          <div class="get-around__photo">
+            <img src="img/how-get/photo_2.png" alt="minibus">
+          </div>
+          <div class="get-around__text">
+            <p>По Салехарду ходит большое количество маршруток. В любое место столицы Ямала,
+              даже до речной переправы, вы комфортно доедете на этом удобном виде общественного пассажирского
+              транспорта.</p>
+          </div>
+        </div>
+        <div class="get-around__item">
+          <div class="get-around__photo">
+            <img src="img/how-get/photo_3.png" alt="taxi">
+          </div>
+          <div class="get-around__text">
+            <p>Там, где есть автомобильные дороги, вы сможете воспользоваться услугами такси,
+              проехать на автомобиле.
+              На определенных участках передвижение возможно
+              на вездеходе.</p>
+          </div>
+        </div>
+        <div class="get-around__item get-around__item_boat">
+          <div class="get-around__photo">
+            <img src="img/how-get/photo_4.png" alt="boat">
+          </div>
+          <div class="get-around__text get-around__text_boat">
+            <p>На Ямале также есть регулярные паромные переправы, потому как рек здесь великое множество.</p>
+            <p>Судоходные водные маршруты на полуострове проложены по рекам Обь, Малая Обь, Надым, Таз и Пур, с общей
+              протяжённостью 3 621 км. Речной вокзал здесь гораздо привычнее, чем в других местах автостанция.</p>
+          </div>
+        </div>
+        <div class="get-around__routes">
+          <div class="get-around__routes-label">Теплоходы перевозят пассажиров по следующим маршрутам внутри региона:
+          </div>
+          <div class="get-around__routes-wrapper">
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Аксарка</span>
+              <span>Салемал</span>
+              <span>Панаевск</span>
+              <span>Яр-Сале</span>
+              <span>Кутопьюган</span>
+              <span>Ныда</span>
+            </div>
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Новый Порт</span>
+              <span>Антипаюта</span>
+            </div>
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Питляр</span>
+              <span>Горки</span>
+              <span>Лопхари</span>
+              <span>Казым Мыс</span>
+            </div>
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Шурышкары</span>
+              <span>Мужи</span>
+            </div>
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Катравож</span>
+            </div>
+            <div class="get-around__routes-item">
+              <span>Салехард</span>
+              <span>Лабытнанги</span>
+            </div>
+          </div>
+        </div>
+        <div class="get-around__item">
+          <div class="get-around__photo">
+            <img src="img/how-get/photo_5.png" alt="deer">
+          </div>
+          <div class="get-around__text get-around__text_small">
+            <p>Конечно, по зимней тундре,
+              вас с ветерком прокатят
+              оленьи упряжки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+  <script src="js/how-get.js"></script>
+</body>
+
+</html>

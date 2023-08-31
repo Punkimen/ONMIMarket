@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+</head>
+
+<body class="">
+    <section class="main-screen">
+    <div class="burger js-show-menu">
+        <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="main-screen__bg">
+        <div class="main-screen__bg-item" data-index="1">
+            <img src="img/bg_1.jpg" alt="">
+        </div>
+        <div class="main-screen__bg-item" data-index="2">
+            <img src="img/bg_2.jpg" alt="">
+        </div>
+        <div class="main-screen__bg-item" data-index="3">
+            <img src="img/bg_3.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-screen__wrapper">
+            <div class="main-screen__logo">
+                <div class="main-screen__logo-wrapper">
+                    <span>Да, это </span>
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="main-screen__widgets widgets-block">
+                <div class="widgets-block__header">
+                    <div class="widgets-block__langs">
+                        <div class="widgets-block__location">Челябинск</div>
+                        <div class="widgets-block__languages">
+                            <button class="widgets-block__lang btn-small active">ru</button>
+                            <button class="widgets-block__lang btn-small">eng</button>
+                        </div>
+                    </div>
+                    <div class="widgets-block__time">15:20</div>
+                </div>
+                <div class="widgets-block__wrapper">
+                    <div class="widgets-block__item widjet-weather">
+                        <div class="widjet-weather__top">
+                            <div class="widjet-weather__town">Салехард</div>
+                            <div class="widjet-weather__temp">-7°</div>
+                        </div>
+                        <div class="widjet-weather__down">
+                            <div class="widjet-weather__icon">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#snow"></use>
+                                </svg>
+                            </div>
+                            <div class="widjet-weather__status">
+                                <span>Снегопад</span>
+                                <span>Макс. -7°, мин. -9°</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets-block__item widjet-date">
+                        <div class="widjet-date__top">
+                            <div class="widjet-date__day">27 окт.</div>
+                            <div class="widjet-date__weekday">Среда</div>
+                        </div>
+                        <div class="widjet-date__down">
+                            <div class="widjet-date__events">
+                                Сегодня событий нет
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets-block__item widjet-light">
+                        <div class="widjet-light__label">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#lights"></use>
+                            </svg>
+                            <span>Северное сияние</span>
+                        </div>
+                        <div class="widjet-light__slider-inner">
+                            <div class="widjet-light__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="widjet-light__slide swiper-slide">
+                                        <div class="widjet-light__level">
+                                            <span>7 уровень </span>из 10
+                                        </div>
+                                    </div>
+                                    <div class="widjet-light__slide swiper-slide">
+                                        <div class="widjet-light__level">
+                                            <span>7 уровень </span>из 10
+                                        </div>
+                                    </div>
+                                    <div class="widjet-light__slide swiper-slide">
+                                        <div class="widjet-light__level">
+                                            <span>7 уровень </span>из 10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widjet-light__slider-arrow widjet-light__prev-arrow">
+                                <span>
+                                    <img src="img/icon/arrow-slider.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="widjet-light__slider-arrow widjet-light__next-arrow">
+                                <span>
+                                    <img src="img/icon/arrow-slider.svg" alt="">
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="widgets-block__awaits what-awaits">
+                    <div class="what-awaits__label">Что вас ждёт на Ямале</div>
+                    <div class="what-awaits__photo">
+                        <img src="img/awaits-photo.png" alt="">
+                        <div class="what-awaits__name">Граница полярного круга</div>
+                    </div>
+                </div>
+                <div class="widgets-themes">
+                    <div class="widgets-themes__label">Полярный</div>
+                    <div class="widgets-themes__btns">
+                        <button id="light-btn-theme" class="btn-small btn-change-theme active">день</button>
+                        <button id="dark-btn-theme" class="btn-small btn-change-theme">ночь</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="travel-guide">
+    <div class="container">
+        <h2 class="travel-guide__title section-title">Путеводитель</h2>
+        <div class="travel-guide__wrapper">
+            <div class="travel-guide__item excursions-item">
+                <div class="travel-guide__label">Экскурсии</div>
+                <div class="travel-guide__excursions">
+                    <div class="travel-guide__excursion" style="background-image: url(img/travel-guide/photo_1.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,7</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__excursion" style="background-image: url(img/travel-guide/photo_2.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,83</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__excursion hide"
+                        style="background-image: url(img/travel-guide/photo_1.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,7</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__excursion hide"
+                        style="background-image: url(img/travel-guide/photo_2.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,83</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__excursion hide"
+                        style="background-image: url(img/travel-guide/photo_1.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,7</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__excursion hide"
+                        style="background-image: url(img/travel-guide/photo_2.jpg);">
+                        <div class="travel-guide__excursion-estimation">4,83</div>
+                        <div class="travel-guide__excursion-content">
+                            <div class="travel-guide__excursion-label">Мемориал Трёх войн</div>
+                            <div class="travel-guide__excursion-date">14 сен., 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-guide__item routes-item">
+                <div class="travel-guide__label">Маршруты</div>
+                <div class="travel-guide__routes-tabs">
+                    <div class="travel-guide__routes-tab active"
+                        style="background-image: url(img/travel-guide/photo_3.jpg);">
+                        <div class="travel-guide__route-icon">
+                            <img src="img/icon/snow-icon.svg" alt="">
+                        </div>
+                        <div class="convex-connect" style="background-image: url(img/travel-guide/photo_3.jpg);"></div>
+                    </div>
+                    <div class="travel-guide__routes-tab" style="background-image: url(img/travel-guide/photo_4.jpg);">
+                        <div class="travel-guide__route-icon">
+                            <img src="img/icon/trees-icon.svg" alt="">
+                        </div>
+                        <div class="convex-connect" style="background-image: url(img/travel-guide/photo_4.jpg);"></div>
+                    </div>
+                    <div class="travel-guide__routes-tab" style="background-image: url(img/travel-guide/photo_5.jpg);">
+                        <div class="travel-guide__route-icon">
+                            <img src="img/icon/mountains-sun.svg" alt="">
+                        </div>
+                        <div class="convex-connect" style="background-image: url(img/travel-guide/photo_5.jpg);"></div>
+                    </div>
+                    <div class="travel-guide__routes-tab" style="background-image: url(img/travel-guide/photo_6.jpg);">
+                        <div class="travel-guide__route-icon">
+                            <img src="img/icon/mountains.svg" alt="">
+                        </div>
+                        <div class="convex-connect" style="background-image: url(img/travel-guide/photo_6.jpg);"></div>
+                    </div>
+                    <div class="travel-guide__routes-tab" style="background-image: url(img/travel-guide/photo_7.jpg);">
+                        <div class="travel-guide__route-icon">
+                            <img src="img/icon/water.svg" alt="">
+                        </div>
+                        <div class="convex-connect" style="background-image: url(img/travel-guide/photo_7.jpg);"></div>
+                    </div>
+                </div>
+                <div class="travel-guide__routes">
+                    <div class="travel-guide__route" style="background-image: url(img/travel-guide/photo_3.jpg);">
+                        <div class="bg-video">
+                            <video class="video" loop="loop" autoplay="true" muted="true">
+                                <source src="./video/bg.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="travel-guide__route-content">
+                            <div class="travel-guide__route-icon">
+                                <img src="img/icon/snow-icon.svg" alt="">
+                            </div>
+                            <div class="travel-guide__route-text">
+                                <div class="travel-guide__route-label">ЛЁКВОЖ</div>
+                                <div class="travel-guide__route-descr">Место, где можно потрогать облака</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__route" style="background-image: url(img/travel-guide/photo_4.jpg);">
+                        <div class="bg-video">
+                            <video class="video" loop="loop" autoplay="true" muted="true">
+                                <source src="https://denis-creative.com/wp-content/uploads/2018/01/video.mp4"
+                                    type="video/mp4" />
+                                <source src="https://denis-creative.com/wp-content/uploads/2018/01/video.ogv"
+                                    type="video/ogv" />
+                                <source src="https://denis-creative.com/wp-content/uploads/2018/01/video.webm"
+                                    type="video/webm" />
+                            </video>
+                        </div>
+                        <div class="travel-guide__route-content">
+                            <div class="travel-guide__route-icon">
+                                <img src="img/icon/trees-icon.svg" alt="">
+                            </div>
+                            <div class="travel-guide__route-text">
+                                <div class="travel-guide__route-label">ЛЁКВОЖ</div>
+                                <div class="travel-guide__route-descr">Место, где можно потрогать облака</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__route active"
+                        style="background-image: url(img/travel-guide/photo_3.jpg);">
+                        <div class="bg-video">
+                            <video class="video" loop="loop" autoplay="true" muted="true">
+                                <source src="./video/bg.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="travel-guide__route-content">
+                            <div class="travel-guide__route-icon">
+                                <img src="img/icon/mountains-sun.svg" alt="">
+                            </div>
+                            <div class="travel-guide__route-text">
+                                <div class="travel-guide__route-label">ЛЁКВОЖ</div>
+                                <div class="travel-guide__route-descr">Место, где можно потрогать облака</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__route" style="background-image: url(img/travel-guide/photo_6.jpg);">
+                        <div class="bg-video">
+                            <video class="video" loop="loop" autoplay="true" muted="true">
+                                <source src="./video/bg.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="travel-guide__route-content">
+                            <div class="travel-guide__route-icon">
+                                <img src="img/icon/mountains.svg" alt="">
+                            </div>
+                            <div class="travel-guide__route-text">
+                                <div class="travel-guide__route-label">ЛЁКВОЖ</div>
+                                <div class="travel-guide__route-descr">Место, где можно потрогать облака</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-guide__route" style="background-image: url(img/travel-guide/photo_7.jpg);">
+                        <div class="bg-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/Qtuu7WyGVAE?controls=1&showinfo=1&rel=1&autoplay=1&loop=1&mute=1"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="travel-guide__route-content">
+                            <div class="travel-guide__route-icon">
+                                <img src="img/icon/water.svg" alt="">
+                            </div>
+                            <div class="travel-guide__route-text">
+                                <div class="travel-guide__route-label">ЛЁКВОЖ</div>
+                                <div class="travel-guide__route-descr">Место, где можно потрогать облака</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="ready-tours">
+    <div class="container">
+        <h2 class="ready-tours__title section-title">Готовые туры</h2>
+    </div>
+    <div class="ready-tours__banners">
+        <div class="ready-tours__banners-wrapper">
+            <div id="scene_1" class="ready-tours__banners-item">
+                <div class="ready-tours__banners-text ready-tours__banners-text_1 parallax" data-depth="0.2">
+                    волшебник ямал ири
+                </div>
+                <div class="ready-tours__banners-photo ready-tours__banners-photo_1 parallax" data-depth="0.1">
+                    <img src="img/ready-tours/photo_1.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-photo ready-tours__banners-photo_5 parallax" data-depth="0.2">
+                    <img src="img/ready-tours/grandpa.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-figure ready-tours__banners-figure_1 parallax" data-depth="0.3">
+                    <img src="img/ready-tours/figure_1.png" class="" alt="">
+                </div>
+            </div>
+            <div id="scene_2" class="ready-tours__banners-item">
+                <div class="ready-tours__banners-text ready-tours__banners-text_2 parallax" data-depth="0.4">
+                    спуск с высоты 2 км
+                </div>
+                <div class="ready-tours__banners-photo ready-tours__banners-photo_2 parallax" data-depth="0.5">
+                    <img src="img/ready-tours/photo_2.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-figure ready-tours__banners-figure_2 parallax " data-depth="0.4">
+                    <img src="img/ready-tours/figure_2.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-figure ready-tours__banners-figure_3 parallax" data-depth="0.4">
+                    <img src="img/ready-tours/figure_3.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-figure ready-tours__banners-figure_4 parallax" data-depth="0.3">
+                    <img src="img/ready-tours/figure_3.png" class="" alt="">
+                </div>
+            </div>
+            <div id="scene_3" class="ready-tours__banners-item">
+                <div class="ready-tours__banners-text ready-tours__banners-text_3 parallax" data-depth="0.4">
+                    гончарная мастерская
+                </div>
+                <div class="ready-tours__banners-photo ready-tours__banners-photo_3 parallax" data-depth="0.3">
+                    <img src="img/ready-tours/photo_3.png" class="" alt="">
+                </div>
+                <div class="ready-tours__banners-photo ready-tours__banners-photo_4 parallax" data-depth="0.2">
+                    <img src="img/ready-tours/photo_4.png" class="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ready-tours__tours ">
+        <div class="ready-tours__slider ">
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_1.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_2.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_3.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_4.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_5.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_6.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_1.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_2.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_3.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_4.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_5.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_6.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_1.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_2.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_3.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+            <div class="ready-tours__slide">
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_4.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_5.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+                <a href="" class="ready-tours__tour" style="background-image: url(img/ready-tours/bg_6.jpg);">
+                    <div class="ready-tours__tour-title">Обзорная экскурсия по городу Салехарду</div>
+                    <div class="ready-tours__tour-footer">
+                        <div class="ready-tours__tour-time">2 часа</div>
+                        <div class="ready-tours__tour-object">1 объект</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="ready-tours__slider-showAll btn-reset">
+            Посмотреть все →
+        </a>
+        <div class="ready-tours__random">
+            <div class="container">
+                <div class="ready-tours__random-title">Случайный
+                    тур</div>
+                <div class="ready-tours__random-block tilt-js">
+                    <button class="ready-tours__random-rotate btn-reset">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#rotate"></use>
+                        </svg>
+                    </button>
+                    <div class="ready-tours__random-photo">
+                        <img id="random-tour__img" class="tilt-js__inner" src="img/ready-tours/random-tour.jpg" alt="">
+                        <div class="ready-tours__random-content">
+                            <div class="ready-tours__random-label">
+                                Снегоходный тур «Высота 868»
+                            </div>
+                            <div class="ready-tours__random-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="anketa">
+    <div class="container">
+        <div class="anketa__wrapper">
+            <div class="anketa__wrapper-content">
+                <h2 class="anketa__title">Тяжело определиться?</h2>
+                <div class="anketa__description">Ответьте на 4 вопроса и мы подберем для вас идеальный тур
+                </div>
+                <div class="anketa__progress">
+                    <div class="anketa__progress-item active">1</div>
+                    <div class="anketa__progress-item ">2</div>
+                    <div class="anketa__progress-item">3</div>
+                    <div class="anketa__progress-item">4</div>
+                    <div class="anketa__progress-item">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#star"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="anketa__wrapper-answer anketa-answer">
+                <div class="anketa-answer__title">Природа и приключения</div>
+                <div class="anketa-answer__text">А как относитесь к тому, чтобы отправиться
+                    в захватывающее приключение и сделать несколько клевых снимков в свой инстаграм?</div>
+                <div class="anketa-answer__list">
+                    <div class="anketa-answer__item">
+                        <div class="anketa-answer__radio">
+                            <input type="radio">
+                            <div class="radio-indicator"></div>
+                        </div>
+                        <div class="anketa-answer__answer">Стараюсь избегать</div>
+                    </div>
+                    <div class="anketa-answer__item">
+                        <div class="anketa-answer__radio">
+                            <input type="radio">
+                            <div class="radio-indicator"></div>
+                        </div>
+                        <div class="anketa-answer__answer">Только популярные места</div>
+                    </div>
+                    <div class="anketa-answer__item">
+                        <div class="anketa-answer__radio">
+                            <input type="radio">
+                            <div class="radio-indicator"></div>
+                        </div>
+                        <div class="anketa-answer__answer">Очень интересует</div>
+                    </div>
+                    <div class="anketa-answer__item">
+                        <div class="anketa-answer__radio">
+                            <input type="radio">
+                            <div class="radio-indicator"></div>
+                        </div>
+                        <div class="anketa-answer__answer">Я – авантюрист</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="anketa-recomended">
+        <div class="anketa-recomended__descr">
+            <button id="repeatQuiz" type="button" class="anketa-recomended__return btn-reset">
+                <img src="img/icon/return-arrow.svg" alt="">
+            </button>
+            <span>Мы учли все ваши пожелания и вот несколько вариантов для вас, чтобы отлично провести время на Ямале!
+            </span>
+        </div>
+        <div class="anketa-recomended__tours">
+            <div class="anketa-recomended__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="anketa-recomended__slide swiper-slide"
+                        style="background-image: url(img/ready-tours/random-tour--big.jpg);">
+                        <div class="anketa-recomended__tour-content">
+                            <div class="anketa-recomended__tour-name">Снегоходный тур «Высота 868»</div>
+                            <a href="#" class="anketa-recomended__tour-link">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                                </svg>
+                            </a>
+                            <div class="anketa-recomended__tour-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anketa-recomended__slide swiper-slide"
+                        style="background-image: url(img/ready-tours/random-tour--big.jpg);">
+                        <div class="anketa-recomended__tour-content">
+                            <div class="anketa-recomended__tour-name">Снегоходный тур «Высота 868»</div>
+                            <a href="#" class="anketa-recomended__tour-link">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                                </svg>
+                            </a>
+                            <div class="anketa-recomended__tour-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anketa-recomended__slide swiper-slide"
+                        style="background-image: url(img/ready-tours/random-tour--big.jpg);">
+                        <div class="anketa-recomended__tour-content">
+                            <div class="anketa-recomended__tour-name">Снегоходный тур «Высота 868»</div>
+                            <a href="#" class="anketa-recomended__tour-link">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                                </svg>
+                            </a>
+                            <div class="anketa-recomended__tour-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anketa-recomended__slide swiper-slide"
+                        style="background-image: url(img/ready-tours/random-tour--big.jpg);">
+                        <div class="anketa-recomended__tour-content">
+                            <div class="anketa-recomended__tour-name">Снегоходный тур «Высота 868»</div>
+                            <a href="#" class="anketa-recomended__tour-link">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                                </svg>
+                            </a>
+                            <div class="anketa-recomended__tour-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anketa-recomended__slide swiper-slide"
+                        style="background-image: url(img/ready-tours/random-tour--big.jpg);">
+                        <div class="anketa-recomended__tour-content">
+                            <div class="anketa-recomended__tour-name">Снегоходный тур «Высота 868»</div>
+                            <a href="#" class="anketa-recomended__tour-link">
+                                <svg class="">
+                                    <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                                </svg>
+                            </a>
+                            <div class="anketa-recomended__tour-footer">
+                                <div class="ready-tours__random-time">2 часа</div>
+                                <div class="ready-tours__random-object">1 объект</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anketa-recomended__slider-arrows">
+                <button type="button" class="anketa-recomended__slider-arrow anketa-recomended__slider--prev btn-reset">
+                    <img src="img/icon/arrow-slider--big.svg" alt="">
+                </button>
+                <button type="button" class="anketa-recomended__slider-arrow anketa-recomended__slider--next btn-reset">
+                    <img src="img/icon/arrow-slider--big.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="travel">
+    <div class="container">
+        <h2 class="travel__title section-title">Если вы путешествуете самостоятельно</h2>
+        <div class="travel__wrapper">
+            <a href="#" class="travel-link" style="background-image: url(img/travel/bg_1.jpg);">
+                <div class="travel-link__name">
+                    <span>Как<br> добраться?</span>
+                    <img src="img/travel/arrow.svg" alt="">
+                </div>
+            </a>
+            <a href="#" class="travel-link" style="background-image: url(img/travel/bg_2.jpg);">
+                <div class="travel-link__name"><span>Где<br>
+                        поесть?</span>
+                    <img src="img/travel/arrow.svg" alt=""></div>
+            </a>
+            <a href="#" class="travel-link" style="background-image: url(img/travel/bg_3.png);">
+                <div class="travel-link__name"><span>Где<br>
+                        жить?</span>
+                    <img src="img/travel/arrow.svg" alt=""></div>
+            </a>
+            <a href="#" class="travel-link" style="background-image: url(img/travel/bg_4.jpg);">
+                <div class="travel-link__name"><span>Чем<br> заняться?</span>
+                    <img src="img/travel/arrow.svg" alt=""></div>
+            </a>
+        </div>
+    </div>
+</div>
+    <section class="poster">
+    <div class="container">
+        <div class="poster__header">
+            <h2 class="poster__title section-title">Афиша Ямала</h2>
+            <div class="poster__select custom-select">
+                <div class="custom-select__header">
+                    <div class="custom-select__arrow">
+
+                    </div>
+                    <span class="custom-select__current-elem">Все города</span>
+                </div>
+                <div class="custom-select__body">
+                    <div class="custom-select__search">
+                        <input type="text" class="custom-select__input" placeholder="Поиск">
+                        <button type="button" class="custom-select__search-btn btn-reset">
+                            <!-- <img src="img/icon/search.svg" alt="lope"> -->
+                        </button>
+                    </div>
+                    <div class="custom-select__categoryes">
+                        <div class="custom-select__category">
+                            <div class="custom-select__category-letter">
+                                <span class="custom-select__category-icon"></span>
+
+                            </div>
+                            <ul class="custom-select__category-list">
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Все города
+                                        <input class="choosen-radio" value="city" type="radio" name="1" checked />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="custom-select__category">
+                            <div class="custom-select__category-letter">A</div>
+                            <ul class="custom-select__category-list">
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Азерот
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Анадырь
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Аргентина
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Азерот
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="custom-select__category">
+                            <div class="custom-select__category-letter">A</div>
+                            <ul class="custom-select__category-list">
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Азерот
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Анадырь
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Аргентина
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                                <li class="custom-select__category__elem">
+                                    <label class="control control-radio costum-radio">
+                                        Азерот
+                                        <input class="choosen-radio" value="city" type="radio" name="1" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="poster-filter">
+            <div class="poster-filter__schedule">
+                <div class="poster-filter__schedule-header">
+                    <span class="poster-filter__schedule-text">Расписание на <span class="blue">сегодня</span>
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#triangle-arrow"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="poster-filter__schedule-body">
+                    <div id="event-calendar" class="calendar"></div>
+                </div>
+            </div>
+            <div class="poster-filter__btns category__btns">
+                <div class="category-selector"></div>
+                <a href="#" class="poster-filter__btn category-btn active">Все</a>
+                <a href="#" class="poster-filter__btn category-btn">Праздник</a>
+                <a href="#" class="poster-filter__btn category-btn">Фестиваль</a>
+                <a href="#" class="poster-filter__btn category-btn">Выставка</a>
+                <a href="#" class="poster-filter__btn category-btn">Кино</a>
+                <a href="#" class="poster-filter__btn category-btn">Театр</a>
+                <a href="#" class="poster-filter__btn category-btn">Концерт</a>
+                <a href="#" class="poster-filter__btn category-btn">Экскурсия</a>
+            </div>
+        </div>
+
+        <div class="poster__wrapper">
+            <div class="poster-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_1.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">бесплатно</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Человек Севера</div>
+                                <div class="event-item__category">выставка</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_2.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">от 300 ₽</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Дюна</div>
+                                <div class="event-item__category">кино</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_3.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">200 ₽</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Город в искусстве</div>
+                                <div class="event-item__category">выставка</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_1.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">бесплатно</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Человек Севера</div>
+                                <div class="event-item__category">выставка</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_2.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">от 300 ₽</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Дюна</div>
+                                <div class="event-item__category">кино</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster-slider__slide swiper-slide">
+                        <a href="#" class="event-item">
+                            <div class="event-item__body">
+                                <div class="event-item__photo">
+                                    <img src="img/poster/poster_3.jpg" alt="">
+                                </div>
+                                <div class="event-item__status">200 ₽</div>
+                            </div>
+                            <div class="event-item__footer">
+                                <div class="event-item__name">Город в искусстве</div>
+                                <div class="event-item__category">выставка</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="poster-icons">
+        <div class="poster-icon">
+            <div class="poster-icon__icon">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#grow"></use>
+                </svg>
+            </div>
+            <div class="poster-icon__descr">Купите изделия местных мастеров</div>
+        </div>
+        <div class="poster-icon">
+            <div class="poster-icon__icon">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#deer"></use>
+                </svg>
+            </div>
+            <div class="poster-icon__descr">Посетите праздники и фестивали</div>
+        </div>
+        <div class="poster-icon">
+            <div class="poster-icon__icon poster-icon__icon--person">
+                <svg class="person-icon">
+                    <use xlink:href="./img/icons/icons.svg#person"></use>
+                </svg>
+            </div>
+            <div class="poster-icon__descr">Проведите время
+                с пользой для себя</div>
+        </div>
+    </div>
+    <div class="poster-events">
+        <div class="poster-events__slider swiper">
+            <div class="swiper-wrapper">
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_1.png" alt="">
+                    <div class="poster-events__name">В гостях у Сэр Ни
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_2.png" alt="">
+                    <div class="poster-events__name">Зимняя рыбалка: вкусный фестиваль
+
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_3.png" alt="">
+                    <div class="poster-events__name">Местный колорит магазин сувениров
+
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_4.png" alt="">
+                    <div class="poster-events__name">День оленевода праздник
+
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_1.png" alt="">
+                    <div class="poster-events__name">В гостях у Сэр Ни
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_2.png" alt="">
+                    <div class="poster-events__name">Зимняя рыбалка: вкусный фестиваль
+
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_3.png" alt="">
+                    <div class="poster-events__name">Местный колорит магазин сувениров
+
+                    </div>
+                </a>
+                <a href="#" class="poster-events__slide swiper-slide">
+                    <img src="img/poster/event_4.png" alt="">
+                    <div class="poster-events__name">День оленевода праздник
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="poster-events__arrows">
+            <div class="container">
+                <button type="button" class="poster-events__arrow poster-events__arrow--prev btn-reset">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                    </svg>
+                </button>
+                <button type="button" class="poster-events__arrow poster-events__arrow--next btn-reset">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/fb.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="footer__emal blue">info@visityamal.ru</a>
+                <a href="tel:73492244949" class="footer__phone blue">+7 (349) 224-49-49</a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav">
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">О Ямале</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">ООПТ и пограничные зоны</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Партнеры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Туры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Афиша</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+    <script src="js/parallax.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

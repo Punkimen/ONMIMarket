@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="#" class="" data-popup="#invitation">1</a>
+  <div class="popups"
+    style=" position: fixed; top: 0; bottom: 0;left:0; right: 0; z-index: 999;overflow: hidden; font-family: 'CircularStd', 'Mulish', serif;">
+    <div class="popups__inner" style="width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    padding: 50px 10px;
+    overflow: auto;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);">
+      <div id="invitation" class="popup invitation-popup" style=" padding: 60px 50px 60px;
+      position: relative;
+      max-width: 532px;
+      min-height: 250px;
+      width: 100%;
+      background: linear-gradient(115.71deg, #EFF3FF 17.28%, #FFF5F2 104.92%);
+      box-shadow: 0px 5px 20px rgb(72 0 1 / 20%);
+      border-radius: 12px;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;">
+        <div class="popup__content" style="width: 100%;
+        overflow: hidden;">
+          <div class="popup__title" style="font-size: 40px;
+          text-align: center;
+          line-height: 1.2em;
+          margin-bottom: 23px;">NeoFin</div>
+          <div class=" popup__text" style="text-align: left; margin-bottom: 24px;">
+            <p style="margin-bottom: 22px;"> Hi,</p>
+
+            <p style="margin-bottom: 22px;">You have been invited to NeoFin by Patric Smith to participate in demo
+              version of our loan management
+              system.</p>
+
+            <p>Log in to your NeoFin account to start using demo collaboratively</p>
+          </div>
+          <div class="invitation-links" style="overflow: hidden;
+          position: relative;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-bottom: 24px;
+          width: 100%;
+          margin-bottom: 24px;">
+            <button type="button" class="invitation-links__accept btn black-btn" style="font-weight: 500;
+            text-align: center;
+            padding: 12px 18px 11px 18px;
+            display: block;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: transparent;
+            border: 2px solid #000000;
+            border-radius: 40px;
+            transition: all ease 0.2s;
+            color: #fff;
+            background: #000;">
+              Accept an invitation</button>
+            <div class=" invitation-links__text" style="margin: 24px 0;">or follow the link below</div>
+            <a href="" class="invitation-links__link underline"
+              style="max-width: 100%; color:#000; text-decoration: underline;">https://atlassian.design/components/form/usage/components/form/...</a>
+          </div>
+          <div class=" popup__text popup__text_invitation"
+            style="text-align: left; padding-top: 20px; font-size: 16px;">
+            <p><span style="display: block;"><b>What is NeoFin?</b></span>
+              NeoFin is a company that creates innovative credit and banking software products. Our goal is to launch
+              projects of any level of complexity as quickly as possible.</p>
+            <div class="popup__text_invitation-author" style="color: #656565;
+            font-size: 14px;
+            margin-top: 24px;">
+              <span style="display: block;">Kind regards</span>
+              <span style="display: block;">NeoFin</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="popup__exit js-close-popup" style="position: absolute;
+        top: 0;
+        right: 0;">
+          <img src="img/icon/close.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/newPopup.js"></script>
+</body>
+
+</html>

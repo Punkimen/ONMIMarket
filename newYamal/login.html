@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+</head>
+
+<body class="">
+  <main class="main-page">
+    <section class="login">
+      <div class="login-content">
+        <header class="header header--transparent">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <div class="header__logo">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+          </svg>
+        </div>
+        <div class="header__location">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#location"></use>
+          </svg>
+          <span>Челябинск</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__themes-btns">
+          <button id="light-btn-theme" class="btn-small header__change-theme btn-change-theme active">день</button>
+          <button id="dark-btn-theme" class="btn-small header__change-theme btn-change-theme">ночь</button>
+        </div>
+        <div class="header__visually">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#eye"></use>
+          </svg>
+          <span>Версия для слабовидящих</span>
+        </div>
+        <div class="burger js-show-menu">
+          <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+        <div class="container">
+          <div class="inner__breadcrumbs">
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__elem">
+                <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+              </li>
+              <li class="bread-crumbs__elem">
+                <a href="#" class="bread-crumbs__link">Личный кабинет</a>
+              </li>
+              <li class="bread-crumbs__elem">
+                <a href="#" class="bread-crumbs__link">Авторизация</a>
+              </li>
+            </ul>
+          </div>
+          <h2 class="login__title section-title ">Личный кабинет</h2>
+          <div class="login__inner">
+            <div id="login" class="form-block login-block show">
+              <div class="form-block__bg">
+                <img src="img/bg-form.svg" alt="">
+              </div>
+              <form id="login-form" action="#">
+                <div class="form-block__title">Войти</div>
+                <div class="form-block__body">
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-inner">
+                      <input type="text" placeholder="логин" required>
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/user.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-inner">
+                      <input type="password" placeholder="пароль" required>
+                      <button type="button" class="form-block__input-icon js-showPassword btn-reset">
+                        <img src="img/icon/eye-slash.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-block__handle">
+                    <div class="popup-form__personal-check white-check">
+                      <label class="control control-radio costum-radio">
+                        запомнить меня
+                        <input class="choosen-radio" name="remember" value="agree" type="checkbox" required checked
+                          name="1" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                    <a href="#" data-showBlock="#reset-password" class="form-block__forgot-password">забыли пароль?</a>
+                  </div>
+                  <div class="form-block__footer">
+                    <button src-href="cabinet.html" class="form-block__btn btn enter">Войти</button>
+                    <div class="form-block__social">
+                      <div class="form-block__social-label">или войти при помощи </div>
+                      <div class="form-block__socials">
+                        <a href="#" class="form-block__social-link">
+                          <img src="img/icon/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="form-block__social-link">
+                          <img src="img/icon/fb.svg" alt="">
+                        </a>
+                        <a href="#" class="form-block__social-link">
+                          <img src="img/icon/google.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" data-showBlock="#register"
+                  class="form-block__btn-block form-block__btn-block--bottom">Зарегистрироваться</button>
+              </form>
+            </div>
+            <div id="register" class="form-block register-block">
+              <div class="form-block__bg">
+                <img src="img/bg-form_top.svg" alt="">
+              </div>
+              <form action="#">
+                <div class="form-block__title">Регистрация</div>
+                <div class="form-block__body">
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Имя</div>
+                    <div class="form-block__input-inner">
+                      <input class="opacity-placehold" type="text" placeholder="Иван">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/user.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Почта</div>
+                    <div class="form-block__input-inner">
+                      <input class="opacity-placehold" type="email" placeholder="ex@mail.ru">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/email.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Телефон</div>
+                    <div class="form-block__input-inner">
+                      <input type="tel" class="phone-input opacity-placehold" placeholder="+7 000 000-00-00">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/phone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Пароль</div>
+                    <div class="form-block__input-inner">
+                      <input type="password" class="opacity-placehold" placeholder="">
+                      <button type="button" class="form-block__input-icon js-showPassword btn-reset">
+                        <img src="img/icon/eye-slash.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-block__handle">
+                    <div class="popup-form__personal-check white-check">
+                      <label class="control control-radio costum-radio">
+                        Даю согласие на обработку
+                        <a href="#" class="underline">персональных данных</a>
+                        <input class="choosen-radio" name="remember" value="agree" type="checkbox" required checked
+                          name="1" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                    <div class="popup-form__personal-check white-check">
+                      <label class="control control-radio costum-radio">
+                        Хочу получать маркетинговые
+                        предложения от сервиса
+                        <input class="choosen-radio" name="remember" value="agree" type="checkbox" required name="2" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-block__footer">
+                  <button data-showBlock="#sucsses-notification" class="form-block__btn btn">
+                    Зарегестрироваться
+                  </button>
+                </div>
+                <button data-showBlock="#login" type="button"
+                  class="form-block__btn-block form-block__btn-block--top">Назад</button>
+              </form>
+              <a href="#" data-showBlock="#register-partner" class="partners-link form-block__btn btn">Стать
+                партнером</a>
+            </div>
+            <div id="sucsses-notification" class="form-block sucsess-block">
+              <div class="form-block__bg">
+                <img src="img/bg-form_small.svg" alt="">
+              </div>
+              <div class="form-block__title">Вы успешно зарегистрированы</div>
+              <a href="cabinet_partner.html" class="form-block__btn-block form-block__btn-block--bottom">Профиль</a>
+            </div>
+            <div id="reset-password" class="form-block resetPassword-block ">
+              <div class="form-block__bg">
+                <img src="img/bg-form_small-top.svg" alt="">
+              </div>
+              <form action="">
+                <div class="form-block__title">Сброс пароля</div>
+                <div class="form-block__input transparent-input ">
+                  <div class="form-block__input-label">Почта</div>
+                  <div class="form-block__input-inner " data-info="Не найдено">
+                    <input class="opacity-placehold " type="email" placeholder="ex@mail.ru">
+                    <div class="form-block__input-icon">
+                      <img src="img/icon/email.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-block__footer">
+                  <button data-showBlock="#sucsses-newPassword" class="form-block__btn btn">
+                    Сброс
+                  </button>
+                </div>
+              </form>
+
+              <button data-showBlock="#login" type="button" href="#"
+                class="form-block__btn-block form-block__btn-block--top">Назад</button>
+            </div>
+            <div id="sucsses-newPassword" class="form-block auth-block ">
+              <div class="form-block__bg">
+                <img src="img/bg-form_auth.svg" alt="">
+              </div>
+              <div class="form-block__title">Новый пароль отправлен на почту</div>
+              <a href="#" data-showBlock="#login"
+                class="form-block__btn-block form-block__btn-block--bottom">Авторизация</a>
+            </div>
+            <div id="register-partner" class="form-block register-block ">
+              <div class="form-block__bg">
+                <img src="img/bg-form_top.svg" alt="">
+              </div>
+              <form action="#">
+                <div class="form-block__title">Регистрация
+                  <span class="additional-descr">как партнер</span>
+                </div>
+                <div class="form-block__body">
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Имя</div>
+                    <div class="form-block__input-inner">
+                      <input class="opacity-placehold" type="text" placeholder="Иван">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/user.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Почта</div>
+                    <div class="form-block__input-inner">
+                      <input class="opacity-placehold" type="email" placeholder="ex@mail.ru">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/email.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Телефон</div>
+                    <div class="form-block__input-inner">
+                      <input type="tel" class="phone-input opacity-placehold" placeholder="+7 000 000-00-00">
+                      <div class="form-block__input-icon">
+                        <img src="img/icon/phone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-block__input transparent-input">
+                    <div class="form-block__input-label">Пароль</div>
+                    <div class="form-block__input-inner">
+                      <input type="password" class="opacity-placehold" placeholder="">
+                      <button type="button" class="form-block__input-icon js-showPassword btn-reset">
+                        <img src="img/icon/eye-slash.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-block__handle">
+                    <div class="popup-form__personal-check white-check">
+                      <label class="control control-radio costum-radio">
+                        Даю согласие на обработку
+                        <a href="#" class="underline">персональных данных</a>
+                        <input class="choosen-radio" name="remember" value="agree" type="checkbox" required checked
+                          name="1" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                    <div class="popup-form__personal-check white-check">
+                      <label class="control control-radio costum-radio">
+                        Хочу получать маркетинговые
+                        предложения от сервиса
+                        <input class="choosen-radio" name="remember" value="agree" type="checkbox" required name="2" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-block__footer">
+                  <button data-showBlock="#sucsses-reg" class="form-block__btn btn">
+                    Зарегестрироваться
+                  </button>
+                </div>
+                <button data-showBlock="#login" type="button"
+                  class="form-block__btn-block form-block__btn-block--top">Назад</button>
+              </form>
+              <a href="#" data-showBlock="#register" class="partners-link form-block__btn btn">Стать
+                путешественником</a>
+            </div>
+            <div id="sucsses-reg" class="form-block order-block ">
+              <div class="form-block__bg">
+                <img src="img/bg-form_sucsess.svg" alt="">
+              </div>
+              <div class="form-block__title">Заявка на регистрацию отправлена</div>
+              <div class="form-block__text">Ответ поступит на указанную почту</div>
+              <a href="#" class="form-block__btn-block form-block__btn-block--bottom">Главная страница</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="footer footer--tranparent">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/fb.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="footer__emal blue">info@visityamal.ru</a>
+                <a href="tel:73492244949" class="footer__phone blue">+7 (349) 224-49-49</a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav">
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">О Ямале</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">ООПТ и пограничные зоны</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Партнеры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Туры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Афиша</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+    </section>
+    <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

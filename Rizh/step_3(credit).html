@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step-3(credit)</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.css"
+    integrity="sha512-kSH0IqtUh1LRE0tlO8dWN7rbmdy5cqApopY6ABJ4U99HeKulW6iKG5KgrVfofEXQOYtdQGFjj2N/DUBnj3CNmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/vendor.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="site-container"><header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <img class="cum-logo" src="img/logo/cum-logo.jpg" alt="">
+            <img class="header__logo-add" src="img/logo/add.svg" alt="">
+            <img class="rizh-logo" src="img/logo/rizh-logo.svg" alt="">
+        </div>
+        <div class="header__right">
+            <a href="#" class="header__link">Як це працює</a>
+            <button class="btn header__login">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#cabinet"></use>
+                </svg>
+                <span>Увійти</span>
+            </button>
+        </div>
+        <div class="header__burger">
+            <div class="burger__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-mobile__content">
+                <nav class="header-mobile__nav">
+                    <ul class="header-mobile__list">
+                        <li class="header-mobile__elem"><a href="" class="header-mobile__link">Як це працює</a></li>
+                        <li class="header-mobile__elem"><a href="" class="header-mobile__link">Увійти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-mobile__footer">
+                2021 © ТОВ Ріж Платіж, усі права захищені
+            </div>
+        </div>
+    </div>
+</header> <main class="main">
+            <section class="steps-banner">
+    <div class="container">
+        <a href="#" class="steps-banner__link">
+            <svg class="">
+                <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                <span>Назад до сторінки товара</span>
+            </svg>
+        </a>
+        <div class="steps-banner__logo">
+            <img src="img/steps-logo.svg" alt="">
+            <div class="steps-banner__text">плати, як хочеш,<br>
+                про решту дбаємо ми</div>
+        </div>
+        <div class="steps-banner__items">
+            <div class="steps-banner__item active">
+                <div class="steps-banner__num"><span>1</span></div>
+                <div class="steps-banner__label">Варіант оплати</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>2</span></div>
+                <div class="steps-banner__label">Вхід / реєстрація</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>3</span></div>
+                <div class="steps-banner__label">Обробка заявки</div>
+            </div>
+            <div class="steps-banner__lines"></div>
+            <div class="steps-banner__item">
+                <div class="steps-banner__num"><span>4</span></div>
+                <div class="steps-banner__label">Товар їде до вас</div>
+            </div>
+        </div>
+    </div>
+
+</section> <section class="step-content">
+                <div class="container step-content__container">
+                    <div class="step-content__inner bg-border">
+                        <div class="step-content__info">Крок 3. Ухвалення угоди</div>
+                        <h1 class="step-content__title">Пропозиції для вас: оберіть найвигіднішу</h1>
+                        <div class="step-content__wrapper">
+                            <div class="step-content__left">
+                                <form action="" class="choosen-bank__form">
+                                    <div class="step-content__block loading-request">
+                                        <div class="loading-request__progress">
+                                            <div class="loading-request__percent">
+                                                <svg>
+                                                    <circle cx="30" cy="30" r="30"></circle>
+                                                    <circle cx="30" cy="30" r="30"></circle>
+                                                </svg>
+                                                <div class="loading-request__number">
+                                                    5 <span>хв</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="loading-request__text">Зачекайте пока триває пошук (максимум 15
+                                            хвилин)
+                                            – поки ми чекаємо підтвердження від фінансових установ. Щоб не прогавити
+                                            кращу
+                                            пропозицію.</div>
+                                    </div>
+                                    <div class="searching-bank__title">
+                                        <span>Знайдено: 20</span> лендерів готових фінансувати ваш заказ
+                                    </div>
+                                    <div class="step-content__item buy-choose active profitable">
+                                        <div class="buy-choose__head">
+                                            <div class="buy-choose__radio">
+                                                <label class="control control-radio">
+                                                    <input class="choosen-radio" value="2" type="radio" name="2"
+                                                        checked />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="buy-choose__content">
+                                                <div class="buy-choose__title">Альфа Банк: легкая рассрочка</div>
+                                                <div class="buy-choose__info">4 платежі, кожні 15 днів по <span
+                                                        class="blue">3872₴</span><br>
+                                                    перший платіж сьогодні</div>
+                                            </div>
+                                            <div class="buy-choose__img buy-choose__img--bank">
+                                                <img src="img/logo/alfa-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="choose-bank__footer">
+                                            <div class="choose-bank__info">👍 Без переплати</div>
+                                            <a href="" class="choose-bank__link">показати деталі угоди</a>
+                                        </div>
+                                    </div>
+                                    <div class="step-content__item buy-choose">
+                                        <div class="buy-choose__head">
+                                            <div class="buy-choose__radio">
+                                                <label class="control control-radio">
+                                                    <input class="choosen-radio" value="2" type="radio" name="2" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="buy-choose__content">
+                                                <div class="buy-choose__title">Купуй зараз – плати пізніше</div>
+                                                <div class="buy-choose__info"> 4 платежі, кожні 15 днів по <span
+                                                        class="blue">3888₴</span><br>
+                                                    перший платіж сьогодні</div>
+                                            </div>
+                                            <div class="buy-choose__img buy-choose__img--bank">
+                                                <img src="img/logo/bank-2-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="choose-bank__footer">
+                                            <div class="choose-bank__info">👍 Переплата 0,01%</div>
+                                            <a href="" class="choose-bank__link">показати деталі угоди</a>
+                                        </div>
+                                    </div>
+                                    <div class="step-content__item buy-choose">
+                                        <div class="buy-choose__head">
+                                            <div class="buy-choose__radio">
+                                                <label class="control control-radio">
+                                                    <input class="choosen-radio" value="2" type="radio" name="2" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="buy-choose__content">
+                                                <div class="buy-choose__title">Гроші від Ідея Банк</div>
+                                                <div class="buy-choose__info">4 платежі, кожні 15 днів по <span
+                                                        class="blue">4235₴</span><br>
+                                                    перший платіж сьогодні</div>
+                                            </div>
+                                            <div class="buy-choose__img buy-choose__img--bank">
+                                                <img src="img/logo/bank-3-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="choose-bank__footer">
+                                            <div class="choose-bank__info">🤔 Переплата 0,02%</div>
+                                            <a href="" class="choose-bank__link">показати деталі угоди</a>
+                                        </div>
+                                    </div>
+                                    <div class="choosen-bank__footer">
+                                        <button type="button" class="choosen-bank__show btn">Показати наступні 3
+                                            заявки</button>
+                                        <button type="button"
+                                            class="choosen-bank__btn btn btn-yellow">Продовжити</button>
+                                    </div>
+                                    <div class="choosen-bank__questions">
+                                        <div class="choosen-bank__label">Чому я бачу декілька варіантів?</div>
+                                        <a href="" class="choosen-bank__text">Пояснення про агрегатор </a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="step-content__right">
+                                <div class="step-content__product step-product bg-border">
+                                    <div class="step-product__head border-none">
+                                        <div class="step-product__img"><img src="img/product.jpg" alt=""></div>
+                                        <div class="step-product__content">
+                                            <div class="step-product__code">Код: 14558408</div>
+                                            <div class="step-product__name">Душова кабіна Kolo Record 90x90
+                                                PKPG902223 з піддоном XBN1690000</div>
+                                            <div class="step-product__price">7 110,
+                                                65₴</div>
+                                        </div>
+                                        <div class="product__method">метод сплати</div>
+                                    </div>
+                                    <div class="step-product__body product-body">
+                                        <div class="product-body__wrapper">
+                                            <div class="product-body__left">
+                                                <div class="product-body__label">Всю суму пізніше (до 45 днів)</div>
+                                                <button type="button"
+                                                    class="buy-choose__showMore btn product-showMore"><span>показати
+                                                        деталі</span><svg class="">
+                                                        <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
+                                                    </svg></button>
+                                            </div>
+                                            <div class="product-body__right"><img src="img/apple.svg"
+                                                    class="product-body__img" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="step-product__footer product-footer">
+                                        <div class="product-footer__wrapper">
+                                            <div class="product-footer__label">Сумма до розрізання: </div>
+                                            <div class="product-footer__price">7 110,
+                                                65₴</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><section class="questions">
+    <div class="container">
+        <div class="questions__wrapper">
+            <div class="questions-aside">
+                <div class="questions-aside__title">Відповіді на питання</div>
+                <div class="questions-aside__items">
+                    <ul class="questions-aside__list">
+                        <li class="questions-aside__elem active">
+                            <a href="#">Про Ріж Платіж</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Персональні дані</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Угода з лендером</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Питання по виплатам</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Оформлення та доставка товару</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Повернення товару</a>
+                        </li>
+                        <li class="questions-aside__elem">
+                            <a href="#">Служба підтримки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-content">
+                <div class="questions-content__items">
+                    <div class="questions-content__item item-question bg-border active">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Що таке Ріж Платіж та як він працює?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чому я маю довіряти Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи є переплата за покупки з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи можна купити декілька товарів з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Чи можу я взяти ще один (більше) товарів з Ріж Платіж,
+                                якщо не розрахувався(-лась) за попередній?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Як оформити заявку на покупку з Ріж Платіж?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Скільки часу займе погодження заявки?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-content__item item-question bg-border">
+                        <div class="item-question__head">
+                            <div class="item-question__title">Хто така Ріжка та що вона символізує?</div>
+                            <button class="btn item-question__switch">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="item-question__body">
+                            <div class="item-question__text">
+                                <p>Once you register with our website, you are assigned a specific Client ID and that
+                                    together with your order instructions are the only two things visible for our
+                                    writers. We take privacy very seriously and understand that you expect us to.
+                                </p>
+                                <p> Our support agents are the only ones who have some access to the information you
+                                    provide in order to be able to contact you with any questions regarding your order
+                                    and payment. Take a look at our Privacy Policy for any questions you may have.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> </main><footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__title">Ріж платіж, відсотки під ніж!</div>
+                <div class="footer__text">плати, як хочеш<br>
+                    про решту дбаємо ми
+                </div>
+                <a href="#" class="footer__link">rizh.com.ua</a>
+            </div>
+            <div class="footer__right">
+                <img src="img/samurai.png" alt="" class="footer__img">
+                <a href="#" class="footer__question">Що символізує героїня?</a>
+            </div>
+        </div>
+        <div class="footer__copy">2021 © ТОВ Ріж Платіж, усі права захищені</div>
+    </div>
+</footer> </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.js"
+    integrity="sha512-6vo59lZMHB6GgEySnojEnfhnugP7LR4qm6akxptNOw/KW+i9o9MK4Gaia8f/eJATjAzCkgN3CWlIHWbVi2twpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

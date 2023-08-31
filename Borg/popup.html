@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a class="popup-modal" href="#popup_form">1</a>
+    <a class="popup-modal" href="#popup_enter">2</a>
+    <a class="popup-modal" href="#popup_reg">3</a>
+    <a class="popup-modal" href="#popup_sucsess">4</a>
+    <a class="popup-modal" href="#popup_sucsess-2">5</a>
+    <div class="popups">
+        <div id="popup_form" class="popup popup_form">
+            <div class="popup__title">Заполните форму и с вами свяжется наш эксперт</div>
+            <form id="popup-form" action="">
+                <div class="popup__inp">
+                    <input name="name" type="text" placeholder="Имя">
+                </div>
+                <div class="popup__inp">
+                    <input name="phone" type="tel" placeholder="Телефон">
+                </div>
+                <div class="popup__inp">
+                    <input name="email" type="email" placeholder="E- mail">
+                </div>
+                <button class="poppup__btn btn" type="submit">Решить проблему</button>
+            </form>
+            <a href="#" class="popup__exit">
+                <img src="img/icon/exit.png" alt="">
+            </a>
+        </div>
+        <div id="popup_enter" class="popup popup_enter">
+            <div class="popup__title">Войти в кабинет</div>
+            <form id="form-enter" action="">
+                <div class="popup__inp">
+                    <input name="email" type="email" placeholder="E- mail">
+                </div>
+                <div class="popup__inp">
+                    <input name="password" type="password" placeholder="Пароль">
+                </div>
+                <a id="forgotPassword" class="popup__inp-link" href="">Забыли пароль?</a>
+                <span class="newPassword-info">На Вашу почту было отправлено письмо с новым паролем. </span>
+                <button class="poppup__btn btn" type="submit">Войти</button>
+                <div class="popup__link">
+                    <a href="#">Регистрация</a>
+                </div>
+            </form> <a href="#" class="popup__exit">
+                <img src="img/icon/exit.png" alt="">
+            </a>
+        </div>
+        <div id="popup_reg" class="popup popup_reg">
+            <div class="popup__title">Регистрация</div>
+            <form id="form-reg" action="">
+                <div class="popup__inp">
+                    <input name="email" type="email" placeholder="E- mail">
+                </div>
+                <div class="popup__inp">
+                    <input id="password" name="password" type="password" placeholder="Пароль">
+                </div>
+                <div class="popup__inp">
+                    <input name="passwordAgain" type="password" placeholder="Пароль повторно">
+                </div>
+                <button class="poppup__btn btn" type="submit">Войти</button>
+                <div class="popup__link">
+                    <a href="#">Есть аккаунт</a>
+                </div>
+            </form> <a href="#" class="popup__exit">
+                <img src="img/icon/exit.png" alt="">
+            </a>
+        </div>
+        <div id="popup_sucsess" class="popup popup_sucsess">
+            <div class="popup__title">Войти в кабинет</div>
+            <div class="popup__text">Мы свяжемся с вами в течении 5 минут</div> <a href="#" class="popup__exit">
+                <img src="img/icon/exit.png" alt="">
+            </a>
+        </div>
+        <div id="popup_sucsess-2" class="popup popup_sucsess">
+            <div class="popup__title">Регистрация прошла успешно! </div>
+            <div class="popup__text">Вам на почту отправлено письмо-подтверждение.
+                Перейдите по ссылке в письме в личный кабинет.</div> <a href="#" class="popup__exit">
+                <img src="img/icon/exit.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+</body>
+
+</html>

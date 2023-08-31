@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neofin</title>
+    <link type="image/x-icon" href="img/favicon/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/favicon/favicon.ico" rel="icon">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css"
+  integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class='cirilyc'>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <a href="/" class="header__logo">
+          <img src="img/new_logo.svg" alt="logo">
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__elem active">
+              <a href="lending.html" class="header__link">Lending</a>
+            </li>
+            <li class="header__elem">
+              <a href="about.html" class="header__link">About us</a>
+            </li>
+            <li class="header__elem">
+              <a href="contact-us.html" class="header__link">Contacts</a>
+            </li>
+            <li class="header__elem">
+              <a href="technical-documentation.html" class="header__link">Techical documentation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <a class="lang" data-popup="#change-lang" href="#">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#globe"></use>
+          </svg>
+          <div class="lang__current">
+            <span>United State</span> | <span>English</span>
+          </div>
+        </a>
+        <a class="control-panel__link" href="#">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#setting"></use>
+          </svg>
+        </a>
+        <!-- <div class="header__lang select-lang">
+          <div class="custom-select">
+            <div class="custom-select__header">
+              <span class="custom-select__val">
+                RU
+              </span>
+              <div class="select_arrow">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="custom-select__body">
+              <div class="custom-select__item">
+                <span class="custom-select__choose">
+                  RU
+                </span>
+                <input class="custom-select__radio" checked value="RU" name="language" type="radio">
+              </div>
+              <div class="custom-select__item">
+                <span class="custom-select__choose">
+                  EN
+                </span>
+                <input class="custom-select__radio" value="EN" name="language" type="radio">
+              </div>
+              <div class="custom-select__item">
+                <span class="custom-select__choose">
+                  UA
+                </span>
+                <input class="custom-select__radio" value="UA" name="language" type="radio">
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="header__btns">
+          <a href="sign-up_v2.html" type="button" class="header__btn btn-reset">Login</a>
+          <a href="#" class="header__btn btn">
+            Contact Sales
+          </a>
+        </div>
+        <div class="header__burger">
+          <div class="burger__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="header-mobile__wrapper">
+      <div class="header-mobile__btns">
+        <a href="#" class="header__btn btn-reset">Login</a>
+        <button type="button" class="header-mobile__btn btn">Contact sales</button>
+      </div>
+    </div>
+  </div>
+</header>
+    <section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__left">
+        <h1 class="hero__title">
+          Launch any lending business in
+          <span class="text-bg">
+            <span>an hour</span>
+          </span>
+        </h1>
+        <div class="hero__descr">
+          For&nbsp;<span class="text-bg"><span id="animate-text" class="animate-text"></span></span>
+        </div>
+        <div class="hero-sign">
+          <form id="sign-up" action="">
+            <div class="hero-sign__filed">
+              <input type="text" name="email" class="hero-sign__input" placeholder="Enter your  work email">
+              <button class="hero-sign__btn btn demo-btn" data-href="sign-up.html">
+                <span>Sign up for free</span>
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#small-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero-types">
+          <div class="hero-types__head">Type of loan</div>
+          <div class="hero-types__body">
+
+          </div>
+          <button type="button" class="show-types btn-reset">
+            <span class="show-modules__cloud">...</span>
+            <div class="show-modules__text underline">show 4 more modules</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="about">
+  <div class="container">
+    <div class="about__info">
+      <b>Neofin</b> – is an intuitive AI-powered software that allows to fully automate all the credit/loan operations
+    </div>
+    <div class="about__attention">From inquiry to credit scoring, issuing and verification: <span
+        class="text-bg"><span>we have you
+          covered</span></span>
+    </div>
+    <div class="about__wrapper">
+      <div class="about__title">Say YES to:</div>
+      <div class="about__items">
+        <div class="about-item">
+          <div class="about-item__icon">
+            <img src="img/about/icon_1.svg" alt="">
+          </div>
+          <div class="about-item__content">
+            <div class="about-item__title">Тест</div>
+            <div class="about-item__text">
+              <p>ТестТест ТестТест ТестТест ТестТест ТестТест ТестТест</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">
+            <img src="img/about/icon_2.svg" alt="">
+          </div>
+          <div class="about-item__content">
+            <div class="about-item__title">DIY Site builders</div>
+            <div class="about-item__text">
+              <p>With all the out-of-box components tailored for loans and credit servicing</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">
+            <img src="img/about/icon_3.svg" alt="">
+          </div>
+          <div class="about-item__content">
+            <div class="about-item__title">Pluguble solutions</div>
+            <div class="about-item__text">
+              <p>That allow you to construct and launch any new credit product right from the intuitive admin panel</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">
+            <img src="img/about/icon_4.svg" alt="">
+          </div>
+          <div class="about-item__content">
+            <div class="about-item__title">Revenue Streamline</div>
+            <div class="about-item__text">
+              <p>Thanks to the decreased default rate and increased lead conversion with automated online products</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">
+            <img src="img/about/icon_5.svg" alt="">
+          </div>
+          <div class="about-item__content">
+            <div class="about-item__title">Quick credit decisions</div>
+            <div class="about-item__text">
+              <p>That allow you to construct and launch any new credit product right from the intuitive admin panel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="container">
+    <h2 class="benefits__title section-title">
+      What you can do with – <b>Neofin</b>
+    </h2>
+    <div class="benefits__wrapper">
+      <ul class="benefits__tabs">
+        <li class="benefits__tabs-elem active">
+          <a href="#" class="benefits__tabs-link">Кирилица текст
+          </a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Decision engine / Credit scoring</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Loan accounting system</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">APIs integration</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Digital onboarding + kyc
+          </a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">CRM</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Debt collection</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Mobile api</a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Sitekit</a>
+        </li>
+      </ul>
+      <div class="benefits__body">
+        <div class="benefits__body-item benefits-item show">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">POS credit / Buy Now Pay Later</div>
+            <div class="benefits-item__img">
+              <img src="img/benefits/img_1.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>A module that allows any bank or financial organisation integrate with various merchants and seamlessly
+                finance “buy now - pay later” purchases of the end users.
+              </p>
+              <p>This way any financial organisation can get
+                new warm leads and grow the client base with a low acquisition cost.</p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Decision engine / Credit scoring</div>
+            <div class="benefits-item__img benefits-item__img--2">
+              <img src="img/benefits/img_2.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>This module allows to take a credit decision in 1 to 15 minutes based on real-time data anylysis. The
+                engine includes over 150 criteria types, such as bankruptcy and insolvency verification, anti-money
+                laundering checks, credit scores from sources like Experian/Equifax and many more.
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Loan accounting system</div>
+            <div class="benefits-item__img benefits-item__img--3">
+              <img src="img/benefits/img_3.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>A module that grants you a single place to manage and track all your credit programs, loans and
+                achieved metrics. It allows you to see it all in one place in a fully industry-secure cloud-based and
+                constantly updatable environment.
+
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">APIs Integrations</div>
+            <div class="benefits-item__img benefits-item__img--4">
+              <img src="img/benefits/img_4.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>This module allows to integrate all the APIs needed to run the credit/loan activities inside one
+                instrument. Power BI, SSN verification, credit bureau scores, and many other useful integrations are
+                included. Module is open to custom APIs, too!
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Digital onboarding + KYC</div>
+            <div class="benefits-item__img benefits-item__img--5">
+              <img src="img/benefits/img_5.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>This module provides all the needed instruments to run KYC quickly and smoothly: ai-powered 3D liveness
+                detection, video verification, documents recognition, client application forms and data validation
+                algorithms.</p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">CRM</div>
+            <div class="benefits-item__img benefits-item__img--6">
+              <img src="img/benefits/img_6.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>This module is built to help you manage all the leads, track their history, set tasks, push ai-powered
+                notifications and run the analytics in a simple and intuitive admin panel.
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Debt collection</div>
+            <div class="benefits-item__img benefits-item__img--7">
+              <img src="img/benefits/img_7.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>This module helps you optimise the works with debtors through involving various channels of
+                communication, such as voice calls, SMS, IVRs
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Mobile API</div>
+            <div class="benefits-item__img benefits-item__img--8">
+              <img src="img/benefits/img_8.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>An API that allows to launch an end user’s mobile app with minimal efforts. And app will facilitate the
+                user experience of your clients, letting them track a status of their credits/BNPL purchases from the
+                comfort of their phone.
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+        <div class="benefits__body-item benefits-item">
+          <div class="benefits-item__content">
+            <div class="benefits-item__title">Sitekit</div>
+            <div class="benefits-item__img benefits-item__img--9">
+              <img src="img/benefits/img_9.png" alt="">
+            </div>
+            <div class="benefits-item__text">
+              <p>A website builder made of simple in use, out-of-box site blocks tailored specially for credit unions
+                and neobanks.
+              </p>
+            </div>
+            <a class="benefits-item__video popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+              <img src="img/benefits/video.png" alt="">
+              <span class="play">
+                <img src="img/icon/play.svg" alt="">
+              </span>
+              <span class="video-time">8:40</span>
+            </a>
+          </div>
+          <a href="demo.html" target="_blank" class="benefits-item__explore demo-btn btn">
+            Explore Demo
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="main">
+  <div class="big-container">
+    <div class="green-light">
+      <img src="img/green-light.svg" alt="">
+    </div>
+    <div class="main-hand">
+      <img src="img/hand.png" alt="">
+    </div>
+    <div class="container">
+      <h1 class="main__title">Credit & Lending Servicing 2.0</h1>
+      <div class="main__info">
+        Automated AI-powered SaaS solution. <span class="text-bg"><span>Super Easy to setup and manage.</span></span>
+      </div>
+      <div class="main__checkboxes">
+        <div class="main__checkboxes-inner"></div>
+        <div class="main__checkboxes-show">
+          <button type="button" class="show-modules btn-reset">
+            <span class="show-modules__cloud">...</span>
+            <div class="show-modules__text underline">show 4 more modules</div>
+          </button>
+        </div>
+      </div>
+      <div class="main__demo-btn ">
+        <button type="button" class="demo-btn btn">Launch Demo</button>
+      </div>
+    </div>
+    <div class="main__demo">
+      <!-- <img srcset="img/demo_mob.png" alt="My default image"> -->
+      <picture>
+        <source srcset="img/demo_mob.png" media="(max-width: 568px)">
+        <source srcset="img/demo.png">
+        <img srcset="img/demo.png" alt="My default image">
+      </picture>
+    </div>
+  </div>
+</section>
+    <section class="intergrations">
+  <div class="container">
+    <h2 class="intergrations__title section-title">Intergrations and Methods of Verification</h2>
+    <div class="intergrations__wrapper">
+      <div class="intergrations__benefits">
+        <div class="intergrations__benefits-title">Benefits for you:</div>
+        <ul class="intergrations__list">
+          <li class="intergrations__elem">no more human error in scoring</li>
+          <li class="intergrations__elem">quick data driven decisions (in 60 sec)</li>
+          <li class="intergrations__elem">default rate decrease</li>
+        </ul>
+        <a href="#" class="intergrations__btn btn demo-btn">Schedule a Call</a>
+      </div>
+      <div class="intergrations__content">
+        <div class="intergrations__photo">
+          <img src="img/integrations/photo.png" alt="">
+          <div class="intergrations__timer">
+            <span>0:59</span>
+          </div>
+        </div>
+        <ul class="intergrations__content-list">
+          <li class="intergrations__content-elem green-block">Credit Bureau(s) </li>
+          <li class="intergrations__content-elem green-block">Social Security Number </li>
+          <li class="intergrations__content-elem red-block">Black-listing Checking</li>
+          <li class="intergrations__content-elem green-block">Anti-Money Laundering </li>
+          <li class="intergrations__content-elem transparent-block">Amount of taken credits </li>
+          <li class="intergrations__content-elem transparent-block">Bankruptcy and Insolvency </li>
+        </ul>
+      </div>
+    </div>
+</section>
+    <section class="pricing">
+  <div class="container">
+    <h2 class="pricing__title section-title">Transparent Pricing</h2>
+    <div class="pricing__inner">
+      <div class="pricing__wrapper">
+        <div class="pricing-item">
+          <div class="pricing-item__title">Licence and first setup fee</div>
+          <div class="pricing-item__icon">
+            <img src="img/pricing/basket.svg" alt="">
+          </div>
+          <div class="pricing-item__footer">
+            <div class="pricing-item__label">Onetime payment:</div>
+            <div class="pricing-item__value">$50,000</div>
+          </div>
+        </div>
+        <div class="pricing-item">
+          <div class="pricing-item__title">Monthly payment</div>
+          <div class="pricing-item__range">
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+          </div>
+          <div class="pricing-item__footer">
+            <div class="pricing-item__label">Monthly payment:</div>
+            <div class="pricing-item__value">$1,350</div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-contact">
+        <div class="pricing-contact__person">
+          <div class="pricing-contact__photo">
+            <img src="img/pricing/photo.png" alt="">
+          </div>
+          <div class="pricing-contact__text">To discuss Project Implementation and Pricing, please schedule a call with
+            our
+            Bizdev Director or email us at <a href="mailto:vlad@webref.ru"
+              class="underline pricing-contact__email">bizdev@neofin.com</a>
+          </div>
+        </div>
+        <a href="#" class="pricing-contact__btn btn">Schedule a Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="records">
+  <div class="container">
+    <h2 class="records__title section-title">Track of Records</h2>
+    <div class="records-stat">
+      <div class="records-stat__item">
+        <div class="records-stat__label">5+ years</div>
+        <div class="records-stat__text">
+          <p>in the market of IT business solutions
+          </p>
+        </div>
+      </div>
+      <div class="records-stat__item">
+        <div class="records-stat__label">10+ years</div>
+        <div class="records-stat__text">
+          <p>banking and finance expertise
+          </p>
+        </div>
+      </div>
+      <div class="records-stat__item">
+        <div class="records-stat__label">120+ </div>
+        <div class="records-stat__text">
+          <p>successfully implemented projects and satisfied customers
+          </p>
+        </div>
+      </div>
+      <div class="records-stat__item">
+        <div class="records-stat__label">20 000+ </div>
+        <div class="records-stat__text">
+          <p>hours of work on the development of IT solutions for the fintech
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="records__wrapper">
+      <div class="records-awards">
+        <div class="records-awards__slide">
+          <div class="records-awards__img">
+            <picture>
+              <source srcset="img/records/awards_mob.png" media="(max-width: 768px)">
+              <source srcset="img/records/awards.png">
+              <img srcset="img/records/awards.png" alt="awards">
+            </picture>
+          </div>
+          <div class="records-awards__text">PSM Awards 2020 Winner: TechFin startup of the year
+          </div>
+        </div>
+        <div class="records-awards__slide">
+          <div class="records-awards__img">
+            <img src="img/records/cup.png" alt="cup">
+          </div>
+          <div class="records-awards__text">2nd place in StartUp Arena Award at Fintech & E-commerce Linking Days 2022
+          </div>
+        </div>
+      </div>
+      <div class="records-partners">
+        <div class="records-partners__item">
+          <div class="records-partners__icon">
+            <img src="img/records/partner_1.svg" alt="">
+          </div>
+          <div class="records-partners__text">
+            <p>Supported USAID through powering the automation of the credit unions
+            </p>
+          </div>
+        </div>
+        <div class="records-partners__item">
+          <div class="records-partners__icon">
+            <img src="img/records/partner_2.svg" alt="">
+          </div>
+          <div class="records-partners__text">
+            <p>Powered the mobile application and seamless mobile credit functionality for the major electronic money
+              vendor in the Eastern Europe
+            </p>
+          </div>
+        </div>
+        <div class="records-partners__item">
+          <div class="records-partners__icon">
+            <img src="img/records/partner_3.svg" alt="">
+          </div>
+          <div class="records-partners__text">
+            <p>Launched the first revolutionary automated credit issuing in Ukraine with Unex Bank
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="testimonials">
+  <div class="container">
+    <h2 class="testimonials__title section-title">Testimonials</h2>
+    <div class="testimonials__wrapper">
+      <div class="testimonials-review">
+        <div class="testimonials-review__text">
+          <p>Our partnership with Neofin started this year.
+            Their new online credit solution is a life saver for credit unions here in Ukraine. It helped to improve
+            their growth strategy and compare all the government and National Bank regulations.
+            Neofin team works a lot to make their solution an essential one for financial communities. It really
+            improves credit unions processing and online presence.</p>
+        </div>
+        <div class="testimonials-review__person">
+          <div class="testimonials-review__photo">
+            <img src="img/testimonials/photo_1.png" alt="">
+          </div>
+          <div class="testimonials-review__info">
+            <div class="testimonials-review__name">Matthias Pfaff</div>
+            <div class="testimonials-review__descr">Deutsche sparkassenstiftung für internationale kooperation
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-review">
+        <div class="testimonials-review__text">
+          <p>Our bank started collaboration with Neofin 2 years ago.
+            All I can say - they are just awesome! Our new online credit platform was done in several months from
+            scratch at the beginning of lockdown. It helped us to improve our market strategy and outrun competitors.
+            Today they support our platforms, all updates and new integrations are done fast and secure.</p>
+        </div>
+        <div class="testimonials-review__person">
+          <div class="testimonials-review__photo">
+            <img src="img/testimonials/photo_2.png" alt="">
+          </div>
+          <div class="testimonials-review__info">
+            <div class="testimonials-review__name">Ivan Yrdey</div>
+            <div class="testimonials-review__descr">Head of business growth at bank “kliringovyi dom”</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-trusted">
+      <div class="testimonials-trusted__label">We are trusted by</div>
+      <div class="testimonials-trusted__inner">
+        <a href="" class="testimonials-trusted__item">
+          <img src="img/testimonials/icon_1.png" alt="citybank">
+        </a>
+        <a href="" class="testimonials-trusted__item">
+          <img src="img/testimonials/icon_2.png" alt="ca">
+        </a>
+        <a href="" class="testimonials-trusted__item">
+          <img src="img/testimonials/icon_3.png" alt="raiffeisen">
+        </a>
+        <a href="" class="testimonials-trusted__item">
+          <img src="img/testimonials/icon_4.png" alt="bnp">
+        </a>
+        <a href="" class="testimonials-trusted__item">
+          <img src="img/testimonials/icon_5.png" alt="optbank">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="security">
+  <div class="container">
+    <h2 class="security__title section-title">Cyber Security, Compliance and GDPR</h2>
+    <div class="security__wrapper">
+      <div class="security__content">
+        <div class="security__text">
+          <p>Neofin platform lives up to the high security standards and is compliant with common industry requirements,
+            verified and assured by an external certification body.</p>
+          <p>You can read in detail and download our security
+            policy. It applies thoughout all company and it’s members. Neofin platform lives up to the high security
+            standards and is compliant with common industry requirements, verified and assured by an external
+            certification body.</p>
+        </div>
+        <button type="button" class="download btn-reset underline">Download PDF file</button>
+      </div>
+      <div class="security__items">
+        <div class="security-item">
+          <div class="security-item__icon">
+            <img src="img/icon/shield.png" alt="">
+          </div>
+          <div class="security-item__label">Data encrypted at rest + HTTPS/SSL 1.2</div>
+        </div>
+        <div class="security-item">
+          <div class="security-item__icon">
+            <img src="img/icon/shield.png" alt="">
+          </div>
+          <div class="security-item__label">Liveness 2D/3D detection</div>
+        </div>
+        <div class="security-item">
+          <div class="security-item__icon">
+            <img src="img/icon/shield.png" alt="">
+          </div>
+          <div class="security-item__label">AntiFraud system</div>
+        </div>
+        <div class="security-item">
+          <div class="security-item__icon">
+            <img src="img/icon/shield.png" alt="">
+          </div>
+          <div class="security-item__label">California Consumer Privacy Act (CCPA)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="questions">
+  <div class="container">
+    <div class="questions__wrapper">
+      <div class="questions-conten">
+        <h2 class="questions__title section-title">Frequently<br>
+          Asked Questions</h2>
+        <div class="questions__info">
+          <p>Haven’t found what you’re looking for?</p>
+          <p>Try the <a href="#" class="underline">Help Center</a></p>
+        </div>
+      </div>
+      <div class="questions__items">
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">How Neofin works?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">How secure is our data?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">How often is Neofin platform updated?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">Will you help us with data migration?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">How fast is your response through the help center?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+        <div class="questions-item">
+          <div class="questions-item__head">
+            <div class="questions-item__label">Can I test Neofin system befor purchase?</div>
+          </div>
+          <div class="questions-item__body">
+            <p>Neofin platform lives up to the high security standards and is compliant with common industry
+              requirements, verified and assured by an external certification body. You can read in detail and
+              download our security policy. It applies thoughout all company and it’s members. Neofin platform lives up
+              to the high security standards and is compliant with common industry requirements, verified and assured by
+              an external certification body.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <h3 class="footer__title">Neofin – faster, lighter, smoother.</h3>
+      <div class="footer__descr">
+        <p>Neofin is an intuitive AI-powered software that allows to fully automate all the credit/loan operations. From
+          inquiry to credit scoring, issuing and verification: we have you covered.
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__left">
+        <div class="footer__copy">
+          <span>©2022</span> <a href="">SECURITY </a>&nbsp;|&nbsp;<a href="#">PRIVACY POLICY</a>&nbsp;|&nbsp;<a
+            href="#">TERMS &
+            CONDITIONS</a>
+        </div>
+      </div>
+      <div class="footer__right">
+        <a class="lang" data-popup="#change-lang" href="#">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#globe"></use>
+          </svg>
+          <span>United State</span> | <span>English</span>
+        </a>
+        <div class="footer-socials">
+          <a href="#" class="footer-social">
+            <!-- <img src="img/icon/fb.svg" alt=""> -->
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer-social">
+            <!-- <img src="img/icon/in.svg" alt=""> -->
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#in"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer-social">
+            <!-- <img src="img/icon/twit.svg" alt=""> -->
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#twit"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer-social">
+            <!-- <img src="img/icon/youtube.svg" alt=""> -->
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="popups">
+  <div class="popups__inner">
+    <div id="check-mail" class="popup">
+      <div class="popup__content">
+        <div class="popup__title">Check your email</div>
+        <div class=" popup__text">
+          <p>Automaticaly generated password was sent to <b>email@email.com</b>
+
+          </p>
+          <p> check your inbox and <b>follow the link</b> in the emai to finish registration in our system</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="success" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/success-icon.svg" alt="">
+        </div>
+        <div class="popup__title">Success</div>
+        <div class=" popup__text">
+          <p>Your invitation was sent successfully to <b>email@email.com.</b></p>
+
+          <p>You can manage permissions or invite more collaborators in <b>Share Access To Demo</b> tab in the control
+            panel</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="project-loading" class="popup popup-loading">
+      <div class="popup__content">
+        <div class="popup__title">Your project is Loading</div>
+        <div class=" popup__text">
+          <p>An estimated finish time is <b>2 hours 45 mins</b> </p>
+        </div>
+        <div class="loading popup__loading">
+          <span class="loading__progress" data-value="20"></span>
+          <span class="loading__back"></span>
+        </div>
+        <div class=" popup__text">
+          <p>We will send you an email notification when the demo is ready to use.</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="invitation" class="popup invitation-popup ">
+      <div class="popup__content">
+        <div class="popup__title">NeoFin</div>
+        <div class=" popup__text">
+          <p> Hi,</p>
+
+          <p>You have been invited to NeoFin by Patric Smith to participate in demo version of our loan management
+            system.</p>
+
+          <p>Log in to your NeoFin account to start using demo collaboratively</p>
+        </div>
+        <div class="invitation-links">
+          <button type="button" class="invitation-links__accept btn black-btn">
+            Accept an invitation</button>
+          <div class=" invitation-links__text">or follow the link below</div>
+          <a href=""
+            class="invitation-links__link underline">https://atlassian.design/components/form/usage/components/form/...</a>
+        </div>
+        <div class=" popup__text popup__text_invitation">
+          <p><span class="block"><b>What is NeoFin?</b></span>
+            NeoFin is a company that creates innovative credit and banking software products. Our goal is to launch
+            projects of any level of complexity as quickly as possible.</p>
+          <div class="popup__text_invitation-author">
+            <span>Kind regards</span>
+            <span>NeoFin</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="invite-collaborators " class="popup popup_window ">
+      <div class="popup__header">
+        <div class="popup__name">Invite collaborators </div>
+        <a href="#" class="popup__exit js-close-popup">
+          <img src="img/icon/close.svg" alt="">
+        </a>
+      </div>
+      <div class="popup_window__body">
+        <div class="invite-method">
+          <div class="invite-method__label">Invite with link</div>
+          <div class="invite-method__inner">
+            <div class="invite-method__input">
+              <input type="text" value="https://atlassian.design/components/form/usage/comp..." readonly>
+              <div class="invite-method__select">
+                <div class="costum-select">
+                  <div class="costum-select__header">
+                    <div class="costum-select__val">can view</div>
+                  </div>
+                  <div class="costum-select__body">
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" checked value="can view">
+                      <div class="costum-select__option-text">can view</div>
+                    </label>
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" value="can edit">
+                      <div class="costum-select__option-text">can edit</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="invite-method__btn copy-btn btn-reset">Copy</button>
+          </div>
+        </div>
+        <div class="invite-method">
+          <div class="invite-method__label">Invite by email</div>
+          <div class="invite-method__inner">
+            <div class="invite-method__input">
+              <input type="text" value="" placeholder="email">
+              <div class="invite-method__select">
+                <div class="costum-select">
+                  <div class="costum-select__header">
+                    <div class="costum-select__val">can view</div>
+                  </div>
+                  <div class="costum-select__body">
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" checked value="can view">
+                      <div class="costum-select__option-text">can view</div>
+                    </label>
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" value="can edit">
+                      <div class="costum-select__option-text">can edit</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="invite-method__btn btn black-btn">Send</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="error" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/alert-triangle.svg" alt="">
+        </div>
+        <div class="popup__title">Are you sure you want to <span class="error-color">delete</span> this project?</div>
+        <div class=" popup__text">
+          <p>This action will permanently delete all the data connected to this project. This action will be
+            <b>irreversible</b>.</p>
+        </div>
+        <div class="popup__btns">
+          <a href="/" class="popup-btn_cancel btn-reset js-close-popup">Cancel</a>
+          <button type="button" href="#" class="btn delete-btn js-close-popup">
+            Delete
+          </button>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="calc" class="popup popup_window calc-popup">
+      <div class="popup__header">
+        <div class="calc-popup__title">Credit calculator</div>
+        <a href="#" class="popup__exit js-close-popup">
+          <img src="img/icon/close.svg" alt="">
+        </a>
+      </div>
+      <div class="popup_window__body">
+        <div class="credits__calc">
+          <div class="credits__calc-wrap">
+            <div class="wrap__content">
+              <div class="credits__calc-left">
+                <div class="сalc__info">
+                  <div class="range clearfix">
+                    <div class="range__up">
+                      <div class="info__label">Amount of credit</div>
+                      <div class="info__inp">
+                        <div class="info__inp-btn sum_minus">
+                          <span>-</span>
+                        </div>
+                        <input type="text" class="calc__input" id="summ" name="s" value="50" data-max="5000"
+                          data-min="50" data-step="50" data-k="1" multiple>
+                        <div class="info__inp-btn sum_plus">
+                          <span>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <input id="calculation-range-summ" class="costum-range" type="range" min="50" max="5000" step="50"
+                        value="50">
+                    </div>
+                  </div>
+                  <div class="сalc__quantity">
+                    <div class="quantity__left">
+                      $50
+                    </div>
+                    <div class="quantity__right">
+                      $5000
+                    </div>
+                  </div>
+                </div>
+                <div class="сalc__info">
+                  <div class="range clearfix">
+                    <div class="range__up range__up--term">
+                      <div class="info__label">Number of Payments</div>
+                      <div class="info__inp">
+                        <div class="info__inp-btn date_minus">
+                          <span>-</span>
+                        </div>
+                        <input type="text" class="calc__input" id="term" name="s" value="12" data-max="36" data-min="6"
+                          readonly data-min-event="1" data-step="6" data-k="1">
+                        <div class="info__inp-btn date_plus">
+                          <span>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <input id="calculation-range-term" class="costum-range" type="range" min="6" max="36" step="6"
+                        value="12">
+                    </div>
+                  </div>
+                  <div class="сalc__quantity">
+                    <div class="quantity__left">
+                      6 <span>num</span>
+                    </div>
+                    <div class="quantity__right">
+                      36 <span>num</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits__calc-right">
+                <div class="calc__calculation">
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Monthly payment</div>
+                    <div class="quantity__sum calculation__sum">
+                      <span>$</span>
+                      <span id="month-pay">
+                        500
+                      </span>
+                    </div>
+                  </div>
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Number of Payments</div>
+                    <div id="quantity__num" class="quantity__sum calculation__sum">
+                      12
+                    </div>
+                  </div>
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Сontract amount</div>
+                    <div class="return__sum calculation__sum">
+                      <span>$</span>
+                      <span id="return__sum">
+                        8 055
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits__calc-button">
+                <button class="credits__calc-btn btn black-btn js-close-popup">
+                  Apply for a loan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="delete-card" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/success-icon.svg" alt="">
+        </div>
+        <div class="popup__title">Success</div>
+        <div class=" popup__text">
+          Are you sure you want to delete the card?
+          <b>5252 **** 4455</b></p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          Continue
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="change-lang" class="popup popup-lang">
+      <div class="popup__content">
+        <div class="popup__title">Select Your Country or Region</div>
+        <div class="popup-lang__body">
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">Asia Pacific</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">Europe</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">North America</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+  integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.2/smooth-scrollbar.min.js"
+  integrity="sha512-PEwnonaWU3k7TR3sQuTjkR1ZXmg6s9iGWX42rhxuAufRn1j48UL1mvu2UFj1L4u8LkDzYfqYz5dAV1WpgWRhJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"
+  integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/script.js"></script>
+    <script src="js/recordsSlider.js"></script>
+</body>
+
+</html>

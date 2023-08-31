@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+</head>
+
+<body class="">
+  <main class="main-page">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <div class="header__logo">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+          </svg>
+        </div>
+        <div class="header__location">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#location"></use>
+          </svg>
+          <span>Челябинск</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__themes-btns">
+          <button id="light-btn-theme" class="btn-small header__change-theme btn-change-theme active">день</button>
+          <button id="dark-btn-theme" class="btn-small header__change-theme btn-change-theme">ночь</button>
+        </div>
+        <div class="header__visually">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#eye"></use>
+          </svg>
+          <span>Версия для слабовидящих</span>
+        </div>
+        <div class="burger js-show-menu">
+          <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+    <section class="card-page">
+  <div class="container">
+    <div class="handle-banner__breadcrumbs">
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__elem">
+          <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+        </li>
+        <li class="bread-crumbs__elem">
+          <a href="#" class="bread-crumbs__link">Где поесть</a>
+        </li>
+        <li class="bread-crumbs__elem">
+          <a href="#" class="bread-crumbs__link">Ресторан «Ямбург»</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-elem">
+    <div class="container">
+      <div class="card-elem__title">Ресторан «Ямбург»</div>
+      <div class="card-elem__wrapper">
+        <div class="card-elem__photo">
+          <img src="img/card-page/photo_1.jpg" alt="">
+        </div>
+        <div class="card-elem__info">
+          <ul class="card-elem__list">
+            <li class="card-elem__item">
+              <div class="costumn-select__head">
+                <div class="costumn-select__icon">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#select-clock"></use>
+                  </svg>
+                </div>
+                <span class="costumn-select__val">07:00 – 23:00</span>
+              </div>
+            </li>
+            <li class="card-elem__item">
+              <div class="costumn-select__head">
+                <div class="costumn-select__icon">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#select-fish"></use>
+                  </svg>
+                </div>
+                <span class="costumn-select__val">Европейская кухня</span>
+              </div>
+            </li>
+            <li class="card-elem__item">
+              <div class="costumn-select__head">
+                <div class="costumn-select__icon">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#select-check"></use>
+                  </svg>
+                </div>
+                <span class="costumn-select__val">От 500 ₽</span>
+              </div>
+            </li>
+            <li class="card-elem__item">
+              <div class="costumn-select__head">
+                <div class="costumn-select__icon">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#select-phone"></use>
+                  </svg>
+                </div>
+                <span class="costumn-select__val">+7 (349) 96-66-52</span>
+              </div>
+            </li>
+            <li class="card-elem__item">
+              <div class="costumn-select__head">
+                <div class="costumn-select__icon">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#select-map"></use>
+                  </svg>
+                </div>
+                <span class="costumn-select__val">г. Новый Уренгой</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-elem__gallery card-gallery">
+      <div class="card-gallery__wrapper swiper">
+        <div class="swiper-wrapper">
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_1.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_2.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_3.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_4.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_1.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_2.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_3.jpg" alt="">
+          </div>
+          <div class="card-gallery__photo swiper-slide">
+            <img src="img/card-page/photo_4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-gallery__arrows">
+          <button type="button" class="card-gallery__arrow btn-reset card-gallery__arrow--prev">
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+            </svg>
+          </button>
+          <button type="button" class="card-gallery__arrow btn-reset card-gallery__arrow--next">
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="card-gallery__info">
+        <div class="container">
+          <div class="card-gallery__text">
+            <p>Разнообразный и богатый опыт курс на социально-ориентированный национальный проект влечет за собой
+              процесс
+              внедрения и модернизации системы масштабного изменения ряда параметров. Практический опыт показывает, что
+              сложившаяся структура организации создаёт предпосылки качественно новых шагов для существующих финансовых
+              и
+              административных условий. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-page__map card-map">
+    <div class="card-map__adress">г. Новый Уренгой, ул. Геологоразведчиков, д. 9</div>
+    <a href="#" class="card-map__routes">
+      <span class="card-map__routes-icon">
+        <svg class="">
+          <use xlink:href="./img/icons/icons.svg#routes-map"></use>
+        </svg>
+      </span>
+      Маршруты</a>
+    <div class="card-map__map" id="gmap"></div>
+  </div>
+</section>
+    <section class="reviews">
+  <div class="container">
+    <div class="reviews__head">
+      <div class="reviews__title">Отзывы</div>
+      <div class="reviews__attention">Для того, чтобы оставить комментарий необходимо <a href="#"
+          class="blue">авторизоваться</a>
+      </div>
+    </div>
+    <div class="reviews__wrapper">
+      <div class="reviews__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="review-item swiper-slide">
+            <div class="review-item__head">
+              <div class="review-item__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                </svg>
+              </div>
+              <div class="review-item__person">
+                <div class="review-item__name">Артем</div>
+                <div class="review-item__date">14.10.2021</div>
+              </div>
+            </div>
+            <div class="review-item__text">
+              <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представляют
+                не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя
+                само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение современных
+                методик обеспечивает актуальность форм воздействия.</p>
+            </div>
+          </div>
+          <div class="review-item swiper-slide">
+            <div class="review-item__head">
+              <div class="review-item__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                </svg>
+              </div>
+              <div class="review-item__person">
+                <div class="review-item__name">Артем</div>
+                <div class="review-item__date">14.10.2021</div>
+              </div>
+            </div>
+            <div class="review-item__text">
+              <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представляют
+                не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя
+                само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение современных
+                методик обеспечивает актуальность форм воздействия.</p>
+            </div>
+          </div>
+          <div class="review-item swiper-slide">
+            <div class="review-item__head">
+              <div class="review-item__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                </svg>
+              </div>
+              <div class="review-item__person">
+                <div class="review-item__name">Артем</div>
+                <div class="review-item__date">14.10.2021</div>
+              </div>
+            </div>
+            <div class="review-item__text">
+              <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представляют
+                не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя
+                само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение современных
+                методик обеспечивает актуальность форм воздействия.</p>
+            </div>
+          </div>
+          <div class="review-item swiper-slide">
+            <div class="review-item__head">
+              <div class="review-item__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                </svg>
+              </div>
+              <div class="review-item__person">
+                <div class="review-item__name">Артем</div>
+                <div class="review-item__date">14.10.2021</div>
+              </div>
+            </div>
+            <div class="review-item__text">
+              <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представляют
+                не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя
+                само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение современных
+                методик обеспечивает актуальность форм воздействия.</p>
+            </div>
+          </div>
+          <div class="review-item swiper-slide">
+            <div class="review-item__head">
+              <div class="review-item__icon">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#emoji-good"></use>
+                </svg>
+              </div>
+              <div class="review-item__person">
+                <div class="review-item__name">Артем</div>
+                <div class="review-item__date">14.10.2021</div>
+              </div>
+            </div>
+            <div class="review-item__text">
+              <p>Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представляют
+                не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя
+                само их существование приносит несомненную пользу обществу. В целом, конечно, внедрение современных
+                методик обеспечивает актуальность форм воздействия.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="review-item__arrows">
+          <button type="button" class="review-item__arrow btn-reset review-item__arrow--prev">
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+            </svg>
+          </button>
+          <button type="button" class="review-item__arrow btn-reset review-item__arrow--next">
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="reviews-show__btn show-more__btn btn">Показать ещё</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/fb.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="footer__emal blue">info@visityamal.ru</a>
+                <a href="tel:73492244949" class="footer__phone blue">+7 (349) 224-49-49</a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav">
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">О Ямале</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">ООПТ и пограничные зоны</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Партнеры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Туры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Афиша</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </main>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAn4lOodBWISBVdVsAchtPd8eRRPgycYco&language=ru">
+  </script>
+  <script src="js/datainit.js"></script>
+  <script defer>
+    let map
+    mapsData.startMarkersHostelMap = [{
+      position: new google.maps.LatLng(66.07715314564803, 76.68674824681685),
+      map: map,
+      title: 'Хостел «Хмель и Соль»',
+      icon: {
+        url: "img/icon/btn-location.svg",
+        scaledSize: new google.maps.Size(32, 32)
+      },
+    }, ]
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+
+  <script src="js/what-do.js"></script>
+  <script src="js/restorans.js"></script>
+</body>
+
+</html>

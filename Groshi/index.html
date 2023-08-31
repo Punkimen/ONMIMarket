@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+        integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/popup.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__wrapper-left">
+                <div class="header__menu-phone">
+                    <div class="burger__menu">
+                        <img src="images/burger.svg" alt="" class="open">
+                        <img src="images/burger_exit.svg" alt="" class="exit">
+                    </div>
+                    <div class="menu-phone">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="about.html">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="get.html">
+                                        Как получить
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="renew.html">
+                                        Как продлить
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="how-loan.html">
+                                        Как погасить
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="FAQ-1.html">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="phone__menu-info">
+                            <div class="phone__menu-phone">
+                                <a href="tel:0800753363">0 (800) 753-363
+                                </a>
+                                <span>безкоштовно по Україні</span>
+                            </div>
+                            <div class="phone__menu-btns">
+                                <div class="header__lang">
+                                    <button class="btn btn__transparent">Ru</button>
+                                </div>
+                                <div class="header__loan">
+                                    <a href="repay_2.html" class="btn btn__yellow">Погасить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="about.html">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="get.html">
+                                    Как получить
+                                </a>
+                            </li>
+                            <li>
+                                <a href="renew.html">
+                                    Как продлить
+                                </a>
+                            </li>
+                            <li>
+                                <a href="how-loan.html">
+                                    Как погасить
+                                </a>
+                            </li>
+                            <li>
+                                <a href="FAQ-1.html">
+                                    Новости
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__wrapper-right">
+                <div class="header__phone">
+                    <div class="header__phone-num">0 (800) 753-363
+                    </div>
+                    <div class="header__phone-text">безкоштовно по Україні</div>
+                </div>
+                <div class="header__lang">
+                    <button class="btn btn__transparent">Ru</button>
+                </div>
+                <div class="header__loan">
+                    <a href="repay_2.html" class="btn btn__yellow">Погасить</a>
+                </div>
+                <div class="header__exit">
+                    <a href="cabinet-personal.html">
+                        <span>Вход</span>
+                        <img src="images/exit.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="calculate credits">
+        <div class="container">
+            <div class="calculate__inner">
+                <h1 class="calculate__inner-title">Быстрый <span>кредит</span> онлайн от Качай Гроши</h1>
+                <div class="credits__calc">
+                    <div class="credits__calc-head">
+                        Первый кредит под 0.01%
+                    </div>
+                    <div class="credits__calc-wrap">
+                        <div class="wrap__content">
+                            <div class="credits__calc-left">
+                                <div class="сalc__info">
+                                    <div class="range clearfix">
+                                        <div class="range__up">
+                                            <div class="info__label">Сумма:</div>
+                                            <div class="info__inp">
+                                                <input type="text" class="text" id="summ" name="s" value="8000"
+                                                    data-max="15000" data-min="150" data-step="150" data-k="1" multiple>
+                                            </div>
+                                        </div>
+                                        <div class="slider__inner">
+                                            <div class="info__inp-btn sum_minus">
+                                                <span></span>
+                                            </div>
+                                            <div class="slider"></div>
+                                            <div class="info__inp-btn sum_plus">
+                                                <span></span>
+                                                <span class="up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="сalc__quantity">
+                                        <div class="quantity__left">
+                                            150 <span>грн</span>
+                                        </div>
+                                        <div class="quantity__right">
+                                            15 000 <span>грн</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="сalc__info">
+                                    <div class="range clearfix">
+                                        <div class="range__up">
+                                            <div class="info__label">Срок:</div>
+                                            <div class="info__inp">
+                                                <input type="text" class="text" id="term" name="s" value="20"
+                                                    data-max="30" data-min="1" data-min-event="0" data-step="1"
+                                                    data-k="1">
+                                            </div>
+                                        </div>
+                                        <div class="slider__inner">
+                                            <div class="info__inp-btn date_minus">
+                                                <span></span>
+                                            </div>
+                                            <div class="slider"></div>
+                                            <div class="info__inp-btn date_plus">
+                                                <span></span>
+                                                <span class="up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="сalc__quantity">
+                                        <div class="quantity__left">
+                                            1 <span>день</span>
+                                        </div>
+                                        <div class="quantity__right">
+                                            30 <span>дней</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__term"></div>
+                            </div>
+                            <div class="credits__calc-right">
+                                <div class="calc__calculation">
+                                    <div class="calculation__date calculation__content">
+                                        <div class="date__label label">Вернуть до:</div>
+                                        <div class="date__sum calculation__sum">
+                                            пн, 21.09.2020
+                                        </div>
+                                    </div>
+                                    <div class="calculation__get calculation__content">
+                                        <div class="get__label label">Сумма:</div>
+                                        <div class="get__sum calculation__sum">
+                                            8000
+                                            <span>грн</span>
+                                        </div>
+                                    </div>
+                                    <div class="calculation__rate calculation__content">
+                                        <div class="rate__label label">Проценты:</div>
+                                        <div class="rate__sum calculation__sum">0,7</div>
+                                    </div>
+                                    <div class="calculation__return calculation__content">
+                                        <div class="return__label label">Вернуть:</div>
+                                        <div class="return__sum calculation__sum">
+                                            8 055
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculate__inner-btns">
+                            <a href="registration-first.html" class="btn btn__yellow">Оформить кредит</a>
+                            <a href="#popup__promo" class="promo popup-modal">У меня есть промокод</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="container">
+            <h3 class="why__title title">
+                Почему Качай Гроши?
+            </h3>
+            <div class="why__info">
+                <div class="why__info__item">
+                    <div class="why__info-img">
+                        <img src="images/why_1.png" alt="">
+                    </div>
+                    <div class="why__info-title">Быстрая обработка заявки</div>
+                    <div class="why__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+                <div class="why__info__item">
+                    <div class="why__info-img">
+                        <img src="images/why_2.png" alt="">
+                    </div>
+                    <div class="why__info-title">Быстрая обработка заявки</div>
+                    <div class="why__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+                <div class="why__info__item">
+                    <div class="why__info-img">
+                        <img src="images/why_3.png" alt="">
+                    </div>
+                    <div class="why__info-title">Быстрая обработка заявки</div>
+                    <div class="why__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what">
+        <div class="container">
+            <h3 class="what__title title">
+                Что нужно для оформления кредита?
+            </h3>
+            <div class="what__info">
+                <div class="what__info-item">
+                    <div class="what__info-img">
+                        <img src="images/what_1.png" alt="">
+                        <div class="what__info-text">Банковская карта</div>
+                    </div>
+                </div>
+                <div class="what__info-item">
+                    <div class="what__info-img">
+                        <img src="images/what_2.png" alt="">
+                        <div class="what__info-text">Быть старше
+                            18 лет</div>
+                    </div>
+                </div>
+                <div class="what__info-item">
+                    <div class="what__info-img">
+                        <img src="images/what_3.png" alt="">
+                        <div class="what__info-text">Паспорт
+                            и ИНН</div>
+                    </div>
+                </div>
+                <div class="what__info-item">
+                    <div class="what__info-img">
+                        <img src="images/what_4.png" alt="">
+                        <div class="what__info-text">Телефон
+                            и email</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how">
+        <div class="container">
+            <h3 class="how__title title">
+                Что нужно для оформления кредита?
+            </h3>
+            <div class="how__info">
+                <div class="how__info-item">
+                    <div class="how__info-img">
+                        <img src="images/how_1.png" alt="">
+                    </div>
+                    <div class="how__item-step">Шаг 1</div>
+                    <div class="how__info-title">Укажите сумму и срок</div>
+                    <div class="how__info-text">На главной странице сайта введите сумму и срок вашего кредита.</div>
+                </div>
+                <div class="how__info-item">
+                    <div class="how__info-img">
+                        <img src="images/how_2.png" alt="">
+                    </div>
+                    <div class="how__item-step">Шаг 2</div>
+                    <div class="how__info-title">Заполните заявку</div>
+                    <div class="how__info-text">Процесс занимает 8 минут при первом обращении и 2 минуты — при
+                        повторных.</div>
+                </div>
+                <div class="how__info-item">
+                    <div class="how__info-img">
+                        <img src="images/how_3.png" alt="">
+                    </div>
+                    <div class="how__item-step">Шаг 3</div>
+                    <div class="how__info-title">Получите деньги</div>
+                    <div class="how__info-text">После всех процедур деньги будут зачислены на вашу карту мгновенно.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="repay">
+        <div class="container">
+            <h3 class="repay__title title">
+                Как погасить кредит
+            </h3>
+            <div class="repay__info">
+                <div class="repay__info-item">
+                    <div class="repay__info-img">
+                        <img src="images/repay_1.png" alt="">
+                    </div>
+                    <div class="repay__info-title">
+                        Оплата
+                        картой
+                    </div>
+                    <div class="repay__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+                <div class="repay__info-item">
+                    <div class="repay__info-img">
+                        <img src="images/repay_2.png" alt="">
+                    </div>
+                    <div class="repay__info-title">Платежный терминал</div>
+                    <div class="repay__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+                <div class="repay__info-item">
+                    <div class="repay__info-img">
+                        <img src="images/repay_3.png" alt="">
+                    </div>
+                    <div class="repay__info-title">Оплата
+                        онлайн</div>
+                    <div class="repay__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+                <div class="repay__info-item">
+                    <div class="repay__info-img">
+                        <img src="images/repay_4.png" alt="">
+                    </div>
+                    <div class="repay__info-title">Банковский перевод</div>
+                    <div class="repay__info-text">Мы предоставляем первый и единственный в Украине офицыальный рейтынг
+                        кредытных компаний </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__title title">Отзывы</div>
+            <div class="reviews__slider">
+                <div class="reviews__slider-item">
+                    <div class="slider__content">
+                        <div class="reviews__slider-text">Отличная компания. Оперативно обслуживают, нет возрастных
+                            ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии.
+                            Часто
+                            бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!</div>
+                        <div class="reviews__slider-author">Надежда Г., Днепр</div>
+                        <div class="reviews__slider-date">7 июля 2019</div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <div class="slider__content">
+                        <div class="reviews__slider-text">Отличная компания. Оперативно обслуживают, нет возрастных
+                            ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии.
+                            Часто
+                            бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!</div>
+                        <div class="reviews__slider-author">Надежда Г., Днепр</div>
+                        <div class="reviews__slider-date">7 июля 2019</div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <div class="slider__content">
+                        <div class="reviews__slider-text">Отличная компания. Оперативно обслуживают, нет возрастных
+                            ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии.
+                            Часто
+                            бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!</div>
+                        <div class="reviews__slider-author">Надежда Г., Днепр</div>
+                        <div class="reviews__slider-date">7 июля 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h3 class="about__title title">Качай Гроши, это компания которая собрала самые актуальные и свежие решения
+                на ринке микрокредитов</h3>
+            <div class="about__content">
+                <div class="about__content-title">1. О компании</div>
+                <div class="about__content-text">
+                    <p>Качай Гроши – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на
+                        банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом
+                        круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету.
+                        Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать
+                        договор с помощью SMS кода.</p>
+                    <p>Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые,
+                        смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не
+                        упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без
+                        отказа.
+                    </p>
+                </div>
+                <div class="about__content-title">2. Причины, по которым украинцы выбирают</div>
+                <div class="about__content-title">2.1 — Выгодные условия</div>
+                <div class="about__content-text">Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная
+                    ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет
+                    меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.</div>
+                <div class="about__content-title">1. О компании</div>
+                <div class="about__content-text">
+                    <p>Качай Гроши – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на
+                        банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом
+                        круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету.
+                        Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать
+                        договор с помощью SMS кода.</p>
+                    <p>Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые,
+                        смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не
+                        упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без
+                        отказа.
+                    </p>
+                </div>
+                <div class="about__content-title mt">2. Причины, по которым украинцы выбирают</div>
+                <div class="about__content-title">2.1 — Выгодные условия</div>
+                <div class="about__content-text">Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная
+                    ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет
+                    меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.</div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="info__wrapper-item">
+                    <div class="info__wrapper-title">Пример расчета процентной ставки</div>
+                    <div class="info__wrapper-text">Например, сумма займа составляет 1000 грн., Срок возврата кредита -
+                        10 календарных дней, сумма к выплате на дату возврата - 2500 грн. В данном случае типичная
+                        летняя APR - 912.5%.</div>
+                </div>
+                <div class="info__wrapper-item">
+                    <div class="info__wrapper-title">Минимальная и максимальная сумма займа</div>
+                    <div class="info__wrapper-text">Минимальная сумма кредита для нового клиента сервиса EuroGroshi
+                        составляет 1000 грн., А максимальная - 10000 грн. Для постоянных клиентов сервиса предусмотрено
+                        увеличение возможной суммы кредитования</div>
+                </div>
+                <div class="info__wrapper-item">
+                    <div class="info__wrapper-title">Сроки пользования услугами кредитования</div>
+                    <div class="info__wrapper-text">Минимальный срок пользования услугой кредитования составляет 1 день.
+                        Максимальный срок пользования услугой кредитования до 30 дней. В случае активации услуги
+                        пролонгации, срок может быть увеличен</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best">
+        <div class="container">
+            <h3 class="best__title title">Лучшие предложения в компании</h3>
+            <div class="best__wrapper">
+                <a href="#" class="best__wrapper-item">Терміново гроші на карту</a>
+                <a href="#" class="best__wrapper-item">Кредит з поганою історією</a>
+                <a href="#" class="best__wrapper-item">Взяти кредит готівкою</a>
+                <a href="#" class="best__wrapper-item">Гроші до зарплати </a>
+                <a href="#" class="best__wrapper-item">Кредит без довідки про доходи</a>
+                <a href="#" class="best__wrapper-item">Кредит без довідки про доходи</a>
+                <a href="#" class="best__wrapper-item">Терміново гроші на карту</a>
+                <a href="#" class="best__wrapper-item">Кредит з поганою історією</a>
+                <a href="#" class="best__wrapper-item">Взяти кредит готівкою</a>
+                <a href="#" class="best__wrapper-item">Гроші до зарплати </a>
+                <a href="#" class="best__wrapper-item">Терміново гроші на карту</a>
+                <a href="#" class="best__wrapper-item">Кредит з поганою історією</a>
+                <a href="#" class="best__wrapper-item">Взяти кредит готівкою</a>
+                <a href="#" class="best__wrapper-item">Гроші до зарплати </a>
+                <a href="#" class="best__wrapper-item">Кредит без довідки про доходи</a>
+                <a href="#" class="best__wrapper-item">Терміново гроші на карту</a>
+                <a href="#" class="best__wrapper-item">Кредит з поганою історією</a>
+                <a href="#" class="best__wrapper-item">Взяти кредит готівкою</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-item first">
+                    <div class="footer__inner-title">О нас</div>
+                    <ul class="footer__inner-list">
+                        <li class="footer__inner-link">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="footer__inner-link">
+                            <a href="use.html">Условия пользования</a>
+                        </li>
+                        <li class="footer__inner-link">
+                            <a href="FAQ-2.html">Вопрос - ответ</a>
+                        </li>
+                        <li class="footer__inner-link">
+                            <a href="about.html">Информация про финансовое учреждение, которая подлежит раскрытию в
+                                соответствии
+                                с законодательством</a>
+                        </li>
+                        <li class="footer__inner-link">
+                            <a href="about.html">Информация про финансовое учреждение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__inner-item second">
+                    <div class="footer__inner-support">
+                        <div class="footer__inner-title">Служба поддержки</div>
+                        <a href="#" class="support-phone">0 800 312 727</a>
+                        <a href="#" class="support-email">info@kachay.com.ua</a>
+                    </div>
+                    <div class="footer__inner-time">
+                        <div class="footer__inner-title">Время работы</div>
+                        <div class="time__text">пн-пт: с 8:00 до 20:00</div>
+                        <div class="time__text">сб-вс: с 10:00 до 18:00</div>
+                    </div>
+                </div>
+                <div class="footer__inner-item">
+                    <div class="footer__inner-title">Мы в сети</div>
+                    <a href="#" class="footer__inner-social">Facebook</a>
+                    <a href="#" class="footer__inner-social">Intsagram</a>
+                    <div class="footer__inner-btn">
+                        <a class="btn btn__yellow" href="https://www.facebook.com/" target="blank">Написать нам</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__inner-best">
+                <div class="best__inner-title">
+                    Лучшие предложения в компании
+                </div>
+                <div class="best__inner-wrapper">
+                    <div class="best__inner-item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="best__inner-item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="best__inner-item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Деньги до зарплаты онлайн за 20 минут
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Кредит без справок и поручителей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Потребительский кредит
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copy">
+        <div class="container">
+            <div class="copy__wrapper">
+                <div class="copy__wrapper-left">
+                    ТОВ "КАЧАЙ ГРОШІ" © 2020 Все права защищены!
+                </div>
+                <div class="copy__wrapper-right">
+                    <img src="images/copy.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="popups" style="display: none">
+        <div id="popup__phone" class="popup phone">
+            <div class="popup-title">Подтверждение номера телефона</div>
+            <div class="popup-text">Мы отправили вам SMS-сообщение с кодом
+                на номер +38 (073) 123 45 67</div>
+            <div class="popup-link"><a href="#">Редактировать номер</a></div>
+            <div class="popup__inp">
+                <label for="code">Код из смс</label>
+                <input type="text" name="code" placeholder="хххх">
+            </div>
+            <div class="popup-timer">Отправить код еще раз через <span class="timer">2:59</span></div>
+            <div class="popup-btn btn btn__yellow">Продолжить</div>
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+        <div id="popup__change" class="popup change">
+            <div class="popup-title">Изменение номера телефона</div>
+            <div class="popup-text">Введите новый номер телефона, на который
+                вы хотите изменить</div>
+            <div class="popup__inp">
+                <label for="phone">Телефон</label>
+                <input type="phone" name="phone" placeholder="+38 (0__) ___ __ __">
+            </div>
+            <div class="popup-btns">
+                <div class="popup-btn btn">Отменить</div>
+                <div class="popup-btn btn btn__yellow">Изменить</div>
+            </div>
+
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+        <div id="popup__calc" class="popup calc">
+            <div class="credits__calc-left">
+                <div class="сalc__info">
+                    <div class="range clearfix">
+                        <div class="range__up">
+                            <div class="info__label">Сумма:</div>
+                            <div class="info__inp">
+                                <input type="text" class="text" id="summ" name="s" value="8000" data-max="15000"
+                                    data-min="150" data-step="150" data-k="1" multiple>
+                            </div>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="info__inp-btn sum_minus">
+                                <span></span>
+                            </div>
+                            <div class="slider"></div>
+                            <div class="info__inp-btn sum_plus">
+                                <span></span>
+                                <span class="up"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="сalc__quantity">
+                        <div class="quantity__left">
+                            150 <span>грн</span>
+                        </div>
+                        <div class="quantity__right">
+                            15 000 <span>грн</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="сalc__info">
+                    <div class="range clearfix">
+                        <div class="range__up">
+                            <div class="info__label">Срок:</div>
+                            <div class="info__inp">
+                                <input type="text" class="text" id="term" name="s" value="20" data-max="30" data-min="1"
+                                    data-min-event="0" data-step="1" data-k="1">
+                            </div>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="info__inp-btn date_minus">
+                                <span></span>
+                            </div>
+                            <div class="slider"></div>
+                            <div class="info__inp-btn date_plus">
+                                <span></span>
+                                <span class="up"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="сalc__quantity">
+                        <div class="quantity__left">
+                            1 <span>день</span>
+                        </div>
+                        <div class="quantity__right">
+                            30 <span>дней</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__term"></div>
+            </div>
+            <div class="credits__calc-right">
+                <div class="calc__calculation">
+                    <div class="calc__calculation-left">
+                        <div class="calculation__date calculation__content">
+                            <div class="date__label label">Вернуть до:</div>
+                            <div class="date__sum calculation__sum">
+                                пн, 21.09.2020
+                            </div>
+                        </div>
+                        <div class="calculation__get calculation__content">
+                            <div class="get__label label">Сумма:</div>
+                            <div class="get__sum calculation__sum">
+                                8000
+                                <span>грн</span>
+                            </div>
+                        </div>
+                        <div class="calculation__rate calculation__content">
+                            <div class="rate__label label">Проценты:</div>
+                            <div class="rate__sum calculation__sum">0,7</div>
+                        </div>
+                        <div class="calculation__return calculation__content">
+                            <div class="return__label label">Вернуть:</div>
+                            <div class="return__sum calculation__sum">
+                                8 055
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__calculation-right">
+                        <div class="calculate__inner-btns">
+                            <a href="#" class="btn btn__yellow">Получить деньги</a>
+                            <a href="#popup__promo" class="promo popup-modal">У меня есть промокод</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+        <div id="popup__phone-2" class="popup phone-2">
+            <div class="popup-title">Подтверждение номера телефона</div>
+            <div class="popup-text">Мы отправили вам SMS-сообщение с кодом
+                на номер +38 (073) 123 45 67</div>
+            <div class="popup-link"><a href="#">Редактировать номер</a></div>
+            <div class="popup__inp">
+                <label for="code">Код из смс</label>
+                <input type="text" name="code" placeholder="хххх">
+            </div>
+            <div class="popup-timer">Отправить код еще раз через <span class="timer">2:59</span></div>
+            <div class="popup-btns">
+                <div class="popup-btn btn btn__yellow">Войти</div>
+                <div class="popup-btn btn">Нету доступа к номеру? <span>Не удается ввойти?</span></div>
+            </div>
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+        <div id="popup__info" class="popup info">
+            <div class="popup-title">Возникли сложности со входом?</div>
+            <div class="popup-text">
+                <p>Позвоните в службу поддрержки (звонок бесплатний) и мы вам поможем. <a href="#">0 800 330 234</a>
+                    (бесплатно по
+                    Украине).</p>
+            </div>
+            <div class="popup-text">
+                <p> График работы службы поддержки: <br>
+                    Пн.-Пт.: с 8:00 до 23:00<br>
+                    Сб.-Вс.: с 8:00 до 22:00<br>
+                    Обработка заявок на кредит — круглосуточно без выходных.</p>
+            </div>
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+        <div id="popup__promo" class="popup promo">
+            <div class="popup-title">Укажите ваш промокод</div>
+            <div class="popup__inp">
+                <label for="code">Ваш промокод</label>
+                <input type="text" name="code" placeholder="хххх" maxlength='4'>
+            </div>
+            <button class="popup-btn btn btn__yellow">Продолжить</button>
+            <div class="popup__exit">
+                <img src="images/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/calc.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

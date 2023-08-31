@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamal</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container header__container">
+        <div class="header__wrapper">
+            <div class="header__left">
+                <div class="header__logo logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="header__location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#location"></use>
+                    </svg>
+                    <span class="location-name">Санкт-Петербург</span>
+                </button>
+            </div>
+            <div class="header__center">
+                <button type="button" class="header__burger-menu btn">
+                    <div class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="header__burger-menu-text">Меню</span>
+                </button>
+            </div>
+            <div class="header__right">
+                <button type="button" class="header__language select-language btn">
+                    <span class="current-lang">ENG</span>
+                </button>
+                <button type="button" class="header__bad-eyes btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#eye"></use>
+                    </svg>
+                    <span>Версия для слабовидящих</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__container container">
+            <div class="header-menu__wrapper">
+                <div class="header-menu__col">
+                    <div class="header-menu__label">О Ямале</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Город на полярном круге</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Чем заняться</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Музеи</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Конференс-залы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографические парки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туроператоры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Планирование поездки</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Как добраться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где остановиться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где поесть</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Туристические направления</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Водный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Событийный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экологический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location-menu location-menu--main">
+        <div class="location-menu__search">
+            <div class="location-menu__search-container container">
+                <button type="btn" class="location-menu__search-btn js-show-cities btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#global-edit"></use>
+                    </svg>
+                </button>
+                <input type="text" class="location-menu__search-inp input-reset" disabled value="Санкт-Петербург">
+                <button type="btn" class="location-menu__search-btn js-hide-location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="location-menu__lists">
+            <div class="container location-menu__lists-container">
+                <div class="location-menu__lists-wrapper">
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="weather-block">
+    <div class="container weather-block__container">
+        <div class="weather-block__wrapper">
+            <div class="weather-block__menu weather-menu">
+                <div class="weather-menu__wrapper">
+                    <a href="#" class="weather-menu__link" data-hover="Профиль">
+                        <svg class="stroke-white">
+                            <use xlink:href="./img/icons/icons.svg#user-square"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="weather-menu__link" data-hover="Мои маршруты">
+                        <svg class="stroke-white">
+                            <use xlink:href="./img/icons/icons.svg#routing"></use>
+                        </svg>
+                    </a>
+                    <div class="weather-menu__line"></div>
+                    <a href="#" class="weather-menu__link" data-hover="Все маршруты">
+                        <svg class="stroke-white">
+                            <use xlink:href="./img/icons/icons.svg#arrow-square"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="weather-menu__link" data-hover="Афиша">
+                        <svg class="stroke-white">
+                            <use xlink:href="./img/icons/icons.svg#calendar"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="weather-menu__link" data-hover="Магазин">
+                        <svg class="stroke-white">
+                            <use xlink:href="./img/icons/icons.svg#shop"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="weather-block__content">
+                <h2 class="weather-block__title section-title" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Насладитесь
+                    гармонией
+                    арктики</h2>
+                <p class="weather-block__text section-text" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Мы создали уникальную систему подбора маршрутов, которая
+                    учитывает множество скрытых факторов,
+                    чтобы насладиться отдыхом сполна.</p>
+                <button class="weather-block__btn btn btn-green" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">Пройти опрос</button>
+            </div>
+            <div class="weather-block__widjets widjets">
+                <div class="widjets-item widjets-block widjets-weather">
+                    <div class="widjets-block__header">
+                        <div class="widjets-block__label">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#map-marker"></use>
+                            </svg>
+                            <span>Салехард</span>
+                        </div>
+                        <div class="widjets-block__time">19:16</div>
+                    </div>
+                    <div class="widjets-block__body widjets-block__body--flex">
+                        <div class="widjets-weather__speed-wind">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#wind"></use>
+                            </svg>
+                            <span>4 м/с</span>
+                        </div>
+                        <div class="widjets-weather__temp">
+                            <span>+13°C</span>
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#cloud-sunny"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="widjets-item northern-lights">
+                    <div class="northern-lights__slider widjets-block  swiper">
+                        <div class="swiper-wrapper">
+                            <div class="northern-lights__slide  swiper-slide">
+                                <div class="widjets-block__header">
+                                    <div class="widjets-block__label">
+                                        <svg class="">
+                                            <use xlink:href="./img/icons/icons.svg#sound
+                                        "></use>
+                                        </svg>
+                                        <span>Северное сияние</span>
+                                    </div>
+                                    <div class="widjets-block__time">15 сен.</div>
+                                </div>
+                                <div class="widjets-block__body">
+                                    <div class="northern-lights__level">
+                                        7 уровень
+                                        <span class="northern-lights__level-small">из 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="northern-lights__slide  swiper-slide">
+                                <div class="widjets-block__header">
+                                    <div class="widjets-block__label">
+                                        <svg class="">
+                                            <use xlink:href="./img/icons/icons.svg#sound
+                                        "></use>
+                                        </svg>
+                                        <span>Северное сияние</span>
+                                    </div>
+                                    <div class="widjets-block__time">15 сен.</div>
+                                </div>
+                                <div class="widjets-block__body">
+                                    <div class="northern-lights__level">
+                                        7 уровень
+                                        <span class="northern-lights__level-small">из 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="northern-lights__slide  swiper-slide">
+                                <div class="widjets-block__header">
+                                    <div class="widjets-block__label">
+                                        <svg class="">
+                                            <use xlink:href="./img/icons/icons.svg#sound
+                                        "></use>
+                                        </svg>
+                                        <span>Северное сияние</span>
+                                    </div>
+                                    <div class="widjets-block__time">15 сен.</div>
+                                </div>
+                                <div class="widjets-block__body">
+                                    <div class="northern-lights__level">
+                                        7 уровень
+                                        <span class="northern-lights__level-small">из 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="slick-arrow northern-lights-arrow__prev btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="slick-arrow northern-lights-arrow__next btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="widjets-item widjets-block attention">
+                    <div class="attention__body">
+                        <div class="attention__title">Обратите внимание!</div>
+                        <div class="attention__text">В регионе есть территории, которые требуют специального прокуска
+                            для нахождения там.</div>
+                    </div>
+                    <div class="attention__footer">
+                        <div class="attention__footer-text">Пограничные зоны и особо охраняемые природные территории
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="quote">
+    <div class="container quote__container">
+        <div class="quote__wrapper">
+            <div class="quote__content">
+                <h2 class="quote__title section-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                    <span>— Если вы пришелец, почему говорите, как северянин?!</span>
+                    <span>— У многих планет есть север</span>
+                </h2>
+                <div class="quote__copy" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    &#169; «Доктор Кто» (2005)
+                </div>
+                <div class="quote__text" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    Равным образом, структура организации требует анализа кластеризации усилий. Каждый из нас понимает
+                    очевидную вещь: разбавленное изрядной долей эмпатии.
+                </div>
+                <button type="button" class="quote__about-btn btn btn-green">О Ямале</button>
+            </div>
+            <div class="quote__photos">
+                <div class="quote__photos-descr quote__photos-descr--first descr-block rellax" data-rellax-speed="2">
+                    <div class="descr-block__title">> 50 000</div>
+                    <div class="descr-block__text">ручьев, озер и рек</div>
+                </div>
+                <div class="quote__photos-descr quote__photos-descr--second descr-block rellax" data-rellax-speed="3">
+                    <div class="descr-block__title">2293 видов</div>
+                    <div class="descr-block__text">животных и птиц</div>
+                </div>
+                <div class="quote__photos-photo quote__photos-photo--first" data-aos="fade-down"
+                    data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                    <img src="img/north-photo_1.jpg" alt="Северный пейзаж">
+                </div>
+                <div class="quote__photos-photo quote__photos-photo--second" data-aos="fade-down"
+                    data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                    <picture>
+                        <source srcset="img/mobile-north_1.jpg" media="(max-width: 568px)">
+                        <source srcset="img/north-photo_2.jpg">
+                        <img src="img/north-photo_2.jpg" alt="Северный пейзаж">
+                    </picture>
+                </div>
+                <div class="quote__photos-photo quote__photos-photo--third" data-aos="fade-up" data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic">
+                    <img src="img/north-photo_3.jpg" alt="Северный пейзаж">
+                </div>
+                <div class="quote__photos-photo quote__photos-photo--fourth" data-aos="fade-up" data-aos-duration="2500"
+                    data-aos-easing="ease-out-cubic">
+                    <picture>
+                        <source srcset="img/mobile-north_2.jpg" media="(max-width: 568px)">
+                        <source srcset="img/north-photo_4.jpg">
+                        <img src="img/north-photo_4.jpg" alt="Северный пейзаж">
+                    </picture>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="banner banner-sale">
+    <div class="container banner__container">
+        <div class="banner__wrapper">
+            <div class="banner__content">
+                <h2 class="banner__title section-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Скидки в заведениях Ямала</h2>
+                <div class="banner__text" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Зарегистрируйтесь и получите электонную карту гостя, дающую скидку в
+                    заведениях Ямало-Ненецкого АО.</div>
+                <button class="banner__create-acc btn btn-green" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">Создать личный кабинет</button>
+            </div>
+            <div class="banner__photos">
+                <div class="banner__photos-item photo-block rellax" data-rellax-speed="1">
+                    <div class="photo-block__img">
+                        <img src="img/photo_1.png" alt="Ресторан «Край земли»">
+                    </div>
+                    <div class="photo-block__descr">
+                        <div class="photo-block__title descr-block__title">Ресторан «Край земли»</div>
+                        <div class="photo-block__text descr-block__text">г. Салехард</div>
+                    </div>
+                </div>
+                <div class="banner__photos-item photo-block rellax" data-rellax-speed="-2">
+                    <div class="photo-block__img">
+                        <img src="img/photo_2.png" alt="Музей истории Арктики">
+                    </div>
+                    <div class="photo-block__descr">
+                        <div class="photo-block__title descr-block__title">Музей истории Арктики</div>
+                        <div class="photo-block__text descr-block__text">г. Новый Уренгой</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale__photos-descr descr-block rellax" data-rellax-speed="3">
+                <div class="descr-block__title">658 мест</div>
+                <div class="descr-block__text">со скидкой для гостей</div>
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--center fly-icon rellax" data-rellax-speed="-2">
+                <img src="img/icon/receipt-disscount.svg" alt="">
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--right fly-icon rellax" data-rellax-speed="4">
+                <img src="img/icon/buy-crypto.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="quiz">
+    <div class="container quiz__container">
+        <div class="quiz__wrapper">
+            <div class="quiz__questions-block">
+                <div class="questions-block__title">Природа и приключения</div>
+                <div class="questions-block__wrapper">
+                    <button type="button" class="questions-block__answer btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#emoji-happy"></use>
+                        </svg>
+
+                        <span>Я — авантюрист</span>
+                    </button>
+                    <button type="button" class="questions-block__answer btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#emoji-normal"></use>
+                        </svg>
+
+                        <span>Очень интересно</span>
+                    </button>
+                    <button type="button" class="questions-block__answer btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#emoji-normal-1"></use>
+                        </svg>
+
+                        <span>Только популярные места</span>
+                    </button>
+                    <button type="button" class="questions-block__answer btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#emoji-medium"></use>
+                        </svg>
+
+                        <span>Стараюсь избегать</span>
+                    </button>
+                </div>
+                <div class="questions-block__dott"></div>
+            </div>
+            <div class="quiz-routes">
+                <h2 class="quiz-routes__title section-title" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Рекомендованные машруты</h2>
+                <div class="quiz-routes__text" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Ответьте на несколько вопросов, чтобы с высокой точностью посоветовать
+                    маршруты для путешествия по региону.</div>
+                <div class="quiz-routes__progress">
+                    <div class="quiz-routes__progress-item active ">
+                        <div class="quiz-routes__progress-num">1</div>
+                        <button type="button" class="quiz-routes__progress-btn btn btn-return" data-count="0">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#redo"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quiz-routes__progress-item">
+                        <div class="quiz-routes__progress-num">2</div>
+                        <button type="button" class="quiz-routes__progress-btn btn btn-return" data-count="1">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#redo"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quiz-routes__progress-item">
+                        <div class="quiz-routes__progress-num">3</div>
+                        <button type="button" class="quiz-routes__progress-btn btn btn-return" data-count="2">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#redo"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quiz-routes__progress-item">
+                        <div class="quiz-routes__progress-num">4</div>
+                        <button type="button" class="quiz-routes__progress-btn btn btn-return" data-count="3">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#redo"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- <div class="quiz-routes__progress-item">
+                        <div class="quiz-routes__progress-num"><img src="img/icon/calendar.svg" alt="календарь"></div>
+                        <button type="button" class="quiz-routes__progress-btn btn btn-return">
+                            <svg class="">
+                                <use xlink:href="./img/icons/icons.svg#redo"></use>
+                            </svg>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-goods recomended-route">
+        <div class="recomended-route__header">
+            <h2 class="recomended-route__title section-title">Рекомендованные машруты</h2>
+            <button id="repeatQuiz" type="button" class="recomended-route__btn btn btn-green">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                </svg>
+                Пройти опрос заново
+            </button>
+        </div>
+        <div class="photos__wrapper routes-wrapper swiper">
+            <div class="swiper-wrapper">
+                <a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a><a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a><a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a><a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a><a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a><a href="" class="catalog__wrapper-item card-item photo swiper-slide" data-status="Европейская">
+                    <div class="card-item__img">
+                        <img src="img/cards/card-restor_1.png" alt="Ресторан «Ямбург»">
+                    </div>
+                    <div class="card-item__footer">
+                        <div class="card-item__name">Ресторан «Ямбург»</div>
+                        <div class="card-item__price" data-price="3">
+                            Ср. чек до 500₽
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button type="button" class="slick-arrow routes-arrow__next btn">
+            <svg class="">
+                <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="quiz-individual">
+        <div class="quiz-individual__wrapper">
+            <div class="quiz-individual__left-icons">
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--first fly-icon" data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img src="img/icon/route-square.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--second fly-icon" data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <img src="img/icon/map.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--thrid fly-icon" data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/icon/location.svg" alt="">
+                </div>
+            </div>
+            <div class="quiz-individual__content">
+                <div class="quiz-individual__title" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Больше ничего не удивляет?</div>
+                <div class="quiz-individual__text" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Составьте свой индивидуальный маршрут по региону, а мы поможем
+                    получить максимум от путешествия.</div>
+                <button class="quiz-individual__btn btn btn-green" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">Индивидуальный маршрут</button>
+            </div>
+            <div class="quiz-individual__right-icons">
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--right-first fly-icon"
+                    data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img src="img/icon/routing.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--right-second fly-icon"
+                    data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <img src="img/icon/airplane.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--right-thrid fly-icon"
+                    data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/icon/global.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--right-fourth fly-icon"
+                    data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+                    <img src="img/icon/location.svg" alt="">
+                </div>
+                <div class="quiz-individual__fly-icon quiz-individual__fly-icon--right-fifth fly-icon"
+                    data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <img src="img/icon/picture-frame.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="photos">
+    <div class="container photos__container">
+        <div class="photos__wrapper photos__wrapper--scroll">
+            <a href="#" class="photos__wrapper-item photo">
+                <div class="photo__img">
+                    <img src="img/photo-1.png" alt="Туры по Ямалу">
+                </div>
+                <div class="photo__descr">
+                    <div class="descr-block__title">Туры по Ямалу</div>
+                    <div class="descr-block__text">3524 позиций</div>
+                </div>
+            </a>
+            <a href="#" class="photos__wrapper-item photo">
+                <div class="photo__img">
+                    <img src="img/photo-2.png" alt="Достопримечательности">
+                </div>
+                <div class="photo__descr">
+                    <div class="descr-block__title">Достопримечательности</div>
+                    <div class="descr-block__text">365 объектов</div>
+                </div>
+            </a>
+            <a href="#" class="photos__wrapper-item photo">
+                <div class="photo__img">
+                    <img src="img/photo-3.png" alt="Этнографические парки">
+                </div>
+                <div class="photo__descr">
+                    <div class="descr-block__title">Этнографические парки</div>
+                    <div class="descr-block__text">580 территорий</div>
+                </div>
+            </a>
+            <a href="#" class="photos__wrapper-item photo">
+                <div class="photo__img">
+                    <img src="img/photo-4.png" alt="Горнолыжные комплексы">
+                </div>
+                <div class="photo__descr">
+                    <div class="descr-block__title">Горнолыжные комплексы</div>
+                    <div class="descr-block__text">158 объектов</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+    <section class="playbill">
+    <div class="playbill__container container">
+        <div class="playbill__top">
+            <div class="playbill__header">
+                <h2 class="playbill__title section-title">Афиша Ямала</h2>
+                <div class="playbill__select-city custom-select">
+                    <div class="custom-select__header">
+                        <div class="custom-select__arrow">
+                            <img src="img/icon/select-arrow.svg" alt="">
+                        </div>
+                        <span class="custom-select__current-elem">Все города</span>
+                    </div>
+                    <div class="custom-select__body">
+                        <div class="custom-select__search">
+                            <input type="text" class="custom-select__input" placeholder="Поиск">
+                            <button type="button" class="custom-select__search-btn btn">
+                                <img src="img/icon/search.svg" alt="lope">
+                            </button>
+                        </div>
+                        <div class="custom-select__categoryes">
+                            <div class="custom-select__category">
+                                <div class="custom-select__category-letter">
+                                    <img src="img/icon/global.svg" alt="">
+                                </div>
+                                <ul class="custom-select__category-list">
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Все города
+                                            <input class="choosen-radio" value="city" type="radio" name="1" checked />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="custom-select__category">
+                                <div class="custom-select__category-letter">A</div>
+                                <ul class="custom-select__category-list">
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Азерот
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Анадырь
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Аргентина
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Азерот
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="custom-select__category">
+                                <div class="custom-select__category-letter">A</div>
+                                <ul class="custom-select__category-list">
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Азерот
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Анадырь
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Аргентина
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li class="custom-select__category__elem">
+                                        <label class="control control-radio costum-radio">
+                                            Азерот
+                                            <input class="choosen-radio" value="city" type="radio" name="1" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playbill__categoryes">
+                <button type="button" class="playbill-category btn current">Все</button>
+                <button type="button" class="playbill-category btn">Праздник</button>
+                <button type="button" class="playbill-category btn">Фестиваль</button>
+                <button type="button" class="playbill-category btn">Кино</button>
+                <button type="button" class="playbill-category btn">Театр</button>
+                <button type="button" class="playbill-category btn">Концерт</button>
+            </div>
+        </div>
+    </div>
+    <div class="playbill-events">
+        <div class="playbill__container container">
+            <div class="playbill-events__inner">
+                <div class="playbill-events__calendar">
+                    <div class="playbill-events__calendar-slider">
+                        <div class="playbill-events__calendar-inner swiper-wrapper">
+                            <div class="playbill-events__calendar-slide swiper-slide">
+                                <div class="playbill-events__calendar-mounth">Сентябрь</div>
+                                <div class="playbill-events__calendar-wrapper">
+                                    <div class="playbill-events__calendar-item hasEvent active">
+                                        <span class="day">13</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">14</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">15</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">16</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">17</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">18</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">19</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">20</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">21</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">22</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">23</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item hasEvent">
+                                        <span class="day">24</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">25</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">26</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">27</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">28</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">29</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">30</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playbill-events__calendar-slide swiper-slide">
+                                <div class="playbill-events__calendar-mounth">Октябрь</div>
+                                <div class="playbill-events__calendar-wrapper">
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">1</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">14</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">15</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">16</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">17</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">18</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">19</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">20</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">21</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">22</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">23</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">24</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">25</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">26</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">27</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">28</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">29</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                    <div class="playbill-events__calendar-item">
+                                        <span class="day">30</span>
+                                        <span class="week-day">ПН</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="slick-arrow calendar-arrow__next btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="playbill__container--p0 playbill__container container">
+            <div class="playbill-events__inner">
+                <div class="playbill-events__inner-slider">
+                    <div class="playbill-events__slider playbill-events__slider--event swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                            <a href="#" class="playbill-events__event swiper-slide">
+                                <div class="playbill-events__event-img" data-status="Бесплатно">
+                                    <img src="img/event-1.jpg" alt="">
+                                </div>
+                                <div class="playbill-events__event-descr">
+                                    <div class="descr-block__title">День оленевода</div>
+                                    <div class="descr-block__text">Праздник</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="slick-arrow event-arrow__next btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="playbill-events__inner-empty playbill-events__inner-empty empty-notification">
+                    <div class="empty-notification__icon popup__icon"><img src="img/icon/sucsess-icon.svg"></div>
+                    <div class="empty-notification__text popup__title">Нет запланированных событий на выбранную дату
+                    </div>
+                </div>
+            </div>
+            <div class="playbill-events__inner">
+                <div class="playbill-events__slider playbill-events__slider--banner swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="banner-slide swiper-slide" data-status="Бесплатно"
+                            style="background-image: url(img/banner.png);">
+                            <div class="banner-slide__content">
+                                <div class="banner-slide__title">В гоcтях
+                                    у Сэр Ни</div>
+                                <div class="banner-slide__date">1 ноября 12:00</div>
+                                <div class="banner-slide__place">Этнографический парк «Кочевник»</div>
+                            </div>
+                        </a>
+                        <a href="#" class="banner-slide swiper-slide" data-status="Бесплатно"
+                            style="background-image: url(img/banner.png);">
+                            <div class="banner-slide__content">
+                                <div class="banner-slide__title">В гостях
+                                    у Сэр Ни</div>
+                                <div class="banner-slide__date">1 ноября 12:00</div>
+                                <div class="banner-slide__place">Этнографический парк «Кочевник»</div>
+                            </div>
+                        </a>
+                        <a href="#" class="banner-slide swiper-slide" data-status="Бесплатно"
+                            style=" background-image: url(img/banner.png);">
+                            <div class="banner-slide__content">
+                                <div class="banner-slide__title">В гостях
+                                    у Сэр Ни</div>
+                                <div class="banner-slide__date">1 ноября 12:00</div>
+                                <div class="banner-slide__place">Этнографический парк «Кочевник»</div>
+                            </div>
+                        </a>
+                        <a href="#" class="banner-slide swiper-slide" data-status="Бесплатно"
+                            style=" background-image: url(img/banner.png);">
+                            <div class="banner-slide__content">
+                                <div class="banner-slide__title">В гостях
+                                    у Сэр Ни</div>
+                                <div class="banner-slide__date">1 ноября 12:00</div>
+                                <div class="banner-slide__place">Этнографический парк «Кочевник»</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button type="button" class="slick-arrow banner-arrow__next btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <section class="flavor">
+    <div class="container flavor__container">
+        <div class="flavor__wrapper">
+            <div class="flavor__content">
+                <h2 class="banner__title section-title" data-aos="flip-left" data-aos-easing="ease"
+                    data-aos-duration="1000">Местный колорит</h2>
+                <div class="banner__text" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1500">Равным
+                    образом, структура организации требует анализа кластеризации
+                    усилий. Каждый из нас понимает.</div>
+                <button class="banner__create-acc btn btn-green" data-aos="flip-left" data-aos-easing="ease"
+                    data-aos-duration="2000">Магазин сувениров</button>
+            </div>
+            <div class="flavor__photos">
+                <div class="flavor__photos-descr descr-block rellax" data-rellax-speed="3">
+                    <div class="descr-block__title">22 093 позиций</div>
+                    <div class="descr-block__text">народного творчества</div>
+                </div>
+                <div class="flavor__photo" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500">
+                    <img src="img/flavor-1.jpg" alt="">
+                </div>
+                <div class="flavor__photo" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+                    <img src="img/flavor-2.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container container-goods">
+        <div class="photos__wrapper goods-wrapper swiper">
+            <div class="swiper-wrapper">
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-1.png" alt="Юла">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Юла</div>
+                        <div class="descr-block__text">150₽</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-2.png" alt="Брошь «Писец»">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Брошь «Писец»</div>
+                        <div class="descr-block__text">325₽</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-3.png" alt="Брелок «Бубен-шаман»">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Брелок «Бубен-шаман»</div>
+                        <div class="descr-block__text">350₽</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-4.png" alt="Композиция «Охота»">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Композиция «Охота»</div>
+                        <div class="descr-block__text">3500₽</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-1.png" alt="Туры по Ямалу">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Туры по Ямалу</div>
+                        <div class="descr-block__text">3524 позиций</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-2.png" alt="Достопримечательности">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Достопримечательности</div>
+                        <div class="descr-block__text">365 объектов</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-3.png" alt="Этнографические парки">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Этнографические парки</div>
+                        <div class="descr-block__text">580 территорий</div>
+                    </div>
+                </a>
+                <a href="#" class="photos__wrapper-item photo swiper-slide">
+                    <div class="photo__img">
+                        <img src="img/product-4.png" alt="Горнолыжные комплексы">
+                    </div>
+                    <div class="photo__descr">
+                        <div class="descr-block__title">Горнолыжные комплексы</div>
+                        <div class="descr-block__text">158 объектов</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button type="button" class="slick-arrow goods-arrow__next btn">
+            <svg class="">
+                <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+    <section class="banner banner-visits">
+    <div class="container banner__container">
+        <div class="banner__wrapper">
+            <div class="banner__content">
+                <h2 class="banner__title section-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Визит Ямал</h2>
+                <div class="banner__text" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1300">Публикуем лучшие фотографии по хештегу
+                    <a href="#" class="green">#visityamal</a> из Instagram</div>
+                <button class="banner__create-acc btn btn-green" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1700">Перейти в Instagram</button>
+            </div>
+            <div class="banner__photos">
+                <div class="banner__photos-item photo-block rellax" data-rellax-speed="1">
+                    <div class="photo-block__img">
+                        <img src="img/photo_4.png" alt="Ресторан «Край земли»">
+                    </div>
+                    <div class="photo-block__stat">
+                        <div class="photo-block__likes">
+                            <img src="img/icon/heart.svg" alt="">
+                            <span>135</span>
+                        </div>
+                        <div class="photo-block__comments">
+                            <img src="img/icon/messages.svg" alt="">
+                            <span>3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__photos-item photo-block rellax" data-rellax-speed="-1">
+                    <div class="photo-block__img">
+                        <img src="img/photo_3.png" alt="Музей истории Арктики">
+                    </div>
+                    <div class="photo-block__stat">
+                        <div class="photo-block__likes">
+                            <img src="img/icon/heart.svg" alt="">
+                            <span>365</span>
+                        </div>
+                        <div class="photo-block__comments">
+                            <img src="img/icon/messages.svg" alt="">
+                            <span>55</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--top fly-icon rellax" data-rellax-speed="1">
+                <img src="img/icon/bg-icon.png" alt="">
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--top-center fly-icon rellax" data-rellax-speed="2">
+                <img src="img/icon/sound.svg" alt="">
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--center fly-icon rellax" data-rellax-speed="0">
+                <img src="img/icon/video.svg" alt="">
+            </div>
+            <div class="banner__fly-icon banner__fly-icon--right fly-icon rellax" data-rellax-speed="1">
+                <img src="img/icon/camera.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="gallery">
+    <div class="container gallery__container">
+        <div class="gallery__wrapper  ">
+            <div class="gallery__slider swiper">
+                <div class="swiper-wrapper ">
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-1.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-2.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-3.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-4.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-1.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-2.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-3.png" alt="фото из инсты">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                        <img src="img/gallery-4.png" alt="фото из инсты">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <button type="button" class="slick-arrow gallery-arrow__prev btn">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                </svg>
+            </button>
+            <button type="button" class="slick-arrow gallery-arrow__next btn">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#arrow-slide"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top">
+            <div class="footer__top-logo">
+                <img src="img/Logo-full.svg" alt="Logo">
+            </div>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">О Ямале</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Чем заняться</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Блог</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Экскурсии</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Афиша</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Обработка данных</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Планирование поездки</a>
+                <li class="footer__top-elem footer__top-elem--last">
+                    <a href="" class="footer__top-link">Туристические направления</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__partners">
+            <div class="footer__partners-col">
+                <div class="footer__partners-label">
+                    Парнеры:
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Ямал Ири
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    День Оленевода
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Культура Ямала
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Восхождение на гору Рай-Из
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-socials">
+                <div class="footer__bottom-socials-wrapper">
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/instagram.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/facebook.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/frame.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="tel:73492244949" class="footer__bottom-link green">+7 (349) 224-49-49</a>
+            <a href="#" class="footer__bottom-link green">info@visityamal.ru</a>
+        </div>
+    </div>
+</footer>
+    <div class="fixed-menu show-leftMenu">
+    <div class="fixed-menu__logo">
+        <img src="img/icon/logo-menu.svg" alt="logo">
+    </div>
+    <div class="fixed-menu__wrapper">
+        <button type="button" class="fixed-menu__link btn js-show-menu">
+            <div class="fixed-menu__link-icon">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#menu"></use>
+                </svg>
+            </div>
+            <span class="menu-elem">Меню</span>
+        </button>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#user-square"></use>
+                </svg>
+            </div>
+            <span class="menu-elem">Профиль</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#routing"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Мои маршруты</span>
+        </a>
+        <div class="fixed-menu__line"></div>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#arrow-square"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Все маршруты</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#calendar"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Афиша</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#shop"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Магазин</span>
+        </a>
+    </div>
+    <div class="fixed-menu__menu-block">
+        <button type="button" class="fixed-menu__close btn">
+            <img src="img/icon/close.svg" alt="">
+        </button>
+        <div class="fixed-menu__menu-header">
+            <div class="fixed-menu__header-left">
+                <div class="fixed-menu__header-logo logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="fixed-menu__header-location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#location"></use>
+                    </svg>
+                    <span class="location-name">Санкт-Петербург</span>
+                </button>
+            </div>
+        </div>
+        <div class="header-menu__container container">
+            <div class="fixed-menu__label">
+                Меню</div>
+            <div class="header-menu__wrapper">
+                <div class="header-menu__col">
+                    <div class="header-menu__label">О Ямале</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Город на полярном круге</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Чем заняться</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Музеи</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Конференс-залы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографические парки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туроператоры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Планирование поездки</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Как добраться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где остановиться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где поесть</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Туристические направления</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Водный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Событийный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экологический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="location-menu location-menu--fixed">
+            <div class="location-menu__search">
+                <div class="location-menu__search-container container">
+                    <button type="btn" class="location-menu__search-btn js-show-cities btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#global-edit"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="location-menu__search-inp input-reset" disabled value="Санкт-Петербург">
+                    <button type="btn" class="location-menu__search-btn js-hide-location btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="location-menu__lists">
+                    <div class="container location-menu__lists-container">
+                        <div class="location-menu__lists-wrapper">
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+    <div class="popups">
+    <div class="popups__inner">
+        <div id="popup-enter" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Избранное</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-error.svg">
+                </div>
+                <div class="popup__title">
+                    Необходимой войти в систему
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="popup__btn-registr btn btn-green">Регистрация</div>
+                <div class="popup__btn-enter btn btn-transparent-green">Войти</div>
+            </div>
+        </div>
+        <div id="popup-delete-rewiew" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Избранное</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Хотите удалить отзыв?
+                </div>
+            </div>
+            <div class="popup__btns">
+                <button type="button" class="popup__btn-cancel btn js-close btn-green js-close">Отменить</button>
+                <button type="button" class="popup__btn-delete btn btn-transparent-green" data-popup="#delete-rewiew">
+                    Удалить
+                </button>
+            </div>
+        </div>
+        <div id="popup-create-way" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Мои маршруты</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Маршрут успешно создан
+                </div>
+                <div class="popup__text">
+                    <p>Он будет доступен по ссылки в течении <span class="color-purple">7 дней.</span></p>
+                    <p>Добавьте в личный кабинет, чтобы сохранить надолго.</p>
+                </div>
+                <div class="popup__way-generate-link">
+                    <a class="popup__way-link">https://visityamal.ru/route?id=23159348</a>
+                    <button type="button" class="btn btn-copy">
+                        <img src="img/icon/copy.svg" alt="copy">
+                    </button>
+                </div>
+
+            </div>
+            <div class="popup__btns">
+                <button type="button" class="popup__btn-sms btn btn-green js-close"
+                    data-popup="#phone-for-sms">Отправить ссылку по
+                    СМС</button>
+                <button id="add-acc-btn" type="button" class="popup__btn-delete  js-close btn btn-transparent-green"
+                    data-popup="#add-acc">
+                    Добавить в ЛК
+                </button>
+            </div>
+        </div>
+        <div id="phone-for-sms" class="popup">
+            <form id="sms-send" action="">
+                <div class="popup__header">
+                    <div class="popup__name">Мои маршруты</div>
+                    <button class="fixed-filter__close popup-close btn js-close">
+                        <img src="img/icon/filter-close.svg" alt="">
+                    </button>
+                </div>
+                <div class="popup__body">
+                    <div class="popup__input-inner">
+                        <div class="popup__input-label">Телефон</div>
+                        <div class="costum-input">
+                            <input type="tel" name="phone" class="input-phone" placeholder="+7 000 000 00 00"
+                                required></input>
+                            <div class="costum-input__icon">
+                                <img src="img/icon/call.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__title">
+                        Можно отправить 1 раз
+                    </div>
+                </div>
+                <div class="popup__btns">
+                    <button type="submit" class="popup__btn-enter btn btn-green">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div id="popup-oopt" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Заявка на ООПТ</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Заявка успешно отправлена
+                </div>
+                <div class="popup__text">
+                    Ответ направим на указанную почту
+                </div>
+            </div>
+            <div class="popup__btns">
+                <button class="popup__btn-registr btn btn-green js-close">Закрыть</button>
+            </div>
+        </div>
+        <!-- 
+        <div id="error-pay" class="popup">
+            <button class="fixed-filter__close fixed-filter__close--only popup-close btn js-close">
+                <img src="img/icon/filter-close.svg" alt="">
+            </button>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-error.svg">
+                </div>
+                <div class="popup__title">
+                    Что-то пошло не так. Попробуйте еще раз
+                </div>
+                <div class="popup__text">
+                    Мы добавили маршрут в ваш личный кабинеит
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="popup__btn-registr btn btn-green">Мои маршруты</div>
+            </div>
+        </div> -->
+        <div id="preloader" class="preloader-loading">
+            <div class="preloader-loading__inner">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#preloader-Illustration"></use>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="delete-rewiew" class="notification">
+    <div class="notification__label">Отзыв успешно удален</div>
+    <button class="fixed-filter__close js-close btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+<div id="add-rewiew" class="notification">
+    <div class="notification__label">Отзыв опубликован</div>
+    <button class="fixed-filter__close js-close  btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+<div id="add-acc" class="notification">
+    <div class="notification__label">Маршрут добавлен в ЛК</div>
+    <button class="fixed-filter__close js-close  btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script src="https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
+    integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+    integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

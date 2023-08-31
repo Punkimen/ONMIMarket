@@ -1,0 +1,5837 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamal</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/last-syles.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="site-content">
+        <header class="header">
+    <div class="container header__container">
+        <div class="header__wrapper">
+            <div class="header__left">
+                <div class="header__logo logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="header__location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#location"></use>
+                    </svg>
+                    <span class="location-name">Санкт-Петербург</span>
+                </button>
+            </div>
+            <div class="header__center">
+                <button type="button" class="header__burger-menu btn">
+                    <div class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="header__burger-menu-text">Меню</span>
+                </button>
+            </div>
+            <div class="header__right">
+                <button type="button" class="header__language select-language btn">
+                    <span class="current-lang">ENG</span>
+                </button>
+                <button type="button" class="header__bad-eyes btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#eye"></use>
+                    </svg>
+                    <span>Версия для слабовидящих</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__container container">
+            <div class="header-menu__wrapper">
+                <div class="header-menu__col">
+                    <div class="header-menu__label">О Ямале</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Город на полярном круге</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Чем заняться</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Музеи</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Конференс-залы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографические парки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туроператоры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Планирование поездки</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Как добраться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где остановиться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где поесть</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Туристические направления</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Водный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Событийный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экологический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location-menu location-menu--main">
+        <div class="location-menu__search">
+            <div class="location-menu__search-container container">
+                <button type="btn" class="location-menu__search-btn js-show-cities btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#global-edit"></use>
+                    </svg>
+                </button>
+                <input type="text" class="location-menu__search-inp input-reset" disabled value="Санкт-Петербург">
+                <button type="btn" class="location-menu__search-btn js-hide-location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="location-menu__lists">
+            <div class="container location-menu__lists-container">
+                <div class="location-menu__lists-wrapper">
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">A</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-menu__category">
+                        <div class="location-menu__category-letter">Б</div>
+                        <ul class="location-menu__category-list">
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Барбаросса</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                            <li class="location-menu__category-city">
+                                <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page">
+            <div class="bread-crumbs">
+                <div class="container">
+                    <ul class="bread-crumbs__list">
+                        <li class="bread-crumbs__elem">
+                            <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+                        </li>
+                        <li class="bread-crumbs__elem">
+                            <a href="#" class="bread-crumbs__link">ООПТ и пограничные зоны</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="border-zones">
+                <div class="container">
+                    <div class="border-zones__wrapper">
+                        <div class="border-zones__content">
+                            <div class="border-zones__block">
+                                <div class="border-zones__title section-title">ООПТ и пограничные зоны</div>
+                                <div class="border-zones__text">
+                                    <p>В регионе имеется 18 особо охраняемых территорий с уникальной флорой и фауной.
+                                        Для
+                                        посещения или транзита необходимо отправить заявку.</p>
+                                </div>
+                            </div>
+                            <div class="border-zones__block">
+                                <div class="border-zones__subtitle">Особо охраняемые природные территории</div>
+                                <div class="border-zones__text">
+                                    <p>
+                                        В соответствии с ФЗ «Об особо охраняемых природных территориях», <span
+                                            class="green">это «участки земли, водной поверхности и воздушного
+                                            пространства
+                                            над ними, где располагаются природные комплексы и объекты, которые имеют
+                                            особое
+                                            природоохранное, научное, культурное, эстетическое, рекреационное и
+                                            оздоровительное значение».</span> Эти участки полностью или частично изъяты
+                                        по
+                                        решению властей из хозяйственного использования и относятся к объектам
+                                        общенационального достояния. Кроме того, для этих участков установлен режим
+                                        особой
+                                        охраны.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-zones__photos">
+                            <div class="border-zones__descr-block descr-block">
+                                <div class="descr-block__title">18 закрытых зон</div>
+                                <div class="descr-block__text">уникальные территории</div>
+                            </div>
+                            <div class="border-zones__photo border-zones__photo--first">
+                                <img src="img/border-zones/photo_1.jpg" alt="">
+                            </div>
+                            <div class="border-zones__photo border-zones__photo--second">
+                                <img src="img/border-zones/photo_2.jpg" alt="">
+                            </div>
+                            <div class="border-zones__photo">
+                                <img src="img/border-zones/photo_3.jpg" alt="">
+                            </div>
+                            <div class="border-zones__photo">
+                                <img src="img/border-zones/photo_4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ooptt-form personal-cabinet__inner">
+                <div class="container">
+                    <div class="cabinet-window ooptt-form__window">
+                        <form id="ooptt-form" action="">
+                            <div class="cabinet-window__body">
+                                <div class="cabinet-window__row cabinet-window__row--bordered">
+                                    <div class="input-label__header">
+                                        <label for="">ООПТ</label>
+                                    </div>
+                                    <div class="input-select custom-select">
+                                        <div class="custom-select__header">
+                                            <div class="custom-select__arrow">
+                                                <img src="img/icon/select-arrow.svg" alt="">
+                                            </div>
+                                            <span class="custom-select__current-elem default">Выберите место</span>
+                                        </div>
+                                        <div class="custom-select__body">
+                                            <ul class="custom-select-list">
+                                                <li class="custom-select__elem">
+                                                    <label class="control control-radio costum-radio">
+                                                        Место_1
+                                                        <input class="choosen-radio" value="default" type="radio"
+                                                            name="sort-kitchen" />
+                                                        <div class="control_indicator"></div>
+                                                    </label>
+                                                </li>
+                                                <li class="custom-select__elem">
+                                                    <label class="control control-radio costum-radio">
+                                                        Место_2
+                                                        <input class="choosen-radio" value="default" type="radio"
+                                                            name="sort-kitchen" />
+                                                        <div class="control_indicator"></div>
+                                                    </label>
+                                                </li>
+                                                <li class="custom-select__elem">
+                                                    <label class="control control-radio costum-radio">
+                                                        Место_3
+                                                        <input class="choosen-radio" value="expensive" type="radio"
+                                                            name="sort-kitchen" />
+                                                        <div class="control_indicator"></div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-window__row cabinet-window__row--bordered">
+                                    <div class="cabinet-window__row ">
+                                        <div class="input-label__header">
+                                            <label for="">Цель посещения</label>
+                                        </div>
+                                        <div class="fixed-pay__form-checkboxes">
+                                            <div class="fixed-pay__form-checkbox ooptt-form__checkbox">
+                                                <label class="control control-radio costum-radio">
+                                                    Экологический туризм
+                                                    <input class="choosen-radio" name="personal-date" value="agree"
+                                                        type="checkbox" required checked name="1" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="fixed-pay__form-checkbox ooptt-form__checkbox">
+                                                <label class="control control-radio costum-radio">
+                                                    Сбор грибов, трав, ягод
+                                                    <input class="choosen-radio" name="personal-date" value="agree"
+                                                        type="checkbox" checked name="1" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="fixed-pay__form-checkbox ooptt-form__checkbox">
+                                                <label class="control control-radio costum-radio">
+                                                    Велотуризм
+                                                    <input class="choosen-radio" name="personal-date" value="agree"
+                                                        type="checkbox" checked name="1" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                            <div class="fixed-pay__form-checkbox ooptt-form__checkbox">
+                                                <label class="control control-radio costum-radio">
+                                                    Свой вариант
+                                                    <input class="choosen-radio" name="personal-date" value="agree"
+                                                        type="checkbox" checked name="1" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-window__row">
+                                        <div class="costum-input">
+                                            <input type="text" name="title-name" class=""
+                                                placeholder="Название заведения"></input>
+                                            <div class="costum-input__icon">
+                                                <img src="img/icon/text.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-window__row cabinet-window__row--bordered">
+                                    <div class="cabinet-window__bordered">
+                                        <div class="cabinet-window__row">
+                                            <div class="popup__input-label">Фамилия</div>
+                                            <div class="costum-input">
+                                                <input type="text" name="surname" class="" placeholder="Иванов"
+                                                    required></input>
+                                                <div class="costum-input__icon">
+                                                    <img src="img/icon/user.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet-window__row">
+                                            <div class="popup__input-label">Имя</div>
+                                            <div class="costum-input">
+                                                <input type="text" name="name" class="" placeholder="Имя"
+                                                    required></input>
+                                                <div class="costum-input__icon">
+                                                    <img src="img/icon/user.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet-window__row">
+                                            <div class="popup__input-label">Телефон</div>
+                                            <div class="costum-input">
+                                                <input type="tel" name="phone" class="input-phone"
+                                                    placeholder="+7 000 000 00 00" required></input>
+                                                <div class="costum-input__icon">
+                                                    <img src="img/icon/call.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet-window__row">
+                                            <div class="popup__input-label">Почта</div>
+                                            <div class="costum-input">
+                                                <input type="email" name="email" class="" placeholder="ex@mail.com"
+                                                    required></input>
+                                                <div class="costum-input__icon">
+                                                    <img src="img/icon/email.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-window__row">
+                                    <div class="fixed-pay__form-checkboxes">
+                                        <div class="fixed-pay__form-checkbox">
+                                            <label class="control control-radio costum-radio">
+                                                Даю согласие на <a href="#" class="underline color-green">обработку
+                                                    персональных
+                                                    данных</a>
+                                                <input class="choosen-radio" name="personal-date" value="agree"
+                                                    type="checkbox" required checked name="1" />
+                                                <div class="control_indicator"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-window__row cabinet-window__row--center">
+                                    <button id="ooptt-form__submit" type="submit"
+                                        class="cabinet-window__btn btn submit-registr btn-green"
+                                        data-popup="#popup-oopt">Регистрация</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="border-maps">
+                <div class="container">
+                    <div class="border-maps__info">
+                        <div class="border-maps__content">
+                            <div class="border-zones__subtitle">Пограничные зоны</div>
+                            <div class="border-zones__text">
+                                <p>Участок местности в виде полосы земли вдоль границы государства и территории, где
+                                    ограничены свободное передвижение людей и их хозяйственная деятельность. Согласно
+                                    законодательству служит интересам создания необходимых условий охраны
+                                    государственной
+                                    границы. Пограничную зону не следует путать с охраняемыми природными территориями,
+                                    куда
+                                    ограничен или закрыт доступ публики, а также автономными образованиями, куда может
+                                    потребоваться специальное разрешение.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-maps__photos">
+                            <div class="border-maps__photo">
+                                <img src="img/border-zones/photo_5.jpg" alt="">
+                            </div>
+                            <div class="border-maps__photo">
+                                <img src="img/border-zones/photo_6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-maps__inner">
+                        <div class="container container-map">
+                            <div class="steps-planning__map custom-map">
+                                <div class="custom-map__text custom-map__choose-map">
+                                    <div class="choose-map__radios">
+                                        <label class="control control-radio costum-radio">
+                                            ООТП
+                                            <input class="choosen-radio choosen-radio-maps" value="ootp" type="radio"
+                                                name="choose-map__radio" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-radio costum-radio">
+                                            Пограничные зоны
+                                            <input class="choosen-radio choosen-radio-maps" value="border-zones" checked
+                                                type="radio" name="choose-map__radio" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="custom-map__text custom-map__text-control">
+                                    <img src="img/icon/border-zones-marker.svg" alt="">
+                                    <span>Пограничный контроль</span>
+                                </div>
+                                <div id="map-ootp"></div>
+                                <div id="map-zones"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+    <div class="container">
+        <h2 class="questions__title section-title">Популярные вопросы</h2>
+        <div class="questions__wrapper">
+            <div class="questions__wrapper-col">
+                <div class="questions-item">
+                    <div class="questions-item__header">На сколько холодно на Ямале?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">Какие вещи с собой стоит взять?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">А Ямал - это Россия?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">Хотим устроить фестиваль, куда писать?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="questions__wrapper-col">
+                <div class="questions-item">
+                    <div class="questions-item__header">Если я заболею, куда идти?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">На Ямале есть медведи?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">Можно искупаться в открытом море?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="questions-item__header">Как преисполниться шаманизмом?</div>
+                    <div class="questions-item__body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit et nemo ipsam cumque
+                            provident ad nostrum doloremque natus, corrupti fugiat repellat iure aperiam necessitatibus
+                            voluptatem assumenda possimus aliquam eligendi nihil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="questions__link btn btn-green">Все вопросы</a>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top">
+            <div class="footer__top-logo">
+                <img src="img/Logo-full.svg" alt="Logo">
+            </div>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">О Ямале</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Чем заняться</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Блог</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Экскурсии</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Афиша</a>
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Обработка данных</a>
+                </li>
+            </ul>
+            <ul class="footer__top-list">
+                <li class="footer__top-elem">
+                    <a href="" class="footer__top-link">Планирование поездки</a>
+                <li class="footer__top-elem footer__top-elem--last">
+                    <a href="" class="footer__top-link">Туристические направления</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__partners">
+            <div class="footer__partners-col">
+                <div class="footer__partners-label">
+                    Парнеры:
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Ямал Ири
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    День Оленевода
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Культура Ямала
+                </div>
+            </div>
+            <div class="footer__partners-col">
+                <div class="footer__partners-partner">
+                    Восхождение на гору Рай-Из
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-socials">
+                <div class="footer__bottom-socials-wrapper">
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/instagram.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/facebook.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/frame.svg" alt="">
+                    </a>
+                    <a href="" class="footer__bottom-social-link">
+                        <img src="img/icon/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="tel:73492244949" class="footer__bottom-link green">+7 (349) 224-49-49</a>
+            <a href="#" class="footer__bottom-link green">info@visityamal.ru</a>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div class="fixed-menu show-leftMenu">
+    <div class="fixed-menu__logo">
+        <img src="img/icon/logo-menu.svg" alt="logo">
+    </div>
+    <div class="fixed-menu__wrapper">
+        <button type="button" class="fixed-menu__link btn js-show-menu">
+            <div class="fixed-menu__link-icon">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#menu"></use>
+                </svg>
+            </div>
+            <span class="menu-elem">Меню</span>
+        </button>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#user-square"></use>
+                </svg>
+            </div>
+            <span class="menu-elem">Профиль</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#routing"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Мои маршруты</span>
+        </a>
+        <div class="fixed-menu__line"></div>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#arrow-square"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Все маршруты</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#calendar"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Афиша</span>
+        </a>
+        <a href="#" class="fixed-menu__link">
+            <div class="fixed-menu__link-icon">
+                <svg class="stroke-white">
+                    <use xlink:href="./img/icons/icons.svg#shop"></use>
+                </svg>
+            </div>
+
+            <span class="menu-elem">Магазин</span>
+        </a>
+    </div>
+    <div class="fixed-menu__menu-block">
+        <button type="button" class="fixed-menu__close btn">
+            <img src="img/icon/close.svg" alt="">
+        </button>
+        <div class="fixed-menu__menu-header">
+            <div class="fixed-menu__header-left">
+                <div class="fixed-menu__header-logo logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <button type="button" class="fixed-menu__header-location btn">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#location"></use>
+                    </svg>
+                    <span class="location-name">Санкт-Петербург</span>
+                </button>
+            </div>
+        </div>
+        <div class="header-menu__container container">
+            <div class="fixed-menu__label">
+                Меню</div>
+            <div class="header-menu__wrapper">
+                <div class="header-menu__col">
+                    <div class="header-menu__label">О Ямале</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Город на полярном круге</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Чем заняться</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Достопримечательности</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Музеи</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Конференс-залы</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографические парки</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Туроператоры</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Планирование поездки</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Как добраться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где остановиться</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Где поесть</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__col">
+                    <div class="header-menu__label">Туристические направления</div>
+                    <ul class="header-menu__list">
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Этнографический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Водный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Событийный туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Экологический туризм</a>
+                        </li>
+                        <li class="header-menu__elem">
+                            <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="location-menu location-menu--fixed">
+            <div class="location-menu__search">
+                <div class="location-menu__search-container container">
+                    <button type="btn" class="location-menu__search-btn js-show-cities btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#global-edit"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="location-menu__search-inp input-reset" disabled value="Санкт-Петербург">
+                    <button type="btn" class="location-menu__search-btn js-hide-location btn">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="location-menu__lists">
+                    <div class="container location-menu__lists-container">
+                        <div class="location-menu__lists-wrapper">
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">A</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Анадырь</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аргентина</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Азерот</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Аврора</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location-menu__category">
+                                <div class="location-menu__category-letter">Б</div>
+                                <ul class="location-menu__category-list">
+                                    <li class="location-menu__category-city">
+                                        <button type="button"
+                                            class="location-menu__category-btn btn">Барбаросса</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бакалавр</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                    <li class="location-menu__category-city">
+                                        <button type="button" class="location-menu__category-btn btn">Бейбиленд</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+    <div class="popups">
+    <div class="popups__inner">
+        <div id="popup-enter" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Избранное</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-error.svg">
+                </div>
+                <div class="popup__title">
+                    Необходимой войти в систему
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="popup__btn-registr btn btn-green">Регистрация</div>
+                <div class="popup__btn-enter btn btn-transparent-green">Войти</div>
+            </div>
+        </div>
+        <div id="popup-delete-rewiew" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Избранное</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Хотите удалить отзыв?
+                </div>
+            </div>
+            <div class="popup__btns">
+                <button type="button" class="popup__btn-cancel btn js-close btn-green js-close">Отменить</button>
+                <button type="button" class="popup__btn-delete btn btn-transparent-green" data-popup="#delete-rewiew">
+                    Удалить
+                </button>
+            </div>
+        </div>
+        <div id="popup-create-way" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Мои маршруты</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Маршрут успешно создан
+                </div>
+                <div class="popup__text">
+                    <p>Он будет доступен по ссылки в течении <span class="color-purple">7 дней.</span></p>
+                    <p>Добавьте в личный кабинет, чтобы сохранить надолго.</p>
+                </div>
+                <div class="popup__way-generate-link">
+                    <a class="popup__way-link">https://visityamal.ru/route?id=23159348</a>
+                    <button type="button" class="btn btn-copy">
+                        <img src="img/icon/copy.svg" alt="copy">
+                    </button>
+                </div>
+
+            </div>
+            <div class="popup__btns">
+                <button type="button" class="popup__btn-sms btn btn-green js-close"
+                    data-popup="#phone-for-sms">Отправить ссылку по
+                    СМС</button>
+                <button id="add-acc-btn" type="button" class="popup__btn-delete  js-close btn btn-transparent-green"
+                    data-popup="#add-acc">
+                    Добавить в ЛК
+                </button>
+            </div>
+        </div>
+        <div id="phone-for-sms" class="popup">
+            <form id="sms-send" action="">
+                <div class="popup__header">
+                    <div class="popup__name">Мои маршруты</div>
+                    <button class="fixed-filter__close popup-close btn js-close">
+                        <img src="img/icon/filter-close.svg" alt="">
+                    </button>
+                </div>
+                <div class="popup__body">
+                    <div class="popup__input-inner">
+                        <div class="popup__input-label">Телефон</div>
+                        <div class="costum-input">
+                            <input type="tel" name="phone" class="input-phone" placeholder="+7 000 000 00 00"
+                                required></input>
+                            <div class="costum-input__icon">
+                                <img src="img/icon/call.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__title">
+                        Можно отправить 1 раз
+                    </div>
+                </div>
+                <div class="popup__btns">
+                    <button type="submit" class="popup__btn-enter btn btn-green">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div id="popup-oopt" class="popup">
+            <div class="popup__header">
+                <div class="popup__name">Заявка на ООПТ</div>
+                <button class="fixed-filter__close popup-close btn js-close">
+                    <img src="img/icon/filter-close.svg" alt="">
+                </button>
+            </div>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-sucses.svg">
+                </div>
+                <div class="popup__title">
+                    Заявка успешно отправлена
+                </div>
+                <div class="popup__text">
+                    Ответ направим на указанную почту
+                </div>
+            </div>
+            <div class="popup__btns">
+                <button class="popup__btn-registr btn btn-green js-close">Закрыть</button>
+            </div>
+        </div>
+        <!-- 
+        <div id="error-pay" class="popup">
+            <button class="fixed-filter__close fixed-filter__close--only popup-close btn js-close">
+                <img src="img/icon/filter-close.svg" alt="">
+            </button>
+            <div class="popup__body">
+                <div class="popup__icon">
+                    <img src="img/icon/popup-error.svg">
+                </div>
+                <div class="popup__title">
+                    Что-то пошло не так. Попробуйте еще раз
+                </div>
+                <div class="popup__text">
+                    Мы добавили маршрут в ваш личный кабинеит
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="popup__btn-registr btn btn-green">Мои маршруты</div>
+            </div>
+        </div> -->
+        <div id="preloader" class="preloader-loading">
+            <div class="preloader-loading__inner">
+                <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#preloader-Illustration"></use>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="delete-rewiew" class="notification">
+    <div class="notification__label">Отзыв успешно удален</div>
+    <button class="fixed-filter__close js-close btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+<div id="add-rewiew" class="notification">
+    <div class="notification__label">Отзыв опубликован</div>
+    <button class="fixed-filter__close js-close  btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+<div id="add-acc" class="notification">
+    <div class="notification__label">Маршрут добавлен в ЛК</div>
+    <button class="fixed-filter__close js-close  btn">
+        <img src="img/icon/filter-close.svg" alt="">
+    </button>
+</div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAn4lOodBWISBVdVsAchtPd8eRRPgycYco&language=ru">
+    </script>
+    <script src="js/dataInit.js"></script>
+    <script>
+        let map
+        mapsBorderZonesData.markerZonesDot = [{
+                position: new google.maps.LatLng(71.267533, 72.098678),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            }, {
+                position: new google.maps.LatLng(71.396885, 71.844997),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            }, {
+                position: new google.maps.LatLng(70.172372, 72.556722),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(68.472347, 73.599267),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(67.696588, 72.975996),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(69.439219, 72.601492),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            }, {
+                position: new google.maps.LatLng(66.527258, 72.427856),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(67.721762, 74.873104),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(67.413984, 78.834897),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(67.741441, 77.629326),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(69.051911, 76.89871),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(70.373572, 74.201611),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(70.897778, 78.54952),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+            {
+                position: new google.maps.LatLng(71.992476, 76.503445),
+                map: map,
+                icon: {
+                    url: "img/icon/border-zones-marker.svg",
+                    scaledSize: new google.maps.Size(10, 10)
+                },
+            },
+        ];
+        mapsBorderZonesData.borderZonesCoord = [{
+                lat: 69.259456,
+                lng: 65.080818
+            },
+            {
+                lat: 69.237983,
+                lng: 65.130727
+            },
+            {
+                lat: 69.192441,
+                lng: 65.301845
+            },
+            {
+                lat: 69.095983,
+                lng: 65.961363
+            },
+            {
+                lat: 69.090895,
+                lng: 66.093266
+            },
+            {
+                lat: 69.045045,
+                lng: 66.285774
+            },
+            {
+                lat: 68.918461,
+                lng: 66.567406
+            },
+            {
+                lat: 69.011871,
+                lng: 66.282209
+            },
+            {
+                lat: 69.098527,
+                lng: 65.715381
+            },
+            {
+                lat: 69.045045,
+                lng: 65.80094
+            },
+            {
+                lat: 69.052693,
+                lng: 65.886499
+            },
+            {
+                lat: 68.981205,
+                lng: 66.2323
+            },
+            {
+                lat: 68.983762,
+                lng: 66.296469
+            },
+            {
+                lat: 68.950495,
+                lng: 66.317859
+            },
+            {
+                lat: 68.820791,
+                lng: 67.137799
+            },
+            {
+                lat: 68.813062,
+                lng: 67.330307
+            },
+            {
+                lat: 68.758882,
+                lng: 67.419431
+            },
+            {
+                lat: 68.806619,
+                lng: 67.191274
+            },
+            {
+                lat: 68.784698,
+                lng: 67.07363
+            },
+            {
+                lat: 68.735622,
+                lng: 67.162754
+            },
+            {
+                lat: 68.531709,
+                lng: 67.704628
+            },
+            {
+                lat: 68.395608,
+                lng: 68.182332
+            },
+            {
+                lat: 68.315398,
+                lng: 68.271456
+            },
+            {
+                lat: 68.229616,
+                lng: 68.185897
+            },
+            {
+                lat: 68.185942,
+                lng: 68.292846
+            },
+            {
+                lat: 68.208451,
+                lng: 68.403359
+            },
+            {
+                lat: 68.353566,
+                lng: 68.602997
+            },
+            {
+                lat: 68.812837,
+                lng: 69.126744
+            },
+            {
+                lat: 68.882203,
+                lng: 68.997708
+            },
+            {
+                lat: 68.910085,
+                lng: 68.820711
+            },
+            {
+                lat: 68.963757,
+                lng: 68.499904
+            },
+            {
+                lat: 69.263488,
+                lng: 68.079536
+            },
+            {
+                lat: 69.532072,
+                lng: 68.134847
+            },
+            {
+                lat: 69.516594,
+                lng: 68.046349
+            },
+            {
+                lat: 69.485602,
+                lng: 68.035286
+            },
+            {
+                lat: 69.597733,
+                lng: 67.415797
+            },
+            {
+                lat: 69.682405,
+                lng: 67.034147
+            },
+            {
+                lat: 69.615079,
+                lng: 66.917993
+            },
+            {
+                lat: 69.491417,
+                lng: 66.984367
+            },
+            {
+                lat: 69.576512,
+                lng: 67.33283
+            },
+            {
+                lat: 69.435146,
+                lng: 67.338361
+            },
+            {
+                lat: 69.359238,
+                lng: 67.177957
+            },
+            {
+                lat: 69.444858,
+                lng: 66.934586
+            },
+            {
+                lat: 69.491734,
+                lng: 66.896705
+            },
+            {
+                lat: 69.549498,
+                lng: 66.842396
+            },
+            {
+                lat: 69.666824,
+                lng: 66.820672
+            },
+            {
+                lat: 69.854956,
+                lng: 66.850361
+            },
+            {
+                lat: 69.973333,
+                lng: 66.901051
+            },
+            {
+                lat: 70.046115,
+                lng: 67.032846
+            },
+            {
+                lat: 69.952492,
+                lng: 66.992294
+            },
+            {
+                lat: 69.942063,
+                lng: 67.058191
+            },
+            {
+                lat: 69.975069,
+                lng: 67.189986
+            },
+            {
+                lat: 70.09277,
+                lng: 67.372471
+            },
+            {
+                lat: 70.184046,
+                lng: 67.124089
+            },
+            {
+                lat: 70.414731,
+                lng: 67.271091
+            },
+            {
+                lat: 70.735032,
+                lng: 67.336988
+            },
+            {
+                lat: 70.826806,
+                lng: 67.245745
+            },
+            {
+                lat: 70.791815,
+                lng: 67.048053
+            },
+            {
+                lat: 70.751749,
+                lng: 66.738842
+            },
+            {
+                lat: 70.870044,
+                lng: 66.6476
+            },
+            {
+                lat: 70.833464,
+                lng: 66.546219
+            },
+            {
+                lat: 70.801818,
+                lng: 66.632393
+            },
+            {
+                lat: 70.805152,
+                lng: 66.531012
+            },
+            {
+                lat: 70.622663,
+                lng: 66.556357
+            },
+            {
+                lat: 70.535017,
+                lng: 66.743911
+            },
+            {
+                lat: 70.396031,
+                lng: 66.977087
+            },
+            {
+                lat: 70.384123,
+                lng: 66.880775
+            },
+            {
+                lat: 70.47581,
+                lng: 66.586771
+            },
+            {
+                lat: 70.642835,
+                lng: 66.414424
+            },
+            {
+                lat: 70.813483,
+                lng: 66.460046
+            },
+            {
+                lat: 71.089757,
+                lng: 66.733773
+            },
+            {
+                lat: 71.264752,
+                lng: 66.921327
+            },
+            {
+                lat: 71.41235,
+                lng: 67.590439
+            },
+            {
+                lat: 71.704188,
+                lng: 68.340656
+            },
+            {
+                lat: 72.297775,
+                lng: 68.796869
+            },
+            {
+                lat: 72.817254,
+                lng: 69.25144
+            },
+            {
+                lat: 72.93523,
+                lng: 69.381927
+            },
+            {
+                lat: 72.931266,
+                lng: 69.847916
+            },
+            {
+                lat: 72.893562,
+                lng: 69.591284
+            },
+            {
+                lat: 72.863739,
+                lng: 69.584531
+            },
+            {
+                lat: 72.847813,
+                lng: 69.658819
+            },
+            {
+                lat: 72.855778,
+                lng: 70.165328
+            },
+            {
+                lat: 72.881639,
+                lng: 71.144579
+            },
+            {
+                lat: 72.881639,
+                lng: 71.610567
+            },
+            {
+                lat: 72.697806,
+                lng: 72.839695
+            },
+            {
+                lat: 72.57284,
+                lng: 72.995025
+            },
+            {
+                lat: 72.562724,
+                lng: 72.981518
+            },
+            {
+                lat: 72.615265,
+                lng: 72.778914
+            },
+            {
+                lat: 72.51003,
+                lng: 72.758654
+            },
+            {
+                lat: 72.469391,
+                lng: 72.812681
+            },
+            {
+                lat: 72.273046,
+                lng: 72.839695
+            },
+            {
+                lat: 72.186478,
+                lng: 72.71138
+            },
+            {
+                lat: 72.120246,
+                lng: 72.670859
+            },
+            {
+                lat: 71.897051,
+                lng: 72.481762
+            },
+            {
+                lat: 71.848724,
+                lng: 72.346693
+            },
+            {
+                lat: 71.707234,
+                lng: 72.326433
+            },
+            {
+                lat: 71.664792,
+                lng: 72.157596
+            },
+            {
+                lat: 71.605214,
+                lng: 72.177857
+            },
+            {
+                lat: 71.575354,
+                lng: 72.049541
+            },
+            {
+                lat: 71.528338,
+                lng: 71.873951
+            },
+            {
+                lat: 71.405984,
+                lng: 71.887458
+            },
+            {
+                lat: 71.315328,
+                lng: 72.022527
+            },
+            {
+                lat: 71.156745,
+                lng: 72.468255
+            },
+            {
+                lat: 71.075873,
+                lng: 72.630338
+            },
+            {
+                lat: 70.996865,
+                lng: 72.57631
+            },
+            {
+                lat: 70.875546,
+                lng: 72.799174
+            },
+            {
+                lat: 70.795733,
+                lng: 72.785668
+            },
+            {
+                lat: 70.664236,
+                lng: 72.765407
+            },
+            {
+                lat: 70.603771,
+                lng: 72.704626
+            },
+            {
+                lat: 70.529622,
+                lng: 72.745147
+            },
+            {
+                lat: 70.389574,
+                lng: 72.7519
+            },
+            {
+                lat: 70.275929,
+                lng: 72.434488
+            },
+            {
+                lat: 70.113682,
+                lng: 72.617216
+            },
+            {
+                lat: 70.022584,
+                lng: 72.49845
+            },
+            {
+                lat: 69.837141,
+                lng: 72.694415
+            },
+            {
+                lat: 69.736604,
+                lng: 72.682538
+            },
+            {
+                lat: 69.647982,
+                lng: 72.516265
+            },
+            {
+                lat: 69.446704,
+                lng: 72.658785
+            },
+            {
+                lat: 69.400789,
+                lng: 72.593463
+            },
+            {
+                lat: 69.268761,
+                lng: 72.64097
+            },
+            {
+                lat: 69.211931,
+                lng: 72.53408
+            },
+            {
+                lat: 69.104178,
+                lng: 72.49845
+            },
+            {
+                lat: 68.893486,
+                lng: 72.623155
+            },
+            {
+                lat: 68.745442,
+                lng: 73.015085
+            },
+            {
+                lat: 68.557367,
+                lng: 73.537658
+            },
+            {
+                lat: 68.485614,
+                lng: 73.626733
+            },
+            {
+                lat: 68.420186,
+                lng: 73.60298
+            },
+            {
+                lat: 68.463826,
+                lng: 73.549535
+            },
+            {
+                lat: 68.437652,
+                lng: 73.472336
+            },
+            {
+                lat: 68.345804,
+                lng: 73.412953
+            },
+            {
+                lat: 68.271179,
+                lng: 73.205111
+            },
+            {
+                lat: 68.160991,
+                lng: 73.092283
+            },
+            {
+                lat: 68.052492,
+                lng: 73.062591
+            },
+            {
+                lat: 67.910007,
+                lng: 73.193235
+            },
+            {
+                lat: 67.838435,
+                lng: 73.181358
+            },
+            {
+                lat: 67.816024,
+                lng: 73.13979
+            },
+            {
+                lat: 67.791346,
+                lng: 73.06853
+            },
+            {
+                lat: 67.746412,
+                lng: 73.092283
+            },
+            {
+                lat: 67.699138,
+                lng: 73.133851
+            },
+            {
+                lat: 67.696884,
+                lng: 72.973516
+            },
+            {
+                lat: 67.660798,
+                lng: 72.872565
+            },
+            {
+                lat: 67.629178,
+                lng: 72.872565
+            },
+            {
+                lat: 67.597515,
+                lng: 72.706291
+            },
+            {
+                lat: 67.599778,
+                lng: 72.593463
+            },
+            {
+                lat: 67.552208,
+                lng: 72.522203
+            },
+            {
+                lat: 67.545404,
+                lng: 72.563771
+            },
+            {
+                lat: 67.459058,
+                lng: 72.450943
+            },
+            {
+                lat: 67.326658,
+                lng: 72.42719
+            },
+            {
+                lat: 67.306047,
+                lng: 72.24904
+            },
+            {
+                lat: 67.290005,
+                lng: 72.053075
+            },
+            {
+                lat: 67.246406,
+                lng: 72.053075
+            },
+            {
+                lat: 67.237217,
+                lng: 72.219348
+            },
+            {
+                lat: 67.154359,
+                lng: 72.243101
+            },
+            {
+                lat: 67.1336,
+                lng: 72.225286
+            },
+            {
+                lat: 67.142829,
+                lng: 72.14215
+            },
+            {
+                lat: 67.119751,
+                lng: 71.99963
+            },
+            {
+                lat: 67.087406,
+                lng: 72.011506
+            },
+            {
+                lat: 67.010915,
+                lng: 71.951733
+            },
+            {
+                lat: 66.900682,
+                lng: 71.737174
+            },
+            {
+                lat: 66.933328,
+                lng: 71.676899
+            },
+            {
+                lat: 67.030589,
+                lng: 71.772724
+            },
+            {
+                lat: 67.115937,
+                lng: 71.901926
+            },
+            {
+                lat: 67.286143,
+                lng: 71.958109
+            },
+            {
+                lat: 67.386512,
+                lng: 72.330956
+            },
+            {
+                lat: 67.580147,
+                lng: 72.407568
+            },
+            {
+                lat: 67.673464,
+                lng: 72.698695
+            },
+            {
+                lat: 67.73934,
+                lng: 72.938747
+            },
+            {
+                lat: 67.981865,
+                lng: 72.984714
+            },
+            {
+                lat: 68.214296,
+                lng: 73.015359
+            },
+            {
+                lat: 68.320202,
+                lng: 73.102187
+            },
+            {
+                lat: 68.374854,
+                lng: 73.388206
+            },
+            {
+                lat: 68.461274,
+                lng: 73.383098
+            },
+            {
+                lat: 68.476269,
+                lng: 73.439281
+            },
+            {
+                lat: 68.568726,
+                lng: 73.42379
+            },
+            {
+                lat: 68.657652,
+                lng: 73.096449
+            },
+            {
+                lat: 68.760556,
+                lng: 72.828424
+            },
+            {
+                lat: 68.91205,
+                lng: 72.479113
+            },
+            {
+                lat: 69.218185,
+                lng: 72.411008
+            },
+            {
+                lat: 69.440752,
+                lng: 72.4879
+            },
+            {
+                lat: 69.632765,
+                lng: 72.441765
+            },
+            {
+                lat: 69.788934,
+                lng: 72.588959
+            },
+            {
+                lat: 70.004141,
+                lng: 72.421993
+            },
+            {
+                lat: 70.121753,
+                lng: 72.505476
+            },
+            {
+                lat: 70.266166,
+                lng: 72.380251
+            },
+            {
+                lat: 70.404414,
+                lng: 72.641685
+            },
+            {
+                lat: 70.534412,
+                lng: 72.659261
+            },
+            {
+                lat: 70.848223,
+                lng: 72.690017
+            },
+            {
+                lat: 70.974671,
+                lng: 72.542824
+            },
+            {
+                lat: 71.07468,
+                lng: 72.50987
+            },
+            {
+                lat: 71.215258,
+                lng: 72.164952
+            },
+            {
+                lat: 71.443069,
+                lng: 71.71974
+            },
+            {
+                lat: 71.547457,
+                lng: 71.762847
+            },
+            {
+                lat: 71.644235,
+                lng: 72.054644
+            },
+            {
+                lat: 71.695217,
+                lng: 72.084119
+            },
+            {
+                lat: 71.712798,
+                lng: 72.193174
+            },
+            {
+                lat: 71.849182,
+                lng: 72.260966
+            },
+            {
+                lat: 72.271089,
+                lng: 72.688385
+            },
+            {
+                lat: 72.589039,
+                lng: 72.647874
+            },
+            {
+                lat: 72.63007,
+                lng: 72.725442
+            },
+            {
+                lat: 72.62646,
+                lng: 72.815587
+            },
+            {
+                lat: 72.687739,
+                lng: 72.772713
+            },
+            {
+                lat: 72.860457,
+                lng: 71.608923
+            },
+            {
+                lat: 72.829773,
+                lng: 69.670431
+            },
+            {
+                lat: 72.856718,
+                lng: 69.541029
+            },
+            {
+                lat: 72.856718,
+                lng: 69.404015
+            },
+            {
+                lat: 72.771252,
+                lng: 69.312673
+            },
+            {
+                lat: 71.691149,
+                lng: 68.463694
+            },
+            {
+                lat: 71.388903,
+                lng: 67.722137
+            },
+            {
+                lat: 71.234711,
+                lng: 67.098914
+            },
+            {
+                lat: 70.925205,
+                lng: 66.814913
+            },
+            {
+                lat: 70.821811,
+                lng: 66.870136
+            },
+            {
+                lat: 70.845122,
+                lng: 67.169914
+            },
+            {
+                lat: 70.84771,
+                lng: 67.327692
+            },
+            {
+                lat: 70.725693,
+                lng: 67.48547
+            },
+            {
+                lat: 70.198061,
+                lng: 67.27247
+            },
+            {
+                lat: 70.109679,
+                lng: 67.469692
+            },
+            {
+                lat: 69.923656,
+                lng: 67.264581
+            },
+            {
+                lat: 69.904691,
+                lng: 67.020025
+            },
+            {
+                lat: 69.749622,
+                lng: 66.972691
+            },
+            {
+                lat: 69.65658,
+                lng: 67.422359
+            },
+            {
+                lat: 69.563128,
+                lng: 67.998249
+            },
+            {
+                lat: 69.583152,
+                lng: 68.261483
+            },
+            {
+                lat: 69.253119,
+                lng: 68.238365
+            },
+            {
+                lat: 68.999185,
+                lng: 68.626777
+            },
+            {
+                lat: 68.928835,
+                lng: 69.129218
+            },
+            {
+                lat: 68.819669,
+                lng: 69.232557
+            },
+            {
+                lat: 68.175816,
+                lng: 68.531298
+            },
+            {
+                lat: 68.145991,
+                lng: 68.294116
+            },
+            {
+                lat: 68.203121,
+                lng: 68.103702
+            },
+            {
+                lat: 68.310784,
+                lng: 68.083658
+            },
+            {
+                lat: 68.760609,
+                lng: 67.038053
+            },
+            {
+                lat: 68.956997,
+                lng: 66.166158
+            },
+            {
+                lat: 69.033632,
+                lng: 65.755265
+            },
+            {
+                lat: 69.095701,
+                lng: 65.574873
+            },
+            {
+                lat: 69.2359,
+                lng: 64.973567
+            },
+            {
+                lat: 69.25839,
+                lng: 65.077125
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord2 = [{
+                lat: 66.499969,
+                lng: 72.323226
+            },
+            {
+                lat: 66.529754,
+                lng: 72.455456
+            },
+            {
+                lat: 66.602917,
+                lng: 72.4957
+            },
+            {
+                lat: 66.614329,
+                lng: 72.817652
+            },
+            {
+                lat: 66.725892,
+                lng: 73.018871
+            },
+            {
+                lat: 66.791682,
+                lng: 73.36382
+            },
+            {
+                lat: 66.823496,
+                lng: 73.509157
+            },
+            {
+                lat: 66.873894,
+                lng: 73.582091
+            },
+            {
+                lat: 66.927654,
+                lng: 73.610823
+            },
+            {
+                lat: 66.939777,
+                lng: 73.699228
+            },
+            {
+                lat: 67.005481,
+                lng: 73.8893
+            },
+            {
+                lat: 67.049474,
+                lng: 73.867198
+            },
+            {
+                lat: 67.05809,
+                lng: 73.922451
+            },
+            {
+                lat: 67.098547,
+                lng: 73.915821
+            },
+            {
+                lat: 67.179258,
+                lng: 73.955603
+            },
+            {
+                lat: 67.269096,
+                lng: 73.906981
+            },
+            {
+                lat: 67.301527,
+                lng: 73.955603
+            },
+            {
+                lat: 67.426568,
+                lng: 74.116943
+            },
+            {
+                lat: 67.541671,
+                lng: 74.421941
+            },
+            {
+                lat: 67.630156,
+                lng: 74.631904
+            },
+            {
+                lat: 67.700287,
+                lng: 74.763407
+            },
+            {
+                lat: 67.79528,
+                lng: 74.792138
+            },
+            {
+                lat: 67.935933,
+                lng: 74.823188
+            },
+            {
+                lat: 68.025971,
+                lng: 74.812514
+            },
+            {
+                lat: 68.071855,
+                lng: 74.740467
+            },
+            {
+                lat: 68.232723,
+                lng: 74.607048
+            },
+            {
+                lat: 68.288071,
+                lng: 74.484302
+            },
+            {
+                lat: 68.365922,
+                lng: 74.329535
+            },
+            {
+                lat: 68.51301,
+                lng: 74.489639
+            },
+            {
+                lat: 68.686319,
+                lng: 74.462955
+            },
+            {
+                lat: 68.738631,
+                lng: 74.567022
+            },
+            {
+                lat: 68.775371,
+                lng: 74.721789
+            },
+            {
+                lat: 68.83133,
+                lng: 75.08469
+            },
+            {
+                lat: 68.896757,
+                lng: 75.46627
+            },
+            {
+                lat: 68.9006,
+                lng: 75.647721
+            },
+            {
+                lat: 68.930358,
+                lng: 75.78114
+            },
+            {
+                lat: 68.939949,
+                lng: 75.967928
+            },
+            {
+                lat: 68.972527,
+                lng: 76.200078
+            },
+            {
+                lat: 68.979228,
+                lng: 76.37886
+            },
+            {
+                lat: 68.970612,
+                lng: 76.576321
+            },
+            {
+                lat: 68.956244,
+                lng: 76.603005
+            },
+            {
+                lat: 68.911164,
+                lng: 76.659041
+            },
+            {
+                lat: 68.863105,
+                lng: 76.699067
+            },
+            {
+                lat: 68.846742,
+                lng: 76.701735
+            },
+            {
+                lat: 68.826511,
+                lng: 76.683057
+            },
+            {
+                lat: 68.793717,
+                lng: 76.635026
+            },
+            {
+                lat: 68.769574,
+                lng: 76.632357
+            },
+            {
+                lat: 68.745404,
+                lng: 76.66171
+            },
+            {
+                lat: 68.686319,
+                lng: 76.845829
+            },
+            {
+                lat: 68.649432,
+                lng: 76.952564
+            },
+            {
+                lat: 68.615404,
+                lng: 77.027279
+            },
+            {
+                lat: 68.572553,
+                lng: 77.067305
+            },
+            {
+                lat: 68.566703,
+                lng: 77.067305
+            },
+            {
+                lat: 68.565728,
+                lng: 77.045958
+            },
+            {
+                lat: 68.557926,
+                lng: 77.053963
+            },
+            {
+                lat: 68.550121,
+                lng: 77.109999
+            },
+            {
+                lat: 68.558901,
+                lng: 77.136683
+            },
+            {
+                lat: 68.573528,
+                lng: 77.134015
+            },
+            {
+                lat: 68.571578,
+                lng: 77.162033
+            },
+            {
+                lat: 68.565241,
+                lng: 77.190051
+            },
+            {
+                lat: 68.549145,
+                lng: 77.218069
+            },
+            {
+                lat: 68.529131,
+                lng: 77.242085
+            },
+            {
+                lat: 68.508611,
+                lng: 77.270103
+            },
+            {
+                lat: 68.495899,
+                lng: 77.295453
+            },
+            {
+                lat: 68.479754,
+                lng: 77.278108
+            },
+            {
+                lat: 68.467515,
+                lng: 77.240751
+            },
+            {
+                lat: 68.446939,
+                lng: 77.232745
+            },
+            {
+                lat: 68.411131,
+                lng: 77.255427
+            },
+            {
+                lat: 68.390994,
+                lng: 77.272771
+            },
+            {
+                lat: 68.368381,
+                lng: 77.299455
+            },
+            {
+                lat: 68.355098,
+                lng: 77.268769
+            },
+            {
+                lat: 68.335404,
+                lng: 77.246087
+            },
+            {
+                lat: 68.322102,
+                lng: 77.240751
+            },
+            {
+                lat: 68.318159,
+                lng: 77.190051
+            },
+            {
+                lat: 68.312736,
+                lng: 77.168704
+            },
+            {
+                lat: 68.3009,
+                lng: 77.168704
+            },
+            {
+                lat: 68.27474,
+                lng: 77.135349
+            },
+            {
+                lat: 68.256954,
+                lng: 77.131346
+            },
+            {
+                lat: 68.245089,
+                lng: 77.163367
+            },
+            {
+                lat: 68.236186,
+                lng: 77.326139
+            },
+            {
+                lat: 68.230249,
+                lng: 77.343484
+            },
+            {
+                lat: 68.185176,
+                lng: 77.299455
+            },
+            {
+                lat: 68.154416,
+                lng: 77.302124
+            },
+            {
+                lat: 68.136175,
+                lng: 77.284618
+            },
+            {
+                lat: 68.10059,
+                lng: 77.214108
+            },
+            {
+                lat: 68.069888,
+                lng: 77.218515
+            },
+            {
+                lat: 68.042441,
+                lng: 77.234673
+            },
+            {
+                lat: 68.01936,
+                lng: 77.228797
+            },
+            {
+                lat: 67.999008,
+                lng: 77.184729
+            },
+            {
+                lat: 67.987999,
+                lng: 77.177384
+            },
+            {
+                lat: 67.970374,
+                lng: 77.202356
+            },
+            {
+                lat: 67.954942,
+                lng: 77.192074
+            },
+            {
+                lat: 67.938395,
+                lng: 77.197949
+            },
+            {
+                lat: 67.922941,
+                lng: 77.222922
+            },
+            {
+                lat: 67.906372,
+                lng: 77.259645
+            },
+            {
+                lat: 67.900846,
+                lng: 77.271397
+            },
+            {
+                lat: 67.888132,
+                lng: 77.286086
+            },
+            {
+                lat: 67.88039,
+                lng: 77.291962
+            },
+            {
+                lat: 67.869325,
+                lng: 77.274335
+            },
+            {
+                lat: 67.842193,
+                lng: 77.255239
+            },
+            {
+                lat: 67.816694,
+                lng: 77.206763
+            },
+            {
+                lat: 67.81503,
+                lng: 77.192074
+            },
+            {
+                lat: 67.81196,
+                lng: 77.18314
+            },
+            {
+                lat: 67.82196,
+                lng: 77.153273
+            },
+            {
+                lat: 67.83068,
+                lng: 77.135241
+            },
+            {
+                lat: 67.851084,
+                lng: 77.147075
+            },
+            {
+                lat: 67.849385,
+                lng: 77.130169
+            },
+            {
+                lat: 67.831743,
+                lng: 77.117772
+            },
+            {
+                lat: 67.820045,
+                lng: 77.087342
+            },
+            {
+                lat: 67.811109,
+                lng: 77.072127
+            },
+            {
+                lat: 67.781082,
+                lng: 77.072127
+            },
+            {
+                lat: 67.765095,
+                lng: 77.081143
+            },
+            {
+                lat: 67.76019,
+                lng: 77.089596
+            },
+            {
+                lat: 67.719418,
+                lng: 77.252452
+            },
+            {
+                lat: 67.683984,
+                lng: 77.362261
+            },
+            {
+                lat: 67.651035,
+                lng: 77.554953
+            },
+            {
+                lat: 67.585714,
+                lng: 77.702578
+            },
+            {
+                lat: 67.545851,
+                lng: 77.83315
+            },
+            {
+                lat: 67.543357,
+                lng: 78.087764
+            },
+            {
+                lat: 67.55333,
+                lng: 78.231392
+            },
+            {
+                lat: 67.533379,
+                lng: 78.33585
+            },
+            {
+                lat: 67.538369,
+                lng: 78.505592
+            },
+            {
+                lat: 67.560807,
+                lng: 78.662278
+            },
+            {
+                lat: 67.588203,
+                lng: 78.884249
+            },
+            {
+                lat: 67.617553,
+                lng: 78.816713
+            },
+            {
+                lat: 67.643769,
+                lng: 78.694251
+            },
+            {
+                lat: 67.618525,
+                lng: 78.671289
+            },
+            {
+                lat: 67.597143,
+                lng: 78.684046
+            },
+            {
+                lat: 67.584499,
+                lng: 78.627917
+            },
+            {
+                lat: 67.603948,
+                lng: 78.464635
+            },
+            {
+                lat: 67.618525,
+                lng: 78.462083
+            },
+            {
+                lat: 67.610752,
+                lng: 78.538622
+            },
+            {
+                lat: 67.642798,
+                lng: 78.640674
+            },
+            {
+                lat: 67.663169,
+                lng: 78.528417
+            },
+            {
+                lat: 67.638916,
+                lng: 78.505455
+            },
+            {
+                lat: 67.640857,
+                lng: 78.472288
+            },
+            {
+                lat: 67.666078,
+                lng: 78.449327
+            },
+            {
+                lat: 67.669956,
+                lng: 78.400852
+            },
+            {
+                lat: 67.663169,
+                lng: 78.367685
+            },
+            {
+                lat: 67.627266,
+                lng: 78.398301
+            },
+            {
+                lat: 67.62241,
+                lng: 78.372788
+            },
+            {
+                lat: 67.658321,
+                lng: 78.314108
+            },
+            {
+                lat: 67.659291,
+                lng: 78.275839
+            },
+            {
+                lat: 67.652501,
+                lng: 78.265634
+            },
+            {
+                lat: 67.641828,
+                lng: 78.232467
+            },
+            {
+                lat: 67.659291,
+                lng: 78.173787
+            },
+            {
+                lat: 67.641828,
+                lng: 78.14062
+            },
+            {
+                lat: 67.641828,
+                lng: 78.069184
+            },
+            {
+                lat: 67.648621,
+                lng: 78.079389
+            },
+            {
+                lat: 67.675008,
+                lng: 78.008373
+            },
+            {
+                lat: 67.680057,
+                lng: 77.927668
+            },
+            {
+                lat: 67.674287,
+                lng: 77.92482
+            },
+            {
+                lat: 67.672483,
+                lng: 77.893488
+            },
+            {
+                lat: 67.657329,
+                lng: 77.852661
+            },
+            {
+                lat: 67.661299,
+                lng: 77.839368
+            },
+            {
+                lat: 67.658051,
+                lng: 77.820379
+            },
+            {
+                lat: 67.665629,
+                lng: 77.805187
+            },
+            {
+                lat: 67.700961,
+                lng: 77.912477
+            },
+            {
+                lat: 67.697358,
+                lng: 77.939062
+            },
+            {
+                lat: 67.69916,
+                lng: 77.973243
+            },
+            {
+                lat: 67.706162,
+                lng: 77.967144
+            },
+            {
+                lat: 67.720801,
+                lng: 77.839825
+            },
+            {
+                lat: 67.716299,
+                lng: 77.796289
+            },
+            {
+                lat: 67.736801,
+                lng: 77.771222
+            },
+            {
+                lat: 67.737301,
+                lng: 77.748794
+            },
+            {
+                lat: 67.730802,
+                lng: 77.730324
+            },
+            {
+                lat: 67.720801,
+                lng: 77.696022
+            },
+            {
+                lat: 67.702788,
+                lng: 77.647209
+            },
+            {
+                lat: 67.703789,
+                lng: 77.630058
+            },
+            {
+                lat: 67.720606,
+                lng: 77.615546
+            },
+            {
+                lat: 67.71835,
+                lng: 77.55658
+            },
+            {
+                lat: 67.740661,
+                lng: 77.488644
+            },
+            {
+                lat: 67.753201,
+                lng: 77.460594
+            },
+            {
+                lat: 67.77709,
+                lng: 77.460054
+            },
+            {
+                lat: 67.782803,
+                lng: 77.473004
+            },
+            {
+                lat: 67.799361,
+                lng: 77.480236
+            },
+            {
+                lat: 67.824777,
+                lng: 77.457844
+            },
+            {
+                lat: 67.869606,
+                lng: 77.449842
+            },
+            {
+                lat: 67.871974,
+                lng: 77.455844
+            },
+            {
+                lat: 67.869606,
+                lng: 77.472419
+            },
+            {
+                lat: 67.872082,
+                lng: 77.478706
+            },
+            {
+                lat: 67.88171,
+                lng: 77.462472
+            },
+            {
+                lat: 67.90202,
+                lng: 77.506781
+            },
+            {
+                lat: 67.905439,
+                lng: 77.494284
+            },
+            {
+                lat: 67.917558,
+                lng: 77.530573
+            },
+            {
+                lat: 67.910293,
+                lng: 77.576519
+            },
+            {
+                lat: 67.922885,
+                lng: 77.600995
+            },
+            {
+                lat: 67.930791,
+                lng: 77.598418
+            },
+            {
+                lat: 67.938051,
+                lng: 77.586825
+            },
+            {
+                lat: 67.942566,
+                lng: 77.555478
+            },
+            {
+                lat: 67.943695,
+                lng: 77.542167
+            },
+            {
+                lat: 67.941437,
+                lng: 77.534008
+            },
+            {
+                lat: 67.939502,
+                lng: 77.531861
+            },
+            {
+                lat: 67.930791,
+                lng: 77.555049
+            },
+            {
+                lat: 67.929823,
+                lng: 77.553331
+            },
+            {
+                lat: 67.931114,
+                lng: 77.537443
+            },
+            {
+                lat: 67.93676,
+                lng: 77.516403
+            },
+            {
+                lat: 67.94434,
+                lng: 77.488491
+            },
+            {
+                lat: 67.975922,
+                lng: 77.469598
+            },
+            {
+                lat: 67.995559,
+                lng: 77.479045
+            },
+            {
+                lat: 68.012124,
+                lng: 77.512538
+            },
+            {
+                lat: 68.027398,
+                lng: 77.528487
+            },
+            {
+                lat: 68.046407,
+                lng: 77.521459
+            },
+            {
+                lat: 68.072063,
+                lng: 77.492262
+            },
+            {
+                lat: 68.082157,
+                lng: 77.504157
+            },
+            {
+                lat: 68.089623,
+                lng: 77.49875
+            },
+            {
+                lat: 68.113216,
+                lng: 77.529569
+            },
+            {
+                lat: 68.128931,
+                lng: 77.537138
+            },
+            {
+                lat: 68.209001,
+                lng: 77.723654
+            },
+            {
+                lat: 68.216845,
+                lng: 77.866313
+            },
+            {
+                lat: 68.230566,
+                lng: 78.130495
+            },
+            {
+                lat: 68.244279,
+                lng: 78.172764
+            },
+            {
+                lat: 68.266882,
+                lng: 78.150137
+            },
+            {
+                lat: 68.28997,
+                lng: 78.115543
+            },
+            {
+                lat: 68.290809,
+                lng: 78.101932
+            },
+            {
+                lat: 68.310053,
+                lng: 78.058782
+            },
+            {
+                lat: 68.319886,
+                lng: 78.057364
+            },
+            {
+                lat: 68.329515,
+                lng: 78.079461
+            },
+            {
+                lat: 68.346376,
+                lng: 78.067639
+            },
+            {
+                lat: 68.357145,
+                lng: 78.029956
+            },
+            {
+                lat: 68.361843,
+                lng: 77.99758
+            },
+            {
+                lat: 68.369278,
+                lng: 77.971574
+            },
+            {
+                lat: 68.382969,
+                lng: 77.948221
+            },
+            {
+                lat: 68.427859,
+                lng: 77.917558
+            },
+            {
+                lat: 68.443731,
+                lng: 77.89188
+            },
+            {
+                lat: 68.44759,
+                lng: 77.874373
+            },
+            {
+                lat: 68.452837,
+                lng: 77.870381
+            },
+            {
+                lat: 68.460463,
+                lng: 77.882881
+            },
+            {
+                lat: 68.464978,
+                lng: 77.882276
+            },
+            {
+                lat: 68.464238,
+                lng: 77.896995
+            },
+            {
+                lat: 68.460389,
+                lng: 77.898809
+            },
+            {
+                lat: 68.460537,
+                lng: 77.90506
+            },
+            {
+                lat: 68.467494,
+                lng: 77.935505
+            },
+            {
+                lat: 68.467494,
+                lng: 77.942158
+            },
+            {
+                lat: 68.466532,
+                lng: 77.945989
+            },
+            {
+                lat: 68.464238,
+                lng: 77.95103
+            },
+            {
+                lat: 68.46409,
+                lng: 77.953248
+            },
+            {
+                lat: 68.476868,
+                lng: 77.955251
+            },
+            {
+                lat: 68.483019,
+                lng: 77.952704
+            },
+            {
+                lat: 68.49835,
+                lng: 77.946705
+            },
+            {
+                lat: 68.509329,
+                lng: 77.932877
+            },
+            {
+                lat: 68.514394,
+                lng: 77.921682
+            },
+            {
+                lat: 68.518374,
+                lng: 77.881514
+            },
+            {
+                lat: 68.522352,
+                lng: 77.862747
+            },
+            {
+                lat: 68.521147,
+                lng: 77.84826
+            },
+            {
+                lat: 68.514997,
+                lng: 77.823237
+            },
+            {
+                lat: 68.513188,
+                lng: 77.811054
+            },
+            {
+                lat: 68.5115,
+                lng: 77.809408
+            },
+            {
+                lat: 68.508726,
+                lng: 77.809408
+            },
+            {
+                lat: 68.506675,
+                lng: 77.807433
+            },
+            {
+                lat: 68.507628,
+                lng: 77.801454
+            },
+            {
+                lat: 68.519304,
+                lng: 77.778598
+            },
+            {
+                lat: 68.527672,
+                lng: 77.787019
+            },
+            {
+                lat: 68.538017,
+                lng: 77.7792
+            },
+            {
+                lat: 68.567398,
+                lng: 77.791139
+            },
+            {
+                lat: 68.568266,
+                lng: 77.767382
+            },
+            {
+                lat: 68.585187,
+                lng: 77.732934
+            },
+            {
+                lat: 68.619857,
+                lng: 77.703238
+            },
+            {
+                lat: 68.632844,
+                lng: 77.697298
+            },
+            {
+                lat: 68.636306,
+                lng: 77.731746
+            },
+            {
+                lat: 68.647913,
+                lng: 77.747644
+            },
+            {
+                lat: 68.673744,
+                lng: 77.754513
+            },
+            {
+                lat: 68.707446,
+                lng: 77.746499
+            },
+            {
+                lat: 68.736115,
+                lng: 77.740202
+            },
+            {
+                lat: 68.780292,
+                lng: 77.697267
+            },
+            {
+                lat: 68.793963,
+                lng: 77.686963
+            },
+            {
+                lat: 68.822314,
+                lng: 77.688108
+            },
+            {
+                lat: 68.862398,
+                lng: 77.692115
+            },
+            {
+                lat: 68.885301,
+                lng: 77.670934
+            },
+            {
+                lat: 68.906531,
+                lng: 77.590217
+            },
+            {
+                lat: 68.916418,
+                lng: 77.438514
+            },
+            {
+                lat: 68.913123,
+                lng: 77.417333
+            },
+            {
+                lat: 68.912505,
+                lng: 77.38871
+            },
+            {
+                lat: 68.918477,
+                lng: 77.370391
+            },
+            {
+                lat: 68.930417,
+                lng: 77.337761
+            },
+            {
+                lat: 68.96486,
+                lng: 77.260598
+            },
+            {
+                lat: 68.98706,
+                lng: 77.15029
+            },
+            {
+                lat: 68.984648,
+                lng: 77.139529
+            },
+            {
+                lat: 68.980305,
+                lng: 77.131457
+            },
+            {
+                lat: 68.993329,
+                lng: 77.02384
+            },
+            {
+                lat: 68.995258,
+                lng: 76.9929
+            },
+            {
+                lat: 69.000562,
+                lng: 76.970032
+            },
+            {
+                lat: 69.008996,
+                lng: 76.92833
+            },
+            {
+                lat: 69.036687,
+                lng: 76.851653
+            },
+            {
+                lat: 69.051121,
+                lng: 76.826766
+            },
+            {
+                lat: 69.089324,
+                lng: 76.813987
+            },
+            {
+                lat: 69.118112,
+                lng: 76.740673
+            },
+            {
+                lat: 69.127661,
+                lng: 76.740742
+            },
+            {
+                lat: 69.132603,
+                lng: 76.69838
+            },
+            {
+                lat: 69.140368,
+                lng: 76.660972
+            },
+            {
+                lat: 69.135339,
+                lng: 76.608204
+            },
+            {
+                lat: 69.133133,
+                lng: 76.604488
+            },
+            {
+                lat: 69.130397,
+                lng: 76.609442
+            },
+            {
+                lat: 69.127749,
+                lng: 76.609195
+            },
+            {
+                lat: 69.125278,
+                lng: 76.602506
+            },
+            {
+                lat: 69.123689,
+                lng: 76.604735
+            },
+            {
+                lat: 69.123159,
+                lng: 76.641648
+            },
+            {
+                lat: 69.121305,
+                lng: 76.645116
+            },
+            {
+                lat: 69.119451,
+                lng: 76.645116
+            },
+            {
+                lat: 69.117597,
+                lng: 76.640905
+            },
+            {
+                lat: 69.11689,
+                lng: 76.629509
+            },
+            {
+                lat: 69.11689,
+                lng: 76.616131
+            },
+            {
+                lat: 69.121781,
+                lng: 76.577062
+            },
+            {
+                lat: 69.124888,
+                lng: 76.535823
+            },
+            {
+                lat: 69.125812,
+                lng: 76.50943
+            },
+            {
+                lat: 69.124552,
+                lng: 76.47526
+            },
+            {
+                lat: 69.12598,
+                lng: 76.450988
+            },
+            {
+                lat: 69.132108,
+                lng: 76.428601
+            },
+            {
+                lat: 69.16082,
+                lng: 76.369827
+            },
+            {
+                lat: 69.175406,
+                lng: 76.279004
+            },
+            {
+                lat: 69.208364,
+                lng: 76.177439
+            },
+            {
+                lat: 69.229846,
+                lng: 76.103218
+            },
+            {
+                lat: 69.243695,
+                lng: 76.041693
+            },
+            {
+                lat: 69.243349,
+                lng: 76.011418
+            },
+            {
+                lat: 69.235733,
+                lng: 75.975284
+            },
+            {
+                lat: 69.239541,
+                lng: 75.921572
+            },
+            {
+                lat: 69.234002,
+                lng: 75.778013
+            },
+            {
+                lat: 69.240233,
+                lng: 75.717465
+            },
+            {
+                lat: 69.255805,
+                lng: 75.595391
+            },
+            {
+                lat: 69.248193,
+                lng: 75.506521
+            },
+            {
+                lat: 69.234002,
+                lng: 75.457692
+            },
+            {
+                lat: 69.217375,
+                lng: 75.432301
+            },
+            {
+                lat: 69.219454,
+                lng: 75.405933
+            },
+            {
+                lat: 69.218761,
+                lng: 75.384448
+            },
+            {
+                lat: 69.213563,
+                lng: 75.36101
+            },
+            {
+                lat: 69.192759,
+                lng: 75.30925
+            },
+            {
+                lat: 69.179919,
+                lng: 75.299484
+            },
+            {
+                lat: 69.17124,
+                lng: 75.257491
+            },
+            {
+                lat: 69.164988,
+                lng: 75.23503
+            },
+            {
+                lat: 69.164988,
+                lng: 75.210615
+            },
+            {
+                lat: 69.15665,
+                lng: 75.181317
+            },
+            {
+                lat: 69.15109,
+                lng: 75.177411
+            },
+            {
+                lat: 69.148657,
+                lng: 75.155926
+            },
+            {
+                lat: 69.128486,
+                lng: 75.124675
+            },
+            {
+                lat: 69.123962,
+                lng: 75.124675
+            },
+            {
+                lat: 69.117001,
+                lng: 75.114909
+            },
+            {
+                lat: 69.106903,
+                lng: 75.124675
+            },
+            {
+                lat: 69.104814,
+                lng: 75.1403
+            },
+            {
+                lat: 69.099937,
+                lng: 75.124675
+            },
+            {
+                lat: 69.097498,
+                lng: 75.062173
+            },
+            {
+                lat: 69.098195,
+                lng: 75.024086
+            },
+            {
+                lat: 69.097149,
+                lng: 75.011391
+            },
+            {
+                lat: 69.094362,
+                lng: 75.009437
+            },
+            {
+                lat: 69.091225,
+                lng: 74.933263
+            },
+            {
+                lat: 69.094013,
+                lng: 74.918615
+            },
+            {
+                lat: 69.092271,
+                lng: 74.910802
+            },
+            {
+                lat: 69.089134,
+                lng: 74.913732
+            },
+            {
+                lat: 69.081464,
+                lng: 74.85416
+            },
+            {
+                lat: 69.079372,
+                lng: 74.860019
+            },
+            {
+                lat: 69.081116,
+                lng: 74.895176
+            },
+            {
+                lat: 69.076233,
+                lng: 74.859043
+            },
+            {
+                lat: 69.077905,
+                lng: 74.734651
+            },
+            {
+                lat: 69.09253,
+                lng: 74.705508
+            },
+            {
+                lat: 69.106401,
+                lng: 74.669822
+            },
+            {
+                lat: 69.127096,
+                lng: 74.56596
+            },
+            {
+                lat: 69.133349,
+                lng: 74.476216
+            },
+            {
+                lat: 69.128146,
+                lng: 74.249264
+            },
+            {
+                lat: 69.120139,
+                lng: 74.213311
+            },
+            {
+                lat: 69.074441,
+                lng: 74.025682
+            },
+            {
+                lat: 69.075,
+                lng: 73.963688
+            },
+            {
+                lat: 69.081141,
+                lng: 73.895909
+            },
+            {
+                lat: 69.096875,
+                lng: 73.917474
+            },
+            {
+                lat: 69.087897,
+                lng: 74.027446
+            },
+            {
+                lat: 69.13838,
+                lng: 74.215764
+            },
+            {
+                lat: 69.142475,
+                lng: 74.488897
+            },
+            {
+                lat: 69.123273,
+                lng: 74.656371
+            },
+            {
+                lat: 69.096362,
+                lng: 74.742623
+            },
+            {
+                lat: 69.084562,
+                lng: 74.758436
+            },
+            {
+                lat: 69.086871,
+                lng: 74.849002
+            },
+            {
+                lat: 69.103285,
+                lng: 74.910816
+            },
+            {
+                lat: 69.106874,
+                lng: 75.036601
+            },
+            {
+                lat: 69.107643,
+                lng: 75.082602
+            },
+            {
+                lat: 69.152198,
+                lng: 75.132197
+            },
+            {
+                lat: 69.194865,
+                lng: 75.298906
+            },
+            {
+                lat: 69.236678,
+                lng: 75.395184
+            },
+            {
+                lat: 69.262643,
+                lng: 75.566184
+            },
+            {
+                lat: 69.263661,
+                lng: 75.602108
+            },
+            {
+                lat: 69.241772,
+                lng: 75.784605
+            },
+            {
+                lat: 69.250937,
+                lng: 75.909622
+            },
+            {
+                lat: 69.247373,
+                lng: 75.974286
+            },
+            {
+                lat: 69.250428,
+                lng: 76.02458
+            },
+            {
+                lat: 69.250937,
+                lng: 76.056194
+            },
+            {
+                lat: 69.207112,
+                lng: 76.225757
+            },
+            {
+                lat: 69.180569,
+                lng: 76.294732
+            },
+            {
+                lat: 69.16933,
+                lng: 76.378077
+            },
+            {
+                lat: 69.137625,
+                lng: 76.472917
+            },
+            {
+                lat: 69.13046,
+                lng: 76.563447
+            },
+            {
+                lat: 69.140696,
+                lng: 76.60943
+            },
+            {
+                lat: 69.145812,
+                lng: 76.695649
+            },
+            {
+                lat: 69.132507,
+                lng: 76.754565
+            },
+            {
+                lat: 69.119707,
+                lng: 76.766061
+            },
+            {
+                lat: 69.09716,
+                lng: 76.832162
+            },
+            {
+                lat: 69.052511,
+                lng: 76.85659
+            },
+            {
+                lat: 69.027837,
+                lng: 76.906885
+            },
+            {
+                lat: 68.999532,
+                lng: 77.006036
+            },
+            {
+                lat: 68.991291,
+                lng: 77.126742
+            },
+            {
+                lat: 68.995412,
+                lng: 77.158356
+            },
+            {
+                lat: 68.967064,
+                lng: 77.291995
+            },
+            {
+                lat: 68.923183,
+                lng: 77.399768
+            },
+            {
+                lat: 68.921633,
+                lng: 77.53197
+            },
+            {
+                lat: 68.911294,
+                lng: 77.613878
+            },
+            {
+                lat: 68.892155,
+                lng: 77.702971
+            },
+            {
+                lat: 68.861602,
+                lng: 77.728836
+            },
+            {
+                lat: 68.86212,
+                lng: 77.727399
+            },
+            {
+                lat: 68.797771,
+                lng: 77.736021
+            },
+            {
+                lat: 68.745219,
+                lng: 77.754702
+            },
+            {
+                lat: 68.651255,
+                lng: 77.792063
+            },
+            {
+                lat: 68.633462,
+                lng: 77.794937
+            },
+            {
+                lat: 68.618274,
+                lng: 77.764761
+            },
+            {
+                lat: 68.581047,
+                lng: 77.789189
+            },
+            {
+                lat: 68.575799,
+                lng: 77.813618
+            },
+            {
+                lat: 68.531139,
+                lng: 77.809307
+            },
+            {
+                lat: 68.529035,
+                lng: 77.853853
+            },
+            {
+                lat: 68.523249,
+                lng: 77.941509
+            },
+            {
+                lat: 68.489552,
+                lng: 77.983181
+            },
+            {
+                lat: 68.460554,
+                lng: 77.983181
+            },
+            {
+                lat: 68.451584,
+                lng: 77.96019
+            },
+            {
+                lat: 68.451584,
+                lng: 77.930013
+            },
+            {
+                lat: 68.438385,
+                lng: 77.922828
+            },
+            {
+                lat: 68.377573,
+                lng: 77.991803
+            },
+            {
+                lat: 68.352143,
+                lng: 78.090955
+            },
+            {
+                lat: 68.328276,
+                lng: 78.121131
+            },
+            {
+                lat: 68.313943,
+                lng: 78.111072
+            },
+            {
+                lat: 68.278339,
+                lng: 78.162804
+            },
+            {
+                lat: 68.243744,
+                lng: 78.204476
+            },
+            {
+                lat: 68.221363,
+                lng: 78.169988
+            },
+            {
+                lat: 68.195757,
+                lng: 77.748954
+            },
+            {
+                lat: 68.121446,
+                lng: 77.592323
+            },
+            {
+                lat: 68.089832,
+                lng: 77.542029
+            },
+            {
+                lat: 68.069447,
+                lng: 77.529096
+            },
+            {
+                lat: 68.038298,
+                lng: 77.565021
+            },
+            {
+                lat: 68.034536,
+                lng: 77.563584
+            },
+            {
+                lat: 68.034536,
+                lng: 77.565021
+            },
+            {
+                lat: 67.987187,
+                lng: 77.526222
+            },
+            {
+                lat: 67.955927,
+                lng: 77.521911
+            },
+            {
+                lat: 67.948915,
+                lng: 77.527659
+            },
+            {
+                lat: 67.946218,
+                lng: 77.601664
+            },
+            {
+                lat: 67.918684,
+                lng: 77.626811
+            },
+            {
+                lat: 67.89365,
+                lng: 77.592494
+            },
+            {
+                lat: 67.905378,
+                lng: 77.534044
+            },
+            {
+                lat: 67.881916,
+                lng: 77.497025
+            },
+            {
+                lat: 67.868707,
+                lng: 77.506767
+            },
+            {
+                lat: 67.859898,
+                lng: 77.487283
+            },
+            {
+                lat: 67.799609,
+                lng: 77.506767
+            },
+            {
+                lat: 67.770143,
+                lng: 77.49118
+            },
+            {
+                lat: 67.742854,
+                lng: 77.512612
+            },
+            {
+                lat: 67.734735,
+                lng: 77.569114
+            },
+            {
+                lat: 67.734735,
+                lng: 77.617823
+            },
+            {
+                lat: 67.718489,
+                lng: 77.647048
+            },
+            {
+                lat: 67.748757,
+                lng: 77.721085
+            },
+            {
+                lat: 67.74433,
+                lng: 77.789278
+            },
+            {
+                lat: 67.726613,
+                lng: 77.816554
+            },
+            {
+                lat: 67.717011,
+                lng: 77.980216
+            },
+            {
+                lat: 67.717011,
+                lng: 77.978267
+            },
+            {
+                lat: 67.693359,
+                lng: 78.011389
+            },
+            {
+                lat: 67.660056,
+                lng: 78.089323
+            },
+            {
+                lat: 67.668942,
+                lng: 78.151671
+            },
+            {
+                lat: 67.663019,
+                lng: 78.227656
+            },
+            {
+                lat: 67.668942,
+                lng: 78.291952
+            },
+            {
+                lat: 67.680783,
+                lng: 78.45951
+            },
+            {
+                lat: 67.656013,
+                lng: 78.634052
+            },
+            {
+                lat: 67.646396,
+                lng: 78.739049
+            },
+            {
+                lat: 67.589178,
+                lng: 78.922761
+            },
+            {
+                lat: 67.531114,
+                lng: 78.536621
+            },
+            {
+                lat: 67.52351,
+                lng: 78.32951
+            },
+            {
+                lat: 67.542291,
+                lng: 78.204307
+            },
+            {
+                lat: 67.527089,
+                lng: 78.038151
+            },
+            {
+                lat: 67.535585,
+                lng: 77.820508
+            },
+            {
+                lat: 67.589747,
+                lng: 77.59832
+            },
+            {
+                lat: 67.636104,
+                lng: 77.522493
+            },
+            {
+                lat: 67.671443,
+                lng: 77.364528
+            },
+            {
+                lat: 67.733894,
+                lng: 77.110709
+            },
+            {
+                lat: 67.77785,
+                lng: 77.020156
+            },
+            {
+                lat: 67.843734,
+                lng: 77.061786
+            },
+            {
+                lat: 67.863164,
+                lng: 77.13117
+            },
+            {
+                lat: 67.845977,
+                lng: 77.182712
+            },
+            {
+                lat: 67.87586,
+                lng: 77.254077
+            },
+            {
+                lat: 67.936256,
+                lng: 77.180729
+            },
+            {
+                lat: 68.015055,
+                lng: 77.129187
+            },
+            {
+                lat: 68.041015,
+                lng: 77.184694
+            },
+            {
+                lat: 68.094375,
+                lng: 77.176502
+            },
+            {
+                lat: 68.150029,
+                lng: 77.271598
+            },
+            {
+                lat: 68.191897,
+                lng: 77.279105
+            },
+            {
+                lat: 68.221624,
+                lng: 77.299122
+            },
+            {
+                lat: 68.229977,
+                lng: 77.182771
+            },
+            {
+                lat: 68.250848,
+                lng: 77.096447
+            },
+            {
+                lat: 68.297622,
+                lng: 77.131477
+            },
+            {
+                lat: 68.326287,
+                lng: 77.143988
+            },
+            {
+                lat: 68.331369,
+                lng: 77.221555
+            },
+            {
+                lat: 68.366911,
+                lng: 77.259087
+            },
+            {
+                lat: 68.435989,
+                lng: 77.212797
+            },
+            {
+                lat: 68.473664,
+                lng: 77.199035
+            },
+            {
+                lat: 68.489266,
+                lng: 77.255334
+            },
+            {
+                lat: 68.56346,
+                lng: 77.165256
+            },
+            {
+                lat: 68.549739,
+                lng: 77.15775
+            },
+            {
+                lat: 68.544248,
+                lng: 77.121468
+            },
+            {
+                lat: 68.550196,
+                lng: 77.041399
+            },
+            {
+                lat: 68.569403,
+                lng: 77.027637
+            },
+            {
+                lat: 68.57763,
+                lng: 77.04265
+            },
+            {
+                lat: 68.631485,
+                lng: 76.951321
+            },
+            {
+                lat: 68.709754,
+                lng: 76.708611
+            },
+            {
+                lat: 68.766011,
+                lng: 76.569741
+            },
+            {
+                lat: 68.842456,
+                lng: 76.642304
+            },
+            {
+                lat: 68.952812,
+                lng: 76.582252
+            },
+            {
+                lat: 68.963592,
+                lng: 76.418361
+            },
+            {
+                lat: 68.957304,
+                lng: 76.239456
+            },
+            {
+                lat: 68.938879,
+                lng: 76.074313
+            },
+            {
+                lat: 68.915937,
+                lng: 75.837859
+            },
+            {
+                lat: 68.895225,
+                lng: 75.690231
+            },
+            {
+                lat: 68.842456,
+                lng: 75.3074
+            },
+            {
+                lat: 68.684461,
+                lng: 74.545702
+            },
+            {
+                lat: 68.522642,
+                lng: 74.528193
+            },
+            {
+                lat: 68.365034,
+                lng: 74.396875
+            },
+            {
+                lat: 68.244212,
+                lng: 74.665346
+            },
+            {
+                lat: 68.042144,
+                lng: 74.88129
+            },
+            {
+                lat: 67.695857,
+                lng: 74.84919
+            },
+            {
+                lat: 67.265579,
+                lng: 74.005842
+            },
+            {
+                lat: 67.195556,
+                lng: 74.035023
+            },
+            {
+                lat: 67.058311,
+                lng: 73.991251
+            },
+            {
+                lat: 67.00479,
+                lng: 73.962069
+            },
+            {
+                lat: 66.80677,
+                lng: 73.562281
+            },
+            {
+                lat: 66.602504,
+                lng: 72.88235
+            },
+            {
+                lat: 66.47587,
+                lng: 72.359999
+            },
+            {
+                lat: 66.500022,
+                lng: 72.324077
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord3 = [{
+                // ик
+                lat: 69.08298,
+                lng: 73.895921
+            },
+            {
+                lat: 69.095965,
+                lng: 73.868867
+            },
+            {
+                lat: 69.183001,
+                lng: 73.784906
+            },
+            {
+                lat: 69.300467,
+                lng: 73.871371
+            },
+            {
+                lat: 69.462506,
+                lng: 73.895037
+            },
+            {
+                lat: 69.586834,
+                lng: 73.729173
+            },
+            {
+                lat: 69.743283,
+                lng: 73.545537
+            },
+            {
+                lat: 69.849664,
+                lng: 73.681783
+            },
+            {
+                lat: 70.02038,
+                lng: 73.818029
+            },
+            {
+                lat: 70.117309,
+                lng: 73.711402
+            },
+            {
+                lat: 70.331757,
+                lng: 74.114216
+            },
+            {
+                lat: 70.528459,
+                lng: 74.367477
+            },
+            {
+                lat: 70.777836,
+                lng: 74.133861
+            },
+            {
+                lat: 70.843957,
+                lng: 73.926203
+            },
+            {
+                lat: 70.962848,
+                lng: 73.906735
+            },
+            {
+                lat: 71.049443,
+                lng: 73.718544
+            },
+            {
+                lat: 71.173388,
+                lng: 73.647162
+            },
+            {
+                lat: 71.309034,
+                lng: 73.36812
+            },
+            {
+                lat: 71.39204,
+                lng: 73.024186
+            },
+            {
+                lat: 71.528222,
+                lng: 73.283759
+            },
+            {
+                lat: 71.718483,
+                lng: 73.536843
+            },
+            {
+                lat: 71.758272,
+                lng: 73.44321
+            },
+            {
+                lat: 71.778387,
+                lng: 73.461649
+            },
+            {
+                lat: 71.867633,
+                lng: 73.816035
+            },
+            {
+                lat: 71.989708,
+                lng: 74.529893
+            },
+            {
+                lat: 72.186737,
+                lng: 75.060712
+            },
+            {
+                lat: 72.481131,
+                lng: 75.079016
+            },
+            {
+                lat: 72.681127,
+                lng: 74.941735
+            },
+            {
+                lat: 72.797896,
+                lng: 74.767846
+            },
+            {
+                lat: 72.986603,
+                lng: 74.159084
+            },
+            {
+                lat: 73.108161,
+                lng: 74.246341
+            },
+            {
+                lat: 73.108161,
+                lng: 74.585674
+            },
+            {
+                lat: 73.0715,
+                lng: 74.798969
+            },
+            {
+                lat: 72.864196,
+                lng: 75.02196
+            },
+            {
+                lat: 72.715028,
+                lng: 75.458245
+            },
+            {
+                lat: 72.665989,
+                lng: 75.370988
+            },
+            {
+                lat: 72.532618,
+                lng: 75.65215
+            },
+            {
+                lat: 72.500578,
+                lng: 75.506721
+            },
+            {
+                lat: 72.239243,
+                lng: 75.729712
+            },
+            {
+                lat: 72.007105,
+                lng: 75.400074
+            },
+            {
+                lat: 71.892952,
+                lng: 75.254645
+            },
+            {
+                lat: 71.756866,
+                lng: 75.24495
+            },
+            {
+                lat: 71.650339,
+                lng: 75.487331
+            },
+            {
+                lat: 71.524785,
+                lng: 75.506721
+            },
+            {
+                lat: 71.429305,
+                lng: 75.42916
+            },
+            {
+                lat: 71.426217,
+                lng: 75.235255
+            },
+            {
+                lat: 71.280524,
+                lng: 75.526112
+            },
+            {
+                lat: 71.227556,
+                lng: 75.933312
+            },
+            {
+                lat: 71.174443,
+                lng: 77.038568
+            },
+            {
+                lat: 71.146266,
+                lng: 77.581501
+            },
+            {
+                lat: 71.118048,
+                lng: 77.843273
+            },
+            {
+                lat: 71.007925,
+                lng: 77.93053
+            },
+            {
+                lat: 70.94472,
+                lng: 78.085653
+            },
+            {
+                lat: 70.919381,
+                lng: 78.395901
+            },
+            {
+                lat: 71.11491,
+                lng: 78.308644
+            },
+            {
+                lat: 71.240032,
+                lng: 78.289253
+            },
+            {
+                lat: 71.261846,
+                lng: 78.008092
+            },
+            {
+                lat: 71.240032,
+                lng: 77.93053
+            },
+            {
+                lat: 71.286746,
+                lng: 77.52333
+            },
+            {
+                lat: 71.398403,
+                lng: 77.11613
+            },
+            {
+                lat: 71.472484,
+                lng: 76.641064
+            },
+            {
+                lat: 71.570815,
+                lng: 76.272645
+            },
+            {
+                lat: 71.895965,
+                lng: 76.010874
+            },
+            {
+                lat: 72.007105,
+                lng: 76.369597
+            },
+            {
+                lat: 72.060935,
+                lng: 76.91253
+            },
+            {
+                lat: 71.820496,
+                lng: 77.591197
+            },
+            {
+                lat: 71.814445,
+                lng: 77.804492
+            },
+            {
+                lat: 71.856759,
+                lng: 78.124434
+            },
+            {
+                lat: 71.971132,
+                lng: 78.260168
+            },
+            {
+                lat: 72.093753,
+                lng: 78.037177
+            },
+            {
+                lat: 72.06392,
+                lng: 77.571806
+            },
+            {
+                lat: 72.072875,
+                lng: 77.406987
+            },
+            {
+                lat: 72.206682,
+                lng: 77.513635
+            },
+            {
+                lat: 72.177031,
+                lng: 77.765711
+            },
+            {
+                lat: 72.236285,
+                lng: 77.998396
+            },
+            {
+                lat: 71.974133,
+                lng: 78.754625
+            },
+            {
+                lat: 71.702155,
+                lng: 78.347425
+            },
+            {
+                lat: 71.683883,
+                lng: 77.455463
+            },
+            {
+                lat: 71.865814,
+                lng: 76.834968
+            },
+            {
+                lat: 71.738647,
+                lng: 76.524721
+            },
+            {
+                lat: 71.555484,
+                lng: 76.854359
+            },
+            {
+                lat: 71.351958,
+                lng: 78.037177
+            },
+            {
+                lat: 71.283635,
+                lng: 78.618891
+            },
+            {
+                lat: 70.830441,
+                lng: 78.735234
+            },
+            {
+                lat: 70.798579,
+                lng: 77.979006
+            },
+            {
+                lat: 71.014234,
+                lng: 77.474854
+            },
+            {
+                lat: 71.070928,
+                lng: 75.516417
+            },
+            {
+                lat: 71.407679,
+                lng: 75.089826
+            },
+            {
+                lat: 71.744722,
+                lng: 74.760189
+            },
+            {
+                lat: 71.389123,
+                lng: 73.848837
+            },
+            {
+                lat: 70.709097,
+                lng: 74.740798
+            },
+            {
+                lat: 70.005203,
+                lng: 74.217255
+            },
+            {
+                lat: 69.731582,
+                lng: 73.965179
+            },
+            {
+                lat: 69.461181,
+                lng: 74.314208
+            },
+            {
+                lat: 69.132143,
+                lng: 74.256036
+            },
+            {
+                lat: 69.077615,
+                lng: 73.888452
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord4 = [{
+                lat: 73.37207,
+                lng: 70.0719
+            },
+            {
+                lat: 73.002834,
+                lng: 70.009204
+            },
+            {
+                lat: 73.070001,
+                lng: 70.197557
+            },
+            {
+                lat: 73.021178,
+                lng: 70.28127
+            },
+            {
+                lat: 73.094361,
+                lng: 70.888187
+            },
+            {
+                lat: 73.173297,
+                lng: 71.683458
+            },
+            {
+                lat: 73.312078,
+                lng: 71.474176
+            },
+            {
+                lat: 73.251876,
+                lng: 71.223038
+            },
+            {
+                lat: 73.419913,
+                lng: 71.097469
+            },
+            {
+                lat: 73.468535,
+                lng: 70.936738
+            },
+            {
+                lat: 73.448837,
+                lng: 70.573507
+            },
+            {
+                lat: 73.387134,
+                lng: 70.089199
+            },
+            {
+                lat: 73.369151,
+                lng: 70.071902
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord5 = [{
+                lat: 73.414704,
+                lng: 75.377412
+            },
+            {
+                lat: 73.438624,
+                lng: 75.409303
+            },
+            {
+                lat: 73.479985,
+                lng: 75.506157
+            },
+            {
+                lat: 73.502138,
+                lng: 75.566395
+            },
+            {
+                lat: 73.511862,
+                lng: 75.631358
+            },
+            {
+                lat: 73.522921,
+                lng: 75.768371
+            },
+            {
+                lat: 73.521916,
+                lng: 75.8605
+            },
+            {
+                lat: 73.520576,
+                lng: 75.972709
+            },
+            {
+                lat: 73.524261,
+                lng: 76.001056
+            },
+            {
+                lat: 73.522586,
+                lng: 76.069563
+            },
+            {
+                lat: 73.521916,
+                lng: 76.077831
+            },
+            {
+                lat: 73.520576,
+                lng: 76.132163
+            },
+            {
+                lat: 73.491401,
+                lng: 76.358943
+            },
+            {
+                lat: 73.467554,
+                lng: 76.521941
+            },
+            {
+                lat: 73.440308,
+                lng: 76.656592
+            },
+            {
+                lat: 73.418412,
+                lng: 76.718011
+            },
+            {
+                lat: 73.39345,
+                lng: 76.745177
+            },
+            {
+                lat: 73.390074,
+                lng: 76.723917
+            },
+            {
+                lat: 73.410657,
+                lng: 76.694388
+            },
+            {
+                lat: 73.428858,
+                lng: 76.648324
+            },
+            {
+                lat: 73.451413,
+                lng: 76.560919
+            },
+            {
+                lat: 73.466882,
+                lng: 76.446348
+            },
+            {
+                lat: 73.487708,
+                lng: 76.345951
+            },
+            {
+                lat: 73.486701,
+                lng: 76.315241
+            },
+            {
+                lat: 73.494086,
+                lng: 76.280988
+            },
+            {
+                lat: 73.486365,
+                lng: 76.258546
+            },
+            {
+                lat: 73.486365,
+                lng: 76.217206
+            },
+            {
+                lat: 73.479314,
+                lng: 76.161692
+            },
+            {
+                lat: 73.487037,
+                lng: 76.048302
+            },
+            {
+                lat: 73.487708,
+                lng: 75.956173
+            },
+            {
+                lat: 73.478306,
+                lng: 75.872312
+            },
+            {
+                lat: 73.468562,
+                lng: 75.855776
+            },
+            {
+                lat: 73.456795,
+                lng: 75.859319
+            },
+            {
+                lat: 73.448385,
+                lng: 75.874674
+            },
+            {
+                lat: 73.443674,
+                lng: 75.903021
+            },
+            {
+                lat: 73.438961,
+                lng: 75.916014
+            },
+            {
+                lat: 73.431553,
+                lng: 75.900659
+            },
+            {
+                lat: 73.428521,
+                lng: 75.882942
+            },
+            {
+                lat: 73.429195,
+                lng: 75.851051
+            },
+            {
+                lat: 73.423804,
+                lng: 75.762465
+            },
+            {
+                lat: 73.424141,
+                lng: 75.699865
+            },
+            {
+                lat: 73.427511,
+                lng: 75.633721
+            },
+            {
+                lat: 73.428521,
+                lng: 75.58175
+            },
+            {
+                lat: 73.427511,
+                lng: 75.545135
+            },
+            {
+                lat: 73.432563,
+                lng: 75.554584
+            },
+            {
+                lat: 73.434921,
+                lng: 75.588837
+            },
+            {
+                lat: 73.449731,
+                lng: 75.573482
+            },
+            {
+                lat: 73.457132,
+                lng: 75.577026
+            },
+            {
+                lat: 73.465873,
+                lng: 75.569939
+            },
+            {
+                lat: 73.475115,
+                lng: 75.586475
+            },
+            {
+                lat: 73.47881,
+                lng: 75.580569
+            },
+            {
+                lat: 73.476123,
+                lng: 75.563442
+            },
+            {
+                lat: 73.469403,
+                lng: 75.546906
+            },
+            {
+                lat: 73.460494,
+                lng: 75.541591
+            },
+            {
+                lat: 73.440644,
+                lng: 75.460092
+            },
+            {
+                lat: 73.437783,
+                lng: 75.458911
+            },
+            {
+                lat: 73.4265,
+                lng: 75.42643
+            },
+            {
+                lat: 73.417738,
+                lng: 75.419343
+            },
+            {
+                lat: 73.40661,
+                lng: 75.403397
+            },
+            {
+                lat: 73.397332,
+                lng: 75.407531
+            },
+            {
+                lat: 73.387035,
+                lng: 75.398082
+            },
+            {
+                lat: 73.370987,
+                lng: 75.39572
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord6 = [{
+                lat: 72.271099,
+                lng: 76.943579
+            },
+            {
+                lat: 72.312828,
+                lng: 76.847545
+            },
+            {
+                lat: 72.361392,
+                lng: 76.948152
+            },
+            {
+                lat: 72.420879,
+                lng: 77.222536
+            },
+            {
+                lat: 72.487054,
+                lng: 77.309424
+            },
+            {
+                lat: 72.535155,
+                lng: 77.419177
+            },
+            {
+                lat: 72.599546,
+                lng: 77.629538
+            },
+            {
+                lat: 72.574913,
+                lng: 78.041114
+            },
+            {
+                lat: 72.540644,
+                lng: 78.242328
+            },
+            {
+                lat: 72.485678,
+                lng: 78.356655
+            },
+            {
+                lat: 72.458133,
+                lng: 78.361228
+            },
+            {
+                lat: 72.442965,
+                lng: 78.233182
+            },
+            {
+                lat: 72.411209,
+                lng: 78.205744
+            },
+            {
+                lat: 72.394618,
+                lng: 78.128002
+            },
+            {
+                lat: 72.386317,
+                lng: 78.018248
+            },
+            {
+                lat: 72.357234,
+                lng: 77.958799
+            },
+            {
+                lat: 72.353076,
+                lng: 77.917641
+            },
+            {
+                lat: 72.30727,
+                lng: 77.835326
+            },
+            {
+                lat: 72.289193,
+                lng: 77.807888
+            },
+            {
+                lat: 72.290584,
+                lng: 77.730146
+            },
+            {
+                lat: 72.287802,
+                lng: 77.634111
+            },
+            {
+                lat: 72.286411,
+                lng: 77.492346
+            },
+            {
+                lat: 72.282236,
+                lng: 77.37802
+            },
+            {
+                lat: 72.291975,
+                lng: 77.277412
+            },
+            {
+                lat: 72.279452,
+                lng: 77.217963
+            },
+            {
+                lat: 72.279452,
+                lng: 77.09449
+            },
+            {
+                lat: 72.272491,
+                lng: 76.943579
+            },
+        ]
+        mapsBorderZonesData.borderZonesCoord7 = [{
+                lat: 73.189338,
+                lng: 76.096444
+            },
+            {
+                lat: 73.166399,
+                lng: 76.130414
+            },
+            {
+                lat: 73.132481,
+                lng: 76.239873
+            },
+            {
+                lat: 73.122622,
+                lng: 76.353106
+            },
+            {
+                lat: 73.117142,
+                lng: 76.481438
+            },
+            {
+                lat: 73.116046,
+                lng: 76.639964
+            },
+            {
+                lat: 73.119334,
+                lng: 76.70413
+            },
+            {
+                lat: 73.137957,
+                lng: 76.696581
+            },
+            {
+                lat: 73.157653,
+                lng: 76.651288
+            },
+            {
+                lat: 73.184971,
+                lng: 76.56825
+            },
+            {
+                lat: 73.167492,
+                lng: 76.587122
+            },
+            {
+                lat: 73.170771,
+                lng: 76.522956
+            },
+            {
+                lat: 73.182787,
+                lng: 76.349332
+            },
+            {
+                lat: 73.193704,
+                lng: 76.243647
+            },
+            {
+                lat: 73.196978,
+                lng: 76.179482
+            },
+            {
+                lat: 73.187155,
+                lng: 76.100219
+            },
+        ]
+
+        mapsBorderZonesData.ootpZonesPark = [{
+                lat: 69.173084,
+                lng: 65.178528
+            },
+            {
+                lat: 69.134974,
+                lng: 64.896184
+            },
+            {
+                lat: 69.041146,
+                lng: 64.740408
+            },
+            {
+                lat: 68.93992,
+                lng: 64.769616
+            },
+            {
+                lat: 68.915416,
+                lng: 64.876712
+            },
+            {
+                lat: 68.880363,
+                lng: 65.129848
+            },
+            {
+                lat: 68.82768,
+                lng: 65.39272
+            },
+            {
+                lat: 68.72547,
+                lng: 65.597176
+            },
+            {
+                lat: 68.53033,
+                lng: 65.762688
+            },
+            {
+                lat: 68.476815,
+                lng: 65.6848
+            },
+            {
+                lat: 68.344267,
+                lng: 65.470608
+            },
+            {
+                lat: 68.243444,
+                lng: 65.4414
+            },
+            {
+                lat: 68.149423,
+                lng: 65.421928
+            },
+            {
+                lat: 68.022246,
+                lng: 65.421928
+            },
+            {
+                lat: 67.949258,
+                lng: 65.470608
+            },
+            {
+                lat: 67.96022,
+                lng: 65.772424
+            },
+            {
+                lat: 68.007667,
+                lng: 65.996352
+            },
+            {
+                lat: 67.861368,
+                lng: 66.132656
+            },
+            {
+                lat: 67.732598,
+                lng: 66.307904
+            },
+            {
+                lat: 67.599409,
+                lng: 66.26896
+            },
+            {
+                lat: 67.517643,
+                lng: 66.230016
+            },
+            {
+                lat: 67.345764,
+                lng: 66.161864
+            },
+            {
+                lat: 67.244299,
+                lng: 67.466487
+            },
+            {
+                lat: 67.554844,
+                lng: 68.586127
+            },
+            {
+                lat: 67.894365,
+                lng: 68.605599
+            },
+            {
+                lat: 68.102268,
+                lng: 68.225895
+            },
+            {
+                lat: 68.243444,
+                lng: 68.050647
+            },
+            {
+                lat: 68.326295,
+                lng: 68.170923
+            },
+            {
+                lat: 68.399627,
+                lng: 67.874087
+            },
+            {
+                lat: 68.623674,
+                lng: 67.297463
+            },
+            {
+                lat: 68.791631,
+                lng: 67.007516
+            },
+            {
+                lat: 68.883844,
+                lng: 66.496658
+            },
+            {
+                lat: 68.997953,
+                lng: 66.013414
+            },
+            {
+                lat: 69.047381,
+                lng: 65.737275
+            },
+            {
+                lat: 69.126236,
+                lng: 65.481846
+            },
+            {
+                lat: 69.171183,
+                lng: 65.170961
+            },
+        ]
+        mapsBorderZonesData.ootpZonesNature = [{
+                lat: 68.746235,
+                lng: 74.677241
+            },
+            {
+                lat: 68.673299,
+                lng: 74.556715
+            },
+            {
+                lat: 68.609894,
+                lng: 74.529931
+            },
+            {
+                lat: 68.546309,
+                lng: 74.529931
+            },
+            {
+                lat: 68.502184,
+                lng: 74.556715
+            },
+            {
+                lat: 68.496281,
+                lng: 74.553297
+            },
+            {
+                lat: 68.487743,
+                lng: 74.548365
+            },
+            {
+                lat: 68.348286,
+                lng: 74.380842
+            },
+            {
+                lat: 68.227601,
+                lng: 74.65417
+            },
+            {
+                lat: 68.116136,
+                lng: 74.768791
+            },
+            {
+                lat: 67.961159,
+                lng: 74.874595
+            },
+            {
+                lat: 67.78848,
+                lng: 74.892229
+            },
+            {
+                lat: 67.658128,
+                lng: 74.804059
+            },
+            {
+                lat: 67.597721,
+                lng: 74.680621
+            },
+            {
+                lat: 67.506821,
+                lng: 74.460195
+            },
+            {
+                lat: 67.418956,
+                lng: 74.230953
+            },
+            {
+                lat: 67.323969,
+                lng: 74.133965
+            },
+            {
+                lat: 67.167097,
+                lng: 74.063429
+            },
+            {
+                lat: 67.026411,
+                lng: 74.036978
+            },
+            {
+                lat: 66.960938,
+                lng: 73.939991
+            },
+            {
+                lat: 66.893341,
+                lng: 74.174248
+            },
+            {
+                lat: 66.885652,
+                lng: 74.370124
+            },
+            {
+                lat: 66.981489,
+                lng: 74.655313
+            },
+            {
+                lat: 67.170137,
+                lng: 75.074574
+            },
+            {
+                lat: 67.24854,
+                lng: 75.681779
+            },
+            {
+                lat: 67.321115,
+                lng: 76.780531
+            },
+            {
+                lat: 67.773861,
+                lng: 76.990161
+            },
+            {
+                lat: 68.492366,
+                lng: 77.20829
+            },
+            {
+                lat: 68.707365,
+                lng: 76.659226
+            },
+            {
+                lat: 68.92513,
+                lng: 76.565484
+            },
+            {
+                lat: 68.867268,
+                lng: 75.78876
+            },
+            {
+                lat: 68.809255,
+                lng: 75.186129
+            },
+        ]
+        mapsBorderZonesData.ootpZonesMarker = [{
+                position: new google.maps.LatLng(68.1560663833055, 76.01858336230296),
+                map: map,
+                title: `Мисо-Яхтенский
+природный
+заказник`,
+                icon: {
+                    url: "",
+                    scaledSize: new google.maps.Size(32, 32)
+                },
+                label: {
+                    text: `Мисо-Яхтенский
+природный
+заказник`,
+                    color: "#213A8F",
+                    fontWeight: "bold",
+                    fontSize: "12px",
+                    className: "ootp-map-label"
+                }
+            },
+            {
+                position: new google.maps.LatLng(68.34775642642852, 66.7247898224413),
+
+                map: map,
+                title: 'Природный парк',
+                icon: {
+                    url: "",
+                    scaledSize: new google.maps.Size(32, 32)
+                },
+                label: {
+                    text: "Природный парк",
+                    color: "#213A8F",
+                    fontWeight: "bold",
+                    fontSize: "12px",
+                    className: "ootp-map-label"
+                }
+            },
+        ]
+
+
+        mapsBorderZonesData.startBorderMarker = [{
+            position: new google.maps.LatLng(66.55047769194653, 66.59826008447075),
+            map: map,
+            title: 'Салехард',
+            icon: {
+                url: "img/icon/btn-location.svg",
+                scaledSize: new google.maps.Size(32, 32)
+            },
+            label: {
+                text: "Салехард",
+                color: "#213A8F",
+                fontWeight: "bold",
+                fontSize: "12px",
+                className: "map-label"
+            }
+        }, ];
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script src="https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
+    integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+    integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/script.js"></script>
+    <script src="js/border-zones-maps.js" defer></script>
+    <script src="js/newScripts.js"></script>
+    <script src="js/work.js"></script>
+</body>
+
+</html>

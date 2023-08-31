@@ -1,0 +1,98 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 2.33vw;
+  }
+
+  .btn_app {
+    padding: 0.58vw 0.94vw 0.58vw 0.94vw;
+  }
+
+  .decor-line svg {
+    height: 26vw;
+  }
+
+  .c {
+    width: 0.14vw;
+    height: 0.14vw;
+  }
+
+  .header {
+    font-size: 1vw;
+  }
+
+  .header__link {
+    font-size: 0.83vw;
+  }
+
+  .header__btn {
+    font-size: 0.83vw;
+  }
+
+  .reality__screen {
+    min-width: 15.67vw;
+  }
+
+  .omi-card__title {
+    font-size: 1.75vw;
+  }
+
+  .omi-card__text {
+    font-size: 1.17vw;
+  }
+
+  .omi-card__label-icon {
+    width: 1.83vw;
+    height: 1.83vw;
+  }
+
+  .omi-card__label-text {
+    font-size: 1.17vw;
+  }
+
+  .omi-card__point-value {
+    font-size: 3vw;
+    width: 6.6vw;
+  }
+
+  .sound-season__count {
+    font-size: 1vw;
+  }
+
+  .sound-season__author {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .sound-season__author_unknown {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .sound-season__name {
+    font-size: 1.2vw;
+  }
+
+  .culture-event {
+    padding-left: 2.33vw;
+  }
+
+  .question-item {
+    padding: 0 2.33vw;
+  }
+
+  .footer__text {
+    font-size: 0.83vw;
+  }
+
+  .footer__copy {
+    font-size: 1.17vw;
+  }
+
+  .modal__info {
+    left: 2.33vw;
+  }
+
+  .modal__close {
+    right: 2.33vw;
+  }
+}

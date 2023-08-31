@@ -1,0 +1,232 @@
+.planning-hints {
+  position: relative;
+  padding-left: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 22px;
+}
+
+.planning-hints::before {
+  content: url(../img/city/info-circle.svg);
+  position: absolute;
+  top: -2;
+  left: 0;
+}
+
+.city-description {
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+
+.city-description__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.city-description__left {
+  max-width: 480px;
+  min-width: 420px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.city-description__photo {
+  position: relative;
+  display: none;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.city-description__photo.show {
+  display: block;
+}
+
+.city-description__photo picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.city-description__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.city-description__about {
+  position: absolute;
+  bottom: 24px;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #fff;
+}
+
+.city-description__about-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.city-description__all {
+  max-width: 680px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.city-description__tabs {
+  position: relative;
+  padding: 0 44px;
+  margin-bottom: 24px;
+}
+
+.city-description__tabs-scroll {
+  overflow: auto;
+  display: flex;
+  min-height: 50px;
+}
+
+.city-description__tabs-scroll .mCSB_container {
+  display: flex;
+}
+
+.city-description__tabs-scroll .mCSB_dragger {
+  display: none !important;
+}
+
+.city-description__tabs-scroll .mCSB_dragger_bar {
+  display: none !important;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.city-description__slider {
+  overflow: hidden;
+}
+
+.city-description__slider-wrapper {
+  display: flex;
+}
+
+.city-description__slide {
+  white-space: nowrap;
+  font-weight: bold;
+  color: #B3B3B3;
+}
+
+.city-description__slide:not(:last-child) {
+  margin-right: 24px;
+}
+
+.city-description__slide.active {
+  color: #009974;
+}
+
+.city-description__tabs-arrows {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.city-description__tabs-arrows:hover svg {
+  stroke: #000;
+}
+
+.city-description__tabs-arrows svg {
+  stroke: #e4e4e4;
+  width: 24px;
+  height: 24px;
+  transition: all ease;
+}
+
+.city-description__item {
+  display: none;
+}
+
+.city-description__item.show {
+  display: block;
+}
+
+.city-description__item-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.city-description__item-text b {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.city-description__item-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.tabs-arrow__prev {
+  left: 0;
+}
+
+.tabs-arrow__next {
+  right: 0;
+}
+
+.tabs-arrow__next svg {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .city-description {
+    padding: 0 15px 150px;
+    margin-top: 70px;
+  }
+
+  .city-description__wrapper {
+    display: block;
+  }
+
+  .city-description__left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 55px;
+  }
+
+  .city-description__all {
+    max-width: 100%;
+  }
+
+  .city-description__tabs {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .city-description__tabs-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  .planning-hints::before {
+    content: url(../img/city/arrow-city.svg);
+  }
+
+  .city-description {
+    padding: 0 10px 100px;
+    margin-top: 50px;
+  }
+
+  .city-description__left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 55px;
+    min-width: auto;
+  }
+
+  .city-description__about {
+    right: auto;
+    left: 20px;
+    bottom: 14px;
+    display: block;
+  }
+}

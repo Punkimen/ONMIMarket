@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenpixel - Pick a plan</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/icons/site.webmanifest">
+    <link rel="mask-icon" href="./images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/newStyles.css" />
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <header class="header">
+  <div class="container">
+    <div class="header__navbar">
+      <div class="header__logo">
+        <a href="./index.html" class="header__logo-link"><img src="images/logo.svg" alt="Logo" /></a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Features</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Advantages</a>
+          </li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Pricing</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">How to use</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">FAQ</a></li>
+        </ul>
+        <div class='header__language'>
+          <details class='details'>
+            <summary class="summary">English</summary>
+            <div class='opt-wrapper'>
+              <a href="./index.html" type="button" data-lang='russian' class='opt '>RU</a>
+              <a href="./eng/index.html" type="button" data-lang='english' class='opt selected'>ENG</a>
+            </div>
+          </details>
+        </div>
+      </nav>
+      <div class="burger"><span></span></div>
+    </div>
+  </div>
+</header>
+        <main class="main">
+            <section class="paywall">
+                <div class="container">
+                    <h1 class="paywall__title title">Pick a plan that suits your needs</h1>
+                    <div class="paywall__wrapper">
+                        <div class="paywall__col paywall-labels">
+                            <div class="paywall__row">
+                                <div class="paywall-labels__text description">Try our Premium service for 7 days free of
+                                    charge. No card required</div>
+                            </div>
+                            <div class="paywall__row">
+                                <h3 class="paywall-labels__title">Screenshot</h3>
+                                <ul class="paywall-labels__list">
+                                    <li class="paywall-labels__item">Number of screenshots</li>
+                                    <li class="paywall-labels__item">Cloud Storage</li>
+                                    <li class="paywall-labels__item">Screenshot History</li>
+                                    <li class="paywall-labels__item">Direct links to screenshots</li>
+                                    <li class="paywall-labels__item">Annotation tools</li>
+                                    <li class="paywall-labels__item">Annotation tools</li>
+                                </ul>
+                            </div>
+                            <div class="paywall__row">
+                                <h3 class="paywall-labels__title">Video Recording</h3>
+                                <ul class="paywall-labels__list">
+                                    <li class="paywall-labels__item">Number of video recordings</li>
+                                    <li class="paywall-labels__item">Cloud Storage</li>
+                                    <li class="paywall-labels__item">Recording History</li>
+                                    <li class="paywall-labels__item">Direct links to video recordings</li>
+                                    <li class="paywall-labels__item">Use annotation tools while recording</li>
+                                    <li class="paywall-labels__item">Maximum duration for Hard Drive Storage</li>
+                                    <li class="paywall-labels__item">Maximum duration for Cloud Storage</li>
+                                    <li class="paywall-labels__item">No ads</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="paywall__col paywall-plan paywall-plan">
+                            <div class="paywall__row paywall__row_header">
+                                <div class="paywall__status">Free</div>
+                                <div class="paywall__price">
+                                    <div class="paywall__price-value">$0</div>
+                                    <div class="paywall__price-subtext">Per month</div>
+                                </div>
+                            </div>
+                            <div class="paywall__row" data-label="Screenshot">
+                                <div class="paywall__value" data-label="Number of screenshots">
+                                    <span>50 per month</span>
+                                </div>
+                                <div class="paywall__value" data-label="Cloud Storage">
+                                    <span>1 month</span>
+                                </div>
+                                <div class="paywall__value" data-label="Screenshot History">
+                                    <img src="images/icons/icon_false.svg" alt="no">
+                                </div>
+                                <div class="paywall__value" data-label="Direct links to screenshots">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Annotation tools">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="No ads">
+                                    <img src="images/icons/icon_false.svg" alt="no">
+                                </div>
+                            </div>
+                            <div class="paywall__row" data-label="Video Recording">
+                                <div class="paywall__value" data-label="Number of video recordings">
+                                    <span>10 per month</span>
+                                </div>
+                                <div class="paywall__value" data-label="Cloud Storage">
+                                    <span>1 month</span>
+                                </div>
+                                <div class="paywall__value" data-label="Recording History">
+                                    <img src="images/icons/icon_false.svg" alt="no">
+                                </div>
+                                <div class="paywall__value" data-label="Direct links to video recordings">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Use annotation tools while recording">
+                                    <img src="images/icons/icon_false.svg" alt="no">
+                                </div>
+                                <div class="paywall__value" data-label="Maximum duration for Hard Drive Storage">
+                                    <span>30 mins</span>
+                                </div>
+                                <div class="paywall__value" data-label="Maximum duration for Cloud Storage">
+                                    <span>1 min</span>
+                                </div>
+                                <div class="paywall__value" data-label="No ads">
+                                    <img src="images/icons/icon_false.svg" alt="no">
+                                </div>
+                            </div>
+                            <button class="paywall__btn button">Get trial period</button>
+                        </div>
+                        <div class="paywall__col paywall-plan paywall-plan_premium">
+                            <div class="paywall__row paywall__row_header">
+                                <div class="paywall__status">Premium</div>
+                                <div class="paywall__price">
+                                    <div class="paywall__price-value">$7</div>
+                                    <div class="paywall__price-subtext">Per month</div>
+                                </div>
+                                <div class="switch pay-switch">
+                                    <div class="pay-switch__label pay-switch__label_sale">
+                                        Pay Annually
+                                        <div class="circle-sale">
+                                            <span>-29%</span>
+                                            <span>OFF</span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="flipswitch">
+                                        <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs">
+                                        <label class="flipswitch-label" for="fs">
+                                            <div class="flipswitch-inner"></div>
+                                            <div class="flipswitch-switch"></div>
+                                        </label>
+                                    </div> -->
+
+                                    <input type="checkbox" class="flipswitch-input" id="switch" /><label
+                                        class="flipswitch" for="switch">Toggle</label>
+
+                                    <div class="pay-switch__label">Pay Monthly</div>
+                                </div>
+                            </div>
+                            <div class="paywall__row" data-label="Screenshot">
+                                <div class="paywall__value" data-label="Number of screenshots">
+                                    <span>Unlimited</span>
+                                </div>
+                                <div class="paywall__value" data-label="Cloud Storage">
+                                    <span>1 year</span>
+                                </div>
+                                <div class="paywall__value" data-label="Screenshot History">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Direct links to screenshots">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Annotation tools">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="No ads">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                            </div>
+                            <div class="paywall__row" data-label="Video Recording">
+                                <div class="paywall__value" data-label="Number of video recordings">
+                                    <span>Unlimited</span>
+                                </div>
+                                <div class="paywall__value" data-label="Cloud Storage">
+                                    <span>1 year</span>
+                                </div>
+                                <div class="paywall__value" data-label="Recording History">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Direct links to video recordings">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Use annotation tools while recording">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                                <div class="paywall__value" data-label="Maximum duration for Hard Drive Storage">
+                                    <span>3 hours</span>
+                                </div>
+                                <div class="paywall__value" data-label="Maximum duration for Cloud Storage">
+                                    <span>30 min</span>
+                                </div>
+                                <div class="paywall__value" data-label="No ads">
+                                    <img src="images/icons/icon_true.svg" alt="yes">
+                                </div>
+                            </div>
+                            <button class="paywall__btn button">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo"><img src="images/logo.svg" alt="Footer Logo"></div>
+      <div class="footer__product">
+        <a href="#" class="footer__title">Продукт</a>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#functions">Функции</a></li>
+          <li class="footer__list-item"><a href="#advantages">Преимущества</a></li>
+          <li class="footer__list-item"><a href="#how">Как использовать</a></li>
+        </ul>
+      </div>
+      <div class="footer__product">
+        <a href="./feedback.html" class="footer__title">Обратная связь</a>
+      </div>
+      <div class="footer__product footer__product--1">
+        <a href="./privacy.html" class="footer__title">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="js/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/paywall.js"></script>
+</body>
+
+</html>

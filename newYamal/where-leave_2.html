@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/light.css" id="theme">
+</head>
+
+<body class="">
+    <main class="main-page">
+        <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <div class="header__logo">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+          </svg>
+        </div>
+        <div class="header__location">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#location"></use>
+          </svg>
+          <span>Челябинск</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__themes-btns">
+          <button id="light-btn-theme" class="btn-small header__change-theme btn-change-theme active">день</button>
+          <button id="dark-btn-theme" class="btn-small header__change-theme btn-change-theme">ночь</button>
+        </div>
+        <div class="header__visually">
+          <svg class="">
+            <use xlink:href="./img/icons/icons.svg#eye"></use>
+          </svg>
+          <span>Версия для слабовидящих</span>
+        </div>
+        <div class="burger js-show-menu">
+          <div class="burger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+        <div class="handle-banner handle-banner--leave_2">
+  <div class="container">
+    <div class="handle-banner__wrapper">
+      <div class="handle-banner__left">
+        <div class="handle-banner__breadcrumbs">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__elem">
+              <a href="/" class="bread-crumbs__link bread-crumbs__link--arrow">Главная</a>
+            </li>
+            <li class="bread-crumbs__elem">
+              <a href="#" class="bread-crumbs__link">Где жить</a>
+            </li>
+          </ul>
+        </div>
+        <div class="handle-banner__title">
+          Где жить
+        </div>
+      </div>
+      <div class="handle-banner__cards">
+        <div class="handle-banner__title handle-banner__title--onCards">
+          на Ямале
+        </div>
+        <div class="handle-banner__card card-1" style="z-index: 4;">
+          <img src="img/handle-banner/card_1.png" alt="">
+        </div>
+        <div class="handle-banner__card card-2" style="z-index: 3;">
+          <img src="img/handle-banner/card_2.png" alt="">
+        </div>
+        <div class="handle-banner__card card-3" style="z-index: 2;">
+          <img src="img/handle-banner/card_3.png" alt="">
+        </div>
+        <div class="handle-banner__card card-4" style="z-index: 1;">
+          <img src="img/handle-banner/card_4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <section class="hotel-choose">
+  <div class="container">
+    <div class="hotel-choose__filter">
+      <div class="hotel-choose__variants">
+        <div class="hotel-choose__select costumn-select">
+          <div class="costumn-select__head costumn-select__head--hidden">
+            <div class="costumn-select__icon">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-map"></use>
+              </svg>
+            </div>
+            <span class="costumn-select__val">Куда вы хотитет поехать?</span>
+            <div class="costumn-select__arrow">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="costumn-select__body">
+            <ul class="costumn-select__list">
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  Азерот
+                  <input class="choosen-radio" value="Азерот" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  Москва
+                  <input class="choosen-radio" value="Москва" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  Салехард
+                  <input class="choosen-radio" value="Салехард" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  Ямал
+                  <input class="choosen-radio" value="Ямал" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hotel-choose__select costumn-select costumn-calendar">
+          <div class="costumn-select__head">
+            <div class="costumn-select__icon">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-calendar"></use>
+              </svg>
+            </div>
+            <input type="text" class="costum-calendar" name="daterange" autocomplete="off" placeholder="Заезд – Отъезд"
+              required value="" />
+            <div class="costumn-select__arrow">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-choose__select costumn-select">
+          <div class="costumn-select__head">
+            <div class="costumn-select__icon">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-user"></use>
+              </svg>
+            </div>
+            <span class="costumn-select__val">Сколько человек?</span>
+            <div class="costumn-select__arrow">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#select-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="costumn-select__body">
+            <ul class="costumn-select__list">
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  1
+                  <input class="choosen-radio" value="1" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  2
+                  <input class="choosen-radio" value="2" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  3
+                  <input class="choosen-radio" value="3" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+              <li class="costumn-select__elem">
+                <label class="control control-radio costum-radio">
+                  4
+                  <input class="choosen-radio" value="4" type="radio" name="1" />
+                  <div class="control_indicator"></div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="show-var" class="hotel-choose__btn btn" data-do="show">Посмотреть варианты</div>
+      </div>
+      <div class="hotel-choose__btns">
+        <div class="category__btns">
+          <div class="category-selector"></div>
+          <a href="#" class="event-catalog__btn active category-btn">Все</a>
+          <a href="#" class="event-catalog__btn category-btn">Гостиницы</a>
+          <a href="#" class="event-catalog__btn category-btn">Отели</a>
+          <a href="#" class="event-catalog__btn category-btn">Хостелы</a>
+          <a href="#" class="event-catalog__btn category-btn">Апартаменты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hotel-choose__catalog">
+    <div class="hotel-choose__wrapper">
+      <div class="container">
+        <div class="hotel-choose__hotels">
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_1.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Арктика»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_2.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="0"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Хостел «Хостелы Рус»</div>
+              <div class="card-hotel__category">хостелы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_3.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="4"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Юрибей»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_4.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Россия»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_1.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Арктика»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_2.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="0"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Хостел «Хостелы Рус»</div>
+              <div class="card-hotel__category">хостелы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_3.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="4"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Юрибей»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_4.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Россия»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_1.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Арктика»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_2.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="0"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Хостел «Хостелы Рус»</div>
+              <div class="card-hotel__category">хостелы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_3.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="4"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Юрибей»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+          <a href="#" class="hotel-choose__hotel card-hotel">
+            <div class="card-hotel__body">
+              <div class="card-hotel__photo">
+                <img src="img/hotels/photo_4.jpg" alt="">
+              </div>
+              <div class="card-hotel__info">
+                <div class="card-hotel__stars" data-stars="3"></div>
+                <div class="card-hotel__btn card-choose__btn btn-reset">
+                  Выбрать
+                </div>
+              </div>
+            </div>
+            <div class="card-hotel__footer">
+              <div class="card-hotel__name">Гостиница «Россия»</div>
+              <div class="card-hotel__category">гостиницы</div>
+            </div>
+          </a>
+        </div>
+        <button class="hotel-choose__show btn">Показать ещё</button>
+        <div class="hotel-choose__pagination pagination">
+          <nav class="pagination__nav">
+            <ul class="pagination__list">
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item pagination__arrow pagination__arrow--prev">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item current">1</a>
+              </li>
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item">2</a>
+              </li>
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item">3</a>
+              </li>
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item">4</a>
+              </li>
+              <li class="pagination__elem">
+                <a href="#" class="pagination__item pagination__arrow pagination__arrow--next">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#arrow-slider"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/vk.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/inst.svg" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/icon/fb.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="footer__emal blue">info@visityamal.ru</a>
+                <a href="tel:73492244949" class="footer__phone blue">+7 (349) 224-49-49</a>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav">
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">О Ямале</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">ООПТ и пограничные зоны</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Партнеры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Туры</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Афиша</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+        <div class="header-menu">
+    <div class="header-menu__container container">
+        <div class="header-menu__wrapper">
+            <div class="header-menu__col">
+                <div class="header-menu__label">О Ямале</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Город на полярном круге</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полярный Урал ждет!</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Традиции народов Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мамонтенок Люба</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">По следам 501 стройки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">«Земля Надежды»</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Кто такие Сихиртя?</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">AuroraBorealis или Северное сияние</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Чем заняться</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туры по Ямалу</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Достопримечательности</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Музеи</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Сувенирные лавки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Мастера народных промыслов</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжные трассы и комплексы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Конференс-залы</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографические парки</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Туроператоры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Планирование поездки</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Как добраться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где остановиться</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Где поесть</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Когда лучше приезжать</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Гиды / экскурсоводы Ямала</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Полезная информация для туриста</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-menu__col">
+                <div class="header-menu__label">Туристические направления</div>
+                <ul class="header-menu__list">
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Этнографический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горный (пеший) туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Водный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экскурсионный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Горнолыжный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Событийный туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Экологический туризм</a>
+                    </li>
+                    <li class="header-menu__elem">
+                        <a href="#" class="header-menu__link">Охота и рыбалка</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script script src="js/script.js">
+</script>
+<script script src="js/form-validate.js">
+</script>
+    <script src="js/what-do.js"></script>
+</body>
+
+</html>

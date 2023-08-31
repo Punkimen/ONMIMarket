@@ -1,0 +1,21 @@
+.build-plan__list--noRender {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 25px;
+}
+
+.build-plan__list--noRender .build-plan__icon-drag:hover {
+  background: #fff;
+}
+
+.build-plan__list--noRender .build-plan__elem {
+  cursor: pointer;
+}
+
+.build-plan__elem.no-drag {
+  cursor: pointer;
+}
+
+.build-plan__icon-drag.no-drag:hover {
+  background: #fff;
+}

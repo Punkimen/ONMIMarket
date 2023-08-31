@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Project</title>
+    <link type="image/x-icon" href="img/favicon/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/favicon/favicon.ico" rel="icon">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css"
+  integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header header_enter">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <a href="/" class="header__logo">
+          <img src="img/new_logo.svg" alt="">
+          <span>Control Panel</span>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__elem active">
+              <a href="#" class="header__link">Demo</a>
+            </li>
+            <li class="header__elem">
+              <a href="#" class="header__link">My Projects</a>
+            </li>
+            <li class="header__elem">
+              <a href="#" class="header__link">Manage Account </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_create-project btn">
+            <span>+</span>
+            Create project
+          </a>
+          <div class="user">
+            <div class="user__photo">
+              <img src="img/user-photo.png" alt="">
+            </div>
+            <button type="button" class="user__btn btn-reset ">
+              Marina P.
+            </button>
+            <div class="user-menu">
+              <ul class="user-menu__list">
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Personal information
+                  </a>
+                </li>
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Account settings
+                  </a>
+                </li>
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Shared access
+                  </a>
+                </li>
+              </ul>
+              <div class="user-menu__logout">
+                <button type="button" class="btn-reset logout-btn">
+                  LOG OUT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__burger">
+          <div class="burger__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="header-mobile__wrapper">
+      <button type="button" class="header-mobile__btn btn">Contact sales</button>
+    </div>
+  </div>
+</header>
+    <section class="create-project">
+  <div class="container">
+    <h1 class="section-title create-project__title">Create project</h1>
+    <div class="create-project__progress step-progress">
+      <div class="step-progress__item active">
+        <div class="step-progress__num" data-step="1"></div>
+        <div class="step-progress__label">Project info</div>
+      </div>
+      <div class="step-progress__line"></div>
+      <div class="step-progress__item">
+        <div class="step-progress__num" data-step="2"></div>
+        <div class="step-progress__label">Manage permissions</div>
+      </div>
+      <div class="step-progress__line"></div>
+      <div class="step-progress__item">
+        <div class="step-progress__num" data-step="3"></div>
+        <div class="step-progress__label">Payment Details</div>
+      </div>
+      <div class="step-progress__line"></div>
+      <div class="step-progress__item">
+        <div class="step-progress__num" data-step="4"></div>
+        <div class="step-progress__label">Project Appearance</div>
+      </div>
+    </div>
+    <div class="create-project__steps">
+      <div class="create-project__item project-info show">
+        <div class="create-project__item-title">Project information</div>
+        <form action="#" id="project-info" class="project-info__form">
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="project-name" class="input-block__label">Project name<span>*</span></label>
+              <input id="project-name" name="project-name" type="text" placeholder="" value="" required>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="url" class="input-block__label">Stage project URL<span>*</span></label>
+              <input id="url" name="url" type="url" placeholder="your project.neofin.global" value="" required>
+            </div>
+            <div class="personal-form__hint">
+              <p>A test version will be available under this name</p>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="url-2" class="input-block__label">Production URL<span>*</span></label>
+              <input id="url-2" name="url-2" type="url" placeholder="enter your domain name" value="" required>
+            </div>
+            <div class="personal-form__hint">
+              <p>If you have problems setting up your production URL, follow the <a href="#"
+                  class="underline"><b>link</b></a></p>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="description" class="input-block__label">Project description</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="Email" class="input-block__label">Email<span>*</span></label>
+              <input id="Email" name=Email"" type="email" required>
+            </div>
+            <div class="personal-form__hint">
+              <p>You will receive a project info on this email</p>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="phone" class="input-block__label">Phone<span>*</span></label>
+              <input id="phone" name="phone" type="tel" required>
+            </div>
+            <div class="personal-form__hint">
+              <p>This phone will be used for two factor varification process</p>
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="company-name" class="input-block__label">Company name</label>
+              <input id="company-name" name="company-name" type="text">
+            </div>
+          </div>
+          <div class="personal-form__item">
+            <div class="input-block">
+              <label for="company-code" class="input-block__label">Company code</label>
+              <input id="company-code" name="company-code" type="text">
+            </div>
+          </div>
+          <div class="create-project__btns">
+            <a href="#" class="next-step__btn btn black-btn">Proceed next</a>
+          </div>
+        </form>
+      </div>
+      <div class="create-project__item permissions ">
+        <div class="create-project__item-title">Manage permissions</div>
+        <div class="permissions__body">
+          <div class="permissions-header">
+            <div class="permissions-header__wrapper">
+              <div class="permissions-header__select">
+                <div class="permissions-header__select-label">Select a project owner*</div>
+                <div class="permissions-header__radios">
+                  <label class="control control-radio control-radio_new-style">
+                    <div class="contol-group__text">I am the project owner</div>
+                    <input type="radio" name="owner" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-radio control-radio_new-style">
+                    <div class="contol-group__text">I am not the project owner</div>
+                    <input type="radio" name="owner" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+              <div class="personal-form__hint">
+                <p>You can create project on behalf of other team/person</p>
+              </div>
+            </div>
+          </div>
+          <div class="permissions-member">
+            <div class="shared-access__header">
+              <div class="shared-access__header-descr">
+                <div class="shared-access__header-label">Members and permissions</div>
+                <div class="shared-access__header-info">You will be able to add and manage members anytime</div>
+              </div>
+              <button id="add-member" class="shared-access__header-btn btn">Add member</button>
+            </div>
+            <table class="shared-access__table shared-table shared-table_2-col">
+              <thead class="shared-table__header">
+                <tr class="shared-table__row">
+                  <td class="shared-table__col">
+                    <span>Name</span>
+                  </td>
+                  <td class="shared-table__col">
+                    <span>Permission</span>
+                  </td>
+                </tr>
+              </thead>
+              <tbody class="shared-table__body">
+                <tr class="shared-table__row">
+                  <td class="shared-table__col" data-label="Name">
+                    <div class="shared-table__user">
+                      <div class="shared-table__user-initials">
+                        UN
+                      </div>
+                      <div class="shared-table__user-data">
+                        <div class="shared-table__user-name">User Name</div>
+                        <div class="shared-table__user-email">user@testaccount.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="shared-table__col" data-label="Permission">
+                    <div class="shared-table__premission costum-select">
+                      <div class="costum-select__header">
+                        <div class="costum-select__val">Owner</div>
+                      </div>
+                      <div class="costum-select__body">
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_1" checked value="Owner">
+                          <div class="costum-select__option-text">Owner</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_1" value="Admin">
+                          <div class="costum-select__option-text">Admin</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_1" value="Can edit">
+                          <div class="costum-select__option-text">Can edit</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_1" value="Can view">
+                          <div class="costum-select__option-text">Can view</div>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="shared-table__row">
+                  <td class="shared-table__col" data-label="Name">
+                    <div class="shared-table__user">
+                      <div class="shared-table__user-initials">
+                        UN
+                      </div>
+                      <div class="shared-table__user-data">
+                        <div class="shared-table__user-name">User Name</div>
+                        <div class="shared-table__user-email">user@testaccount.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="shared-table__col" data-label="Permission">
+                    <div class="shared-table__premission costum-select">
+                      <div class="costum-select__header">
+                        <div class="costum-select__val">Admin</div>
+                      </div>
+                      <div class="costum-select__body">
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_2" value="Owner">
+                          <div class="costum-select__option-text">Owner</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_2" checked value="Admin">
+                          <div class="costum-select__option-text">Admin</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_2" value="Can edit">
+                          <div class="costum-select__option-text">Can edit</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_2" value="Can view">
+                          <div class="costum-select__option-text">Can view</div>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="shared-table__row">
+                  <td class="shared-table__col" data-label="Name">
+                    <div class="shared-table__user">
+                      <div class="shared-table__user-initials">
+                        UN
+                      </div>
+                      <div class="shared-table__user-data">
+                        <div class="shared-table__user-name">User Name</div>
+                        <div class="shared-table__user-email">user@testaccount.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="shared-table__col" data-label="Permission">
+                    <div class="shared-table__premission costum-select">
+                      <div class="costum-select__header">
+                        <div class="costum-select__val">Owner</div>
+                      </div>
+                      <div class="costum-select__body">
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_3" checked value="Owner">
+                          <div class="costum-select__option-text">Owner</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_3" value="Admin">
+                          <div class="costum-select__option-text">Admin</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_3" value="Can edit">
+                          <div class="costum-select__option-text">Can edit</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_3" value="Can view">
+                          <div class="costum-select__option-text">Can view</div>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="shared-table__row">
+                  <td class="shared-table__col" data-label="Name">
+                    <div class="shared-table__user">
+                      <div class="shared-table__user-initials">
+                        UN
+                      </div>
+                      <div class="shared-table__user-data">
+                        <div class="shared-table__user-name">User Name</div>
+                        <div class="shared-table__user-email">user@testaccount.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="shared-table__col" data-label="Permission">
+                    <div class="shared-table__premission costum-select">
+                      <div class="costum-select__header">
+                        <div class="costum-select__val">Admin</div>
+                      </div>
+                      <div class="costum-select__body">
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_4" value="Owner">
+                          <div class="costum-select__option-text">Owner</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_4" checked value="Admin">
+                          <div class="costum-select__option-text">Admin</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_4" value="Can edit">
+                          <div class="costum-select__option-text">Can edit</div>
+                        </label>
+                        <label class="costum-select__option">
+                          <input type="radio" name="premission_4" value="Can view">
+                          <div class="costum-select__option-text">Can view</div>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="create-project__btns">
+            <a href="#" class="back-step__btn back-btn">return back</a>
+            <a href="#" class="next-step__btn btn black-btn">Proceed next</a>
+          </div>
+        </div>
+      </div>
+      <div class="create-project__item payment">
+        <div class="create-project__item-title">Payment details</div>
+        <div class="payment__body">
+          <form action="#" class="payment__form">
+            <div class="payment-info">Please add your credit or debet card for the future purchase and automatically
+              renew</div>
+            <div class="payment__card-number payment-input__inner">
+              <div class="input-block">
+                <label for="card-num" class="input-block__label">Card number</label>
+                <input id="card-num" name="card-num" type="text" placeholder="0000 - 0000 - 0000 - 0000" required>
+              </div>
+            </div>
+            <div class="payment__card-info payment-input__inner">
+              <div class="payment__card-date">
+                <label for="date-month" class="payment__card-label">Expiration date</label>
+                <div class="payment__date-inner">
+                  <div class="input-block">
+                    <input id="date-month" name="date-month" type="text" placeholder="MM" required>
+                  </div>
+                  <span class="border-line">/</span>
+                  <div class="input-block">
+                    <input id="date-year" name="date-year" type="text" placeholder="YY" required>
+                  </div>
+                </div>
+              </div>
+              <div class="payment__card-cvv">
+                <div class="input-block">
+                  <label for="CVV" class="input-block__label">
+                    Security code
+                    <span class="info-input" data-info="info-text">
+                      <svg class="">
+                        <use xlink:href="./img/icons/icons.svg#icons-info"></use>
+                      </svg>
+                    </span>
+                  </label>
+                  <input id="CVV" name="CVV" type="text" placeholder="CVV" required>
+                </div>
+              </div>
+            </div>
+            <div class="payment__card-name payment-input__inner">
+              <div class="input-block">
+                <label for="name-on-card" class="input-block__label">Card number</label>
+                <input id="name-on-card" name="name-on-card" type="text" placeholder="" required>
+              </div>
+            </div>
+            <div class="payment__card-save-checkbox">
+              <label class="control control-checkbox">
+                <div class="contol-group__text">Save this card for the future use</div>
+                <input type="checkbox" name="save-card" />
+                <div class="control_indicator"></div>
+              </label>
+            </div>
+            <button class="payment__card-add btn">Add card</button>
+          </form>
+        </div>
+        <div class="create-project__btns">
+          <a href="#" class="back-step__btn">return back</a>
+          <a href="#" class="next-step__btn btn black-btn">Proceed next</a>
+        </div>
+      </div>
+      <div class="create-project__item appearance ">
+        <div class="create-project__item-title">Payment details</div>
+        <div class="appearance__body">
+          <div class="appearance-item">
+            <div class="appearance-item__left">
+              <div class="appearance__logo">
+                <div class="appearance__logo-label">Logo image</div>
+                <div class="appearance__logo-add image-add">
+                  <input type="file" class="input-file" accept="image/*">
+                  <div class="image-add__instruction">
+                    <img src="img/add-photo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="appearance-item__right">
+              <div class="personal-form__hint">
+                <p>Use an emage at least 120px on 120px Maximum file size 2 Mb.
+                  Allowed file types: .jpg, .png, .svg</p>
+              </div>
+            </div>
+          </div>
+          <div class="appearance-item">
+            <div class="appearance-item__left">
+              <div class="permissions-header__select">
+                <div class="permissions-header__select-label">Interface design</div>
+                <div class="permissions-header__radios">
+                  <label class="control control-radio control-radio_new-style">
+                    <div class="contol-group__text">Default Neofin color schemme</div>
+                    <input type="radio" name="design-interface" value="default" checked />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-radio control-radio_new-style">
+                    <div class="contol-group__text">Customize color schemme</div>
+                    <input type="radio" name="design-interface" value="customize" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="appearance-item__right">
+              <div class="personal-form__hint">
+                <p>You can change the colors and upload different logo later</p>
+              </div>
+            </div>
+          </div>
+          <div class="appearance__colors">
+            <div class="appearance-item">
+              <div class="appearance-item__left">
+                <div class="appearance-color">
+                  <div class="appearance-color__label">Choose your main brand color</div>
+                  <div class="appearance-color__choose">
+                    <input id="main-color" name="color" type="color" class="appearance-color__input" value="#F05025">
+                    <input name="choose-color" name="color" type="text" data-for="#main-color"
+                      class="appearance-color__value" value="#F05025">
+                  </div>
+                </div>
+              </div>
+              <div class="appearance-item__right">
+                <div class="personal-form__hint">
+                  <p>This color will be used as a main color scheme in the admin panell</p>
+                </div>
+              </div>
+            </div>
+            <div class="appearance-item">
+              <div class="appearance-item__left">
+                <div class="appearance-color">
+                  <div class="appearance-color__label">Choose your main brand color</div>
+                  <div class="appearance-color__choose">
+                    <input id="brain-color" name="color" type="color" class="appearance-color__input" value="#98B46B">
+                    <input name="choose-color" type="text" data-for="#brain-color" class="appearance-color__value"
+                      value="#98B46B">
+                  </div>
+                </div>
+              </div>
+              <div class="appearance-item__right">
+                <div class="personal-form__hint">
+                  <p>This color will be used as a main color scheme in the admin panell</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="create-project__btns">
+          <a href="#" class="back-step__btn">return back</a>
+          <a href="#" class="next-step__btn btn black-btn">Proceed next</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+  integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.2/smooth-scrollbar.min.js"
+  integrity="sha512-PEwnonaWU3k7TR3sQuTjkR1ZXmg6s9iGWX42rhxuAufRn1j48UL1mvu2UFj1L4u8LkDzYfqYz5dAV1WpgWRhJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"
+  integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

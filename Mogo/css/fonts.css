@@ -1,0 +1,20 @@
+@font-face{
+	font-family: monsterbold;
+	src: url("font/montserratbold.woff") format("woff"), url("font/montserratbold.woff2") format("woff2");
+}
+@font-face{
+	font-family: monster;
+	src: url("font/montserrat.woff") format("woff"), url("font/montserrat.woff2") format("woff2");
+}
+@font-face{
+	font-family: Kaush;
+	src: url("font/Kaushanscript.woff") format("woff"), url("font/Kaushanscript.woff2") format("woff2");
+}
+@font-face{
+	font-family: roboto;
+	src: url("font/Roboto.woff") format("woff"), url("font/Roboto.woff2") format("woff2");
+}
+@font-face{
+	font-family: robotoital;
+	src: url("font/Robotolightitalic.woff") format("woff"), url("font/Robotolightitalic.woff2") format("woff2");
+}

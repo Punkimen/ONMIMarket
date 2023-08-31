@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Account</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css"
+  integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header header_enter">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <a href="/" class="header__logo">
+          <img src="img/new_logo.svg" alt="">
+          <span>Control Panel</span>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__elem active">
+              <a href="#" class="header__link">Demo</a>
+            </li>
+            <li class="header__elem">
+              <a href="#" class="header__link">My Projects</a>
+            </li>
+            <li class="header__elem">
+              <a href="#" class="header__link">Manage Account </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_create-project btn">
+            <span>+</span>
+            Create project
+          </a>
+          <div class="user">
+            <div class="user__photo">
+              <img src="img/user-photo.png" alt="">
+            </div>
+            <button type="button" class="user__btn btn-reset ">
+              Marina P.
+            </button>
+            <div class="user-menu">
+              <ul class="user-menu__list">
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Personal information
+                  </a>
+                </li>
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Account settings
+                  </a>
+                </li>
+                <li class="user-menu__elem">
+                  <a href="" class="user-menu__link">
+                    Shared access
+                  </a>
+                </li>
+              </ul>
+              <div class="user-menu__logout">
+                <button type="button" class="btn-reset logout-btn">
+                  LOG OUT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__burger">
+          <div class="burger__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="header-mobile__wrapper">
+      <button type="button" class="header-mobile__btn btn">Contact sales</button>
+    </div>
+  </div>
+</header>
+    <section class="manage-account">
+  <div class="container">
+    <h1 class="manage-account__title section-title">Manage account and personal information</h1>
+    <div class="manage-account__wrapper">
+      <ul class="benefits__tabs">
+        <li class="benefits__tabs-elem active">
+          <a href="#" class="benefits__tabs-link">Personal information
+          </a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Account settings
+          </a>
+        </li>
+        <li class="benefits__tabs-elem">
+          <a href="#" class="benefits__tabs-link">Shared access</a>
+        </li>
+      </ul>
+      <div class="manage-account__body">
+        <div class="manage-account__item benefits-item show">
+          <div class="tech-doc__header">Personal information</div>
+          <div class="tech-doc__body">
+            <div class="account">
+              <div class="account__title">Personal information</div>
+              <form action="#" class="personal-form">
+                <div class="personal-form__item">
+                  <div class="input-block">
+                    <label for="fullName" class="input-block__label">Full Name<span>*</span></label>
+                    <input id="fullName" name="fullName" type="text" placeholder="" value="Tomas Adams" required>
+                  </div>
+                </div>
+                <div class="personal-form__item">
+                  <div class="input-block input-block_with-status">
+                    <label for="email" class="input-block__label">Email<span>*</span></label>
+                    <input id="email" type="email" placeholder="" value="email@email.com" required>
+                    <div class="input-block__status">
+                      <div class="input-block__status-icon">
+                        <img src="img/icon/check-circle.svg" alt="check">
+                      </div>
+                      <div class="input-block__status-text">Email verified</div>
+                    </div>
+                  </div>
+                  <div class="personal-form__hint">
+                    <p>Your email can be changed in account settings</p>
+                  </div>
+                </div>
+                <div class="personal-form__item">
+                  <div class="input-block">
+                    <label for="company" class="input-block__label">Company</label>
+                    <input id="company" name="company" type="text" placeholder="" value="Finance Group inc">
+                  </div>
+                </div>
+                <div class="personal-form__item">
+                  <div class="input-block">
+                    <label for="Position" class="input-block__label">Position</label>
+                    <input id="Position" name="Position" type="text" placeholder=""
+                      value="VP of Loan management department">
+                  </div>
+                </div>
+                <div class="personal-form__item">
+                  <div class="input-block">
+                    <label for="Country" class="input-block__label">Country</label>
+                    <input id="Country" name="Country" type="text" placeholder="" value="USA">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="manage-account__item benefits-item">
+          <div class="tech-doc__header">Account settings</div>
+          <div class="tech-doc__body">
+            <div class="account">
+              <div class="account__title">Account settings</div>
+              <form action="#" class="account-settings">
+                <div class="account-settings__email">
+                  <div class="personal-form__item">
+                    <div class="input-block">
+                      <label for="email" class="input-block__label">Change your email address </label>
+                      <input id="email" type="email" placeholder="" value="email@email.com" required>
+                    </div>
+                    <div class="personal-form__hint">
+                      <p>You are logged in via Google account, using email u...r@testemail.com</p>
+                    </div>
+                  </div>
+                  <div class="account-settings__email-links">
+                    <a href="#" class="send-link">Send the activation link</a>
+                    <span class="small-text">or connect to sicials</span>
+                    <div class="account-settings__email-socials">
+                      <a href="#" class="account-settings__email-social
+                      account-settings__email-social_google">
+                        <img src="img/icon/google.svg" alt="google">
+                      </a>
+                      <a href="#" class="account-settings__email-social
+                      account-settings__email-social_linked">
+                        <img src="img/icon/linked.svg" alt="linked">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-settings__updates">
+                  <div class="account-settings__updates-title">Get new and updates from Neofin</div>
+                  <div class="account-settings__updates-wrapper">
+                    <div class="account-settings__checkboxes">
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Important system updates
+                          <span class="contol-group__text_small">You will be notified when important system changes
+                            applied</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Montly activity statistic
+                          <span class="contol-group__text_small">Your project activity monthly</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Weekly activity statistic
+                          <span class="contol-group__text_small">Your project activity weekly</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                    <div class="account-settings__checkboxes">
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Important system updates
+                          <span class="contol-group__text_small">You will be notified when important system changes
+                            applied</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Montly activity statistic
+                          <span class="contol-group__text_small">Your project activity monthly</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                      <label class="control control-group__item control-checkbox">
+                        <div class="contol-group__text">
+                          Weekly activity statistic
+                          <span class="contol-group__text_small">Your project activity weekly</span>
+                        </div>
+                        <input type="checkbox" name="updates" />
+                        <div class="control_indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-settings__footer">
+                  <buttont class="account-settings__delete-btn btn-reset">
+                    <img src="img/icon/trash.svg" alt="trash">
+                    <span>Delete account</span>
+                  </buttont>
+                  <buttont class="account-settings__save-btn btn black-btn">Save changes</buttont>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="manage-account__item benefits-item ">
+          <div class="tech-doc__header">Shared access</div>
+          <div class="tech-doc__body">
+            <div class="account">
+              <div class="account__title">Shared acces to demo</div>
+              <div class="shared-access">
+                <div class="shared-access__header">
+                  <div class="shared-access__header-descr">
+                    <div class="shared-access__header-label">Members and permissions</div>
+                    <div class="shared-access__header-info">You will be able to add and manage members anytime</div>
+                  </div>
+                  <button id="add-member" class="shared-access__header-btn btn">Add member</button>
+                </div>
+                <table class="shared-access__table shared-table">
+                  <thead class="shared-table__header">
+                    <tr class="shared-table__row">
+                      <td class="shared-table__col">
+                        <span>Name</span>
+                      </td>
+                      <td class="shared-table__col">
+                        <span>Permission</span>
+                      </td>
+                      <td class="shared-table__col">
+                        <span>Status</span>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody class="shared-table__body">
+                    <tr class="shared-table__row">
+                      <td class="shared-table__col" data-label="Name">
+                        <div class="shared-table__user">
+                          <div class="shared-table__user-initials">
+                            UN
+                          </div>
+                          <div class="shared-table__user-data">
+                            <div class="shared-table__user-name">User Name</div>
+                            <div class="shared-table__user-email">user@testaccount.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Permission">
+                        <div class="shared-table__premission costum-select">
+                          <div class="costum-select__header">
+                            <div class="costum-select__val">Owner</div>
+                          </div>
+                          <div class="costum-select__body">
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_1" checked value="Owner">
+                              <div class="costum-select__option-text">Owner</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_1" value="Admin">
+                              <div class="costum-select__option-text">Admin</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_1" value="Can edit">
+                              <div class="costum-select__option-text">Can edit</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_1" value="Can view">
+                              <div class="costum-select__option-text">Can view</div>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Status">
+                        <div class="shared-table__status">Pending</div>
+                      </td>
+                    </tr>
+                    <tr class="shared-table__row">
+                      <td class="shared-table__col" data-label="Name">
+                        <div class="shared-table__user">
+                          <div class="shared-table__user-initials">
+                            UN
+                          </div>
+                          <div class="shared-table__user-data">
+                            <div class="shared-table__user-name">User Name</div>
+                            <div class="shared-table__user-email">user@testaccount.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Permission">
+                        <div class="shared-table__premission costum-select">
+                          <div class="costum-select__header">
+                            <div class="costum-select__val">Admin</div>
+                          </div>
+                          <div class="costum-select__body">
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_2" value="Owner">
+                              <div class="costum-select__option-text">Owner</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_2" checked value="Admin">
+                              <div class="costum-select__option-text">Admin</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_2" value="Can edit">
+                              <div class="costum-select__option-text">Can edit</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_2" value="Can view">
+                              <div class="costum-select__option-text">Can view</div>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Status">
+                        <div class="shared-table__status">Activated</div>
+                      </td>
+                    </tr>
+                    <tr class="shared-table__row">
+                      <td class="shared-table__col" data-label="Name">
+                        <div class="shared-table__user">
+                          <div class="shared-table__user-initials">
+                            UN
+                          </div>
+                          <div class="shared-table__user-data">
+                            <div class="shared-table__user-name">User Name</div>
+                            <div class="shared-table__user-email">user@testaccount.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Permission">
+                        <div class="shared-table__premission costum-select">
+                          <div class="costum-select__header">
+                            <div class="costum-select__val">Owner</div>
+                          </div>
+                          <div class="costum-select__body">
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_3" checked value="Owner">
+                              <div class="costum-select__option-text">Owner</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_3" value="Admin">
+                              <div class="costum-select__option-text">Admin</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_3" value="Can edit">
+                              <div class="costum-select__option-text">Can edit</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_3" value="Can view">
+                              <div class="costum-select__option-text">Can view</div>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Status">
+                        <div class="shared-table__status">Pending</div>
+                      </td>
+                    </tr>
+                    <tr class="shared-table__row">
+                      <td class="shared-table__col" data-label="Name">
+                        <div class="shared-table__user">
+                          <div class="shared-table__user-initials">
+                            UN
+                          </div>
+                          <div class="shared-table__user-data">
+                            <div class="shared-table__user-name">User Name</div>
+                            <div class="shared-table__user-email">user@testaccount.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Permission">
+                        <div class="shared-table__premission costum-select">
+                          <div class="costum-select__header">
+                            <div class="costum-select__val">Admin</div>
+                          </div>
+                          <div class="costum-select__body">
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_4" value="Owner">
+                              <div class="costum-select__option-text">Owner</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_4" checked value="Admin">
+                              <div class="costum-select__option-text">Admin</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_4" value="Can edit">
+                              <div class="costum-select__option-text">Can edit</div>
+                            </label>
+                            <label class="costum-select__option">
+                              <input type="radio" name="premission_4" value="Can view">
+                              <div class="costum-select__option-text">Can view</div>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shared-table__col" data-label="Status">
+                        <div class="shared-table__status">Activated</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+  integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.2/smooth-scrollbar.min.js"
+  integrity="sha512-PEwnonaWU3k7TR3sQuTjkR1ZXmg6s9iGWX42rhxuAufRn1j48UL1mvu2UFj1L4u8LkDzYfqYz5dAV1WpgWRhJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"
+  integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

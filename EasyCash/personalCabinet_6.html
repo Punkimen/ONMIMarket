@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/resize.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flex-wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="burger__menu">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <rect width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                                    <rect x="5" y="6" width="8" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                    <rect y="12" width="13" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="13" height="13" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="header__left">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header__menu">
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <li class="menu__list-item">
+                                            <a id="about" class="menu__list-link" href="#">
+                                                О нас
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link" href="#">
+                                                Получить
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link" href="#">
+                                                Акции
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header__support">
+                            <div class="header__support-label">
+                                Поддержка:
+                            </div>
+                            <div class="header__support-phones">
+                                <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                            </div>
+                        </div>
+                        <div class="header__account">
+                            <div class="account__language">
+                                <div class="account__language-item">ua</div>
+                                <div class="account__language-item active">ru</div>
+                            </div>
+                            <a href="#" class="account btn  btn-bg">
+                                Погасить
+                            </a>
+                            <div class="account account__name">
+                                <span>Павленко Н.Н</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                                        stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                                        stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="account__name-menu">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="">Мой профиль</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Мои кредиты</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Приведи друга</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Мои транзакции</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Выход</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__account-phone">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="account__name-menu account__name-menu_mobile">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="">Мой профиль</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Мои кредиты</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Приведи друга</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Мои транзакции</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Выход</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainMenu">
+
+                    <div class="mainMenu__inner">
+                        <div class="mainMenu__inner-menu">
+                            <nav class="mainMenu__menu">
+                                <ul class="mainMenu__list">
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Вопросы и ответы
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mainMenu__inner-lang">
+                            <div class="account__language-item">ua</div>
+                            <div class="account__language-item active">ru</div>
+                        </div>
+                        <div class="header__support header__support_mobile">
+                            <div class="header__support-label">
+                                Поддержка:
+                            </div>
+                            <div class="header__support-phones">
+                                <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                            </div>
+                        </div>
+                        <div class="mainMenu__inner-btns">
+                            <a href="#" class="mainMenu__inner-btn btn btn-transparent">Личный кабинет</a>
+                            <a href="#" class="mainMenu__inner-btn btn">Погасить</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="profile-head">
+                <div class="container container_profile">
+                    <div class="profile-head__title">Мои кредиты</div>
+                </div>
+            </section>
+            <section class="persArea">
+                <div class="container container_profile">
+                    <div class="tabs__content-item credit-history">
+                        <div class="tabs__content-section">
+                            <div class="tabs__content-head">
+                                <h3 class="head__title">Кредитная история</h3>
+                            </div>
+                            <div class="table__credits">
+                                <div class="table__credits-head">
+                                    <div class="credits-head-title">Номер договора</div>
+                                    <div class="credits-head-title credits-summ">Сумма</div>
+                                    <div class="credits-head-title credits-date">Дата</div>
+                                    <div class="credits-head-title">Статус</div>
+                                </div>
+                                <div class="table__credits-item table__credits-item_approved">
+                                    <div class="table__credits-row">
+                                        <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                            КК - 12357800
+                                            <div class="credit__date-info">
+                                                от 12.08.2019
+                                            </div>
+                                            <div class="credit__summ-info">на сумму 20 000 грн</div>
+                                        </div>
+                                        <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                        </div>
+                                        <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                        </div>
+                                        <div class="credits-item-text credits-status" data-title="Статус">Кредит
+                                            одобрен</div>
+                                    </div>
+                                    <div class="table__credits-info">
+                                        <div class="credits__info-item">
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата заявки на кредит</div>
+                                                <div class="info-row-date">12.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Плановая дата погашения</div>
+                                                <div class="info-row-date">28.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Процентная ставка в день</div>
+                                                <div class="info-row-date">2%</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы кредита</div>
+                                                <div class="info-row-date">20000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы процентов за весь срок</div>
+                                                <div class="info-row-date">2000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Срок кредита, дней</div>
+                                                <div class="info-row-date">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="credits__info-btns">
+                                            <div class="credits__info-btn btn">Оформить кредит</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table__credits-item table__credits-item_expired">
+                                    <div class="table__credits-row">
+                                        <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                            КК - 12357800
+                                            <div class="credit__date-info">
+                                                от 12.08.2019
+                                            </div>
+                                            <div class="credit__summ-info">на сумму 20 000 грн</div>
+                                        </div>
+                                        <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                        </div>
+                                        <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                        </div>
+                                        <div class="credits-item-text credits-status expired" data-title="Статус">
+                                            Просрочен</div>
+                                    </div>
+                                    <div class="table__credits-info">
+                                        <div class="credits__info-item">
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата оформления кредита</div>
+                                                <div class="info-row-date">12.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Плановая дата закрытия кредита</div>
+                                                <div class="info-row-date">28.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Процентная ставка в день</div>
+                                                <div class="info-row-date">2%</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Просроченная сумма кредита</div>
+                                                <div class="info-row-date">20000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Просроченные проценты</div>
+                                                <div class="info-row-date">2000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Просроченные повышенные проценты</div>
+                                                <div class="info-row-date">3000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Пеня в день</div>
+                                                <div class="info-row-date">0%</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дней просрочки</div>
+                                                <div class="info-row-date">16</div>
+                                            </div>
+                                            <div class="credits__info-row credits__info-row_indebtedness">
+                                                <div class="info-row-text">ВСЕГО ЗАДОЛЖЕННОСТЬ</div>
+                                                <div class="info-row-date">25000 грн</div>
+                                            </div>
+                                        </div>
+                                        <div class="credits__info-btns">
+                                            <div class="credits__info-btn credits__info-btn_prolog btn btn-transparent">
+                                                Пролонгировать</div>
+                                            <div class="credits__info-btn btn">Оформить кредит</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table__credits-item table__credits-item_closed">
+                                    <div class="table__credits-row">
+                                        <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                            КК - 12357800
+                                            <div class="credit__date-info">
+                                                от 12.08.2019
+                                            </div>
+                                            <div class="credit__summ-info">на сумму 20 000 грн</div>
+                                        </div>
+                                        <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                        </div>
+                                        <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                        </div>
+                                        <div class="credits-item-text credits-status closed" data-title="Статус">
+                                            Закрыт</div>
+                                    </div>
+                                    <div class="table__credits-info">
+                                        <div class="credits__info-item">
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата оформления кредита</div>
+                                                <div class="info-row-date">12.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата закрытия кредита</div>
+                                                <div class="info-row-date">28.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Процентная ставка в день</div>
+                                                <div class="info-row-date">2%</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы кредита</div>
+                                                <div class="info-row-date">20000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы процентов за весь срок</div>
+                                                <div class="info-row-date">2000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Срок кредита, дней</div>
+                                                <div class="info-row-date">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="credits__info-btns">
+                                            <div class="credits__info-btn btn">Оформить новый </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table__credits-item table__credits-item_closed">
+                                    <div class="table__credits-row">
+                                        <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                            КК - 12357800
+                                            <div class="credit__date-info">
+                                                от 12.08.2019
+                                            </div>
+                                            <div class="credit__summ-info">на сумму 20 000 грн</div>
+                                        </div>
+                                        <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                        </div>
+                                        <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                        </div>
+                                        <div class="credits-item-text credits-status prolong" data-title="Статус">
+                                            Пролонгирован</div>
+                                    </div>
+                                    <div class="table__credits-info">
+                                        <div class="credits__info-item">
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата пролонгации кредита</div>
+                                                <div class="info-row-date">12.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Дата окончания пролонгации кредита</div>
+                                                <div class="info-row-date">28.08.2019</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Процентная ставка в день</div>
+                                                <div class="info-row-date">2%</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы кредита</div>
+                                                <div class="info-row-date">20000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Суммы процентов за весь срок</div>
+                                                <div class="info-row-date">2000 грн</div>
+                                            </div>
+                                            <div class="credits__info-row">
+                                                <div class="info-row-text">Срок кредита, дней</div>
+                                                <div class="info-row-date">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="credits__info-btns">
+                                            <div class="credits__info-btn credits__info-btn_prolog btn btn-transparent">
+                                                Пролонгировать снова</div>
+                                            <div class="credits__info-btn btn">Погасить</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-up">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__left-title">
+                                <a href="#">О компании</a>
+                            </div>
+                            <div class="footer__left-title">
+                                <a href="#">Полезные ссылки</a>
+                            </div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__right-support">
+                                <div class="support__title">Служба поддержки</div>
+                                <div class="support__phone">
+                                    <a href="#">+38 (044) 338-07-79</a>
+                                </div>
+                            </div>
+                            <div class="footer__right-time">Время работы: с 9:00 до 18:00
+                                без перерыва и выходных</div>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-down">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__copy">© 2020 “Easy Cash”. Все права защищены</div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__social">
+                                <div class="footer__social-text">Мы в социальных сетях:</div>
+                                <div class="footer__social-ico">
+                                    <a href="#" class="social__icon">
+                                        <img src="images/instagram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="social__icon">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="chatbot">
+        <div class="chatbot__messanger">
+            <div class="chatbot__messanger-item veber"><a href="#">
+                    Viber</a></div>
+            <div class="chatbot__messanger-item messenger"><a href="#">
+                    Messenger</a></div>
+            <div class="chatbot__messanger-item telegram"><a href="#">
+                    Telegram</a></div>
+        </div>
+        <img src="images/chatbot.png" alt="">
+    </div>
+</body>
+
+</html>

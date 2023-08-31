@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css"
+  integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header header_sign">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <a href="/" class="header__logo">
+          <img src="img/new_logo.svg" alt="">
+          <span>Control Panel</span>
+        </a>
+      </div>
+      <div class="header__right">
+        <div class="header__burger">
+          <div class="burger__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="header-mobile__wrapper">
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__elem active">
+            <a href="#" class="header__link">Demo</a>
+          </li>
+          <li class="header__elem">
+            <a href="#" class="header__link">My Projects</a>
+          </li>
+          <li class="header__elem">
+            <a href="#" class="header__link">Manage Account </a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header-mobile__btn btn">Contact sales</button>
+    </div>
+  </div>
+</header>
+  <main class="content-page">
+    <section class="sign-up">
+      <div class="container">
+        <div class="sign-up__steps">
+          <span class="sign-up__handle active"></span>
+          <span class="sign-up__handle"></span>
+        </div>
+        <div class="sign-up__wrapper">
+          <div class="sign-up__step sign-up__enter ">
+            <h1 class="sign-up__title section-title">Welcome to Neofin</h1>
+            <div class="sign-up__subtitle">Let’s setup your Demo by few simple steps</div>
+            <div class="sign-up__items">
+              <a href="" class="sign-up__item sign-up__item_email">
+                <img src="img/icon/mail.svg" alt="">
+                <span>Sign Up with Email</span>
+              </a>
+              <a href="" class="sign-up__item sign-up__item_google">
+                <img src="img/icon/google.svg" alt="">
+                <span>Sign Up with Google</span>
+              </a>
+              <a href="" class="sign-up__item sign-up__item_linkedin">
+                <img src="img/icon/linked.svg" alt="">
+                <span>Sign Up with LinkedIn</span>
+              </a>
+            </div>
+            <div class="sign-up__privacy">
+              By signing up you agree to the <a href="">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="sign-up__step sign-up__setup setup-account show">
+            <h1 class="sign-up__title section-title">Setup your account</h1>
+            <form id="registration" action="#" class="setup-account__form">
+              <div class="setup-account__body">
+                <div class="input-block">
+                  <label for="email" class="input-block__label">Email<span>*</span></label>
+                  <input id="email" type="email" placeholder="" required>
+                </div>
+                <div class="input-block">
+                  <label for="fullName" class="input-block__label">Full Name<span>*</span></label>
+                  <input id="fullName" name="fullName" type="text" placeholder="" required>
+                </div>
+                <div class="input-block">
+                  <label for="company" class="input-block__label">Company</label>
+                  <input id="company" name="company" type="text" placeholder="">
+                </div>
+                <div class="input-block">
+                  <label for="Position" class="input-block__label">Position</label>
+                  <input id="Position" name="Position" type="text" placeholder="">
+                </div>
+                <div class="input-block">
+                  <label for="Country" class="input-block__label">Country</label>
+                  <input id="Country" name="Country" type="text" placeholder="">
+                </div>
+                <div class="input-checkbox">
+                  <label class="control control-group__item control-checkbox">
+                    <div class="contol-group__text">Send me information about new products and services, and
+                      recommendations
+                      by mail</div>
+                    <input type="checkbox" name="send-agree" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="setup-account__btn btn black-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+  integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.2/smooth-scrollbar.min.js"
+  integrity="sha512-PEwnonaWU3k7TR3sQuTjkR1ZXmg6s9iGWX42rhxuAufRn1j48UL1mvu2UFj1L4u8LkDzYfqYz5dAV1WpgWRhJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"
+  integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/script.js"></script>
+  <script src="js/inputLangValidate.js"></script>
+</body>
+
+</html>

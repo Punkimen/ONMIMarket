@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenpixel - Feedback</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/icons/site.webmanifest">
+    <link rel="mask-icon" href="./images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/newStyle.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/newStyles.css" />
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <header class="header">
+  <div class="container">
+    <div class="header__navbar">
+      <div class="header__logo">
+        <a href="./index.html" class="header__logo-link"><img src="images/logo.svg" alt="Logo" /></a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Features</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Advantages</a>
+          </li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">Pricing</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">How to use</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-list-link" href="#">FAQ</a></li>
+        </ul>
+        <div class='header__language'>
+          <details class='details'>
+            <summary class="summary">English</summary>
+            <div class='opt-wrapper'>
+              <a href="./index.html" type="button" data-lang='russian' class='opt '>RU</a>
+              <a href="./eng/index.html" type="button" data-lang='english' class='opt selected'>ENG</a>
+            </div>
+          </details>
+        </div>
+      </nav>
+      <div class="burger"><span></span></div>
+    </div>
+  </div>
+</header>
+        <main class="main">
+            <section class="feedback">
+                <div class="feedback__bg">
+                    <img src="images/feedback/bg.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="feedback__inner-block">
+                        <h1 class="title feedback__title">Feedback</h1>
+                        <form action="mail.php" class="form" id="form" method="POST" enctype="multipart/form-data">
+                            <div id="notifications_success" class="notifications notifications_success">
+                                <img src="images/success.svg" alt="success">
+                                The request has been sent
+                            </div>
+                            <input type="hidden" name="admin_email[]" value="hello@screenshoter.plus">
+                            <input type="hidden" name="form_subject" value="Тема письма">
+                            <div class="feedback__form-item form-control">
+                                <input type="text" id="feedback__form-name" class="feedback__form-name notempty"
+                                    data-validate-field="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="feedback__form-item form-control">
+                                <input type="text" id="feedback__form-email" class="feedback__form-email notempty"
+                                    data-validate-field="email" name="email" placeholder="E-mail">
+                            </div>
+
+                            <div class="feedback__form-item form-control">
+                                <select id="feedback__form-subject" data-validate-field="myField"
+                                    class="rev-select-box feedback__form-subject notempty" name="subject">
+                                    <option value="" disabled selected>Subject</option>
+                                    <option value="problem">Problem</option>
+                                    <option value="wish">Finance</option>
+                                    <option value="wish">Wishes</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="cooperation">Cooperation</option>
+                                </select>
+                            </div>
+
+                            <div class="feedback__form-item form-control">
+                                <textarea id="feedback__form-message" class="feedback__form-message notempty"
+                                    data-validate-field="text" name="message" placeholder="Message"></textarea>
+                            </div>
+
+                            <button class="feedback__form-submit button" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo"><img src="images/logo.svg" alt="Footer Logo"></div>
+      <div class="footer__product">
+        <a href="#" class="footer__title">Продукт</a>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#functions">Функции</a></li>
+          <li class="footer__list-item"><a href="#advantages">Преимущества</a></li>
+          <li class="footer__list-item"><a href="#how">Как использовать</a></li>
+        </ul>
+      </div>
+      <div class="footer__product">
+        <a href="./feedback.html" class="footer__title">Обратная связь</a>
+      </div>
+      <div class="footer__product footer__product--1">
+        <a href="./privacy.html" class="footer__title">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="js/lib.min.js"></script>
+    <script src="js/longbow.slidercaptcha.min.js"></script>
+    <script src="js/custom-selectbox.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/newScript.js"></script>
+</body>
+
+</html>

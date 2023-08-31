@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screenshoter - Feedback</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../images/icons/site.webmanifest">
+    <link rel="mask-icon" href="../images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/libs.min.css" />
+    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slidercaptcha.min.css">
+    <link rel="stylesheet" href="../css/justValidateTooltip.min.css">
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <style>
+      .feedback .js-validate-error-label{
+        left: auto;
+        right: -220px;
+        top: 30%;
+      }
+      @media (max-width: 1190px){
+        .feedback .js-validate-error-label{
+          right: calc(-120px + (-220 - -120) * ((100vw - 320px) / (1190 - 320)));
+        }
+      }
+      @media (max-width: 700px){
+        .feedback .js-validate-error-label{
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          max-width: 100%;
+          width: 100%;
+          text-align: center;
+          top: -20px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="body__wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__navbar">
+            <div class="header__logo">
+              <a href="../eng/index.html" class="header__logo-link"><img src="../images/logo-eng.svg" alt="Logo"/></a>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="../eng/index.html#functions">Features</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="../eng/index.html#advantages">Advantages</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="../eng/index.html#how">How to use</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="../eng/index.html#faq">FAQ (F.A.Q)</a></li>
+              </ul>
+              <div class='header__language'>
+                <details class='details'>
+               <summary class="summary">English</summary>
+               <div class='opt-wrapper'>
+                 <a href="../feedback.html" type="button" data-lang='russian' class='opt'>RU</a>
+                 <a href="../eng/feedback.html" type="button" data-lang='english' class='opt selected'>ENG</a>
+                </div>
+              </details>
+              </div>
+            </nav>
+            <div class="burger"><span></span></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="feedback">
+        <div class="container">
+          <h1 class="feedback__title">Feed<span>back</span></h1>
+          <div class="feedback__form-wrapper">
+            <form action="mail.php" class="feedback__form form" id="form" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="admin_email[]" value="hello@screenshoter.plus">
+              <input type="hidden" name="form_subject" value="Messag subject">
+
+              <div class="feedback__form-item form-control">
+              <label for="feedback__form-email">E-mail</label>
+              <input type="text" id="feedback__form-email" class="feedback__form-email notempty" data-validate-field="email" name="email" placeholder="Enter your email">
+              </div>
+
+              <div class="feedback__form-item form-control">
+              <label for="feedback__form-subject">Subject</label>
+              <select id="feedback__form-subject" data-validate-field="myField" class="rev-select-box feedback__form-subject notempty" name="subject">
+                <option value="" disabled selected>Select a subjct</option>
+                <option value="problem">Problem</option>
+                <option value="wish">Wish</option>
+                <option value="review">Review</option>
+                <option value="collab">Collaboration</option>
+              </select>
+              </div>
+
+              <div class="feedback__form-item form-control">
+              <label for="feedback__form-message">Message</label>
+              <textarea id="feedback__form-message" class="feedback__form-message notempty" data-validate-field="text" name="message" placeholder="Enter the message"></textarea>
+              </div> 
+
+              <div class="checkbox-container">
+                <input type="checkbox" id="rememberMe" name="checkbox" checked required/>
+                <label class="checkbox" for="rememberMe"></label>
+                <label class="checkbox-text" for="rememberMe">I have read the <a href="../eng/privacy.html" target="_blank">privacy policy</a> and consent to the processing of personal data.</label>
+              </div>
+
+              <div class="feedback__form-captcha">
+              <label for="captcha">Solve the captcha</label>
+              <div id="captcha"></div>
+              </div>
+
+                <button class="feedback__form-submit button" disabled type="submit">Send</button>
+            </form>
+          </div>
+          
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="images/check-circle.svg" alt="">
+              <p>The message has been sent!</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo"><img src="../images/logo-eng.svg" alt="Footer Logo"></div>
+      <div class="footer__product">
+        <a href="#" class="footer__title">Product</a>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="../eng/index.html#functions">Features</a></li>
+          <li class="footer__list-item"><a href="../eng/index.html#advantages">Advantages</a></li>
+          <li class="footer__list-item"><a href="../eng/index.html#how">How to use</a></li>
+        </ul>
+      </div>
+      <div class="footer__product">
+        <a href="../eng/feedback.html" class="footer__title">Feedback</a>
+      </div>
+      <div class="footer__product footer__product--1">
+        <a href="../eng/privacy.html" class="footer__title">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+    <script src="../js/lib.min.js"></script>
+    <script src="../js/longbow.slidercaptcha.min.js"></script>
+    <script src="../js/custom-selectbox.js"></script>
+    <script src="../js/just-validate.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script>
+      sliderCaptcha({
+          id: 'captcha',
+          width: 280,
+          height: 150,
+          sliderL: 42,
+          sliderR: 9,
+          offset: 8,
+          loadingText: 'Loading...',
+          failedText: 'Try again',
+          barText: 'Slide right to fill',
+          repeatIcon: 'fa fa-redo',
+          setSrc: function () {
+              
+          },
+          onSuccess: function () {
+            document.querySelector(".feedback__form-submit").removeAttribute("disabled");
+            document.querySelector(".feedback__form-submit").classList.add("succes");
+          },
+          onFail: function () {
+            document.querySelector(".feedback__form-submit").classList.remove("succes");
+          },
+          onRefresh: function () {
+          
+          }
+      });
+  </script>
+
+  <script>
+    let validateForms = function(selector, rules, succesModal, yaGoal){
+  new window.JustValidate(selector, {
+    rules: rules,
+    messages: {
+      email: {required:'This field is required',
+              email: 'Enter a valid Email'},
+      text: 'This field is required',
+      myField: 'This field is required'
+    },
+
+    submitHandler: function(form) {
+      let formData = new FormData(form);
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						console.log('Sent');
+
+            let modal = document.getElementById("myModal");
+            let span = document.getElementsByClassName("close")[0];
+            modal.style.display = "flex";
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+					}
+				}
+			}
+
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+			form.reset();
+    }
+  });
+}
+
+validateForms('.feedback__form', {text: {required: true}, email: {required: true, email: true}, myField: {required: true}}, '.modal', 'send goal');
+  </script>
+  </body>
+</html>

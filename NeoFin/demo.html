@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neofin</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+  integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.css"
+  integrity="sha512-NGDSD+b9ygs7E3Bu7orcEL8DojlfYLZGfNkZpCsFlMs6vEM3Q36iXc1oNOLya5bLWrqD+hHoV1Ii2OMqkYZznw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="demo">
+        <aside class="demo-menu close">
+            <div class="demo-menu__top">
+                <div class="demo-menu__header">
+                    <div class="demo-menu__logo">
+                        Neofin Demo
+                    </div>
+                    <button class="demo-menu__open btn-reset">
+                        <img src="img/icon/chevrons-left.svg" alt="arrows">
+                    </button>
+                </div>
+                <ul class="demo-menu__tabs">
+                    <li class="demo-menu__tab">
+                        <a href="#" class="demo-tab active">
+                            <div class="demo-tab__icon">
+                                <img src="img/demo/dashboard-icon.svg" alt="dashboard">
+                            </div>
+                            <div class="demo-tab__label">Dashboard</div>
+                        </a>
+                    </li>
+                    <li class="demo-menu__tab">
+                        <a href="#" class="demo-tab">
+                            <div class="demo-tab__icon">
+                                <img src="img/demo/settings-icon.svg" alt="settings">
+                            </div>
+                            <div class="demo-tab__label">Settings</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="demo-menu__modules demo-modules">
+                    <div class="demo-modules__label">Modules</div>
+                    <ul class="demo-modules__list">
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">POS credit / Buy Now Pay Later</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">Decision engine / Credit scoring</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">Loan accounting system</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">APIs integration</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">Digital onboarding + KYC</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">CRM</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">Debt collection</a>
+                        </li>
+                        <li class="demo-modules__elem">
+                            <a href="" class="demo-modules__link">Mobile api</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="demo-menu__bottom">
+                <div class="demo-menu__trial">
+                    <div class="demo-menu__trial-content">
+                        <div class="demo-menu__trial-label">Your Demo Trial</div>
+                        <a class="demo-menu__trial-link ">contact us</a>
+                    </div>
+                    <div class="demo-menu__trial-progress">
+                        <div id="progress-demo" class="demo-progress__range"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="demo-body">
+            <div class="demo-body__header">
+                <div class="demo-body__header-left">
+                    <div class="demo-body__header-choose">
+                        <div class="demo-body__header-label">Dashboard Insights</div>
+                        <div class="demo-body__header-select costum-select">
+                            <div class="costum-select__header">
+                                <div class="costum-select__val">december 2021</div>
+                            </div>
+                            <div class="costum-select__body">
+                                <label class="costum-select__option">
+                                    <input type="radio" name="Dashboard-insights" checked value="december 2021">
+                                    <div class="costum-select__option-text">december 2021</div>
+                                </label>
+                                <label class="costum-select__option">
+                                    <input type="radio" name="Dashboard-insights" value="semptember 2021">
+                                    <div class="costum-select__option-text">semptember 2021</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-body__header-right">
+                    <div class="demo-body__header-choose">
+                        <a href="#" class="demo-body__header-notifications">
+                            <img src="img/icon/notifications.svg" alt="notifications">
+                            <span class="notifications-quantity">
+                                12
+                            </span>
+                        </a>
+                        <div class="demo-body__header-select costum-select">
+                            <div class="costum-select__header">
+                                <div class="costum-select__val">show actions</div>
+                            </div>
+                            <div class="costum-select__body">
+                                <label class="costum-select__option">
+                                    <input type="radio" name="premission_1" checked value="Super Admin">
+                                    <div class="costum-select__option-text">Super Admin</div>
+                                </label>
+                                <label class="costum-select__option">
+                                    <input type="radio" name="premission_1" value="Admins">
+                                    <div class="costum-select__option-text">Admins</div>
+                                </label>
+                                <label class="costum-select__option">
+                                    <input type="radio" name="premission_1" value="Guest">
+                                    <div class="costum-select__option-text">Guest</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-body__wrapper">
+                <div class="demo-body__wrapper-left">
+                    <div class="demo-body__block demo-statistics">
+                        <div class="demo-statistics__wrapper">
+                            <div class="demo-statistics__item">
+                                <div class="demo-statistics__label">Active loans</div>
+                                <div class="demo-statistics__value">355</div>
+                                <div class="demo-statistics__percent">+45%</div>
+                            </div>
+                            <div class="demo-statistics__item">
+                                <div class="demo-statistics__label">leads</div>
+                                <div class="demo-statistics__value">1,574</div>
+                                <div class="demo-statistics__percent">–5%</div>
+                            </div>
+                            <div class="demo-statistics__item">
+                                <div class="demo-statistics__label">finalised loans</div>
+                                <div class="demo-statistics__value">72</div>
+                                <div class="demo-statistics__percent">+3%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-body__block">
+                        <div class="demo-body__block-header">
+                            <div class="demo-body__block-label">Applications: approved vs rejected</div>
+                            <div class="demo-body__block-settings">
+                                <span class="setting-dots"></span>
+                                <span class="setting-dots"></span>
+                            </div>
+                        </div>
+                        <div class="demo-body__chart">
+                            <!-- <canvas id="chart_1" width="500" height="200"></canvas> -->
+                            <div id="chart_1" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+                        </div>
+                    </div>
+                    <div class="demo-body__block">
+                        <div class="demo-body__block-header">
+                            <div class="demo-body__block-label">Applications: approved vs rejected</div>
+                            <div class="demo-body__block-settings">
+                                <span class="setting-dots"></span>
+                                <span class="setting-dots"></span>
+                            </div>
+                        </div>
+                        <div class="demo-body__chart">
+                            <div id="chart_2" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+                        </div>
+                    </div>
+                    <div class="demo-body__block">
+                        <div class="demo-body__block-header">
+                            <div class="demo-body__block-label">Portfolio </div>
+                            <div class="demo-body__block-settings">
+                                <span class="setting-dots"></span>
+                                <span class="setting-dots"></span>
+                            </div>
+                        </div>
+                        <div class="demo-body__chart">
+                            <div id="chart_3" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-body__wrapper-right">
+                    <div class="demo-body__block">
+                        <div class="demo-body__block-header">
+                            <div class="demo-body__block-label">Lead consultants</div>
+                            <div class="demo-body__block-settings">
+                                <span class="setting-dots"></span>
+                                <span class="setting-dots"></span>
+                            </div>
+                        </div>
+                        <div class="lead-consultants">
+                            <div class="lead-consultants__person">
+                                <div class="lead-consultants__photo">
+                                    <img src="img/consultants/pesron_1.png" alt="">
+                                </div>
+                                <div class="lead-consultants__content">
+                                    <div class="lead-consultants__name">John Cox</div>
+                                    <div class="lead-consultants__stat">
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">leads: </div>
+                                            <div class="lead-consultants__stat-value">398 (33%)</div>
+                                        </div>
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">loan amount: </div>
+                                            <div class="lead-consultants__stat-value">$251,300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lead-consultants__person">
+                                <div class="lead-consultants__photo">
+                                    <img src="img/consultants/pesron_2.png" alt="">
+                                </div>
+                                <div class="lead-consultants__content">
+                                    <div class="lead-consultants__name">Jenifer Villanueva</div>
+                                    <div class="lead-consultants__stat">
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">leads: </div>
+                                            <div class="lead-consultants__stat-value">398 (33%)</div>
+                                        </div>
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">loan amount: </div>
+                                            <div class="lead-consultants__stat-value">$251,300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lead-consultants__person">
+                                <div class="lead-consultants__photo">
+                                    <img src="img/consultants/pesron_3.png" alt="">
+                                </div>
+                                <div class="lead-consultants__content">
+                                    <div class="lead-consultants__name">Amanda Gulavierri </div>
+                                    <div class="lead-consultants__stat">
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">leads: </div>
+                                            <div class="lead-consultants__stat-value">398 (33%)</div>
+                                        </div>
+                                        <div class="lead-consultants__stat-item">
+                                            <div class="lead-consultants__stat-label">loan amount: </div>
+                                            <div class="lead-consultants__stat-value">$251,300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-body__block">
+                        <div class="demo-body__block-header">
+                            <div class="demo-body__block-label">Activity log</div>
+                            <div class="demo-body__block-settings">
+                                <span class="setting-dots"></span>
+                                <span class="setting-dots"></span>
+                            </div>
+                        </div>
+                        <div class="activity-log">
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Approved</div>
+                                <time class="activity-log__date">Dec 16, 20:42</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">New lead</div>
+                                <time class="activity-log__date">Dec 16, 17:07</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Rejected</div>
+                                <time class="activity-log__date">Dec 16, 15:32</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Loan payment overdue</div>
+                                <time class="activity-log__date">Dec 16, 15:32</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Technical error</div>
+                                <time class="activity-log__date">Dec 15, 11:20</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Pre-approved</div>
+                                <time class="activity-log__date">Dec 14, 17:07</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Approved</div>
+                                <time class="activity-log__date">Dec 13, 15:32</time>
+                            </div>
+                            <div class="activity-log__item">
+                                <div class="activity-log__status">Loan payment overdue</div>
+                                <time class="activity-log__date">Dec 10, 15:32</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="popups">
+  <div class="popups__inner">
+    <div id="check-mail" class="popup">
+      <div class="popup__content">
+        <div class="popup__title">Check your email</div>
+        <div class=" popup__text">
+          <p>Automaticaly generated password was sent to <b>email@email.com</b>
+
+          </p>
+          <p> check your inbox and <b>follow the link</b> in the emai to finish registration in our system</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="success" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/success-icon.svg" alt="">
+        </div>
+        <div class="popup__title">Success</div>
+        <div class=" popup__text">
+          <p>Your invitation was sent successfully to <b>email@email.com.</b></p>
+
+          <p>You can manage permissions or invite more collaborators in <b>Share Access To Demo</b> tab in the control
+            panel</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="project-loading" class="popup popup-loading">
+      <div class="popup__content">
+        <div class="popup__title">Your project is Loading</div>
+        <div class=" popup__text">
+          <p>An estimated finish time is <b>2 hours 45 mins</b> </p>
+        </div>
+        <div class="loading popup__loading">
+          <span class="loading__progress" data-value="20"></span>
+          <span class="loading__back"></span>
+        </div>
+        <div class=" popup__text">
+          <p>We will send you an email notification when the demo is ready to use.</p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          OK
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="invitation" class="popup invitation-popup ">
+      <div class="popup__content">
+        <div class="popup__title">NeoFin</div>
+        <div class=" popup__text">
+          <p> Hi,</p>
+
+          <p>You have been invited to NeoFin by Patric Smith to participate in demo version of our loan management
+            system.</p>
+
+          <p>Log in to your NeoFin account to start using demo collaboratively</p>
+        </div>
+        <div class="invitation-links">
+          <button type="button" class="invitation-links__accept btn black-btn">
+            Accept an invitation</button>
+          <div class=" invitation-links__text">or follow the link below</div>
+          <a href=""
+            class="invitation-links__link underline">https://atlassian.design/components/form/usage/components/form/...</a>
+        </div>
+        <div class=" popup__text popup__text_invitation">
+          <p><span class="block"><b>What is NeoFin?</b></span>
+            NeoFin is a company that creates innovative credit and banking software products. Our goal is to launch
+            projects of any level of complexity as quickly as possible.</p>
+          <div class="popup__text_invitation-author">
+            <span>Kind regards</span>
+            <span>NeoFin</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="invite-collaborators " class="popup popup_window ">
+      <div class="popup__header">
+        <div class="popup__name">Invite collaborators </div>
+        <a href="#" class="popup__exit js-close-popup">
+          <img src="img/icon/close.svg" alt="">
+        </a>
+      </div>
+      <div class="popup_window__body">
+        <div class="invite-method">
+          <div class="invite-method__label">Invite with link</div>
+          <div class="invite-method__inner">
+            <div class="invite-method__input">
+              <input type="text" value="https://atlassian.design/components/form/usage/comp..." readonly>
+              <div class="invite-method__select">
+                <div class="costum-select">
+                  <div class="costum-select__header">
+                    <div class="costum-select__val">can view</div>
+                  </div>
+                  <div class="costum-select__body">
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" checked value="can view">
+                      <div class="costum-select__option-text">can view</div>
+                    </label>
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" value="can edit">
+                      <div class="costum-select__option-text">can edit</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="invite-method__btn copy-btn btn-reset">Copy</button>
+          </div>
+        </div>
+        <div class="invite-method">
+          <div class="invite-method__label">Invite by email</div>
+          <div class="invite-method__inner">
+            <div class="invite-method__input">
+              <input type="text" value="" placeholder="email">
+              <div class="invite-method__select">
+                <div class="costum-select">
+                  <div class="costum-select__header">
+                    <div class="costum-select__val">can view</div>
+                  </div>
+                  <div class="costum-select__body">
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" checked value="can view">
+                      <div class="costum-select__option-text">can view</div>
+                    </label>
+                    <label class="costum-select__option">
+                      <input type="radio" name="date-period" value="can edit">
+                      <div class="costum-select__option-text">can edit</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="invite-method__btn btn black-btn">Send</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="error" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/alert-triangle.svg" alt="">
+        </div>
+        <div class="popup__title">Are you sure you want to <span class="error-color">delete</span> this project?</div>
+        <div class=" popup__text">
+          <p>This action will permanently delete all the data connected to this project. This action will be
+            <b>irreversible</b>.</p>
+        </div>
+        <div class="popup__btns">
+          <a href="/" class="popup-btn_cancel btn-reset js-close-popup">Cancel</a>
+          <button type="button" href="#" class="btn delete-btn js-close-popup">
+            Delete
+          </button>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="calc" class="popup popup_window calc-popup">
+      <div class="popup__header">
+        <div class="calc-popup__title">Credit calculator</div>
+        <a href="#" class="popup__exit js-close-popup">
+          <img src="img/icon/close.svg" alt="">
+        </a>
+      </div>
+      <div class="popup_window__body">
+        <div class="credits__calc">
+          <div class="credits__calc-wrap">
+            <div class="wrap__content">
+              <div class="credits__calc-left">
+                <div class="сalc__info">
+                  <div class="range clearfix">
+                    <div class="range__up">
+                      <div class="info__label">Amount of credit</div>
+                      <div class="info__inp">
+                        <div class="info__inp-btn sum_minus">
+                          <span>-</span>
+                        </div>
+                        <input type="text" class="calc__input" id="summ" name="s" value="50" data-max="5000"
+                          data-min="50" data-step="50" data-k="1" multiple>
+                        <div class="info__inp-btn sum_plus">
+                          <span>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <input id="calculation-range-summ" class="costum-range" type="range" min="50" max="5000" step="50"
+                        value="50">
+                    </div>
+                  </div>
+                  <div class="сalc__quantity">
+                    <div class="quantity__left">
+                      $50
+                    </div>
+                    <div class="quantity__right">
+                      $5000
+                    </div>
+                  </div>
+                </div>
+                <div class="сalc__info">
+                  <div class="range clearfix">
+                    <div class="range__up range__up--term">
+                      <div class="info__label">Number of Payments</div>
+                      <div class="info__inp">
+                        <div class="info__inp-btn date_minus">
+                          <span>-</span>
+                        </div>
+                        <input type="text" class="calc__input" id="term" name="s" value="12" data-max="36" data-min="6"
+                          readonly data-min-event="1" data-step="6" data-k="1">
+                        <div class="info__inp-btn date_plus">
+                          <span>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <input id="calculation-range-term" class="costum-range" type="range" min="6" max="36" step="6"
+                        value="12">
+                    </div>
+                  </div>
+                  <div class="сalc__quantity">
+                    <div class="quantity__left">
+                      6 <span>num</span>
+                    </div>
+                    <div class="quantity__right">
+                      36 <span>num</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits__calc-right">
+                <div class="calc__calculation">
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Monthly payment</div>
+                    <div class="quantity__sum calculation__sum">
+                      <span>$</span>
+                      <span id="month-pay">
+                        500
+                      </span>
+                    </div>
+                  </div>
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Number of Payments</div>
+                    <div id="quantity__num" class="quantity__sum calculation__sum">
+                      12
+                    </div>
+                  </div>
+                  <div class="calculation__content">
+                    <div class="calculation__content-label">Сontract amount</div>
+                    <div class="return__sum calculation__sum">
+                      <span>$</span>
+                      <span id="return__sum">
+                        8 055
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits__calc-button">
+                <button class="credits__calc-btn btn black-btn js-close-popup">
+                  Apply for a loan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="delete-card" class="popup">
+      <div class="popup__content">
+        <div class="popup__icon">
+          <img src="img/icon/success-icon.svg" alt="">
+        </div>
+        <div class="popup__title">Success</div>
+        <div class=" popup__text">
+          Are you sure you want to delete the card?
+          <b>5252 **** 4455</b></p>
+        </div>
+        <a href="#" class="popup-btn btn black-btn js-close-popup">
+          Continue
+        </a>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+    <div id="change-lang" class="popup popup-lang">
+      <div class="popup__content">
+        <div class="popup__title">Select Your Country or Region</div>
+        <div class="popup-lang__body">
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">Asia Pacific</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">Europe</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-lang__content">
+            <div class="popup-lang__title">North America</div>
+            <ul class="popup-lang__list">
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中国大陆</div>
+                  <div class="style-text">简体中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>日本</div>
+                  <div class="style-text">日本語</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國台灣</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>中國澳門</div>
+                  <div class="style-text">繁體中文</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Australia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>HongKong</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Singapore</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>New Zealand</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>Indonesia</div>
+                  <div class="style-text">English</div>
+                </a>
+              </li>
+              <li class="popup-lang__elem">
+                <a class="popup-lang__link" href="#">
+                  <div>대한민국</div>
+                  <div class="style-text">한국어</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="popup__exit js-close-popup">
+        <img src="img/icon/close.svg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+  integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+  integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.2/smooth-scrollbar.min.js"
+  integrity="sha512-PEwnonaWU3k7TR3sQuTjkR1ZXmg6s9iGWX42rhxuAufRn1j48UL1mvu2UFj1L4u8LkDzYfqYz5dAV1WpgWRhJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.6.1/roundslider.min.js"
+  integrity="sha512-OztPUuNsmM+BUn6NOM5EVZED6aFf/0P4V+cVwcf5iR5T58hGyIJ8XtWFd5ctuOpGytfCsxy4/9JqxeTLliXrBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--  -->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
